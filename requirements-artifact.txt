@@ -1,0 +1,6 @@
+numpy>=1.21
+matplotlib>=3.5
+PyYAML>=6.0
+pytest>=7,<9
+mkdocs>=1.5
+mkdocs-material>=9.5

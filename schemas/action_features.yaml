@@ -1,0 +1,30 @@
+schema_version: tensor_schema_v1
+name: fixed_context_candidate_action
+action_semantics: candidate differs only in robot for a fixed order-pod-station-return context
+node_field:
+  shape: [nodes, 8]
+  channels:
+    - {index: 0, name: robot_start_indicator}
+    - {index: 1, name: pod_location_indicator}
+    - {index: 2, name: station_location_indicator}
+    - {index: 3, name: return_location_indicator}
+    - {index: 4, name: robot_to_pod_route}
+    - {index: 5, name: pod_to_station_route}
+    - {index: 6, name: station_to_return_route}
+    - {index: 7, name: weighted_route_load, weights: [1.0, 1.5, 0.8], normalization: 3.3}
+global:
+  shape: [6]
+  channels:
+    - {index: 0, name: robot_to_pod_manhattan, scale: rows_plus_cols}
+    - {index: 1, name: pod_to_station_manhattan, scale: rows_plus_cols}
+    - {index: 2, name: station_to_return_manhattan, scale: rows_plus_cols}
+    - {index: 3, name: station_queue, scale: robot_count}
+    - {index: 4, name: route_pressure, definition: mean_0.40_density_plus_0.25_wait_plus_0.25_reservation_plus_0.10_flow}
+    - {index: 5, name: order_size, scale: max_distinct_skus_times_max_quantity_per_sku}
+edge_field_saved_for_audit:
+  model_input: false
+  shape: [directed_edges, 4]
+  channels: [robot_to_pod_route, pod_to_station_route, station_to_return_route, weighted_route_load]
+no_assign_encoding: all_zero
+main_policy_includes_no_assign: false
+canonical_source: src/WorldModel/graph/graph_builder.py

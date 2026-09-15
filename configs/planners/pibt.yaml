@@ -1,0 +1,11 @@
+schema_version: planner_contract_v1
+paper_name: PIBT
+implementation: Policies.PathPlanner.PIBTPlanner.pibt_path_planner.PIBTPlanner
+parameters: {strict_validation: true}
+action_path_mode: 0
+action_route_encoding: canonical_bfs_service_cell_v1
+evaluation_seeds: {start: 551, stop_inclusive: 560}
+adaptation_seeds:
+  train: {start: 461, stop_inclusive: 467}
+  validation: [468, 469]
+  test: [470]

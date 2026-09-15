@@ -1,0 +1,12 @@
+schema_version: tensor_schema_v1
+name: future_system_labels
+shape: [horizon, 7]
+channels:
+  - {index: 0, name: stall_ratio, definition: non-idle stuck-or-plan-blocked robot count divided by robot count}
+  - {index: 1, name: average_excess_delay, scale: 10, definition: mean max(0 actual_duration_minus_free_flow_time)}
+  - {index: 2, name: station_queue_delta, scale: station_count, definition: sum positive per-station physical occupancy-ratio increase}
+  - {index: 3, name: station_load_imbalance, scale: 5, definition: standard deviation of assigned or in-progress delivery counts}
+  - {index: 4, name: bottleneck_CVaR, definition: mean top 10 percent local congestion over top 20 percent betweenness nodes}
+  - {index: 5, name: completed_orders_delta, definition: completed order count since reference}
+  - {index: 6, name: deadlock_or_severe_congestion_risk, definition: unified risk signal}
+canonical_source: src/WorldModel/graph/graph_builder.py

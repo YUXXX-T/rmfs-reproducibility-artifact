@@ -1,0 +1,225 @@
+{
+    "map": {
+        "rows": 23,
+        "cols": 23,
+        "obstacles": [],
+        "stations": [
+            {
+                "id": 1,
+                "row": 0,
+                "col": 5
+            },
+            {
+                "id": 2,
+                "row": 0,
+                "col": 8
+            },
+            {
+                "id": 3,
+                "row": 0,
+                "col": 11
+            },
+            {
+                "id": 4,
+                "row": 0,
+                "col": 14
+            },
+            {
+                "id": 5,
+                "row": 0,
+                "col": 17
+            }
+        ],
+        "pod_zones": [
+            {
+                "origin_row": 3,
+                "origin_col": 2,
+                "num_rows": 2,
+                "num_cols": 5
+            },
+            {
+                "origin_row": 3,
+                "origin_col": 9,
+                "num_rows": 2,
+                "num_cols": 5
+            },
+            {
+                "origin_row": 3,
+                "origin_col": 16,
+                "num_rows": 2,
+                "num_cols": 5
+            },
+            {
+                "origin_row": 7,
+                "origin_col": 2,
+                "num_rows": 2,
+                "num_cols": 5
+            },
+            {
+                "origin_row": 7,
+                "origin_col": 9,
+                "num_rows": 2,
+                "num_cols": 5
+            },
+            {
+                "origin_row": 7,
+                "origin_col": 16,
+                "num_rows": 2,
+                "num_cols": 5
+            },
+            {
+                "origin_row": 11,
+                "origin_col": 2,
+                "num_rows": 2,
+                "num_cols": 5
+            },
+            {
+                "origin_row": 11,
+                "origin_col": 9,
+                "num_rows": 2,
+                "num_cols": 5
+            },
+            {
+                "origin_row": 11,
+                "origin_col": 16,
+                "num_rows": 2,
+                "num_cols": 5
+            },
+            {
+                "origin_row": 15,
+                "origin_col": 2,
+                "num_rows": 2,
+                "num_cols": 5
+            },
+            {
+                "origin_row": 15,
+                "origin_col": 9,
+                "num_rows": 2,
+                "num_cols": 5
+            },
+            {
+                "origin_row": 15,
+                "origin_col": 16,
+                "num_rows": 2,
+                "num_cols": 5
+            },
+            {
+                "origin_row": 19,
+                "origin_col": 2,
+                "num_rows": 2,
+                "num_cols": 5
+            },
+            {
+                "origin_row": 19,
+                "origin_col": 9,
+                "num_rows": 2,
+                "num_cols": 5
+            },
+            {
+                "origin_row": 19,
+                "origin_col": 16,
+                "num_rows": 2,
+                "num_cols": 5
+            }
+        ]
+    },
+    "robots": {
+        "num_robots": 8,
+        "starts": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                1
+            ],
+            [
+                0,
+                2
+            ],
+            [
+                0,
+                3
+            ],
+            [
+                0,
+                19
+            ],
+            [
+                0,
+                20
+            ],
+            [
+                0,
+                21
+            ],
+            [
+                0,
+                22
+            ]
+        ],
+        "speed": 1
+    },
+    "pods": {
+        "pod_types": [
+            "A",
+            "B",
+            "C"
+        ],
+        "skus_per_pod": 3,
+        "sku_pool_size_per_type": 10,
+        "items_per_sku": 50
+    },
+    "simulation": {
+        "order_interval": 2,
+        "max_items_per_order": 2,
+        "pickup_duration": 2,
+        "dropoff_duration": 2,
+        "station_process_duration": 5,
+        "tick_delay": 0.5,
+        "p3d_view_mode": "3d",
+        "p3d_use_gpu": false,
+        "night_mode": false,
+        "log_level": "INFO",
+        "log_file": null,
+        "fixed_order_size": true,
+        "task_execution_mode": "serial",
+        "max_items_per_sku": 3,
+        "robot_label_scale": 0.25,
+        "show_selection_panel": true,
+        "show_robot_paths_panel": true,
+        "use_recorded_orders": true,
+        "recorded_orders_path": "./OrderGenerateRecord/record/orders.json",
+        "immediate_dispatch": true
+    },
+    "policies": {
+        "order_generator": {
+            "name": "ZipfOrderGenerator",
+            "params": { "zipf_param": 1.5 }
+        },
+        "task_assigner": "GreedyTaskAssigner",
+        "path_planner": {
+            "name": "PrioritizedPathPlanner",
+            "params": {
+                "max_horizon": 100,
+                "goal_reserve": 6
+            }
+        },
+        "pod_return_planner": "NearestSlotPlanner",
+        "pod_initializer": "DefaultPodInitializer",
+        "pod_retriever": "DefaultPodRetriever"
+    },
+    "robot_model": {
+        "use_model": true,
+        "body_offset_z": 0.008,
+        "body_hpr": [90, 90, 90],
+        "wheel_radius": 0.08,
+        "wheel_positions": [
+            [0.18, 0.14, 0.08],
+            [0.18, -0.14, 0.08],
+            [-0.18, 0.14, 0.08],
+            [-0.18, -0.14, 0.08]
+        ]
+    }
+}

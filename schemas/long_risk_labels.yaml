@@ -1,0 +1,13 @@
+schema_version: tensor_schema_v1
+name: long_risk_head_outputs
+shape: [6]
+simulator_continuation_horizon: 200
+channels:
+  - {index: 0, name: peak_q90}
+  - {index: 1, name: peak_q95}
+  - {index: 2, name: cvar_q90}
+  - {index: 3, name: terminal_q90}
+  - {index: 4, name: delta_group_q90}
+  - {index: 5, name: event_logit}
+derived_quantile_combo: 0.2*peak_q95 + 0.3*cvar_q90 + 0.5*terminal_q90
+canonical_source: src/WorldModel/core/long_risk_schema.py

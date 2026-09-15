@@ -1,0 +1,6 @@
+schema_version: policy_contract_v1
+paper_name: Hungarian
+implementation: Policies.TaskAssigner.HungarianTaskAssigner.hungarian_task_assigner.HungarianTaskAssigner
+objective: minimum_total_manhattan_distance_robot_to_pod
+solver_scope: current_batch
+trainable_parameters: false

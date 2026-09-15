@@ -1,0 +1,4 @@
+schema_version: seed_split_v1
+purpose: main_paired_pp_evaluation
+evaluation: {start: 900, stop_inclusive: 949, count: 50}
+selection_by_outcome: false

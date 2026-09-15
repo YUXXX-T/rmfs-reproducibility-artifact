@@ -1,0 +1,55 @@
+{
+  "schema_version": "checkpoint_manifest_v1",
+  "review_distribution": "anonymous release bundle; public DOI/Release URL pending",
+  "assets": [
+    {
+      "name": "four_station_wm_base",
+      "path": "checkpoints/main/model_round1_v1/best_regret_world_model.pt",
+      "bytes": 652862,
+      "distribution": "release_pending",
+      "url": null
+    },
+    {
+      "name": "four_station_world_model_with_long_risk",
+      "path": "checkpoints/main/long_risk_head_only_v1/best_long_risk_world_model.pt",
+      "bytes": 655422,
+      "distribution": "release_pending",
+      "url": null
+    },
+    {
+      "name": "four_station_j1_station_head",
+      "path": "checkpoints/main/station_head_rebound_v1/best_station_congestion_head.pt",
+      "bytes": 7332,
+      "distribution": "release_pending",
+      "url": null
+    },
+    {
+      "name": "four_station_j1_scale_contract",
+      "path": "checkpoints/main/station_congestion_scale_contract.json",
+      "bytes": 1790,
+      "distribution": "release_pending",
+      "url": null
+    },
+    {
+      "name": "six_station_world_model_with_long_risk",
+      "path": "checkpoints/station6/long_risk_head_only_v1/best_long_risk_world_model.pt",
+      "bytes": null,
+      "distribution": "release_pending",
+      "url": null
+    },
+    {
+      "name": "six_station_j1_station_head",
+      "path": "checkpoints/station6/station_head_state_level_v1/best_station_congestion_head.pt",
+      "bytes": null,
+      "distribution": "release_pending",
+      "url": null
+    },
+    {
+      "name": "six_station_j1_scale_contract",
+      "path": "checkpoints/station6/station_congestion_scale_contract.json",
+      "bytes": null,
+      "distribution": "release_pending",
+      "url": null
+    }
+  ]
+}

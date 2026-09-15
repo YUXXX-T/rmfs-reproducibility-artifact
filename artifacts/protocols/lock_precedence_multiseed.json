@@ -1,0 +1,3136 @@
+{
+  "trace_root": "WorldModel/checkpoints/phaseC_wm_onpolicy_round1_v1/phasec_physical_only_pp_trace_v1",
+  "n_seed_files": 150,
+  "stride_hint": 10,
+  "params": {
+    "share_grid": [
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ],
+    "primary_share": 0.8,
+    "sustain": 3,
+    "smooth_window": 5,
+    "collapse_max_orders": 300,
+    "collapse_min_deadlock": 0.4,
+    "collapse_rate_frac": 0.25,
+    "collapse_backlog_mult": 1.5,
+    "granger_lag": 3,
+    "bootstrap_iters": 10000,
+    "bootstrap_seed": 20260909
+  },
+  "groups": [
+    {
+      "load": "high",
+      "arm": "ComboS1J1",
+      "n_seeds_with_data": 50,
+      "collapse_definition": "completed_orders < 300 AND deadlock_ratio_mean >= 0.4",
+      "n_collapsed_runs": 15,
+      "n_collapsed_with_onset_time": 15,
+      "n_with_lock_onset(share>=0.8)": 49,
+      "n_lock_onset_in_collapsed": 14,
+      "n_with_both": 14,
+      "lock_onset_by_threshold": {
+        "share_ge_0.6": {
+          "n_crossed": 50,
+          "median_tick": 65.0
+        },
+        "share_ge_0.7": {
+          "n_crossed": 50,
+          "median_tick": 130.0
+        },
+        "share_ge_0.8": {
+          "n_crossed": 49,
+          "median_tick": 240.0
+        },
+        "share_ge_0.9": {
+          "n_crossed": 42,
+          "median_tick": 430.0
+        }
+      },
+      "lead_collapse_minus_lock": {
+        "n": 14,
+        "mean": 471.4,
+        "median": 460.0,
+        "ci95_mean": [
+          400.0,
+          557.1429
+        ],
+        "sign_positive": "14/14",
+        "wilcoxon_greater_p": 0.00048652826472334255
+      },
+      "cross_correlation": {
+        "n_negative_peak": 13,
+        "median_lead_lag_samples": 5.0,
+        "median_peak_corr": -0.774,
+        "note": "collapsed runs only; positive lag (stride-samples) => lock LEADS the rate drop"
+      },
+      "granger": {
+        "scope": "collapsed runs only",
+        "lock_to_rate_sig_frac": 0.933,
+        "lock_to_rate_fisher_p": 5.800665169083269e-63,
+        "rate_to_lock_sig_frac": 0.533,
+        "rate_to_lock_fisher_p": 9.29033306171489e-13,
+        "n_tested": 15,
+        "lag": 3
+      },
+      "lead_pairs": [
+        {
+          "seed": 900,
+          "lock_tick": 140.0,
+          "collapse_tick": 640.0,
+          "lead": 500.0,
+          "completed_orders": 197.0,
+          "deadlock_ratio_mean": 0.6651
+        },
+        {
+          "seed": 904,
+          "lock_tick": 390.0,
+          "collapse_tick": 700.0,
+          "lead": 310.0,
+          "completed_orders": 196.0,
+          "deadlock_ratio_mean": 0.6601
+        },
+        {
+          "seed": 907,
+          "lock_tick": 680.0,
+          "collapse_tick": 1000.0,
+          "lead": 320.0,
+          "completed_orders": 291.0,
+          "deadlock_ratio_mean": 0.4958
+        },
+        {
+          "seed": 910,
+          "lock_tick": 170.0,
+          "collapse_tick": 580.0,
+          "lead": 410.0,
+          "completed_orders": 141.0,
+          "deadlock_ratio_mean": 0.7405
+        },
+        {
+          "seed": 914,
+          "lock_tick": 160.0,
+          "collapse_tick": 500.0,
+          "lead": 340.0,
+          "completed_orders": 117.0,
+          "deadlock_ratio_mean": 0.7849
+        },
+        {
+          "seed": 918,
+          "lock_tick": 140.0,
+          "collapse_tick": 510.0,
+          "lead": 370.0,
+          "completed_orders": 93.0,
+          "deadlock_ratio_mean": 0.8517
+        },
+        {
+          "seed": 920,
+          "lock_tick": 240.0,
+          "collapse_tick": 580.0,
+          "lead": 340.0,
+          "completed_orders": 136.0,
+          "deadlock_ratio_mean": 0.73
+        },
+        {
+          "seed": 924,
+          "lock_tick": 290.0,
+          "collapse_tick": 860.0,
+          "lead": 570.0,
+          "completed_orders": 264.0,
+          "deadlock_ratio_mean": 0.5428
+        },
+        {
+          "seed": 930,
+          "lock_tick": 250.0,
+          "collapse_tick": 730.0,
+          "lead": 480.0,
+          "completed_orders": 147.0,
+          "deadlock_ratio_mean": 0.7686
+        },
+        {
+          "seed": 933,
+          "lock_tick": 100.0,
+          "collapse_tick": 740.0,
+          "lead": 640.0,
+          "completed_orders": 205.0,
+          "deadlock_ratio_mean": 0.6648
+        },
+        {
+          "seed": 936,
+          "lock_tick": 80.0,
+          "collapse_tick": 540.0,
+          "lead": 460.0,
+          "completed_orders": 139.0,
+          "deadlock_ratio_mean": 0.7775
+        },
+        {
+          "seed": 939,
+          "lock_tick": 90.0,
+          "collapse_tick": 550.0,
+          "lead": 460.0,
+          "completed_orders": 178.0,
+          "deadlock_ratio_mean": 0.7092
+        },
+        {
+          "seed": 942,
+          "lock_tick": 120.0,
+          "collapse_tick": 1020.0,
+          "lead": 900.0,
+          "completed_orders": 290.0,
+          "deadlock_ratio_mean": 0.5184
+        },
+        {
+          "seed": 949,
+          "lock_tick": 340.0,
+          "collapse_tick": 840.0,
+          "lead": 500.0,
+          "completed_orders": 298.0,
+          "deadlock_ratio_mean": 0.5105
+        }
+      ]
+    },
+    {
+      "load": "high",
+      "arm": "Greedy",
+      "n_seeds_with_data": 50,
+      "collapse_definition": "completed_orders < 300 AND deadlock_ratio_mean >= 0.4",
+      "n_collapsed_runs": 22,
+      "n_collapsed_with_onset_time": 22,
+      "n_with_lock_onset(share>=0.8)": 50,
+      "n_lock_onset_in_collapsed": 22,
+      "n_with_both": 22,
+      "lock_onset_by_threshold": {
+        "share_ge_0.6": {
+          "n_crossed": 50,
+          "median_tick": 40.0
+        },
+        "share_ge_0.7": {
+          "n_crossed": 50,
+          "median_tick": 110.0
+        },
+        "share_ge_0.8": {
+          "n_crossed": 50,
+          "median_tick": 185.0
+        },
+        "share_ge_0.9": {
+          "n_crossed": 47,
+          "median_tick": 390.0
+        }
+      },
+      "lead_collapse_minus_lock": {
+        "n": 22,
+        "mean": 476.8,
+        "median": 445.0,
+        "ci95_mean": [
+          421.8182,
+          536.8182
+        ],
+        "sign_positive": "22/22",
+        "wilcoxon_greater_p": 1.993271761157743e-05
+      },
+      "cross_correlation": {
+        "n_negative_peak": 21,
+        "median_lead_lag_samples": 5.0,
+        "median_peak_corr": -0.789,
+        "note": "collapsed runs only; positive lag (stride-samples) => lock LEADS the rate drop"
+      },
+      "granger": {
+        "scope": "collapsed runs only",
+        "lock_to_rate_sig_frac": 1.0,
+        "lock_to_rate_fisher_p": 1.3441396556117437e-119,
+        "rate_to_lock_sig_frac": 0.727,
+        "rate_to_lock_fisher_p": 3.5135498941404304e-47,
+        "n_tested": 22,
+        "lag": 3
+      },
+      "lead_pairs": [
+        {
+          "seed": 902,
+          "lock_tick": 330.0,
+          "collapse_tick": 680.0,
+          "lead": 350.0,
+          "completed_orders": 160.0,
+          "deadlock_ratio_mean": 0.7002
+        },
+        {
+          "seed": 904,
+          "lock_tick": 120.0,
+          "collapse_tick": 670.0,
+          "lead": 550.0,
+          "completed_orders": 168.0,
+          "deadlock_ratio_mean": 0.6871
+        },
+        {
+          "seed": 905,
+          "lock_tick": 150.0,
+          "collapse_tick": 940.0,
+          "lead": 790.0,
+          "completed_orders": 270.0,
+          "deadlock_ratio_mean": 0.5238
+        },
+        {
+          "seed": 910,
+          "lock_tick": 70.0,
+          "collapse_tick": 550.0,
+          "lead": 480.0,
+          "completed_orders": 73.0,
+          "deadlock_ratio_mean": 0.8721
+        },
+        {
+          "seed": 911,
+          "lock_tick": 210.0,
+          "collapse_tick": 540.0,
+          "lead": 330.0,
+          "completed_orders": 119.0,
+          "deadlock_ratio_mean": 0.7715
+        },
+        {
+          "seed": 916,
+          "lock_tick": 180.0,
+          "collapse_tick": 540.0,
+          "lead": 360.0,
+          "completed_orders": 161.0,
+          "deadlock_ratio_mean": 0.7362
+        },
+        {
+          "seed": 918,
+          "lock_tick": 230.0,
+          "collapse_tick": 530.0,
+          "lead": 300.0,
+          "completed_orders": 119.0,
+          "deadlock_ratio_mean": 0.8028
+        },
+        {
+          "seed": 920,
+          "lock_tick": 130.0,
+          "collapse_tick": 500.0,
+          "lead": 370.0,
+          "completed_orders": 75.0,
+          "deadlock_ratio_mean": 0.8444
+        },
+        {
+          "seed": 921,
+          "lock_tick": 270.0,
+          "collapse_tick": 740.0,
+          "lead": 470.0,
+          "completed_orders": 192.0,
+          "deadlock_ratio_mean": 0.6697
+        },
+        {
+          "seed": 922,
+          "lock_tick": 140.0,
+          "collapse_tick": 520.0,
+          "lead": 380.0,
+          "completed_orders": 145.0,
+          "deadlock_ratio_mean": 0.768
+        },
+        {
+          "seed": 924,
+          "lock_tick": 220.0,
+          "collapse_tick": 600.0,
+          "lead": 380.0,
+          "completed_orders": 124.0,
+          "deadlock_ratio_mean": 0.7637
+        },
+        {
+          "seed": 925,
+          "lock_tick": 70.0,
+          "collapse_tick": 690.0,
+          "lead": 620.0,
+          "completed_orders": 191.0,
+          "deadlock_ratio_mean": 0.685
+        },
+        {
+          "seed": 926,
+          "lock_tick": 170.0,
+          "collapse_tick": 870.0,
+          "lead": 700.0,
+          "completed_orders": 277.0,
+          "deadlock_ratio_mean": 0.5487
+        },
+        {
+          "seed": 928,
+          "lock_tick": 450.0,
+          "collapse_tick": 800.0,
+          "lead": 350.0,
+          "completed_orders": 281.0,
+          "deadlock_ratio_mean": 0.5347
+        },
+        {
+          "seed": 930,
+          "lock_tick": 300.0,
+          "collapse_tick": 920.0,
+          "lead": 620.0,
+          "completed_orders": 223.0,
+          "deadlock_ratio_mean": 0.6066
+        },
+        {
+          "seed": 932,
+          "lock_tick": 150.0,
+          "collapse_tick": 800.0,
+          "lead": 650.0,
+          "completed_orders": 272.0,
+          "deadlock_ratio_mean": 0.5429
+        },
+        {
+          "seed": 934,
+          "lock_tick": 110.0,
+          "collapse_tick": 530.0,
+          "lead": 420.0,
+          "completed_orders": 84.0,
+          "deadlock_ratio_mean": 0.8525
+        },
+        {
+          "seed": 939,
+          "lock_tick": 120.0,
+          "collapse_tick": 590.0,
+          "lead": 470.0,
+          "completed_orders": 155.0,
+          "deadlock_ratio_mean": 0.7312
+        },
+        {
+          "seed": 941,
+          "lock_tick": 100.0,
+          "collapse_tick": 560.0,
+          "lead": 460.0,
+          "completed_orders": 131.0,
+          "deadlock_ratio_mean": 0.7889
+        },
+        {
+          "seed": 944,
+          "lock_tick": 190.0,
+          "collapse_tick": 520.0,
+          "lead": 330.0,
+          "completed_orders": 101.0,
+          "deadlock_ratio_mean": 0.7908
+        },
+        {
+          "seed": 946,
+          "lock_tick": 260.0,
+          "collapse_tick": 940.0,
+          "lead": 680.0,
+          "completed_orders": 275.0,
+          "deadlock_ratio_mean": 0.5468
+        },
+        {
+          "seed": 948,
+          "lock_tick": 140.0,
+          "collapse_tick": 570.0,
+          "lead": 430.0,
+          "completed_orders": 93.0,
+          "deadlock_ratio_mean": 0.8287
+        }
+      ]
+    },
+    {
+      "load": "high",
+      "arm": "Hungarian",
+      "n_seeds_with_data": 50,
+      "collapse_definition": "completed_orders < 300 AND deadlock_ratio_mean >= 0.4",
+      "n_collapsed_runs": 29,
+      "n_collapsed_with_onset_time": 29,
+      "n_with_lock_onset(share>=0.8)": 50,
+      "n_lock_onset_in_collapsed": 29,
+      "n_with_both": 29,
+      "lock_onset_by_threshold": {
+        "share_ge_0.6": {
+          "n_crossed": 50,
+          "median_tick": 60.0
+        },
+        "share_ge_0.7": {
+          "n_crossed": 50,
+          "median_tick": 100.0
+        },
+        "share_ge_0.8": {
+          "n_crossed": 50,
+          "median_tick": 190.0
+        },
+        "share_ge_0.9": {
+          "n_crossed": 46,
+          "median_tick": 420.0
+        }
+      },
+      "lead_collapse_minus_lock": {
+        "n": 29,
+        "mean": 468.3,
+        "median": 440.0,
+        "ci95_mean": [
+          405.8621,
+          533.1034
+        ],
+        "sign_positive": "29/29",
+        "wilcoxon_greater_p": 1.2780935122901114e-06
+      },
+      "cross_correlation": {
+        "n_negative_peak": 28,
+        "median_lead_lag_samples": 5.0,
+        "median_peak_corr": -0.797,
+        "note": "collapsed runs only; positive lag (stride-samples) => lock LEADS the rate drop"
+      },
+      "granger": {
+        "scope": "collapsed runs only",
+        "lock_to_rate_sig_frac": 0.966,
+        "lock_to_rate_fisher_p": 9.835081434819585e-131,
+        "rate_to_lock_sig_frac": 0.621,
+        "rate_to_lock_fisher_p": 5.307264443491473e-37,
+        "n_tested": 29,
+        "lag": 3
+      },
+      "lead_pairs": [
+        {
+          "seed": 900,
+          "lock_tick": 110.0,
+          "collapse_tick": 560.0,
+          "lead": 450.0,
+          "completed_orders": 155.0,
+          "deadlock_ratio_mean": 0.7534
+        },
+        {
+          "seed": 903,
+          "lock_tick": 340.0,
+          "collapse_tick": 700.0,
+          "lead": 360.0,
+          "completed_orders": 242.0,
+          "deadlock_ratio_mean": 0.5567
+        },
+        {
+          "seed": 904,
+          "lock_tick": 140.0,
+          "collapse_tick": 550.0,
+          "lead": 410.0,
+          "completed_orders": 97.0,
+          "deadlock_ratio_mean": 0.7869
+        },
+        {
+          "seed": 905,
+          "lock_tick": 210.0,
+          "collapse_tick": 650.0,
+          "lead": 440.0,
+          "completed_orders": 141.0,
+          "deadlock_ratio_mean": 0.7672
+        },
+        {
+          "seed": 907,
+          "lock_tick": 240.0,
+          "collapse_tick": 730.0,
+          "lead": 490.0,
+          "completed_orders": 234.0,
+          "deadlock_ratio_mean": 0.5317
+        },
+        {
+          "seed": 908,
+          "lock_tick": 460.0,
+          "collapse_tick": 690.0,
+          "lead": 230.0,
+          "completed_orders": 264.0,
+          "deadlock_ratio_mean": 0.5861
+        },
+        {
+          "seed": 910,
+          "lock_tick": 150.0,
+          "collapse_tick": 500.0,
+          "lead": 350.0,
+          "completed_orders": 109.0,
+          "deadlock_ratio_mean": 0.7045
+        },
+        {
+          "seed": 911,
+          "lock_tick": 80.0,
+          "collapse_tick": 870.0,
+          "lead": 790.0,
+          "completed_orders": 267.0,
+          "deadlock_ratio_mean": 0.5558
+        },
+        {
+          "seed": 914,
+          "lock_tick": 220.0,
+          "collapse_tick": 670.0,
+          "lead": 450.0,
+          "completed_orders": 186.0,
+          "deadlock_ratio_mean": 0.6379
+        },
+        {
+          "seed": 916,
+          "lock_tick": 170.0,
+          "collapse_tick": 500.0,
+          "lead": 330.0,
+          "completed_orders": 120.0,
+          "deadlock_ratio_mean": 0.7736
+        },
+        {
+          "seed": 917,
+          "lock_tick": 180.0,
+          "collapse_tick": 650.0,
+          "lead": 470.0,
+          "completed_orders": 185.0,
+          "deadlock_ratio_mean": 0.5918
+        },
+        {
+          "seed": 918,
+          "lock_tick": 340.0,
+          "collapse_tick": 610.0,
+          "lead": 270.0,
+          "completed_orders": 196.0,
+          "deadlock_ratio_mean": 0.6739
+        },
+        {
+          "seed": 919,
+          "lock_tick": 130.0,
+          "collapse_tick": 560.0,
+          "lead": 430.0,
+          "completed_orders": 144.0,
+          "deadlock_ratio_mean": 0.8226
+        },
+        {
+          "seed": 921,
+          "lock_tick": 80.0,
+          "collapse_tick": 740.0,
+          "lead": 660.0,
+          "completed_orders": 191.0,
+          "deadlock_ratio_mean": 0.6358
+        },
+        {
+          "seed": 923,
+          "lock_tick": 300.0,
+          "collapse_tick": 870.0,
+          "lead": 570.0,
+          "completed_orders": 293.0,
+          "deadlock_ratio_mean": 0.4676
+        },
+        {
+          "seed": 924,
+          "lock_tick": 180.0,
+          "collapse_tick": 800.0,
+          "lead": 620.0,
+          "completed_orders": 184.0,
+          "deadlock_ratio_mean": 0.527
+        },
+        {
+          "seed": 925,
+          "lock_tick": 70.0,
+          "collapse_tick": 600.0,
+          "lead": 530.0,
+          "completed_orders": 95.0,
+          "deadlock_ratio_mean": 0.8021
+        },
+        {
+          "seed": 926,
+          "lock_tick": 190.0,
+          "collapse_tick": 500.0,
+          "lead": 310.0,
+          "completed_orders": 101.0,
+          "deadlock_ratio_mean": 0.7628
+        },
+        {
+          "seed": 928,
+          "lock_tick": 690.0,
+          "collapse_tick": 870.0,
+          "lead": 180.0,
+          "completed_orders": 191.0,
+          "deadlock_ratio_mean": 0.5029
+        },
+        {
+          "seed": 930,
+          "lock_tick": 250.0,
+          "collapse_tick": 610.0,
+          "lead": 360.0,
+          "completed_orders": 146.0,
+          "deadlock_ratio_mean": 0.7642
+        },
+        {
+          "seed": 932,
+          "lock_tick": 270.0,
+          "collapse_tick": 700.0,
+          "lead": 430.0,
+          "completed_orders": 246.0,
+          "deadlock_ratio_mean": 0.5911
+        },
+        {
+          "seed": 933,
+          "lock_tick": 90.0,
+          "collapse_tick": 680.0,
+          "lead": 590.0,
+          "completed_orders": 150.0,
+          "deadlock_ratio_mean": 0.6353
+        },
+        {
+          "seed": 936,
+          "lock_tick": 210.0,
+          "collapse_tick": 500.0,
+          "lead": 290.0,
+          "completed_orders": 123.0,
+          "deadlock_ratio_mean": 0.7875
+        },
+        {
+          "seed": 937,
+          "lock_tick": 480.0,
+          "collapse_tick": 1010.0,
+          "lead": 530.0,
+          "completed_orders": 294.0,
+          "deadlock_ratio_mean": 0.4191
+        },
+        {
+          "seed": 939,
+          "lock_tick": 190.0,
+          "collapse_tick": 510.0,
+          "lead": 320.0,
+          "completed_orders": 111.0,
+          "deadlock_ratio_mean": 0.7692
+        },
+        {
+          "seed": 942,
+          "lock_tick": 180.0,
+          "collapse_tick": 880.0,
+          "lead": 700.0,
+          "completed_orders": 260.0,
+          "deadlock_ratio_mean": 0.5763
+        },
+        {
+          "seed": 944,
+          "lock_tick": 150.0,
+          "collapse_tick": 1050.0,
+          "lead": 900.0,
+          "completed_orders": 277.0,
+          "deadlock_ratio_mean": 0.5281
+        },
+        {
+          "seed": 948,
+          "lock_tick": 210.0,
+          "collapse_tick": 510.0,
+          "lead": 300.0,
+          "completed_orders": 91.0,
+          "deadlock_ratio_mean": 0.7738
+        },
+        {
+          "seed": 949,
+          "lock_tick": 110.0,
+          "collapse_tick": 930.0,
+          "lead": 820.0,
+          "completed_orders": 281.0,
+          "deadlock_ratio_mean": 0.5234
+        }
+      ]
+    },
+    {
+      "load": "high",
+      "arm": "JSQ",
+      "n_seeds_with_data": 50,
+      "collapse_definition": "completed_orders < 300 AND deadlock_ratio_mean >= 0.4",
+      "n_collapsed_runs": 16,
+      "n_collapsed_with_onset_time": 16,
+      "n_with_lock_onset(share>=0.8)": 50,
+      "n_lock_onset_in_collapsed": 16,
+      "n_with_both": 16,
+      "lock_onset_by_threshold": {
+        "share_ge_0.6": {
+          "n_crossed": 50,
+          "median_tick": 40.0
+        },
+        "share_ge_0.7": {
+          "n_crossed": 50,
+          "median_tick": 105.0
+        },
+        "share_ge_0.8": {
+          "n_crossed": 50,
+          "median_tick": 185.0
+        },
+        "share_ge_0.9": {
+          "n_crossed": 44,
+          "median_tick": 400.0
+        }
+      },
+      "lead_collapse_minus_lock": {
+        "n": 16,
+        "mean": 513.1,
+        "median": 510.0,
+        "ci95_mean": [
+          446.875,
+          581.25
+        ],
+        "sign_positive": "16/16",
+        "wilcoxon_greater_p": 0.0002174386120882911
+      },
+      "cross_correlation": {
+        "n_negative_peak": 16,
+        "median_lead_lag_samples": 5.0,
+        "median_peak_corr": -0.758,
+        "note": "collapsed runs only; positive lag (stride-samples) => lock LEADS the rate drop"
+      },
+      "granger": {
+        "scope": "collapsed runs only",
+        "lock_to_rate_sig_frac": 1.0,
+        "lock_to_rate_fisher_p": 1.4013728708650087e-72,
+        "rate_to_lock_sig_frac": 0.688,
+        "rate_to_lock_fisher_p": 2.3376161268890653e-19,
+        "n_tested": 16,
+        "lag": 3
+      },
+      "lead_pairs": [
+        {
+          "seed": 901,
+          "lock_tick": 450.0,
+          "collapse_tick": 770.0,
+          "lead": 320.0,
+          "completed_orders": 259.0,
+          "deadlock_ratio_mean": 0.6058
+        },
+        {
+          "seed": 902,
+          "lock_tick": 240.0,
+          "collapse_tick": 960.0,
+          "lead": 720.0,
+          "completed_orders": 290.0,
+          "deadlock_ratio_mean": 0.4589
+        },
+        {
+          "seed": 905,
+          "lock_tick": 150.0,
+          "collapse_tick": 720.0,
+          "lead": 570.0,
+          "completed_orders": 258.0,
+          "deadlock_ratio_mean": 0.5786
+        },
+        {
+          "seed": 909,
+          "lock_tick": 160.0,
+          "collapse_tick": 820.0,
+          "lead": 660.0,
+          "completed_orders": 262.0,
+          "deadlock_ratio_mean": 0.5225
+        },
+        {
+          "seed": 910,
+          "lock_tick": 70.0,
+          "collapse_tick": 500.0,
+          "lead": 430.0,
+          "completed_orders": 117.0,
+          "deadlock_ratio_mean": 0.7801
+        },
+        {
+          "seed": 914,
+          "lock_tick": 150.0,
+          "collapse_tick": 640.0,
+          "lead": 490.0,
+          "completed_orders": 201.0,
+          "deadlock_ratio_mean": 0.6369
+        },
+        {
+          "seed": 918,
+          "lock_tick": 340.0,
+          "collapse_tick": 630.0,
+          "lead": 290.0,
+          "completed_orders": 188.0,
+          "deadlock_ratio_mean": 0.6681
+        },
+        {
+          "seed": 923,
+          "lock_tick": 230.0,
+          "collapse_tick": 620.0,
+          "lead": 390.0,
+          "completed_orders": 133.0,
+          "deadlock_ratio_mean": 0.7407
+        },
+        {
+          "seed": 924,
+          "lock_tick": 230.0,
+          "collapse_tick": 890.0,
+          "lead": 660.0,
+          "completed_orders": 234.0,
+          "deadlock_ratio_mean": 0.5659
+        },
+        {
+          "seed": 926,
+          "lock_tick": 70.0,
+          "collapse_tick": 500.0,
+          "lead": 430.0,
+          "completed_orders": 120.0,
+          "deadlock_ratio_mean": 0.8178
+        },
+        {
+          "seed": 927,
+          "lock_tick": 130.0,
+          "collapse_tick": 750.0,
+          "lead": 620.0,
+          "completed_orders": 160.0,
+          "deadlock_ratio_mean": 0.7576
+        },
+        {
+          "seed": 934,
+          "lock_tick": 130.0,
+          "collapse_tick": 870.0,
+          "lead": 740.0,
+          "completed_orders": 269.0,
+          "deadlock_ratio_mean": 0.5158
+        },
+        {
+          "seed": 936,
+          "lock_tick": 160.0,
+          "collapse_tick": 530.0,
+          "lead": 370.0,
+          "completed_orders": 156.0,
+          "deadlock_ratio_mean": 0.7501
+        },
+        {
+          "seed": 939,
+          "lock_tick": 120.0,
+          "collapse_tick": 540.0,
+          "lead": 420.0,
+          "completed_orders": 89.0,
+          "deadlock_ratio_mean": 0.8742
+        },
+        {
+          "seed": 941,
+          "lock_tick": 100.0,
+          "collapse_tick": 670.0,
+          "lead": 570.0,
+          "completed_orders": 142.0,
+          "deadlock_ratio_mean": 0.758
+        },
+        {
+          "seed": 946,
+          "lock_tick": 240.0,
+          "collapse_tick": 770.0,
+          "lead": 530.0,
+          "completed_orders": 173.0,
+          "deadlock_ratio_mean": 0.711
+        }
+      ]
+    },
+    {
+      "load": "high",
+      "arm": "PhaseC",
+      "n_seeds_with_data": 50,
+      "collapse_definition": "completed_orders < 300 AND deadlock_ratio_mean >= 0.4",
+      "n_collapsed_runs": 20,
+      "n_collapsed_with_onset_time": 20,
+      "n_with_lock_onset(share>=0.8)": 49,
+      "n_lock_onset_in_collapsed": 20,
+      "n_with_both": 20,
+      "lock_onset_by_threshold": {
+        "share_ge_0.6": {
+          "n_crossed": 50,
+          "median_tick": 70.0
+        },
+        "share_ge_0.7": {
+          "n_crossed": 50,
+          "median_tick": 130.0
+        },
+        "share_ge_0.8": {
+          "n_crossed": 49,
+          "median_tick": 230.0
+        },
+        "share_ge_0.9": {
+          "n_crossed": 42,
+          "median_tick": 420.0
+        }
+      },
+      "lead_collapse_minus_lock": {
+        "n": 20,
+        "mean": 537.0,
+        "median": 555.0,
+        "ci95_mean": [
+          468.0,
+          600.0
+        ],
+        "sign_positive": "20/20",
+        "wilcoxon_greater_p": 4.4161929315406386e-05
+      },
+      "cross_correlation": {
+        "n_negative_peak": 20,
+        "median_lead_lag_samples": 5.0,
+        "median_peak_corr": -0.713,
+        "note": "collapsed runs only; positive lag (stride-samples) => lock LEADS the rate drop"
+      },
+      "granger": {
+        "scope": "collapsed runs only",
+        "lock_to_rate_sig_frac": 1.0,
+        "lock_to_rate_fisher_p": 3.9713630364405955e-89,
+        "rate_to_lock_sig_frac": 0.45,
+        "rate_to_lock_fisher_p": 2.217962299821799e-17,
+        "n_tested": 20,
+        "lag": 3
+      },
+      "lead_pairs": [
+        {
+          "seed": 902,
+          "lock_tick": 390.0,
+          "collapse_tick": 810.0,
+          "lead": 420.0,
+          "completed_orders": 210.0,
+          "deadlock_ratio_mean": 0.6801
+        },
+        {
+          "seed": 905,
+          "lock_tick": 300.0,
+          "collapse_tick": 900.0,
+          "lead": 600.0,
+          "completed_orders": 253.0,
+          "deadlock_ratio_mean": 0.5965
+        },
+        {
+          "seed": 907,
+          "lock_tick": 320.0,
+          "collapse_tick": 870.0,
+          "lead": 550.0,
+          "completed_orders": 233.0,
+          "deadlock_ratio_mean": 0.6409
+        },
+        {
+          "seed": 909,
+          "lock_tick": 180.0,
+          "collapse_tick": 770.0,
+          "lead": 590.0,
+          "completed_orders": 167.0,
+          "deadlock_ratio_mean": 0.7235
+        },
+        {
+          "seed": 910,
+          "lock_tick": 130.0,
+          "collapse_tick": 660.0,
+          "lead": 530.0,
+          "completed_orders": 172.0,
+          "deadlock_ratio_mean": 0.7188
+        },
+        {
+          "seed": 912,
+          "lock_tick": 180.0,
+          "collapse_tick": 930.0,
+          "lead": 750.0,
+          "completed_orders": 261.0,
+          "deadlock_ratio_mean": 0.5023
+        },
+        {
+          "seed": 918,
+          "lock_tick": 130.0,
+          "collapse_tick": 870.0,
+          "lead": 740.0,
+          "completed_orders": 255.0,
+          "deadlock_ratio_mean": 0.5576
+        },
+        {
+          "seed": 921,
+          "lock_tick": 210.0,
+          "collapse_tick": 970.0,
+          "lead": 760.0,
+          "completed_orders": 276.0,
+          "deadlock_ratio_mean": 0.5636
+        },
+        {
+          "seed": 923,
+          "lock_tick": 160.0,
+          "collapse_tick": 660.0,
+          "lead": 500.0,
+          "completed_orders": 166.0,
+          "deadlock_ratio_mean": 0.7275
+        },
+        {
+          "seed": 924,
+          "lock_tick": 170.0,
+          "collapse_tick": 760.0,
+          "lead": 590.0,
+          "completed_orders": 178.0,
+          "deadlock_ratio_mean": 0.6926
+        },
+        {
+          "seed": 925,
+          "lock_tick": 100.0,
+          "collapse_tick": 670.0,
+          "lead": 570.0,
+          "completed_orders": 166.0,
+          "deadlock_ratio_mean": 0.7384
+        },
+        {
+          "seed": 926,
+          "lock_tick": 160.0,
+          "collapse_tick": 500.0,
+          "lead": 340.0,
+          "completed_orders": 126.0,
+          "deadlock_ratio_mean": 0.7983
+        },
+        {
+          "seed": 931,
+          "lock_tick": 120.0,
+          "collapse_tick": 680.0,
+          "lead": 560.0,
+          "completed_orders": 164.0,
+          "deadlock_ratio_mean": 0.7324
+        },
+        {
+          "seed": 936,
+          "lock_tick": 60.0,
+          "collapse_tick": 500.0,
+          "lead": 440.0,
+          "completed_orders": 94.0,
+          "deadlock_ratio_mean": 0.8449
+        },
+        {
+          "seed": 937,
+          "lock_tick": 240.0,
+          "collapse_tick": 970.0,
+          "lead": 730.0,
+          "completed_orders": 295.0,
+          "deadlock_ratio_mean": 0.4725
+        },
+        {
+          "seed": 939,
+          "lock_tick": 100.0,
+          "collapse_tick": 500.0,
+          "lead": 400.0,
+          "completed_orders": 67.0,
+          "deadlock_ratio_mean": 0.8931
+        },
+        {
+          "seed": 943,
+          "lock_tick": 240.0,
+          "collapse_tick": 710.0,
+          "lead": 470.0,
+          "completed_orders": 174.0,
+          "deadlock_ratio_mean": 0.7233
+        },
+        {
+          "seed": 947,
+          "lock_tick": 260.0,
+          "collapse_tick": 780.0,
+          "lead": 520.0,
+          "completed_orders": 204.0,
+          "deadlock_ratio_mean": 0.6612
+        },
+        {
+          "seed": 948,
+          "lock_tick": 140.0,
+          "collapse_tick": 710.0,
+          "lead": 570.0,
+          "completed_orders": 108.0,
+          "deadlock_ratio_mean": 0.8013
+        },
+        {
+          "seed": 949,
+          "lock_tick": 410.0,
+          "collapse_tick": 520.0,
+          "lead": 110.0,
+          "completed_orders": 172.0,
+          "deadlock_ratio_mean": 0.6945
+        }
+      ]
+    },
+    {
+      "load": "low",
+      "arm": "ComboS1J1",
+      "n_seeds_with_data": 50,
+      "collapse_definition": "completed_orders < 300 AND deadlock_ratio_mean >= 0.4",
+      "n_collapsed_runs": 13,
+      "n_collapsed_with_onset_time": 13,
+      "n_with_lock_onset(share>=0.8)": 50,
+      "n_lock_onset_in_collapsed": 13,
+      "n_with_both": 13,
+      "lock_onset_by_threshold": {
+        "share_ge_0.6": {
+          "n_crossed": 50,
+          "median_tick": 50.0
+        },
+        "share_ge_0.7": {
+          "n_crossed": 50,
+          "median_tick": 80.0
+        },
+        "share_ge_0.8": {
+          "n_crossed": 50,
+          "median_tick": 200.0
+        },
+        "share_ge_0.9": {
+          "n_crossed": 39,
+          "median_tick": 490.0
+        }
+      },
+      "lead_collapse_minus_lock": {
+        "n": 13,
+        "mean": 582.3,
+        "median": 600.0,
+        "ci95_mean": [
+          485.3846,
+          679.2308
+        ],
+        "sign_positive": "13/13",
+        "wilcoxon_greater_p": 0.0001220703125
+      },
+      "cross_correlation": {
+        "n_negative_peak": 12,
+        "median_lead_lag_samples": 5.0,
+        "median_peak_corr": -0.759,
+        "note": "collapsed runs only; positive lag (stride-samples) => lock LEADS the rate drop"
+      },
+      "granger": {
+        "scope": "collapsed runs only",
+        "lock_to_rate_sig_frac": 1.0,
+        "lock_to_rate_fisher_p": 2.1639975770370825e-49,
+        "rate_to_lock_sig_frac": 0.615,
+        "rate_to_lock_fisher_p": 5.215256920508012e-20,
+        "n_tested": 13,
+        "lag": 3
+      },
+      "lead_pairs": [
+        {
+          "seed": 900,
+          "lock_tick": 220.0,
+          "collapse_tick": 560.0,
+          "lead": 340.0,
+          "completed_orders": 174.0,
+          "deadlock_ratio_mean": 0.7152
+        },
+        {
+          "seed": 904,
+          "lock_tick": 280.0,
+          "collapse_tick": 700.0,
+          "lead": 420.0,
+          "completed_orders": 233.0,
+          "deadlock_ratio_mean": 0.6062
+        },
+        {
+          "seed": 908,
+          "lock_tick": 260.0,
+          "collapse_tick": 710.0,
+          "lead": 450.0,
+          "completed_orders": 204.0,
+          "deadlock_ratio_mean": 0.6823
+        },
+        {
+          "seed": 911,
+          "lock_tick": 160.0,
+          "collapse_tick": 500.0,
+          "lead": 340.0,
+          "completed_orders": 141.0,
+          "deadlock_ratio_mean": 0.7428
+        },
+        {
+          "seed": 912,
+          "lock_tick": 160.0,
+          "collapse_tick": 830.0,
+          "lead": 670.0,
+          "completed_orders": 213.0,
+          "deadlock_ratio_mean": 0.5522
+        },
+        {
+          "seed": 914,
+          "lock_tick": 170.0,
+          "collapse_tick": 760.0,
+          "lead": 590.0,
+          "completed_orders": 170.0,
+          "deadlock_ratio_mean": 0.6538
+        },
+        {
+          "seed": 918,
+          "lock_tick": 120.0,
+          "collapse_tick": 990.0,
+          "lead": 870.0,
+          "completed_orders": 268.0,
+          "deadlock_ratio_mean": 0.4981
+        },
+        {
+          "seed": 921,
+          "lock_tick": 250.0,
+          "collapse_tick": 1120.0,
+          "lead": 870.0,
+          "completed_orders": 253.0,
+          "deadlock_ratio_mean": 0.62
+        },
+        {
+          "seed": 926,
+          "lock_tick": 200.0,
+          "collapse_tick": 870.0,
+          "lead": 670.0,
+          "completed_orders": 233.0,
+          "deadlock_ratio_mean": 0.6224
+        },
+        {
+          "seed": 927,
+          "lock_tick": 100.0,
+          "collapse_tick": 700.0,
+          "lead": 600.0,
+          "completed_orders": 93.0,
+          "deadlock_ratio_mean": 0.8299
+        },
+        {
+          "seed": 936,
+          "lock_tick": 80.0,
+          "collapse_tick": 800.0,
+          "lead": 720.0,
+          "completed_orders": 148.0,
+          "deadlock_ratio_mean": 0.7402
+        },
+        {
+          "seed": 940,
+          "lock_tick": 620.0,
+          "collapse_tick": 960.0,
+          "lead": 340.0,
+          "completed_orders": 277.0,
+          "deadlock_ratio_mean": 0.4882
+        },
+        {
+          "seed": 948,
+          "lock_tick": 70.0,
+          "collapse_tick": 760.0,
+          "lead": 690.0,
+          "completed_orders": 149.0,
+          "deadlock_ratio_mean": 0.7694
+        }
+      ]
+    },
+    {
+      "load": "low",
+      "arm": "Greedy",
+      "n_seeds_with_data": 50,
+      "collapse_definition": "completed_orders < 300 AND deadlock_ratio_mean >= 0.4",
+      "n_collapsed_runs": 17,
+      "n_collapsed_with_onset_time": 17,
+      "n_with_lock_onset(share>=0.8)": 50,
+      "n_lock_onset_in_collapsed": 17,
+      "n_with_both": 17,
+      "lock_onset_by_threshold": {
+        "share_ge_0.6": {
+          "n_crossed": 50,
+          "median_tick": 50.0
+        },
+        "share_ge_0.7": {
+          "n_crossed": 50,
+          "median_tick": 80.0
+        },
+        "share_ge_0.8": {
+          "n_crossed": 50,
+          "median_tick": 225.0
+        },
+        "share_ge_0.9": {
+          "n_crossed": 46,
+          "median_tick": 440.0
+        }
+      },
+      "lead_collapse_minus_lock": {
+        "n": 17,
+        "mean": 542.9,
+        "median": 510.0,
+        "ci95_mean": [
+          471.7647,
+          614.7059
+        ],
+        "sign_positive": "17/17",
+        "wilcoxon_greater_p": 0.00014595245039721014
+      },
+      "cross_correlation": {
+        "n_negative_peak": 16,
+        "median_lead_lag_samples": 5.0,
+        "median_peak_corr": -0.722,
+        "note": "collapsed runs only; positive lag (stride-samples) => lock LEADS the rate drop"
+      },
+      "granger": {
+        "scope": "collapsed runs only",
+        "lock_to_rate_sig_frac": 0.941,
+        "lock_to_rate_fisher_p": 4.106277719985343e-65,
+        "rate_to_lock_sig_frac": 0.765,
+        "rate_to_lock_fisher_p": 4.068180612380399e-30,
+        "n_tested": 17,
+        "lag": 3
+      },
+      "lead_pairs": [
+        {
+          "seed": 902,
+          "lock_tick": 330.0,
+          "collapse_tick": 630.0,
+          "lead": 300.0,
+          "completed_orders": 160.0,
+          "deadlock_ratio_mean": 0.7097
+        },
+        {
+          "seed": 905,
+          "lock_tick": 310.0,
+          "collapse_tick": 1080.0,
+          "lead": 770.0,
+          "completed_orders": 283.0,
+          "deadlock_ratio_mean": 0.4648
+        },
+        {
+          "seed": 908,
+          "lock_tick": 500.0,
+          "collapse_tick": 860.0,
+          "lead": 360.0,
+          "completed_orders": 256.0,
+          "deadlock_ratio_mean": 0.5393
+        },
+        {
+          "seed": 913,
+          "lock_tick": 380.0,
+          "collapse_tick": 810.0,
+          "lead": 430.0,
+          "completed_orders": 221.0,
+          "deadlock_ratio_mean": 0.6295
+        },
+        {
+          "seed": 914,
+          "lock_tick": 180.0,
+          "collapse_tick": 690.0,
+          "lead": 510.0,
+          "completed_orders": 170.0,
+          "deadlock_ratio_mean": 0.6872
+        },
+        {
+          "seed": 916,
+          "lock_tick": 310.0,
+          "collapse_tick": 1020.0,
+          "lead": 710.0,
+          "completed_orders": 279.0,
+          "deadlock_ratio_mean": 0.5163
+        },
+        {
+          "seed": 918,
+          "lock_tick": 80.0,
+          "collapse_tick": 820.0,
+          "lead": 740.0,
+          "completed_orders": 214.0,
+          "deadlock_ratio_mean": 0.5966
+        },
+        {
+          "seed": 923,
+          "lock_tick": 90.0,
+          "collapse_tick": 710.0,
+          "lead": 620.0,
+          "completed_orders": 138.0,
+          "deadlock_ratio_mean": 0.7102
+        },
+        {
+          "seed": 925,
+          "lock_tick": 60.0,
+          "collapse_tick": 790.0,
+          "lead": 730.0,
+          "completed_orders": 133.0,
+          "deadlock_ratio_mean": 0.7548
+        },
+        {
+          "seed": 926,
+          "lock_tick": 250.0,
+          "collapse_tick": 880.0,
+          "lead": 630.0,
+          "completed_orders": 222.0,
+          "deadlock_ratio_mean": 0.623
+        },
+        {
+          "seed": 927,
+          "lock_tick": 80.0,
+          "collapse_tick": 820.0,
+          "lead": 740.0,
+          "completed_orders": 180.0,
+          "deadlock_ratio_mean": 0.6977
+        },
+        {
+          "seed": 930,
+          "lock_tick": 250.0,
+          "collapse_tick": 660.0,
+          "lead": 410.0,
+          "completed_orders": 137.0,
+          "deadlock_ratio_mean": 0.7726
+        },
+        {
+          "seed": 936,
+          "lock_tick": 60.0,
+          "collapse_tick": 500.0,
+          "lead": 440.0,
+          "completed_orders": 107.0,
+          "deadlock_ratio_mean": 0.7739
+        },
+        {
+          "seed": 939,
+          "lock_tick": 230.0,
+          "collapse_tick": 610.0,
+          "lead": 380.0,
+          "completed_orders": 155.0,
+          "deadlock_ratio_mean": 0.7283
+        },
+        {
+          "seed": 942,
+          "lock_tick": 200.0,
+          "collapse_tick": 660.0,
+          "lead": 460.0,
+          "completed_orders": 132.0,
+          "deadlock_ratio_mean": 0.7147
+        },
+        {
+          "seed": 944,
+          "lock_tick": 280.0,
+          "collapse_tick": 870.0,
+          "lead": 590.0,
+          "completed_orders": 199.0,
+          "deadlock_ratio_mean": 0.5796
+        },
+        {
+          "seed": 948,
+          "lock_tick": 90.0,
+          "collapse_tick": 500.0,
+          "lead": 410.0,
+          "completed_orders": 60.0,
+          "deadlock_ratio_mean": 0.8898
+        }
+      ]
+    },
+    {
+      "load": "low",
+      "arm": "Hungarian",
+      "n_seeds_with_data": 50,
+      "collapse_definition": "completed_orders < 300 AND deadlock_ratio_mean >= 0.4",
+      "n_collapsed_runs": 16,
+      "n_collapsed_with_onset_time": 16,
+      "n_with_lock_onset(share>=0.8)": 50,
+      "n_lock_onset_in_collapsed": 16,
+      "n_with_both": 16,
+      "lock_onset_by_threshold": {
+        "share_ge_0.6": {
+          "n_crossed": 50,
+          "median_tick": 50.0
+        },
+        "share_ge_0.7": {
+          "n_crossed": 50,
+          "median_tick": 80.0
+        },
+        "share_ge_0.8": {
+          "n_crossed": 50,
+          "median_tick": 175.0
+        },
+        "share_ge_0.9": {
+          "n_crossed": 40,
+          "median_tick": 415.0
+        }
+      },
+      "lead_collapse_minus_lock": {
+        "n": 16,
+        "mean": 563.1,
+        "median": 520.0,
+        "ci95_mean": [
+          485.0,
+          655.0
+        ],
+        "sign_positive": "16/16",
+        "wilcoxon_greater_p": 0.00021792118340564174
+      },
+      "cross_correlation": {
+        "n_negative_peak": 16,
+        "median_lead_lag_samples": 5.0,
+        "median_peak_corr": -0.774,
+        "note": "collapsed runs only; positive lag (stride-samples) => lock LEADS the rate drop"
+      },
+      "granger": {
+        "scope": "collapsed runs only",
+        "lock_to_rate_sig_frac": 1.0,
+        "lock_to_rate_fisher_p": 4.5073861185739716e-79,
+        "rate_to_lock_sig_frac": 0.438,
+        "rate_to_lock_fisher_p": 8.333221948113712e-16,
+        "n_tested": 16,
+        "lag": 3
+      },
+      "lead_pairs": [
+        {
+          "seed": 901,
+          "lock_tick": 150.0,
+          "collapse_tick": 730.0,
+          "lead": 580.0,
+          "completed_orders": 237.0,
+          "deadlock_ratio_mean": 0.5629
+        },
+        {
+          "seed": 908,
+          "lock_tick": 70.0,
+          "collapse_tick": 550.0,
+          "lead": 480.0,
+          "completed_orders": 114.0,
+          "deadlock_ratio_mean": 0.7954
+        },
+        {
+          "seed": 911,
+          "lock_tick": 60.0,
+          "collapse_tick": 810.0,
+          "lead": 750.0,
+          "completed_orders": 220.0,
+          "deadlock_ratio_mean": 0.6329
+        },
+        {
+          "seed": 912,
+          "lock_tick": 40.0,
+          "collapse_tick": 500.0,
+          "lead": 460.0,
+          "completed_orders": 70.0,
+          "deadlock_ratio_mean": 0.8409
+        },
+        {
+          "seed": 917,
+          "lock_tick": 400.0,
+          "collapse_tick": 1020.0,
+          "lead": 620.0,
+          "completed_orders": 243.0,
+          "deadlock_ratio_mean": 0.6214
+        },
+        {
+          "seed": 918,
+          "lock_tick": 60.0,
+          "collapse_tick": 1080.0,
+          "lead": 1020.0,
+          "completed_orders": 261.0,
+          "deadlock_ratio_mean": 0.5035
+        },
+        {
+          "seed": 922,
+          "lock_tick": 80.0,
+          "collapse_tick": 500.0,
+          "lead": 420.0,
+          "completed_orders": 86.0,
+          "deadlock_ratio_mean": 0.8454
+        },
+        {
+          "seed": 929,
+          "lock_tick": 140.0,
+          "collapse_tick": 580.0,
+          "lead": 440.0,
+          "completed_orders": 148.0,
+          "deadlock_ratio_mean": 0.7393
+        },
+        {
+          "seed": 932,
+          "lock_tick": 180.0,
+          "collapse_tick": 530.0,
+          "lead": 350.0,
+          "completed_orders": 153.0,
+          "deadlock_ratio_mean": 0.7149
+        },
+        {
+          "seed": 933,
+          "lock_tick": 210.0,
+          "collapse_tick": 710.0,
+          "lead": 500.0,
+          "completed_orders": 159.0,
+          "deadlock_ratio_mean": 0.6598
+        },
+        {
+          "seed": 936,
+          "lock_tick": 80.0,
+          "collapse_tick": 750.0,
+          "lead": 670.0,
+          "completed_orders": 179.0,
+          "deadlock_ratio_mean": 0.6876
+        },
+        {
+          "seed": 938,
+          "lock_tick": 110.0,
+          "collapse_tick": 930.0,
+          "lead": 820.0,
+          "completed_orders": 277.0,
+          "deadlock_ratio_mean": 0.4307
+        },
+        {
+          "seed": 943,
+          "lock_tick": 580.0,
+          "collapse_tick": 930.0,
+          "lead": 350.0,
+          "completed_orders": 244.0,
+          "deadlock_ratio_mean": 0.5334
+        },
+        {
+          "seed": 946,
+          "lock_tick": 70.0,
+          "collapse_tick": 530.0,
+          "lead": 460.0,
+          "completed_orders": 151.0,
+          "deadlock_ratio_mean": 0.7262
+        },
+        {
+          "seed": 947,
+          "lock_tick": 110.0,
+          "collapse_tick": 650.0,
+          "lead": 540.0,
+          "completed_orders": 186.0,
+          "deadlock_ratio_mean": 0.6666
+        },
+        {
+          "seed": 948,
+          "lock_tick": 120.0,
+          "collapse_tick": 670.0,
+          "lead": 550.0,
+          "completed_orders": 137.0,
+          "deadlock_ratio_mean": 0.77
+        }
+      ]
+    },
+    {
+      "load": "low",
+      "arm": "JSQ",
+      "n_seeds_with_data": 50,
+      "collapse_definition": "completed_orders < 300 AND deadlock_ratio_mean >= 0.4",
+      "n_collapsed_runs": 17,
+      "n_collapsed_with_onset_time": 17,
+      "n_with_lock_onset(share>=0.8)": 50,
+      "n_lock_onset_in_collapsed": 17,
+      "n_with_both": 17,
+      "lock_onset_by_threshold": {
+        "share_ge_0.6": {
+          "n_crossed": 50,
+          "median_tick": 50.0
+        },
+        "share_ge_0.7": {
+          "n_crossed": 50,
+          "median_tick": 80.0
+        },
+        "share_ge_0.8": {
+          "n_crossed": 50,
+          "median_tick": 180.0
+        },
+        "share_ge_0.9": {
+          "n_crossed": 45,
+          "median_tick": 420.0
+        }
+      },
+      "lead_collapse_minus_lock": {
+        "n": 17,
+        "mean": 606.5,
+        "median": 580.0,
+        "ci95_mean": [
+          510.0,
+          710.0
+        ],
+        "sign_positive": "17/17",
+        "wilcoxon_greater_p": 0.00014595245039721014
+      },
+      "cross_correlation": {
+        "n_negative_peak": 17,
+        "median_lead_lag_samples": 5.0,
+        "median_peak_corr": -0.745,
+        "note": "collapsed runs only; positive lag (stride-samples) => lock LEADS the rate drop"
+      },
+      "granger": {
+        "scope": "collapsed runs only",
+        "lock_to_rate_sig_frac": 1.0,
+        "lock_to_rate_fisher_p": 3.983551567178404e-59,
+        "rate_to_lock_sig_frac": 0.647,
+        "rate_to_lock_fisher_p": 4.923051505015098e-31,
+        "n_tested": 17,
+        "lag": 3
+      },
+      "lead_pairs": [
+        {
+          "seed": 908,
+          "lock_tick": 90.0,
+          "collapse_tick": 740.0,
+          "lead": 650.0,
+          "completed_orders": 210.0,
+          "deadlock_ratio_mean": 0.6553
+        },
+        {
+          "seed": 909,
+          "lock_tick": 220.0,
+          "collapse_tick": 870.0,
+          "lead": 650.0,
+          "completed_orders": 264.0,
+          "deadlock_ratio_mean": 0.5338
+        },
+        {
+          "seed": 911,
+          "lock_tick": 150.0,
+          "collapse_tick": 950.0,
+          "lead": 800.0,
+          "completed_orders": 269.0,
+          "deadlock_ratio_mean": 0.5508
+        },
+        {
+          "seed": 913,
+          "lock_tick": 380.0,
+          "collapse_tick": 840.0,
+          "lead": 460.0,
+          "completed_orders": 240.0,
+          "deadlock_ratio_mean": 0.6079
+        },
+        {
+          "seed": 914,
+          "lock_tick": 180.0,
+          "collapse_tick": 700.0,
+          "lead": 520.0,
+          "completed_orders": 172.0,
+          "deadlock_ratio_mean": 0.6753
+        },
+        {
+          "seed": 918,
+          "lock_tick": 100.0,
+          "collapse_tick": 630.0,
+          "lead": 530.0,
+          "completed_orders": 148.0,
+          "deadlock_ratio_mean": 0.7267
+        },
+        {
+          "seed": 919,
+          "lock_tick": 490.0,
+          "collapse_tick": 1070.0,
+          "lead": 580.0,
+          "completed_orders": 286.0,
+          "deadlock_ratio_mean": 0.5035
+        },
+        {
+          "seed": 924,
+          "lock_tick": 160.0,
+          "collapse_tick": 1280.0,
+          "lead": 1120.0,
+          "completed_orders": 226.0,
+          "deadlock_ratio_mean": 0.6473
+        },
+        {
+          "seed": 925,
+          "lock_tick": 60.0,
+          "collapse_tick": 890.0,
+          "lead": 830.0,
+          "completed_orders": 143.0,
+          "deadlock_ratio_mean": 0.7448
+        },
+        {
+          "seed": 926,
+          "lock_tick": 150.0,
+          "collapse_tick": 540.0,
+          "lead": 390.0,
+          "completed_orders": 87.0,
+          "deadlock_ratio_mean": 0.8552
+        },
+        {
+          "seed": 934,
+          "lock_tick": 60.0,
+          "collapse_tick": 870.0,
+          "lead": 810.0,
+          "completed_orders": 231.0,
+          "deadlock_ratio_mean": 0.6182
+        },
+        {
+          "seed": 938,
+          "lock_tick": 280.0,
+          "collapse_tick": 1000.0,
+          "lead": 720.0,
+          "completed_orders": 279.0,
+          "deadlock_ratio_mean": 0.4961
+        },
+        {
+          "seed": 942,
+          "lock_tick": 200.0,
+          "collapse_tick": 670.0,
+          "lead": 470.0,
+          "completed_orders": 141.0,
+          "deadlock_ratio_mean": 0.7106
+        },
+        {
+          "seed": 944,
+          "lock_tick": 280.0,
+          "collapse_tick": 1040.0,
+          "lead": 760.0,
+          "completed_orders": 214.0,
+          "deadlock_ratio_mean": 0.5572
+        },
+        {
+          "seed": 945,
+          "lock_tick": 500.0,
+          "collapse_tick": 700.0,
+          "lead": 200.0,
+          "completed_orders": 229.0,
+          "deadlock_ratio_mean": 0.5767
+        },
+        {
+          "seed": 948,
+          "lock_tick": 90.0,
+          "collapse_tick": 500.0,
+          "lead": 410.0,
+          "completed_orders": 61.0,
+          "deadlock_ratio_mean": 0.8868
+        },
+        {
+          "seed": 949,
+          "lock_tick": 270.0,
+          "collapse_tick": 680.0,
+          "lead": 410.0,
+          "completed_orders": 210.0,
+          "deadlock_ratio_mean": 0.6917
+        }
+      ]
+    },
+    {
+      "load": "low",
+      "arm": "PhaseC",
+      "n_seeds_with_data": 50,
+      "collapse_definition": "completed_orders < 300 AND deadlock_ratio_mean >= 0.4",
+      "n_collapsed_runs": 16,
+      "n_collapsed_with_onset_time": 16,
+      "n_with_lock_onset(share>=0.8)": 50,
+      "n_lock_onset_in_collapsed": 16,
+      "n_with_both": 16,
+      "lock_onset_by_threshold": {
+        "share_ge_0.6": {
+          "n_crossed": 50,
+          "median_tick": 50.0
+        },
+        "share_ge_0.7": {
+          "n_crossed": 50,
+          "median_tick": 85.0
+        },
+        "share_ge_0.8": {
+          "n_crossed": 50,
+          "median_tick": 180.0
+        },
+        "share_ge_0.9": {
+          "n_crossed": 42,
+          "median_tick": 335.0
+        }
+      },
+      "lead_collapse_minus_lock": {
+        "n": 16,
+        "mean": 458.1,
+        "median": 425.0,
+        "ci95_mean": [
+          401.25,
+          515.625
+        ],
+        "sign_positive": "16/16",
+        "wilcoxon_greater_p": 0.0002169567970546597
+      },
+      "cross_correlation": {
+        "n_negative_peak": 15,
+        "median_lead_lag_samples": 5.0,
+        "median_peak_corr": -0.773,
+        "note": "collapsed runs only; positive lag (stride-samples) => lock LEADS the rate drop"
+      },
+      "granger": {
+        "scope": "collapsed runs only",
+        "lock_to_rate_sig_frac": 0.938,
+        "lock_to_rate_fisher_p": 4.1996913231525796e-73,
+        "rate_to_lock_sig_frac": 0.625,
+        "rate_to_lock_fisher_p": 1.69437096907895e-26,
+        "n_tested": 16,
+        "lag": 3
+      },
+      "lead_pairs": [
+        {
+          "seed": 904,
+          "lock_tick": 350.0,
+          "collapse_tick": 750.0,
+          "lead": 400.0,
+          "completed_orders": 213.0,
+          "deadlock_ratio_mean": 0.6194
+        },
+        {
+          "seed": 905,
+          "lock_tick": 210.0,
+          "collapse_tick": 580.0,
+          "lead": 370.0,
+          "completed_orders": 113.0,
+          "deadlock_ratio_mean": 0.804
+        },
+        {
+          "seed": 907,
+          "lock_tick": 320.0,
+          "collapse_tick": 950.0,
+          "lead": 630.0,
+          "completed_orders": 252.0,
+          "deadlock_ratio_mean": 0.5599
+        },
+        {
+          "seed": 908,
+          "lock_tick": 460.0,
+          "collapse_tick": 1060.0,
+          "lead": 600.0,
+          "completed_orders": 297.0,
+          "deadlock_ratio_mean": 0.5124
+        },
+        {
+          "seed": 911,
+          "lock_tick": 210.0,
+          "collapse_tick": 500.0,
+          "lead": 290.0,
+          "completed_orders": 144.0,
+          "deadlock_ratio_mean": 0.7515
+        },
+        {
+          "seed": 912,
+          "lock_tick": 10.0,
+          "collapse_tick": 610.0,
+          "lead": 600.0,
+          "completed_orders": 124.0,
+          "deadlock_ratio_mean": 0.7606
+        },
+        {
+          "seed": 918,
+          "lock_tick": 210.0,
+          "collapse_tick": 640.0,
+          "lead": 430.0,
+          "completed_orders": 176.0,
+          "deadlock_ratio_mean": 0.6709
+        },
+        {
+          "seed": 920,
+          "lock_tick": 110.0,
+          "collapse_tick": 500.0,
+          "lead": 390.0,
+          "completed_orders": 137.0,
+          "deadlock_ratio_mean": 0.739
+        },
+        {
+          "seed": 926,
+          "lock_tick": 200.0,
+          "collapse_tick": 550.0,
+          "lead": 350.0,
+          "completed_orders": 155.0,
+          "deadlock_ratio_mean": 0.7562
+        },
+        {
+          "seed": 930,
+          "lock_tick": 160.0,
+          "collapse_tick": 800.0,
+          "lead": 640.0,
+          "completed_orders": 193.0,
+          "deadlock_ratio_mean": 0.6861
+        },
+        {
+          "seed": 931,
+          "lock_tick": 170.0,
+          "collapse_tick": 770.0,
+          "lead": 600.0,
+          "completed_orders": 228.0,
+          "deadlock_ratio_mean": 0.6079
+        },
+        {
+          "seed": 936,
+          "lock_tick": 100.0,
+          "collapse_tick": 510.0,
+          "lead": 410.0,
+          "completed_orders": 79.0,
+          "deadlock_ratio_mean": 0.8621
+        },
+        {
+          "seed": 938,
+          "lock_tick": 220.0,
+          "collapse_tick": 690.0,
+          "lead": 470.0,
+          "completed_orders": 170.0,
+          "deadlock_ratio_mean": 0.686
+        },
+        {
+          "seed": 939,
+          "lock_tick": 240.0,
+          "collapse_tick": 660.0,
+          "lead": 420.0,
+          "completed_orders": 160.0,
+          "deadlock_ratio_mean": 0.7361
+        },
+        {
+          "seed": 940,
+          "lock_tick": 700.0,
+          "collapse_tick": 980.0,
+          "lead": 280.0,
+          "completed_orders": 295.0,
+          "deadlock_ratio_mean": 0.4368
+        },
+        {
+          "seed": 947,
+          "lock_tick": 110.0,
+          "collapse_tick": 560.0,
+          "lead": 450.0,
+          "completed_orders": 85.0,
+          "deadlock_ratio_mean": 0.8535
+        }
+      ]
+    },
+    {
+      "load": "mid",
+      "arm": "ComboS1J1",
+      "n_seeds_with_data": 50,
+      "collapse_definition": "completed_orders < 300 AND deadlock_ratio_mean >= 0.4",
+      "n_collapsed_runs": 18,
+      "n_collapsed_with_onset_time": 18,
+      "n_with_lock_onset(share>=0.8)": 50,
+      "n_lock_onset_in_collapsed": 18,
+      "n_with_both": 18,
+      "lock_onset_by_threshold": {
+        "share_ge_0.6": {
+          "n_crossed": 50,
+          "median_tick": 65.0
+        },
+        "share_ge_0.7": {
+          "n_crossed": 50,
+          "median_tick": 110.0
+        },
+        "share_ge_0.8": {
+          "n_crossed": 50,
+          "median_tick": 220.0
+        },
+        "share_ge_0.9": {
+          "n_crossed": 44,
+          "median_tick": 435.0
+        }
+      },
+      "lead_collapse_minus_lock": {
+        "n": 18,
+        "mean": 560.6,
+        "median": 555.0,
+        "ci95_mean": [
+          478.8889,
+          644.4444
+        ],
+        "sign_positive": "18/18",
+        "wilcoxon_greater_p": 3.814697265625e-06
+      },
+      "cross_correlation": {
+        "n_negative_peak": 18,
+        "median_lead_lag_samples": 5.0,
+        "median_peak_corr": -0.763,
+        "note": "collapsed runs only; positive lag (stride-samples) => lock LEADS the rate drop"
+      },
+      "granger": {
+        "scope": "collapsed runs only",
+        "lock_to_rate_sig_frac": 1.0,
+        "lock_to_rate_fisher_p": 4.2709272228170945e-81,
+        "rate_to_lock_sig_frac": 0.389,
+        "rate_to_lock_fisher_p": 1.47792414855017e-17,
+        "n_tested": 18,
+        "lag": 3
+      },
+      "lead_pairs": [
+        {
+          "seed": 903,
+          "lock_tick": 130.0,
+          "collapse_tick": 650.0,
+          "lead": 520.0,
+          "completed_orders": 141.0,
+          "deadlock_ratio_mean": 0.7676
+        },
+        {
+          "seed": 908,
+          "lock_tick": 220.0,
+          "collapse_tick": 970.0,
+          "lead": 750.0,
+          "completed_orders": 275.0,
+          "deadlock_ratio_mean": 0.5511
+        },
+        {
+          "seed": 909,
+          "lock_tick": 520.0,
+          "collapse_tick": 810.0,
+          "lead": 290.0,
+          "completed_orders": 279.0,
+          "deadlock_ratio_mean": 0.51
+        },
+        {
+          "seed": 910,
+          "lock_tick": 110.0,
+          "collapse_tick": 760.0,
+          "lead": 650.0,
+          "completed_orders": 152.0,
+          "deadlock_ratio_mean": 0.7023
+        },
+        {
+          "seed": 912,
+          "lock_tick": 50.0,
+          "collapse_tick": 980.0,
+          "lead": 930.0,
+          "completed_orders": 271.0,
+          "deadlock_ratio_mean": 0.5407
+        },
+        {
+          "seed": 914,
+          "lock_tick": 200.0,
+          "collapse_tick": 500.0,
+          "lead": 300.0,
+          "completed_orders": 87.0,
+          "deadlock_ratio_mean": 0.8095
+        },
+        {
+          "seed": 916,
+          "lock_tick": 300.0,
+          "collapse_tick": 860.0,
+          "lead": 560.0,
+          "completed_orders": 281.0,
+          "deadlock_ratio_mean": 0.5887
+        },
+        {
+          "seed": 918,
+          "lock_tick": 150.0,
+          "collapse_tick": 540.0,
+          "lead": 390.0,
+          "completed_orders": 142.0,
+          "deadlock_ratio_mean": 0.7597
+        },
+        {
+          "seed": 921,
+          "lock_tick": 280.0,
+          "collapse_tick": 850.0,
+          "lead": 570.0,
+          "completed_orders": 220.0,
+          "deadlock_ratio_mean": 0.6481
+        },
+        {
+          "seed": 924,
+          "lock_tick": 210.0,
+          "collapse_tick": 910.0,
+          "lead": 700.0,
+          "completed_orders": 292.0,
+          "deadlock_ratio_mean": 0.4988
+        },
+        {
+          "seed": 926,
+          "lock_tick": 170.0,
+          "collapse_tick": 540.0,
+          "lead": 370.0,
+          "completed_orders": 154.0,
+          "deadlock_ratio_mean": 0.7631
+        },
+        {
+          "seed": 928,
+          "lock_tick": 320.0,
+          "collapse_tick": 860.0,
+          "lead": 540.0,
+          "completed_orders": 270.0,
+          "deadlock_ratio_mean": 0.5401
+        },
+        {
+          "seed": 938,
+          "lock_tick": 280.0,
+          "collapse_tick": 1010.0,
+          "lead": 730.0,
+          "completed_orders": 284.0,
+          "deadlock_ratio_mean": 0.5105
+        },
+        {
+          "seed": 940,
+          "lock_tick": 140.0,
+          "collapse_tick": 830.0,
+          "lead": 690.0,
+          "completed_orders": 290.0,
+          "deadlock_ratio_mean": 0.5308
+        },
+        {
+          "seed": 942,
+          "lock_tick": 430.0,
+          "collapse_tick": 980.0,
+          "lead": 550.0,
+          "completed_orders": 223.0,
+          "deadlock_ratio_mean": 0.5994
+        },
+        {
+          "seed": 946,
+          "lock_tick": 80.0,
+          "collapse_tick": 860.0,
+          "lead": 780.0,
+          "completed_orders": 244.0,
+          "deadlock_ratio_mean": 0.5896
+        },
+        {
+          "seed": 947,
+          "lock_tick": 250.0,
+          "collapse_tick": 660.0,
+          "lead": 410.0,
+          "completed_orders": 164.0,
+          "deadlock_ratio_mean": 0.7035
+        },
+        {
+          "seed": 948,
+          "lock_tick": 200.0,
+          "collapse_tick": 560.0,
+          "lead": 360.0,
+          "completed_orders": 141.0,
+          "deadlock_ratio_mean": 0.7628
+        }
+      ]
+    },
+    {
+      "load": "mid",
+      "arm": "Greedy",
+      "n_seeds_with_data": 50,
+      "collapse_definition": "completed_orders < 300 AND deadlock_ratio_mean >= 0.4",
+      "n_collapsed_runs": 22,
+      "n_collapsed_with_onset_time": 22,
+      "n_with_lock_onset(share>=0.8)": 50,
+      "n_lock_onset_in_collapsed": 22,
+      "n_with_both": 22,
+      "lock_onset_by_threshold": {
+        "share_ge_0.6": {
+          "n_crossed": 50,
+          "median_tick": 50.0
+        },
+        "share_ge_0.7": {
+          "n_crossed": 50,
+          "median_tick": 85.0
+        },
+        "share_ge_0.8": {
+          "n_crossed": 50,
+          "median_tick": 185.0
+        },
+        "share_ge_0.9": {
+          "n_crossed": 45,
+          "median_tick": 440.0
+        }
+      },
+      "lead_collapse_minus_lock": {
+        "n": 22,
+        "mean": 550.5,
+        "median": 485.0,
+        "ci95_mean": [
+          463.6364,
+          642.2727
+        ],
+        "sign_positive": "22/22",
+        "wilcoxon_greater_p": 1.997949597485874e-05
+      },
+      "cross_correlation": {
+        "n_negative_peak": 20,
+        "median_lead_lag_samples": 5.0,
+        "median_peak_corr": -0.777,
+        "note": "collapsed runs only; positive lag (stride-samples) => lock LEADS the rate drop"
+      },
+      "granger": {
+        "scope": "collapsed runs only",
+        "lock_to_rate_sig_frac": 1.0,
+        "lock_to_rate_fisher_p": 6.0223570212029685e-96,
+        "rate_to_lock_sig_frac": 0.591,
+        "rate_to_lock_fisher_p": 1.9475270196960249e-41,
+        "n_tested": 22,
+        "lag": 3
+      },
+      "lead_pairs": [
+        {
+          "seed": 900,
+          "lock_tick": 220.0,
+          "collapse_tick": 690.0,
+          "lead": 470.0,
+          "completed_orders": 129.0,
+          "deadlock_ratio_mean": 0.7915
+        },
+        {
+          "seed": 904,
+          "lock_tick": 360.0,
+          "collapse_tick": 790.0,
+          "lead": 430.0,
+          "completed_orders": 233.0,
+          "deadlock_ratio_mean": 0.6087
+        },
+        {
+          "seed": 907,
+          "lock_tick": 260.0,
+          "collapse_tick": 850.0,
+          "lead": 590.0,
+          "completed_orders": 228.0,
+          "deadlock_ratio_mean": 0.5982
+        },
+        {
+          "seed": 908,
+          "lock_tick": 60.0,
+          "collapse_tick": 1020.0,
+          "lead": 960.0,
+          "completed_orders": 287.0,
+          "deadlock_ratio_mean": 0.5104
+        },
+        {
+          "seed": 910,
+          "lock_tick": 100.0,
+          "collapse_tick": 780.0,
+          "lead": 680.0,
+          "completed_orders": 211.0,
+          "deadlock_ratio_mean": 0.5988
+        },
+        {
+          "seed": 912,
+          "lock_tick": 40.0,
+          "collapse_tick": 990.0,
+          "lead": 950.0,
+          "completed_orders": 281.0,
+          "deadlock_ratio_mean": 0.4804
+        },
+        {
+          "seed": 914,
+          "lock_tick": 210.0,
+          "collapse_tick": 630.0,
+          "lead": 420.0,
+          "completed_orders": 130.0,
+          "deadlock_ratio_mean": 0.7353
+        },
+        {
+          "seed": 916,
+          "lock_tick": 100.0,
+          "collapse_tick": 820.0,
+          "lead": 720.0,
+          "completed_orders": 260.0,
+          "deadlock_ratio_mean": 0.5978
+        },
+        {
+          "seed": 917,
+          "lock_tick": 80.0,
+          "collapse_tick": 730.0,
+          "lead": 650.0,
+          "completed_orders": 190.0,
+          "deadlock_ratio_mean": 0.6551
+        },
+        {
+          "seed": 918,
+          "lock_tick": 430.0,
+          "collapse_tick": 670.0,
+          "lead": 240.0,
+          "completed_orders": 194.0,
+          "deadlock_ratio_mean": 0.6527
+        },
+        {
+          "seed": 919,
+          "lock_tick": 20.0,
+          "collapse_tick": 500.0,
+          "lead": 480.0,
+          "completed_orders": 103.0,
+          "deadlock_ratio_mean": 0.8256
+        },
+        {
+          "seed": 922,
+          "lock_tick": 110.0,
+          "collapse_tick": 860.0,
+          "lead": 750.0,
+          "completed_orders": 247.0,
+          "deadlock_ratio_mean": 0.5557
+        },
+        {
+          "seed": 923,
+          "lock_tick": 220.0,
+          "collapse_tick": 830.0,
+          "lead": 610.0,
+          "completed_orders": 263.0,
+          "deadlock_ratio_mean": 0.5681
+        },
+        {
+          "seed": 926,
+          "lock_tick": 170.0,
+          "collapse_tick": 540.0,
+          "lead": 370.0,
+          "completed_orders": 144.0,
+          "deadlock_ratio_mean": 0.7543
+        },
+        {
+          "seed": 928,
+          "lock_tick": 520.0,
+          "collapse_tick": 800.0,
+          "lead": 280.0,
+          "completed_orders": 245.0,
+          "deadlock_ratio_mean": 0.5689
+        },
+        {
+          "seed": 930,
+          "lock_tick": 330.0,
+          "collapse_tick": 680.0,
+          "lead": 350.0,
+          "completed_orders": 169.0,
+          "deadlock_ratio_mean": 0.7046
+        },
+        {
+          "seed": 932,
+          "lock_tick": 210.0,
+          "collapse_tick": 500.0,
+          "lead": 290.0,
+          "completed_orders": 113.0,
+          "deadlock_ratio_mean": 0.7851
+        },
+        {
+          "seed": 933,
+          "lock_tick": 70.0,
+          "collapse_tick": 1020.0,
+          "lead": 950.0,
+          "completed_orders": 230.0,
+          "deadlock_ratio_mean": 0.61
+        },
+        {
+          "seed": 936,
+          "lock_tick": 170.0,
+          "collapse_tick": 780.0,
+          "lead": 610.0,
+          "completed_orders": 226.0,
+          "deadlock_ratio_mean": 0.6242
+        },
+        {
+          "seed": 944,
+          "lock_tick": 150.0,
+          "collapse_tick": 640.0,
+          "lead": 490.0,
+          "completed_orders": 153.0,
+          "deadlock_ratio_mean": 0.7073
+        },
+        {
+          "seed": 947,
+          "lock_tick": 110.0,
+          "collapse_tick": 540.0,
+          "lead": 430.0,
+          "completed_orders": 147.0,
+          "deadlock_ratio_mean": 0.7173
+        },
+        {
+          "seed": 948,
+          "lock_tick": 110.0,
+          "collapse_tick": 500.0,
+          "lead": 390.0,
+          "completed_orders": 87.0,
+          "deadlock_ratio_mean": 0.8404
+        }
+      ]
+    },
+    {
+      "load": "mid",
+      "arm": "Hungarian",
+      "n_seeds_with_data": 50,
+      "collapse_definition": "completed_orders < 300 AND deadlock_ratio_mean >= 0.4",
+      "n_collapsed_runs": 22,
+      "n_collapsed_with_onset_time": 22,
+      "n_with_lock_onset(share>=0.8)": 50,
+      "n_lock_onset_in_collapsed": 22,
+      "n_with_both": 22,
+      "lock_onset_by_threshold": {
+        "share_ge_0.6": {
+          "n_crossed": 50,
+          "median_tick": 50.0
+        },
+        "share_ge_0.7": {
+          "n_crossed": 50,
+          "median_tick": 80.0
+        },
+        "share_ge_0.8": {
+          "n_crossed": 50,
+          "median_tick": 205.0
+        },
+        "share_ge_0.9": {
+          "n_crossed": 42,
+          "median_tick": 405.0
+        }
+      },
+      "lead_collapse_minus_lock": {
+        "n": 22,
+        "mean": 565.0,
+        "median": 520.0,
+        "ci95_mean": [
+          501.3636,
+          634.0909
+        ],
+        "sign_positive": "22/22",
+        "wilcoxon_greater_p": 2.0026359953748907e-05
+      },
+      "cross_correlation": {
+        "n_negative_peak": 22,
+        "median_lead_lag_samples": 5.0,
+        "median_peak_corr": -0.772,
+        "note": "collapsed runs only; positive lag (stride-samples) => lock LEADS the rate drop"
+      },
+      "granger": {
+        "scope": "collapsed runs only",
+        "lock_to_rate_sig_frac": 1.0,
+        "lock_to_rate_fisher_p": 2.1756933385255606e-124,
+        "rate_to_lock_sig_frac": 0.636,
+        "rate_to_lock_fisher_p": 4.218469359777311e-31,
+        "n_tested": 22,
+        "lag": 3
+      },
+      "lead_pairs": [
+        {
+          "seed": 902,
+          "lock_tick": 230.0,
+          "collapse_tick": 640.0,
+          "lead": 410.0,
+          "completed_orders": 168.0,
+          "deadlock_ratio_mean": 0.5925
+        },
+        {
+          "seed": 904,
+          "lock_tick": 290.0,
+          "collapse_tick": 900.0,
+          "lead": 610.0,
+          "completed_orders": 254.0,
+          "deadlock_ratio_mean": 0.5642
+        },
+        {
+          "seed": 905,
+          "lock_tick": 140.0,
+          "collapse_tick": 770.0,
+          "lead": 630.0,
+          "completed_orders": 225.0,
+          "deadlock_ratio_mean": 0.6332
+        },
+        {
+          "seed": 909,
+          "lock_tick": 160.0,
+          "collapse_tick": 630.0,
+          "lead": 470.0,
+          "completed_orders": 148.0,
+          "deadlock_ratio_mean": 0.7727
+        },
+        {
+          "seed": 910,
+          "lock_tick": 70.0,
+          "collapse_tick": 710.0,
+          "lead": 640.0,
+          "completed_orders": 185.0,
+          "deadlock_ratio_mean": 0.6578
+        },
+        {
+          "seed": 914,
+          "lock_tick": 220.0,
+          "collapse_tick": 640.0,
+          "lead": 420.0,
+          "completed_orders": 132.0,
+          "deadlock_ratio_mean": 0.7435
+        },
+        {
+          "seed": 916,
+          "lock_tick": 200.0,
+          "collapse_tick": 650.0,
+          "lead": 450.0,
+          "completed_orders": 188.0,
+          "deadlock_ratio_mean": 0.6893
+        },
+        {
+          "seed": 918,
+          "lock_tick": 190.0,
+          "collapse_tick": 1050.0,
+          "lead": 860.0,
+          "completed_orders": 298.0,
+          "deadlock_ratio_mean": 0.4473
+        },
+        {
+          "seed": 919,
+          "lock_tick": 10.0,
+          "collapse_tick": 550.0,
+          "lead": 540.0,
+          "completed_orders": 108.0,
+          "deadlock_ratio_mean": 0.8094
+        },
+        {
+          "seed": 920,
+          "lock_tick": 10.0,
+          "collapse_tick": 900.0,
+          "lead": 890.0,
+          "completed_orders": 199.0,
+          "deadlock_ratio_mean": 0.7016
+        },
+        {
+          "seed": 922,
+          "lock_tick": 80.0,
+          "collapse_tick": 680.0,
+          "lead": 600.0,
+          "completed_orders": 200.0,
+          "deadlock_ratio_mean": 0.6517
+        },
+        {
+          "seed": 924,
+          "lock_tick": 210.0,
+          "collapse_tick": 700.0,
+          "lead": 490.0,
+          "completed_orders": 195.0,
+          "deadlock_ratio_mean": 0.6298
+        },
+        {
+          "seed": 927,
+          "lock_tick": 140.0,
+          "collapse_tick": 1010.0,
+          "lead": 870.0,
+          "completed_orders": 171.0,
+          "deadlock_ratio_mean": 0.6836
+        },
+        {
+          "seed": 929,
+          "lock_tick": 250.0,
+          "collapse_tick": 590.0,
+          "lead": 340.0,
+          "completed_orders": 140.0,
+          "deadlock_ratio_mean": 0.709
+        },
+        {
+          "seed": 930,
+          "lock_tick": 20.0,
+          "collapse_tick": 810.0,
+          "lead": 790.0,
+          "completed_orders": 197.0,
+          "deadlock_ratio_mean": 0.5986
+        },
+        {
+          "seed": 931,
+          "lock_tick": 340.0,
+          "collapse_tick": 720.0,
+          "lead": 380.0,
+          "completed_orders": 222.0,
+          "deadlock_ratio_mean": 0.6083
+        },
+        {
+          "seed": 939,
+          "lock_tick": 300.0,
+          "collapse_tick": 690.0,
+          "lead": 390.0,
+          "completed_orders": 182.0,
+          "deadlock_ratio_mean": 0.7079
+        },
+        {
+          "seed": 940,
+          "lock_tick": 140.0,
+          "collapse_tick": 710.0,
+          "lead": 570.0,
+          "completed_orders": 233.0,
+          "deadlock_ratio_mean": 0.5998
+        },
+        {
+          "seed": 945,
+          "lock_tick": 260.0,
+          "collapse_tick": 740.0,
+          "lead": 480.0,
+          "completed_orders": 184.0,
+          "deadlock_ratio_mean": 0.5409
+        },
+        {
+          "seed": 947,
+          "lock_tick": 90.0,
+          "collapse_tick": 590.0,
+          "lead": 500.0,
+          "completed_orders": 163.0,
+          "deadlock_ratio_mean": 0.6907
+        },
+        {
+          "seed": 948,
+          "lock_tick": 110.0,
+          "collapse_tick": 570.0,
+          "lead": 460.0,
+          "completed_orders": 121.0,
+          "deadlock_ratio_mean": 0.8162
+        },
+        {
+          "seed": 949,
+          "lock_tick": 90.0,
+          "collapse_tick": 730.0,
+          "lead": 640.0,
+          "completed_orders": 214.0,
+          "deadlock_ratio_mean": 0.6853
+        }
+      ]
+    },
+    {
+      "load": "mid",
+      "arm": "JSQ",
+      "n_seeds_with_data": 50,
+      "collapse_definition": "completed_orders < 300 AND deadlock_ratio_mean >= 0.4",
+      "n_collapsed_runs": 23,
+      "n_collapsed_with_onset_time": 23,
+      "n_with_lock_onset(share>=0.8)": 50,
+      "n_lock_onset_in_collapsed": 23,
+      "n_with_both": 23,
+      "lock_onset_by_threshold": {
+        "share_ge_0.6": {
+          "n_crossed": 50,
+          "median_tick": 50.0
+        },
+        "share_ge_0.7": {
+          "n_crossed": 50,
+          "median_tick": 85.0
+        },
+        "share_ge_0.8": {
+          "n_crossed": 50,
+          "median_tick": 210.0
+        },
+        "share_ge_0.9": {
+          "n_crossed": 44,
+          "median_tick": 380.0
+        }
+      },
+      "lead_collapse_minus_lock": {
+        "n": 23,
+        "mean": 559.1,
+        "median": 520.0,
+        "ci95_mean": [
+          497.8261,
+          621.7391
+        ],
+        "sign_positive": "23/23",
+        "wilcoxon_greater_p": 1.3363892927672202e-05
+      },
+      "cross_correlation": {
+        "n_negative_peak": 23,
+        "median_lead_lag_samples": 5.0,
+        "median_peak_corr": -0.747,
+        "note": "collapsed runs only; positive lag (stride-samples) => lock LEADS the rate drop"
+      },
+      "granger": {
+        "scope": "collapsed runs only",
+        "lock_to_rate_sig_frac": 1.0,
+        "lock_to_rate_fisher_p": 8.3213130053759755e-81,
+        "rate_to_lock_sig_frac": 0.565,
+        "rate_to_lock_fisher_p": 5.88403076934355e-25,
+        "n_tested": 23,
+        "lag": 3
+      },
+      "lead_pairs": [
+        {
+          "seed": 900,
+          "lock_tick": 220.0,
+          "collapse_tick": 740.0,
+          "lead": 520.0,
+          "completed_orders": 142.0,
+          "deadlock_ratio_mean": 0.7722
+        },
+        {
+          "seed": 904,
+          "lock_tick": 370.0,
+          "collapse_tick": 800.0,
+          "lead": 430.0,
+          "completed_orders": 222.0,
+          "deadlock_ratio_mean": 0.5956
+        },
+        {
+          "seed": 905,
+          "lock_tick": 290.0,
+          "collapse_tick": 720.0,
+          "lead": 430.0,
+          "completed_orders": 210.0,
+          "deadlock_ratio_mean": 0.6462
+        },
+        {
+          "seed": 911,
+          "lock_tick": 270.0,
+          "collapse_tick": 820.0,
+          "lead": 550.0,
+          "completed_orders": 224.0,
+          "deadlock_ratio_mean": 0.6196
+        },
+        {
+          "seed": 912,
+          "lock_tick": 40.0,
+          "collapse_tick": 910.0,
+          "lead": 870.0,
+          "completed_orders": 262.0,
+          "deadlock_ratio_mean": 0.5469
+        },
+        {
+          "seed": 913,
+          "lock_tick": 250.0,
+          "collapse_tick": 770.0,
+          "lead": 520.0,
+          "completed_orders": 250.0,
+          "deadlock_ratio_mean": 0.5756
+        },
+        {
+          "seed": 914,
+          "lock_tick": 210.0,
+          "collapse_tick": 720.0,
+          "lead": 510.0,
+          "completed_orders": 144.0,
+          "deadlock_ratio_mean": 0.7095
+        },
+        {
+          "seed": 918,
+          "lock_tick": 370.0,
+          "collapse_tick": 640.0,
+          "lead": 270.0,
+          "completed_orders": 170.0,
+          "deadlock_ratio_mean": 0.7131
+        },
+        {
+          "seed": 919,
+          "lock_tick": 20.0,
+          "collapse_tick": 500.0,
+          "lead": 480.0,
+          "completed_orders": 105.0,
+          "deadlock_ratio_mean": 0.7997
+        },
+        {
+          "seed": 923,
+          "lock_tick": 280.0,
+          "collapse_tick": 820.0,
+          "lead": 540.0,
+          "completed_orders": 284.0,
+          "deadlock_ratio_mean": 0.5477
+        },
+        {
+          "seed": 924,
+          "lock_tick": 140.0,
+          "collapse_tick": 790.0,
+          "lead": 650.0,
+          "completed_orders": 281.0,
+          "deadlock_ratio_mean": 0.5258
+        },
+        {
+          "seed": 925,
+          "lock_tick": 230.0,
+          "collapse_tick": 610.0,
+          "lead": 380.0,
+          "completed_orders": 152.0,
+          "deadlock_ratio_mean": 0.7661
+        },
+        {
+          "seed": 930,
+          "lock_tick": 300.0,
+          "collapse_tick": 730.0,
+          "lead": 430.0,
+          "completed_orders": 165.0,
+          "deadlock_ratio_mean": 0.7334
+        },
+        {
+          "seed": 931,
+          "lock_tick": 270.0,
+          "collapse_tick": 770.0,
+          "lead": 500.0,
+          "completed_orders": 233.0,
+          "deadlock_ratio_mean": 0.6333
+        },
+        {
+          "seed": 933,
+          "lock_tick": 300.0,
+          "collapse_tick": 1000.0,
+          "lead": 700.0,
+          "completed_orders": 278.0,
+          "deadlock_ratio_mean": 0.5267
+        },
+        {
+          "seed": 934,
+          "lock_tick": 100.0,
+          "collapse_tick": 750.0,
+          "lead": 650.0,
+          "completed_orders": 236.0,
+          "deadlock_ratio_mean": 0.6214
+        },
+        {
+          "seed": 935,
+          "lock_tick": 470.0,
+          "collapse_tick": 820.0,
+          "lead": 350.0,
+          "completed_orders": 256.0,
+          "deadlock_ratio_mean": 0.5622
+        },
+        {
+          "seed": 937,
+          "lock_tick": 170.0,
+          "collapse_tick": 1010.0,
+          "lead": 840.0,
+          "completed_orders": 293.0,
+          "deadlock_ratio_mean": 0.4549
+        },
+        {
+          "seed": 938,
+          "lock_tick": 250.0,
+          "collapse_tick": 1050.0,
+          "lead": 800.0,
+          "completed_orders": 298.0,
+          "deadlock_ratio_mean": 0.4933
+        },
+        {
+          "seed": 939,
+          "lock_tick": 260.0,
+          "collapse_tick": 940.0,
+          "lead": 680.0,
+          "completed_orders": 294.0,
+          "deadlock_ratio_mean": 0.5703
+        },
+        {
+          "seed": 940,
+          "lock_tick": 130.0,
+          "collapse_tick": 680.0,
+          "lead": 550.0,
+          "completed_orders": 185.0,
+          "deadlock_ratio_mean": 0.6712
+        },
+        {
+          "seed": 944,
+          "lock_tick": 150.0,
+          "collapse_tick": 670.0,
+          "lead": 520.0,
+          "completed_orders": 153.0,
+          "deadlock_ratio_mean": 0.6798
+        },
+        {
+          "seed": 945,
+          "lock_tick": 210.0,
+          "collapse_tick": 900.0,
+          "lead": 690.0,
+          "completed_orders": 280.0,
+          "deadlock_ratio_mean": 0.5025
+        }
+      ]
+    },
+    {
+      "load": "mid",
+      "arm": "PhaseC",
+      "n_seeds_with_data": 50,
+      "collapse_definition": "completed_orders < 300 AND deadlock_ratio_mean >= 0.4",
+      "n_collapsed_runs": 17,
+      "n_collapsed_with_onset_time": 17,
+      "n_with_lock_onset(share>=0.8)": 49,
+      "n_lock_onset_in_collapsed": 17,
+      "n_with_both": 17,
+      "lock_onset_by_threshold": {
+        "share_ge_0.6": {
+          "n_crossed": 50,
+          "median_tick": 55.0
+        },
+        "share_ge_0.7": {
+          "n_crossed": 50,
+          "median_tick": 120.0
+        },
+        "share_ge_0.8": {
+          "n_crossed": 49,
+          "median_tick": 240.0
+        },
+        "share_ge_0.9": {
+          "n_crossed": 39,
+          "median_tick": 480.0
+        }
+      },
+      "lead_collapse_minus_lock": {
+        "n": 17,
+        "mean": 518.2,
+        "median": 510.0,
+        "ci95_mean": [
+          442.3529,
+          608.8235
+        ],
+        "sign_positive": "17/17",
+        "wilcoxon_greater_p": 0.00014509478281012493
+      },
+      "cross_correlation": {
+        "n_negative_peak": 15,
+        "median_lead_lag_samples": 5.0,
+        "median_peak_corr": -0.753,
+        "note": "collapsed runs only; positive lag (stride-samples) => lock LEADS the rate drop"
+      },
+      "granger": {
+        "scope": "collapsed runs only",
+        "lock_to_rate_sig_frac": 0.941,
+        "lock_to_rate_fisher_p": 1.6778409678623952e-65,
+        "rate_to_lock_sig_frac": 0.647,
+        "rate_to_lock_fisher_p": 1.6889407618124905e-16,
+        "n_tested": 17,
+        "lag": 3
+      },
+      "lead_pairs": [
+        {
+          "seed": 900,
+          "lock_tick": 80.0,
+          "collapse_tick": 590.0,
+          "lead": 510.0,
+          "completed_orders": 153.0,
+          "deadlock_ratio_mean": 0.7271
+        },
+        {
+          "seed": 902,
+          "lock_tick": 130.0,
+          "collapse_tick": 790.0,
+          "lead": 660.0,
+          "completed_orders": 209.0,
+          "deadlock_ratio_mean": 0.6492
+        },
+        {
+          "seed": 903,
+          "lock_tick": 330.0,
+          "collapse_tick": 510.0,
+          "lead": 180.0,
+          "completed_orders": 146.0,
+          "deadlock_ratio_mean": 0.7513
+        },
+        {
+          "seed": 905,
+          "lock_tick": 150.0,
+          "collapse_tick": 750.0,
+          "lead": 600.0,
+          "completed_orders": 214.0,
+          "deadlock_ratio_mean": 0.6333
+        },
+        {
+          "seed": 907,
+          "lock_tick": 440.0,
+          "collapse_tick": 950.0,
+          "lead": 510.0,
+          "completed_orders": 255.0,
+          "deadlock_ratio_mean": 0.6022
+        },
+        {
+          "seed": 910,
+          "lock_tick": 100.0,
+          "collapse_tick": 1140.0,
+          "lead": 1040.0,
+          "completed_orders": 297.0,
+          "deadlock_ratio_mean": 0.433
+        },
+        {
+          "seed": 911,
+          "lock_tick": 370.0,
+          "collapse_tick": 920.0,
+          "lead": 550.0,
+          "completed_orders": 247.0,
+          "deadlock_ratio_mean": 0.607
+        },
+        {
+          "seed": 913,
+          "lock_tick": 440.0,
+          "collapse_tick": 850.0,
+          "lead": 410.0,
+          "completed_orders": 254.0,
+          "deadlock_ratio_mean": 0.5309
+        },
+        {
+          "seed": 918,
+          "lock_tick": 60.0,
+          "collapse_tick": 760.0,
+          "lead": 700.0,
+          "completed_orders": 207.0,
+          "deadlock_ratio_mean": 0.6395
+        },
+        {
+          "seed": 920,
+          "lock_tick": 210.0,
+          "collapse_tick": 780.0,
+          "lead": 570.0,
+          "completed_orders": 196.0,
+          "deadlock_ratio_mean": 0.6724
+        },
+        {
+          "seed": 924,
+          "lock_tick": 150.0,
+          "collapse_tick": 540.0,
+          "lead": 390.0,
+          "completed_orders": 117.0,
+          "deadlock_ratio_mean": 0.807
+        },
+        {
+          "seed": 926,
+          "lock_tick": 140.0,
+          "collapse_tick": 540.0,
+          "lead": 400.0,
+          "completed_orders": 137.0,
+          "deadlock_ratio_mean": 0.7869
+        },
+        {
+          "seed": 934,
+          "lock_tick": 100.0,
+          "collapse_tick": 510.0,
+          "lead": 410.0,
+          "completed_orders": 123.0,
+          "deadlock_ratio_mean": 0.8115
+        },
+        {
+          "seed": 936,
+          "lock_tick": 210.0,
+          "collapse_tick": 640.0,
+          "lead": 430.0,
+          "completed_orders": 125.0,
+          "deadlock_ratio_mean": 0.7933
+        },
+        {
+          "seed": 939,
+          "lock_tick": 250.0,
+          "collapse_tick": 660.0,
+          "lead": 410.0,
+          "completed_orders": 185.0,
+          "deadlock_ratio_mean": 0.7286
+        },
+        {
+          "seed": 942,
+          "lock_tick": 350.0,
+          "collapse_tick": 890.0,
+          "lead": 540.0,
+          "completed_orders": 255.0,
+          "deadlock_ratio_mean": 0.5185
+        },
+        {
+          "seed": 944,
+          "lock_tick": 140.0,
+          "collapse_tick": 640.0,
+          "lead": 500.0,
+          "completed_orders": 150.0,
+          "deadlock_ratio_mean": 0.6884
+        }
+      ]
+    }
+  ]
+}

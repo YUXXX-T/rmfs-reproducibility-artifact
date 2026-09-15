@@ -1,0 +1,17 @@
+schema_version: policy_contract_v1
+paper_name: ComboS1J1
+artifact_arm_name: ComboS1J1
+s1:
+  config: phasec_s1.yaml
+  scope: robot_selection_within_one_fixed_context
+j1:
+  implementation: Policies.TaskAssigner.WorldModelTaskAssigner.psi_dispatch_context_assigner.PsiDispatchContextWorldModelTaskAssigner
+  scope: cross_context_ordering
+  order: ascending_J_once_per_proposal_batch
+  formula: "J(c) = 0.5 * predicted_service + 0.5 * predicted_traffic - service_debt"
+  context_mode: j_ascending
+constraints:
+  include_no_assign: false
+  station_injection_weight: 0.0
+  station_admission_change: false
+  deterministic_s1_conversion: true

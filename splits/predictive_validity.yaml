@@ -1,0 +1,15 @@
+schema_version: seed_split_v1
+long_risk_repair:
+  train: {start: 681, stop_inclusive: 687}
+  validation: [688, 689]
+  offline_test: [690]
+  online_test: {start: 691, stop_inclusive: 700}
+context_j1_behavior_labels:
+  train: {start: 571, stop_inclusive: 582}
+  validation: {start: 583, stop_inclusive: 586}
+  test: {start: 587, stop_inclusive: 590}
+pibt_adaptation:
+  train: {start: 461, stop_inclusive: 467}
+  validation: [468, 469]
+  test: [470]
+  evaluation: {start: 551, stop_inclusive: 560}

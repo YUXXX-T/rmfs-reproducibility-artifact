@@ -1,0 +1,13 @@
+schema_version: policy_contract_v1
+paper_name: S1
+scope: within_fixed_context_robot_selection
+candidate_top_m: 10
+energy_scoring_mode: conversion
+energy_potential_form: endpoint
+energy_discount: 0.95
+energy_gate: {mode: sigmoid, window: 200, warmup: 50, quantile: 0.8}
+energy_conversion_lambda: 0.25
+random_flip_rate: 0.0
+drift_signal: quantile_combo
+long_risk_combo: {peak_q95: 0.2, cvar_q90: 0.3, terminal_q90: 0.5}
+energy_weights: {wait: 0.0, excess: 0.0, station: 1.0, bottleneck: 1.0, severe: 2.0, completed: 0.0}

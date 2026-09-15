@@ -1,0 +1,5115 @@
+{
+  "schema_version": "rmfs_results_explorer_v1",
+  "generated_from": [
+    "artifacts/tables/table_main.csv",
+    "artifacts/tables/table_station6.csv",
+    "artifacts/statistics/paired_confidence_intervals.csv",
+    "artifacts/statistics/station6_paired_confidence_intervals.csv"
+  ],
+  "metrics": {
+    "completed_orders": {
+      "label": "Completed orders",
+      "short_label": "Orders",
+      "unit": "orders",
+      "direction": "higher",
+      "decimals": 1,
+      "group": "Throughput"
+    },
+    "completed_tasks": {
+      "label": "Completed tasks",
+      "short_label": "Tasks",
+      "unit": "tasks",
+      "direction": "higher",
+      "decimals": 1,
+      "group": "Throughput"
+    },
+    "completion_fraction": {
+      "label": "Completion fraction",
+      "short_label": "Completion",
+      "unit": "fraction",
+      "direction": "higher",
+      "decimals": 3,
+      "group": "Throughput"
+    },
+    "avg_task_duration": {
+      "label": "Average task duration",
+      "short_label": "Task duration",
+      "unit": "ticks",
+      "direction": "lower",
+      "decimals": 2,
+      "group": "Delay"
+    },
+    "avg_excess_delay": {
+      "label": "Average excess delay",
+      "short_label": "Excess delay",
+      "unit": "ticks",
+      "direction": "lower",
+      "decimals": 2,
+      "group": "Delay"
+    },
+    "open_order_count": {
+      "label": "Open orders at termination",
+      "short_label": "Open orders",
+      "unit": "orders",
+      "direction": "lower",
+      "decimals": 1,
+      "group": "Backlog"
+    },
+    "pending_order_count": {
+      "label": "Pending orders at termination",
+      "short_label": "Pending orders",
+      "unit": "orders",
+      "direction": "lower",
+      "decimals": 1,
+      "group": "Backlog"
+    },
+    "final_backlog_total": {
+      "label": "Final backlog",
+      "short_label": "Backlog",
+      "unit": "orders",
+      "direction": "lower",
+      "decimals": 1,
+      "group": "Backlog"
+    },
+    "final_backlog_fraction": {
+      "label": "Final backlog fraction",
+      "short_label": "Backlog fraction",
+      "unit": "fraction",
+      "direction": "lower",
+      "decimals": 3,
+      "group": "Backlog"
+    },
+    "congestion_events": {
+      "label": "Congestion events",
+      "short_label": "Congestion",
+      "unit": "events",
+      "direction": "lower",
+      "decimals": 1,
+      "group": "Congestion"
+    },
+    "severe_events": {
+      "label": "Severe events",
+      "short_label": "Severe events",
+      "unit": "events",
+      "direction": "lower",
+      "decimals": 1,
+      "group": "Congestion"
+    },
+    "stall_ratio_mean": {
+      "label": "Mean stall ratio",
+      "short_label": "Stall ratio",
+      "unit": "ratio",
+      "direction": "lower",
+      "decimals": 3,
+      "group": "Congestion"
+    },
+    "stall_ratio_max": {
+      "label": "Maximum stall ratio",
+      "short_label": "Max stall ratio",
+      "unit": "ratio",
+      "direction": "lower",
+      "decimals": 3,
+      "group": "Congestion"
+    },
+    "deadlock_ratio_mean": {
+      "label": "Mean deadlock ratio",
+      "short_label": "Deadlock ratio",
+      "unit": "ratio",
+      "direction": "lower",
+      "decimals": 3,
+      "group": "Congestion"
+    },
+    "deadlock_ratio_max": {
+      "label": "Maximum deadlock ratio",
+      "short_label": "Max deadlock ratio",
+      "unit": "ratio",
+      "direction": "lower",
+      "decimals": 3,
+      "group": "Congestion"
+    },
+    "risk_rate_per_100": {
+      "label": "Risk events per 100 ticks",
+      "short_label": "Risk rate",
+      "unit": "events / 100 ticks",
+      "direction": "lower",
+      "decimals": 2,
+      "group": "Congestion"
+    },
+    "completed_orders_per_congestion_event": {
+      "label": "Orders per congestion event",
+      "short_label": "Orders / congestion",
+      "unit": "orders / event",
+      "direction": "higher",
+      "decimals": 2,
+      "group": "Efficiency"
+    },
+    "completed_orders_per_severe_event": {
+      "label": "Orders per severe event",
+      "short_label": "Orders / severe event",
+      "unit": "orders / event",
+      "direction": "higher",
+      "decimals": 2,
+      "group": "Efficiency"
+    },
+    "wall_time_s": {
+      "label": "Wall-clock runtime",
+      "short_label": "Runtime",
+      "unit": "seconds",
+      "direction": "lower",
+      "decimals": 1,
+      "group": "Runtime"
+    },
+    "assignment_time_ms_mean": {
+      "label": "Mean assignment latency",
+      "short_label": "Assignment latency",
+      "unit": "milliseconds",
+      "direction": "lower",
+      "decimals": 2,
+      "group": "Runtime"
+    }
+  },
+  "datasets": {
+    "main": {
+      "label": "Four-station PP",
+      "detail": "20×20 · 48 robots · 4 stations · 50 paired seeds · 1,500 ticks",
+      "aggregate": [
+        {
+          "load": "low",
+          "arm": "ComboS1J1",
+          "n": 50,
+          "values": {
+            "completed_orders": {
+              "mean": 380.56,
+              "std": 128.982039,
+              "n": 50
+            },
+            "completed_tasks": {
+              "mean": 1685.88,
+              "std": 534.779193,
+              "n": 50
+            },
+            "completion_fraction": {
+              "mean": 0.81678,
+              "std": 0.231327,
+              "n": 50
+            },
+            "avg_task_duration": {
+              "mean": 41.523987,
+              "std": 4.380723,
+              "n": 50
+            },
+            "avg_excess_delay": {
+              "mean": 27.711478,
+              "std": 4.340871,
+              "n": 50
+            },
+            "open_order_count": {
+              "mean": 82.06,
+              "std": 102.572786,
+              "n": 50
+            },
+            "pending_order_count": {
+              "mean": 59.76,
+              "std": 95.405568,
+              "n": 50
+            },
+            "final_backlog_total": {
+              "mean": 141.82,
+              "std": 197.824032,
+              "n": 50
+            },
+            "final_backlog_fraction": {
+              "mean": 0.317874,
+              "std": 0.443793,
+              "n": 50
+            },
+            "congestion_events": {
+              "mean": 471.72,
+              "std": 465.534275,
+              "n": 50
+            },
+            "severe_events": {
+              "mean": 431.26,
+              "std": 474.101838,
+              "n": 50
+            },
+            "stall_ratio_mean": {
+              "mean": 0.054191,
+              "std": 0.058611,
+              "n": 50
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.209337,
+              "std": 0.282861,
+              "n": 50
+            },
+            "risk_rate_per_100": {
+              "mean": 31.448004,
+              "std": 31.035628,
+              "n": 50
+            },
+            "completed_orders_per_congestion_event": {
+              "mean": 3.404957,
+              "std": 4.539147,
+              "n": 50
+            },
+            "completed_orders_per_severe_event": {
+              "mean": 6.030253,
+              "std": 9.713022,
+              "n": 50
+            },
+            "wall_time_s": {
+              "mean": 684.7398,
+              "std": 455.334639,
+              "n": 50
+            },
+            "assignment_time_ms_mean": {
+              "mean": 177.93871,
+              "std": 56.169123,
+              "n": 50
+            }
+          }
+        },
+        {
+          "load": "low",
+          "arm": "Greedy",
+          "n": 50,
+          "values": {
+            "completed_orders": {
+              "mean": 356.42,
+              "std": 147.17039,
+              "n": 50
+            },
+            "completed_tasks": {
+              "mean": 1593.62,
+              "std": 623.954033,
+              "n": 50
+            },
+            "completion_fraction": {
+              "mean": 0.737948,
+              "std": 0.217842,
+              "n": 50
+            },
+            "avg_task_duration": {
+              "mean": 43.961516,
+              "std": 4.190265,
+              "n": 50
+            },
+            "avg_excess_delay": {
+              "mean": 30.12172,
+              "std": 4.02558,
+              "n": 50
+            },
+            "open_order_count": {
+              "mean": 106.2,
+              "std": 75.136143,
+              "n": 50
+            },
+            "pending_order_count": {
+              "mean": 74.5,
+              "std": 73.565277,
+              "n": 50
+            },
+            "final_backlog_total": {
+              "mean": 180.7,
+              "std": 148.668793,
+              "n": 50
+            },
+            "final_backlog_fraction": {
+              "mean": 0.453191,
+              "std": 0.421085,
+              "n": 50
+            },
+            "congestion_events": {
+              "mean": 751.94,
+              "std": 398.509644,
+              "n": 50
+            },
+            "severe_events": {
+              "mean": 702.38,
+              "std": 421.025172,
+              "n": 50
+            },
+            "stall_ratio_mean": {
+              "mean": 0.080608,
+              "std": 0.055424,
+              "n": 50
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.345314,
+              "std": 0.271326,
+              "n": 50
+            },
+            "risk_rate_per_100": {
+              "mean": 50.129338,
+              "std": 26.567315,
+              "n": 50
+            },
+            "completed_orders_per_congestion_event": {
+              "mean": 0.926388,
+              "std": 0.97148,
+              "n": 50
+            },
+            "completed_orders_per_severe_event": {
+              "mean": 1.29089,
+              "std": 1.611606,
+              "n": 50
+            },
+            "wall_time_s": {
+              "mean": 616.5888,
+              "std": 498.806991,
+              "n": 50
+            }
+          }
+        },
+        {
+          "load": "low",
+          "arm": "Hungarian",
+          "n": 50,
+          "values": {
+            "completed_orders": {
+              "mean": 341.14,
+              "std": 131.484449,
+              "n": 50
+            },
+            "completed_tasks": {
+              "mean": 1537.82,
+              "std": 542.225624,
+              "n": 50
+            },
+            "completion_fraction": {
+              "mean": 0.744851,
+              "std": 0.272841,
+              "n": 50
+            },
+            "avg_task_duration": {
+              "mean": 40.85157,
+              "std": 4.199491,
+              "n": 50
+            },
+            "avg_excess_delay": {
+              "mean": 27.207975,
+              "std": 4.127702,
+              "n": 50
+            },
+            "open_order_count": {
+              "mean": 121.48,
+              "std": 130.159324,
+              "n": 50
+            },
+            "pending_order_count": {
+              "mean": 98.84,
+              "std": 124.402791,
+              "n": 50
+            },
+            "final_backlog_total": {
+              "mean": 220.32,
+              "std": 254.411748,
+              "n": 50
+            },
+            "final_backlog_fraction": {
+              "mean": 0.462014,
+              "std": 0.533015,
+              "n": 50
+            },
+            "congestion_events": {
+              "mean": 583.68,
+              "std": 490.628391,
+              "n": 50
+            },
+            "severe_events": {
+              "mean": 543.54,
+              "std": 502.261096,
+              "n": 50
+            },
+            "stall_ratio_mean": {
+              "mean": 0.060587,
+              "std": 0.055868,
+              "n": 50
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.277736,
+              "std": 0.302394,
+              "n": 50
+            },
+            "risk_rate_per_100": {
+              "mean": 38.912004,
+              "std": 32.708548,
+              "n": 50
+            },
+            "completed_orders_per_congestion_event": {
+              "mean": 4.670949,
+              "std": 15.318481,
+              "n": 50
+            },
+            "completed_orders_per_severe_event": {
+              "mean": 18.266882,
+              "std": 73.485607,
+              "n": 50
+            },
+            "wall_time_s": {
+              "mean": 461.3578,
+              "std": 488.595596,
+              "n": 50
+            }
+          }
+        },
+        {
+          "load": "low",
+          "arm": "JSQ",
+          "n": 50,
+          "values": {
+            "completed_orders": {
+              "mean": 350.84,
+              "std": 129.709577,
+              "n": 50
+            },
+            "completed_tasks": {
+              "mean": 1562,
+              "std": 539.92029,
+              "n": 50
+            },
+            "completion_fraction": {
+              "mean": 0.750652,
+              "std": 0.239064,
+              "n": 50
+            },
+            "avg_task_duration": {
+              "mean": 41.456368,
+              "std": 3.905532,
+              "n": 50
+            },
+            "avg_excess_delay": {
+              "mean": 27.626834,
+              "std": 3.831737,
+              "n": 50
+            },
+            "open_order_count": {
+              "mean": 111.78,
+              "std": 104.582463,
+              "n": 50
+            },
+            "pending_order_count": {
+              "mean": 84.9,
+              "std": 97.525433,
+              "n": 50
+            },
+            "final_backlog_total": {
+              "mean": 196.68,
+              "std": 201.935083,
+              "n": 50
+            },
+            "final_backlog_fraction": {
+              "mean": 0.440072,
+              "std": 0.458933,
+              "n": 50
+            },
+            "congestion_events": {
+              "mean": 649.88,
+              "std": 465.91723,
+              "n": 50
+            },
+            "severe_events": {
+              "mean": 609.78,
+              "std": 485.173177,
+              "n": 50
+            },
+            "stall_ratio_mean": {
+              "mean": 0.05688,
+              "std": 0.043155,
+              "n": 50
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.300424,
+              "std": 0.288892,
+              "n": 50
+            },
+            "risk_rate_per_100": {
+              "mean": 43.325338,
+              "std": 31.061148,
+              "n": 50
+            },
+            "completed_orders_per_congestion_event": {
+              "mean": 1.766843,
+              "std": 2.88244,
+              "n": 50
+            },
+            "completed_orders_per_severe_event": {
+              "mean": 2.683748,
+              "std": 4.613579,
+              "n": 50
+            },
+            "wall_time_s": {
+              "mean": 457.1274,
+              "std": 391.95812,
+              "n": 50
+            }
+          }
+        },
+        {
+          "load": "low",
+          "arm": "WM-Base",
+          "n": 50,
+          "values": {
+            "completed_orders": {
+              "mean": 345.14,
+              "std": 136.131996,
+              "n": 50
+            },
+            "completed_tasks": {
+              "mean": 1532.24,
+              "std": 583.916075,
+              "n": 50
+            },
+            "completion_fraction": {
+              "mean": 0.750489,
+              "std": 0.272678,
+              "n": 50
+            },
+            "avg_task_duration": {
+              "mean": 41.263737,
+              "std": 4.059057,
+              "n": 50
+            },
+            "avg_excess_delay": {
+              "mean": 27.421738,
+              "std": 3.909565,
+              "n": 50
+            },
+            "open_order_count": {
+              "mean": 117.48,
+              "std": 132.485054,
+              "n": 50
+            },
+            "pending_order_count": {
+              "mean": 92.12,
+              "std": 126.120837,
+              "n": 50
+            },
+            "final_backlog_total": {
+              "mean": 209.6,
+              "std": 258.452394,
+              "n": 50
+            },
+            "final_backlog_fraction": {
+              "mean": 0.444511,
+              "std": 0.530295,
+              "n": 50
+            },
+            "congestion_events": {
+              "mean": 598.34,
+              "std": 482.56343,
+              "n": 50
+            },
+            "severe_events": {
+              "mean": 557.06,
+              "std": 494.552663,
+              "n": 50
+            },
+            "stall_ratio_mean": {
+              "mean": 0.06266,
+              "std": 0.053771,
+              "n": 50
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.283893,
+              "std": 0.307393,
+              "n": 50
+            },
+            "risk_rate_per_100": {
+              "mean": 39.889338,
+              "std": 32.170895,
+              "n": 50
+            },
+            "completed_orders_per_congestion_event": {
+              "mean": 4.124499,
+              "std": 14.922586,
+              "n": 50
+            },
+            "completed_orders_per_severe_event": {
+              "mean": 10.361126,
+              "std": 45.033097,
+              "n": 50
+            },
+            "wall_time_s": {
+              "mean": 684.292,
+              "std": 345.899804,
+              "n": 50
+            },
+            "assignment_time_ms_mean": {
+              "mean": 143.367424,
+              "std": 78.014863,
+              "n": 50
+            }
+          }
+        },
+        {
+          "load": "mid",
+          "arm": "ComboS1J1",
+          "n": 50,
+          "values": {
+            "completed_orders": {
+              "mean": 361.56,
+              "std": 129.460134,
+              "n": 50
+            },
+            "completed_tasks": {
+              "mean": 1617.46,
+              "std": 553.90314,
+              "n": 50
+            },
+            "completion_fraction": {
+              "mean": 0.718964,
+              "std": 0.246403,
+              "n": 50
+            },
+            "avg_task_duration": {
+              "mean": 42.278896,
+              "std": 4.085709,
+              "n": 50
+            },
+            "avg_excess_delay": {
+              "mean": 28.280029,
+              "std": 4.006631,
+              "n": 50
+            },
+            "open_order_count": {
+              "mean": 141.24,
+              "std": 122.346158,
+              "n": 50
+            },
+            "pending_order_count": {
+              "mean": 112.7,
+              "std": 116.508755,
+              "n": 50
+            },
+            "final_backlog_total": {
+              "mean": 253.94,
+              "std": 238.7703,
+              "n": 50
+            },
+            "final_backlog_fraction": {
+              "mean": 0.505225,
+              "std": 0.479876,
+              "n": 50
+            },
+            "congestion_events": {
+              "mean": 685.42,
+              "std": 454.91371,
+              "n": 50
+            },
+            "severe_events": {
+              "mean": 635.48,
+              "std": 469.918854,
+              "n": 50
+            },
+            "stall_ratio_mean": {
+              "mean": 0.074456,
+              "std": 0.061951,
+              "n": 50
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.309318,
+              "std": 0.28201,
+              "n": 50
+            },
+            "risk_rate_per_100": {
+              "mean": 45.694666,
+              "std": 30.327587,
+              "n": 50
+            },
+            "completed_orders_per_congestion_event": {
+              "mean": 1.8019,
+              "std": 2.944278,
+              "n": 50
+            },
+            "completed_orders_per_severe_event": {
+              "mean": 3.352745,
+              "std": 8.87691,
+              "n": 50
+            },
+            "wall_time_s": {
+              "mean": 824.841,
+              "std": 501.53512,
+              "n": 50
+            },
+            "assignment_time_ms_mean": {
+              "mean": 153.295888,
+              "std": 56.986667,
+              "n": 50
+            }
+          }
+        },
+        {
+          "load": "mid",
+          "arm": "Greedy",
+          "n": 50,
+          "values": {
+            "completed_orders": {
+              "mean": 358.3,
+              "std": 159.868853,
+              "n": 50
+            },
+            "completed_tasks": {
+              "mean": 1585.54,
+              "std": 668.119307,
+              "n": 50
+            },
+            "completion_fraction": {
+              "mean": 0.684216,
+              "std": 0.242228,
+              "n": 50
+            },
+            "avg_task_duration": {
+              "mean": 45.841684,
+              "std": 4.6799,
+              "n": 50
+            },
+            "avg_excess_delay": {
+              "mean": 31.78599,
+              "std": 4.499144,
+              "n": 50
+            },
+            "open_order_count": {
+              "mean": 144.5,
+              "std": 99.907607,
+              "n": 50
+            },
+            "pending_order_count": {
+              "mean": 111.42,
+              "std": 100.168676,
+              "n": 50
+            },
+            "final_backlog_total": {
+              "mean": 255.92,
+              "std": 200.059475,
+              "n": 50
+            },
+            "final_backlog_fraction": {
+              "mean": 0.564853,
+              "std": 0.476818,
+              "n": 50
+            },
+            "congestion_events": {
+              "mean": 813.36,
+              "std": 390.413512,
+              "n": 50
+            },
+            "severe_events": {
+              "mean": 757,
+              "std": 420.568948,
+              "n": 50
+            },
+            "stall_ratio_mean": {
+              "mean": 0.090207,
+              "std": 0.06049,
+              "n": 50
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.369745,
+              "std": 0.282416,
+              "n": 50
+            },
+            "risk_rate_per_100": {
+              "mean": 54.224002,
+              "std": 26.02756,
+              "n": 50
+            },
+            "completed_orders_per_congestion_event": {
+              "mean": 0.772381,
+              "std": 0.755456,
+              "n": 50
+            },
+            "completed_orders_per_severe_event": {
+              "mean": 1.068684,
+              "std": 1.284226,
+              "n": 50
+            },
+            "wall_time_s": {
+              "mean": 696.801,
+              "std": 536.463573,
+              "n": 50
+            }
+          }
+        },
+        {
+          "load": "mid",
+          "arm": "Hungarian",
+          "n": 50,
+          "values": {
+            "completed_orders": {
+              "mean": 325.36,
+              "std": 138.152924,
+              "n": 50
+            },
+            "completed_tasks": {
+              "mean": 1504.66,
+              "std": 580.270406,
+              "n": 50
+            },
+            "completion_fraction": {
+              "mean": 0.648269,
+              "std": 0.26747,
+              "n": 50
+            },
+            "avg_task_duration": {
+              "mean": 43.172429,
+              "std": 4.349125,
+              "n": 50
+            },
+            "avg_excess_delay": {
+              "mean": 29.501026,
+              "std": 4.184071,
+              "n": 50
+            },
+            "open_order_count": {
+              "mean": 177.44,
+              "std": 135.744489,
+              "n": 50
+            },
+            "pending_order_count": {
+              "mean": 151.2,
+              "std": 132.436098,
+              "n": 50
+            },
+            "final_backlog_total": {
+              "mean": 328.64,
+              "std": 268.046545,
+              "n": 50
+            },
+            "final_backlog_fraction": {
+              "mean": 0.65124,
+              "std": 0.527592,
+              "n": 50
+            },
+            "congestion_events": {
+              "mean": 773.42,
+              "std": 463.671051,
+              "n": 50
+            },
+            "severe_events": {
+              "mean": 731.46,
+              "std": 476.213238,
+              "n": 50
+            },
+            "stall_ratio_mean": {
+              "mean": 0.087661,
+              "std": 0.066263,
+              "n": 50
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.366979,
+              "std": 0.293531,
+              "n": 50
+            },
+            "risk_rate_per_100": {
+              "mean": 51.561336,
+              "std": 30.911401,
+              "n": 50
+            },
+            "completed_orders_per_congestion_event": {
+              "mean": 1.328638,
+              "std": 2.039082,
+              "n": 50
+            },
+            "completed_orders_per_severe_event": {
+              "mean": 2.245304,
+              "std": 4.349785,
+              "n": 50
+            },
+            "wall_time_s": {
+              "mean": 658.0478,
+              "std": 543.177122,
+              "n": 50
+            }
+          }
+        },
+        {
+          "load": "mid",
+          "arm": "JSQ",
+          "n": 50,
+          "values": {
+            "completed_orders": {
+              "mean": 337.52,
+              "std": 125.22256,
+              "n": 50
+            },
+            "completed_tasks": {
+              "mean": 1518.16,
+              "std": 521.066535,
+              "n": 50
+            },
+            "completion_fraction": {
+              "mean": 0.672826,
+              "std": 0.243389,
+              "n": 50
+            },
+            "avg_task_duration": {
+              "mean": 42.358599,
+              "std": 3.931266,
+              "n": 50
+            },
+            "avg_excess_delay": {
+              "mean": 28.379833,
+              "std": 3.908749,
+              "n": 50
+            },
+            "open_order_count": {
+              "mean": 165.28,
+              "std": 124.609476,
+              "n": 50
+            },
+            "pending_order_count": {
+              "mean": 135.14,
+              "std": 119.765773,
+              "n": 50
+            },
+            "final_backlog_total": {
+              "mean": 300.42,
+              "std": 244.281566,
+              "n": 50
+            },
+            "final_backlog_fraction": {
+              "mean": 0.594209,
+              "std": 0.476301,
+              "n": 50
+            },
+            "congestion_events": {
+              "mean": 800.46,
+              "std": 423.103071,
+              "n": 50
+            },
+            "severe_events": {
+              "mean": 761.02,
+              "std": 436.458909,
+              "n": 50
+            },
+            "stall_ratio_mean": {
+              "mean": 0.080977,
+              "std": 0.054854,
+              "n": 50
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.368036,
+              "std": 0.271444,
+              "n": 50
+            },
+            "risk_rate_per_100": {
+              "mean": 53.364004,
+              "std": 28.206871,
+              "n": 50
+            },
+            "completed_orders_per_congestion_event": {
+              "mean": 1.011696,
+              "std": 1.416736,
+              "n": 50
+            },
+            "completed_orders_per_severe_event": {
+              "mean": 1.320215,
+              "std": 1.999498,
+              "n": 50
+            },
+            "wall_time_s": {
+              "mean": 621.1758,
+              "std": 449.324047,
+              "n": 50
+            }
+          }
+        },
+        {
+          "load": "mid",
+          "arm": "WM-Base",
+          "n": 50,
+          "values": {
+            "completed_orders": {
+              "mean": 356.9,
+              "std": 133.667236,
+              "n": 50
+            },
+            "completed_tasks": {
+              "mean": 1573.04,
+              "std": 577.9211,
+              "n": 50
+            },
+            "completion_fraction": {
+              "mean": 0.715316,
+              "std": 0.263643,
+              "n": 50
+            },
+            "avg_task_duration": {
+              "mean": 42.646524,
+              "std": 4.24105,
+              "n": 50
+            },
+            "avg_excess_delay": {
+              "mean": 28.64819,
+              "std": 4.150647,
+              "n": 50
+            },
+            "open_order_count": {
+              "mean": 145.9,
+              "std": 137.53156,
+              "n": 50
+            },
+            "pending_order_count": {
+              "mean": 116.98,
+              "std": 130.62779,
+              "n": 50
+            },
+            "final_backlog_total": {
+              "mean": 262.88,
+              "std": 268.040194,
+              "n": 50
+            },
+            "final_backlog_fraction": {
+              "mean": 0.512257,
+              "std": 0.513913,
+              "n": 50
+            },
+            "congestion_events": {
+              "mean": 656.16,
+              "std": 460.085616,
+              "n": 50
+            },
+            "severe_events": {
+              "mean": 610.74,
+              "std": 476.030705,
+              "n": 50
+            },
+            "stall_ratio_mean": {
+              "mean": 0.066945,
+              "std": 0.052698,
+              "n": 50
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.309858,
+              "std": 0.293328,
+              "n": 50
+            },
+            "risk_rate_per_100": {
+              "mean": 43.744,
+              "std": 30.672377,
+              "n": 50
+            },
+            "completed_orders_per_congestion_event": {
+              "mean": 1.72946,
+              "std": 2.366096,
+              "n": 50
+            },
+            "completed_orders_per_severe_event": {
+              "mean": 2.96245,
+              "std": 4.707035,
+              "n": 50
+            },
+            "wall_time_s": {
+              "mean": 710.9684,
+              "std": 352.316621,
+              "n": 50
+            },
+            "assignment_time_ms_mean": {
+              "mean": 126.01102,
+              "std": 77.782877,
+              "n": 50
+            }
+          }
+        },
+        {
+          "load": "high",
+          "arm": "ComboS1J1",
+          "n": 50,
+          "values": {
+            "completed_orders": {
+              "mean": 383.42,
+              "std": 149.972676,
+              "n": 50
+            },
+            "completed_tasks": {
+              "mean": 1674.88,
+              "std": 615.776993,
+              "n": 50
+            },
+            "completion_fraction": {
+              "mean": 0.692088,
+              "std": 0.265426,
+              "n": 50
+            },
+            "avg_task_duration": {
+              "mean": 44.75661,
+              "std": 3.946462,
+              "n": 50
+            },
+            "avg_excess_delay": {
+              "mean": 30.59586,
+              "std": 3.961061,
+              "n": 50
+            },
+            "open_order_count": {
+              "mean": 168.86,
+              "std": 144.6755,
+              "n": 50
+            },
+            "pending_order_count": {
+              "mean": 137.7,
+              "std": 142.656546,
+              "n": 50
+            },
+            "final_backlog_total": {
+              "mean": 306.56,
+              "std": 287.293032,
+              "n": 50
+            },
+            "final_backlog_fraction": {
+              "mean": 0.559299,
+              "std": 0.526596,
+              "n": 50
+            },
+            "congestion_events": {
+              "mean": 733.26,
+              "std": 424.153312,
+              "n": 50
+            },
+            "severe_events": {
+              "mean": 678.84,
+              "std": 446.537047,
+              "n": 50
+            },
+            "stall_ratio_mean": {
+              "mean": 0.07846,
+              "std": 0.060264,
+              "n": 50
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.319636,
+              "std": 0.281475,
+              "n": 50
+            },
+            "risk_rate_per_100": {
+              "mean": 48.883996,
+              "std": 28.276891,
+              "n": 50
+            },
+            "completed_orders_per_congestion_event": {
+              "mean": 1.107331,
+              "std": 1.160666,
+              "n": 50
+            },
+            "completed_orders_per_severe_event": {
+              "mean": 1.775841,
+              "std": 2.526254,
+              "n": 50
+            },
+            "wall_time_s": {
+              "mean": 796.5562,
+              "std": 484.418356,
+              "n": 50
+            },
+            "assignment_time_ms_mean": {
+              "mean": 130.441982,
+              "std": 32.508477,
+              "n": 50
+            }
+          }
+        },
+        {
+          "load": "high",
+          "arm": "Greedy",
+          "n": 50,
+          "values": {
+            "completed_orders": {
+              "mean": 318.36,
+              "std": 157.689411,
+              "n": 50
+            },
+            "completed_tasks": {
+              "mean": 1429.38,
+              "std": 659.707447,
+              "n": 50
+            },
+            "completion_fraction": {
+              "mean": 0.56778,
+              "std": 0.266243,
+              "n": 50
+            },
+            "avg_task_duration": {
+              "mean": 45.522207,
+              "std": 5.945006,
+              "n": 50
+            },
+            "avg_excess_delay": {
+              "mean": 31.111485,
+              "std": 5.839266,
+              "n": 50
+            },
+            "open_order_count": {
+              "mean": 233.92,
+              "std": 139.383333,
+              "n": 50
+            },
+            "pending_order_count": {
+              "mean": 201.4,
+              "std": 139.762513,
+              "n": 50
+            },
+            "final_backlog_total": {
+              "mean": 435.32,
+              "std": 279.128604,
+              "n": 50
+            },
+            "final_backlog_fraction": {
+              "mean": 0.805508,
+              "std": 0.531142,
+              "n": 50
+            },
+            "congestion_events": {
+              "mean": 940.94,
+              "std": 342.525643,
+              "n": 50
+            },
+            "severe_events": {
+              "mean": 891.06,
+              "std": 372.335086,
+              "n": 50
+            },
+            "stall_ratio_mean": {
+              "mean": 0.096396,
+              "std": 0.054708,
+              "n": 50
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.448158,
+              "std": 0.273744,
+              "n": 50
+            },
+            "risk_rate_per_100": {
+              "mean": 62.729334,
+              "std": 22.835046,
+              "n": 50
+            },
+            "completed_orders_per_congestion_event": {
+              "mean": 0.517277,
+              "std": 0.536546,
+              "n": 50
+            },
+            "completed_orders_per_severe_event": {
+              "mean": 0.640376,
+              "std": 0.785029,
+              "n": 50
+            },
+            "wall_time_s": {
+              "mean": 737.3234,
+              "std": 503.980514,
+              "n": 50
+            }
+          }
+        },
+        {
+          "load": "high",
+          "arm": "Hungarian",
+          "n": 50,
+          "values": {
+            "completed_orders": {
+              "mean": 290.44,
+              "std": 146.957294,
+              "n": 50
+            },
+            "completed_tasks": {
+              "mean": 1444.7,
+              "std": 627.152653,
+              "n": 50
+            },
+            "completion_fraction": {
+              "mean": 0.525059,
+              "std": 0.265176,
+              "n": 50
+            },
+            "avg_task_duration": {
+              "mean": 44.437568,
+              "std": 4.566945,
+              "n": 50
+            },
+            "avg_excess_delay": {
+              "mean": 30.758343,
+              "std": 4.418348,
+              "n": 50
+            },
+            "open_order_count": {
+              "mean": 261.84,
+              "std": 145.012463,
+              "n": 50
+            },
+            "pending_order_count": {
+              "mean": 236.82,
+              "std": 146.15686,
+              "n": 50
+            },
+            "final_backlog_total": {
+              "mean": 498.66,
+              "std": 291.053095,
+              "n": 50
+            },
+            "final_backlog_fraction": {
+              "mean": 0.904344,
+              "std": 0.531819,
+              "n": 50
+            },
+            "congestion_events": {
+              "mean": 921.94,
+              "std": 382.665567,
+              "n": 50
+            },
+            "severe_events": {
+              "mean": 876.48,
+              "std": 403.73329,
+              "n": 50
+            },
+            "stall_ratio_mean": {
+              "mean": 0.096829,
+              "std": 0.057332,
+              "n": 50
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.440387,
+              "std": 0.275664,
+              "n": 50
+            },
+            "risk_rate_per_100": {
+              "mean": 61.462666,
+              "std": 25.511039,
+              "n": 50
+            },
+            "completed_orders_per_congestion_event": {
+              "mean": 0.75442,
+              "std": 1.505156,
+              "n": 50
+            },
+            "completed_orders_per_severe_event": {
+              "mean": 1.041103,
+              "std": 2.505275,
+              "n": 50
+            },
+            "wall_time_s": {
+              "mean": 740.5024,
+              "std": 479.803089,
+              "n": 50
+            }
+          }
+        },
+        {
+          "load": "high",
+          "arm": "JSQ",
+          "n": 50,
+          "values": {
+            "completed_orders": {
+              "mean": 367.74,
+              "std": 142.578233,
+              "n": 50
+            },
+            "completed_tasks": {
+              "mean": 1619.92,
+              "std": 577.01684,
+              "n": 50
+            },
+            "completion_fraction": {
+              "mean": 0.664648,
+              "std": 0.254288,
+              "n": 50
+            },
+            "avg_task_duration": {
+              "mean": 44.138552,
+              "std": 4.00887,
+              "n": 50
+            },
+            "avg_excess_delay": {
+              "mean": 29.996283,
+              "std": 4.0281,
+              "n": 50
+            },
+            "open_order_count": {
+              "mean": 184.54,
+              "std": 139.228906,
+              "n": 50
+            },
+            "pending_order_count": {
+              "mean": 153.2,
+              "std": 137.582993,
+              "n": 50
+            },
+            "final_backlog_total": {
+              "mean": 337.74,
+              "std": 276.772601,
+              "n": 50
+            },
+            "final_backlog_fraction": {
+              "mean": 0.613911,
+              "std": 0.505319,
+              "n": 50
+            },
+            "congestion_events": {
+              "mean": 791.2,
+              "std": 411.030948,
+              "n": 50
+            },
+            "severe_events": {
+              "mean": 743.84,
+              "std": 430.728469,
+              "n": 50
+            },
+            "stall_ratio_mean": {
+              "mean": 0.079326,
+              "std": 0.056003,
+              "n": 50
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.351751,
+              "std": 0.268011,
+              "n": 50
+            },
+            "risk_rate_per_100": {
+              "mean": 52.746668,
+              "std": 27.402061,
+              "n": 50
+            },
+            "completed_orders_per_congestion_event": {
+              "mean": 1.199159,
+              "std": 2.133236,
+              "n": 50
+            },
+            "completed_orders_per_severe_event": {
+              "mean": 1.995454,
+              "std": 5.162793,
+              "n": 50
+            },
+            "wall_time_s": {
+              "mean": 622.3906,
+              "std": 480.348669,
+              "n": 50
+            }
+          }
+        },
+        {
+          "load": "high",
+          "arm": "WM-Base",
+          "n": 50,
+          "values": {
+            "completed_orders": {
+              "mean": 352.28,
+              "std": 152.64849,
+              "n": 50
+            },
+            "completed_tasks": {
+              "mean": 1532.88,
+              "std": 645.510515,
+              "n": 50
+            },
+            "completion_fraction": {
+              "mean": 0.637793,
+              "std": 0.275897,
+              "n": 50
+            },
+            "avg_task_duration": {
+              "mean": 43.871872,
+              "std": 4.12153,
+              "n": 50
+            },
+            "avg_excess_delay": {
+              "mean": 29.737836,
+              "std": 4.028377,
+              "n": 50
+            },
+            "open_order_count": {
+              "mean": 200,
+              "std": 151.894964,
+              "n": 50
+            },
+            "pending_order_count": {
+              "mean": 167.8,
+              "std": 148.895937,
+              "n": 50
+            },
+            "final_backlog_total": {
+              "mean": 367.8,
+              "std": 300.751193,
+              "n": 50
+            },
+            "final_backlog_fraction": {
+              "mean": 0.666006,
+              "std": 0.546185,
+              "n": 50
+            },
+            "congestion_events": {
+              "mean": 793.2,
+              "std": 440.523461,
+              "n": 50
+            },
+            "severe_events": {
+              "mean": 742.4,
+              "std": 466.509893,
+              "n": 50
+            },
+            "stall_ratio_mean": {
+              "mean": 0.082214,
+              "std": 0.062654,
+              "n": 50
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.376424,
+              "std": 0.293475,
+              "n": 50
+            },
+            "risk_rate_per_100": {
+              "mean": 52.879998,
+              "std": 29.368231,
+              "n": 50
+            },
+            "completed_orders_per_congestion_event": {
+              "mean": 1.274909,
+              "std": 2.331554,
+              "n": 50
+            },
+            "completed_orders_per_severe_event": {
+              "mean": 2.102127,
+              "std": 4.705314,
+              "n": 50
+            },
+            "wall_time_s": {
+              "mean": 761.2666,
+              "std": 384.537901,
+              "n": 50
+            },
+            "assignment_time_ms_mean": {
+              "mean": 92.250528,
+              "std": 52.871689,
+              "n": 50
+            }
+          }
+        }
+      ],
+      "paired": [
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "completed_orders",
+          "direction": "higher",
+          "n": 50,
+          "effect": 29.72,
+          "low": -10.3,
+          "high": 68.24,
+          "wins": 27,
+          "losses": 18,
+          "ties": 5
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "completed_tasks",
+          "direction": "higher",
+          "n": 50,
+          "effect": 123.88,
+          "low": -44.02,
+          "high": 289.72,
+          "wins": 31,
+          "losses": 19,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "avg_task_duration",
+          "direction": "lower",
+          "n": 50,
+          "effect": 0.067619,
+          "low": -1.057564,
+          "high": 1.141742,
+          "wins": 23,
+          "losses": 27,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "avg_excess_delay",
+          "direction": "lower",
+          "n": 50,
+          "effect": 0.084643,
+          "low": -1.027151,
+          "high": 1.150842,
+          "wins": 22,
+          "losses": 28,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "open_order_count",
+          "direction": "lower",
+          "n": 50,
+          "effect": -29.72,
+          "low": -68.24,
+          "high": 10.3,
+          "wins": 27,
+          "losses": 18,
+          "ties": 5
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "pending_order_count",
+          "direction": "lower",
+          "n": 50,
+          "effect": -25.14,
+          "low": -61.78,
+          "high": 12.52,
+          "wins": 27,
+          "losses": 12,
+          "ties": 11
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "congestion_events",
+          "direction": "lower",
+          "n": 50,
+          "effect": -178.16,
+          "low": -342.3,
+          "high": -12.68,
+          "wins": 35,
+          "losses": 15,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "severe_events",
+          "direction": "lower",
+          "n": 50,
+          "effect": -178.52,
+          "low": -348.06,
+          "high": -7.28,
+          "wins": 36,
+          "losses": 14,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "stall_ratio_mean",
+          "direction": "lower",
+          "n": 50,
+          "effect": -0.002689,
+          "low": -0.019709,
+          "high": 0.014685,
+          "wins": 28,
+          "losses": 22,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "deadlock_ratio_mean",
+          "direction": "lower",
+          "n": 50,
+          "effect": -0.091087,
+          "low": -0.190693,
+          "high": 0.011498,
+          "wins": 35,
+          "losses": 15,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "risk_rate_per_100",
+          "direction": "lower",
+          "n": 50,
+          "effect": -11.877334,
+          "low": -22.820006,
+          "high": -0.845334,
+          "wins": 35,
+          "losses": 15,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "completion_fraction",
+          "direction": "higher",
+          "n": 50,
+          "effect": 0.066127,
+          "low": -0.02183,
+          "high": 0.150563,
+          "wins": 27,
+          "losses": 18,
+          "ties": 5
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "final_backlog_total",
+          "direction": "lower",
+          "n": 50,
+          "effect": -54.86,
+          "low": -130.04,
+          "high": 22.86,
+          "wins": 27,
+          "losses": 19,
+          "ties": 4
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "final_backlog_fraction",
+          "direction": "lower",
+          "n": 50,
+          "effect": -0.122198,
+          "low": -0.286291,
+          "high": 0.047642,
+          "wins": 27,
+          "losses": 19,
+          "ties": 4
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "completed_orders_per_congestion_event",
+          "direction": "higher",
+          "n": 50,
+          "effect": 1.638114,
+          "low": 0.769389,
+          "high": 2.562665,
+          "wins": 35,
+          "losses": 15,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "completed_orders_per_severe_event",
+          "direction": "higher",
+          "n": 50,
+          "effect": 3.346505,
+          "low": 1.008722,
+          "high": 6.304446,
+          "wins": 36,
+          "losses": 14,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "completed_orders",
+          "direction": "higher",
+          "n": 50,
+          "effect": 35.42,
+          "low": -2.12,
+          "high": 75.02,
+          "wins": 31,
+          "losses": 16,
+          "ties": 3
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "completed_tasks",
+          "direction": "higher",
+          "n": 50,
+          "effect": 153.64,
+          "low": -13.86,
+          "high": 326.9,
+          "wins": 31,
+          "losses": 19,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "avg_task_duration",
+          "direction": "lower",
+          "n": 50,
+          "effect": 0.26025,
+          "low": -0.744267,
+          "high": 1.340522,
+          "wins": 27,
+          "losses": 23,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "avg_excess_delay",
+          "direction": "lower",
+          "n": 50,
+          "effect": 0.289739,
+          "low": -0.70114,
+          "high": 1.347008,
+          "wins": 26,
+          "losses": 24,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "open_order_count",
+          "direction": "lower",
+          "n": 50,
+          "effect": -35.42,
+          "low": -75.02,
+          "high": 2.12,
+          "wins": 31,
+          "losses": 16,
+          "ties": 3
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "pending_order_count",
+          "direction": "lower",
+          "n": 50,
+          "effect": -32.36,
+          "low": -70.04,
+          "high": 3.42,
+          "wins": 22,
+          "losses": 12,
+          "ties": 16
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "congestion_events",
+          "direction": "lower",
+          "n": 50,
+          "effect": -126.62,
+          "low": -268.04,
+          "high": 13.54,
+          "wins": 31,
+          "losses": 18,
+          "ties": 1
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "severe_events",
+          "direction": "lower",
+          "n": 50,
+          "effect": -125.8,
+          "low": -274.78,
+          "high": 22.08,
+          "wins": 30,
+          "losses": 19,
+          "ties": 1
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "stall_ratio_mean",
+          "direction": "lower",
+          "n": 50,
+          "effect": -0.008469,
+          "low": -0.026064,
+          "high": 0.009326,
+          "wins": 28,
+          "losses": 22,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "deadlock_ratio_mean",
+          "direction": "lower",
+          "n": 50,
+          "effect": -0.074557,
+          "low": -0.16957,
+          "high": 0.020448,
+          "wins": 32,
+          "losses": 18,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "risk_rate_per_100",
+          "direction": "lower",
+          "n": 50,
+          "effect": -8.441334,
+          "low": -17.869334,
+          "high": 0.902674,
+          "wins": 31,
+          "losses": 18,
+          "ties": 1
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "completion_fraction",
+          "direction": "higher",
+          "n": 50,
+          "effect": 0.06629,
+          "low": -0.015106,
+          "high": 0.149738,
+          "wins": 31,
+          "losses": 16,
+          "ties": 3
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "final_backlog_total",
+          "direction": "lower",
+          "n": 50,
+          "effect": -67.78,
+          "low": -144.96,
+          "high": 5.38,
+          "wins": 30,
+          "losses": 17,
+          "ties": 3
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "final_backlog_fraction",
+          "direction": "lower",
+          "n": 50,
+          "effect": -0.126637,
+          "low": -0.287948,
+          "high": 0.030695,
+          "wins": 30,
+          "losses": 17,
+          "ties": 3
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "completed_orders_per_congestion_event",
+          "direction": "higher",
+          "n": 50,
+          "effect": -0.719542,
+          "low": -4.535247,
+          "high": 1.622419,
+          "wins": 31,
+          "losses": 18,
+          "ties": 1
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "completed_orders_per_severe_event",
+          "direction": "higher",
+          "n": 50,
+          "effect": -4.330873,
+          "low": -17.309213,
+          "high": 3.144234,
+          "wins": 32,
+          "losses": 18,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "completed_orders",
+          "direction": "higher",
+          "n": 50,
+          "effect": 24.04,
+          "low": -28.52,
+          "high": 76.58,
+          "wins": 26,
+          "losses": 24,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "completed_tasks",
+          "direction": "higher",
+          "n": 50,
+          "effect": 99.3,
+          "low": -128.08,
+          "high": 326.72,
+          "wins": 25,
+          "losses": 25,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "avg_task_duration",
+          "direction": "lower",
+          "n": 50,
+          "effect": -0.079703,
+          "low": -1.214304,
+          "high": 1.033292,
+          "wins": 29,
+          "losses": 21,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "avg_excess_delay",
+          "direction": "lower",
+          "n": 50,
+          "effect": -0.099804,
+          "low": -1.273986,
+          "high": 1.053419,
+          "wins": 28,
+          "losses": 22,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "open_order_count",
+          "direction": "lower",
+          "n": 50,
+          "effect": -24.04,
+          "low": -76.58,
+          "high": 28.52,
+          "wins": 26,
+          "losses": 24,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "pending_order_count",
+          "direction": "lower",
+          "n": 50,
+          "effect": -22.44,
+          "low": -72.84,
+          "high": 27.9,
+          "wins": 25,
+          "losses": 21,
+          "ties": 4
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "congestion_events",
+          "direction": "lower",
+          "n": 50,
+          "effect": -115.04,
+          "low": -303.58,
+          "high": 75.52,
+          "wins": 27,
+          "losses": 23,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "severe_events",
+          "direction": "lower",
+          "n": 50,
+          "effect": -125.54,
+          "low": -322.3,
+          "high": 74.3,
+          "wins": 26,
+          "losses": 24,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "stall_ratio_mean",
+          "direction": "lower",
+          "n": 50,
+          "effect": -0.006521,
+          "low": -0.031554,
+          "high": 0.018358,
+          "wins": 26,
+          "losses": 24,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "deadlock_ratio_mean",
+          "direction": "lower",
+          "n": 50,
+          "effect": -0.058718,
+          "low": -0.179591,
+          "high": 0.063836,
+          "wins": 26,
+          "losses": 24,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "risk_rate_per_100",
+          "direction": "lower",
+          "n": 50,
+          "effect": -7.669338,
+          "low": -20.23868,
+          "high": 5.034668,
+          "wins": 27,
+          "losses": 23,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "completion_fraction",
+          "direction": "higher",
+          "n": 50,
+          "effect": 0.046138,
+          "low": -0.061333,
+          "high": 0.151628,
+          "wins": 26,
+          "losses": 24,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "final_backlog_total",
+          "direction": "lower",
+          "n": 50,
+          "effect": -46.48,
+          "low": -149.46,
+          "high": 56.44,
+          "wins": 25,
+          "losses": 24,
+          "ties": 1
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "final_backlog_fraction",
+          "direction": "lower",
+          "n": 50,
+          "effect": -0.088984,
+          "low": -0.295162,
+          "high": 0.119668,
+          "wins": 25,
+          "losses": 24,
+          "ties": 1
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "completed_orders_per_congestion_event",
+          "direction": "higher",
+          "n": 50,
+          "effect": 0.790204,
+          "low": 0.00099,
+          "high": 1.730195,
+          "wins": 27,
+          "losses": 23,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "completed_orders_per_severe_event",
+          "direction": "higher",
+          "n": 50,
+          "effect": 2.03253,
+          "low": 0.153448,
+          "high": 4.964841,
+          "wins": 27,
+          "losses": 23,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "completed_orders",
+          "direction": "higher",
+          "n": 50,
+          "effect": 4.66,
+          "low": -43.68,
+          "high": 53.56,
+          "wins": 25,
+          "losses": 24,
+          "ties": 1
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "completed_tasks",
+          "direction": "higher",
+          "n": 50,
+          "effect": 44.42,
+          "low": -164.94,
+          "high": 255.56,
+          "wins": 26,
+          "losses": 24,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "avg_task_duration",
+          "direction": "lower",
+          "n": 50,
+          "effect": -0.367628,
+          "low": -1.547706,
+          "high": 0.87659,
+          "wins": 26,
+          "losses": 24,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "avg_excess_delay",
+          "direction": "lower",
+          "n": 50,
+          "effect": -0.368162,
+          "low": -1.550988,
+          "high": 0.875962,
+          "wins": 27,
+          "losses": 23,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "open_order_count",
+          "direction": "lower",
+          "n": 50,
+          "effect": -4.66,
+          "low": -53.56,
+          "high": 43.68,
+          "wins": 25,
+          "losses": 24,
+          "ties": 1
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "pending_order_count",
+          "direction": "lower",
+          "n": 50,
+          "effect": -4.28,
+          "low": -50.3,
+          "high": 41.6,
+          "wins": 21,
+          "losses": 23,
+          "ties": 6
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "congestion_events",
+          "direction": "lower",
+          "n": 50,
+          "effect": 29.26,
+          "low": -135.94,
+          "high": 198.36,
+          "wins": 22,
+          "losses": 28,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "severe_events",
+          "direction": "lower",
+          "n": 50,
+          "effect": 24.74,
+          "low": -152.88,
+          "high": 204.18,
+          "wins": 20,
+          "losses": 30,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "stall_ratio_mean",
+          "direction": "lower",
+          "n": 50,
+          "effect": 0.007511,
+          "low": -0.015965,
+          "high": 0.031056,
+          "wins": 26,
+          "losses": 24,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "deadlock_ratio_mean",
+          "direction": "lower",
+          "n": 50,
+          "effect": -0.000539,
+          "low": -0.112784,
+          "high": 0.112525,
+          "wins": 24,
+          "losses": 26,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "risk_rate_per_100",
+          "direction": "lower",
+          "n": 50,
+          "effect": 1.950666,
+          "low": -9.062666,
+          "high": 13.224,
+          "wins": 22,
+          "losses": 28,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "completion_fraction",
+          "direction": "higher",
+          "n": 50,
+          "effect": 0.003647,
+          "low": -0.095992,
+          "high": 0.102606,
+          "wins": 25,
+          "losses": 24,
+          "ties": 1
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "final_backlog_total",
+          "direction": "lower",
+          "n": 50,
+          "effect": -8.94,
+          "low": -103.94,
+          "high": 85.28,
+          "wins": 24,
+          "losses": 25,
+          "ties": 1
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "final_backlog_fraction",
+          "direction": "lower",
+          "n": 50,
+          "effect": -0.007032,
+          "low": -0.198418,
+          "high": 0.185472,
+          "wins": 24,
+          "losses": 25,
+          "ties": 1
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "completed_orders_per_congestion_event",
+          "direction": "higher",
+          "n": 50,
+          "effect": 0.07244,
+          "low": -0.614774,
+          "high": 0.801753,
+          "wins": 23,
+          "losses": 27,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "completed_orders_per_severe_event",
+          "direction": "higher",
+          "n": 50,
+          "effect": 0.390296,
+          "low": -1.505865,
+          "high": 3.060499,
+          "wins": 21,
+          "losses": 29,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "completed_orders",
+          "direction": "higher",
+          "n": 50,
+          "effect": 15.68,
+          "low": -28.62,
+          "high": 58.62,
+          "wins": 27,
+          "losses": 22,
+          "ties": 1
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "completed_tasks",
+          "direction": "higher",
+          "n": 50,
+          "effect": 54.96,
+          "low": -126.72,
+          "high": 233.42,
+          "wins": 27,
+          "losses": 23,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "avg_task_duration",
+          "direction": "lower",
+          "n": 50,
+          "effect": 0.618058,
+          "low": -0.666357,
+          "high": 1.946355,
+          "wins": 23,
+          "losses": 27,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "avg_excess_delay",
+          "direction": "lower",
+          "n": 50,
+          "effect": 0.599577,
+          "low": -0.709695,
+          "high": 1.948828,
+          "wins": 24,
+          "losses": 26,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "open_order_count",
+          "direction": "lower",
+          "n": 50,
+          "effect": -15.68,
+          "low": -58.62,
+          "high": 28.62,
+          "wins": 27,
+          "losses": 22,
+          "ties": 1
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "pending_order_count",
+          "direction": "lower",
+          "n": 50,
+          "effect": -15.5,
+          "low": -57.52,
+          "high": 28.04,
+          "wins": 25,
+          "losses": 20,
+          "ties": 5
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "congestion_events",
+          "direction": "lower",
+          "n": 50,
+          "effect": -57.94,
+          "low": -180.92,
+          "high": 67.9,
+          "wins": 27,
+          "losses": 23,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "severe_events",
+          "direction": "lower",
+          "n": 50,
+          "effect": -65,
+          "low": -196.24,
+          "high": 68.42,
+          "wins": 27,
+          "losses": 23,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "stall_ratio_mean",
+          "direction": "lower",
+          "n": 50,
+          "effect": -0.000865,
+          "low": -0.016959,
+          "high": 0.015669,
+          "wins": 26,
+          "losses": 24,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "deadlock_ratio_mean",
+          "direction": "lower",
+          "n": 50,
+          "effect": -0.032115,
+          "low": -0.115229,
+          "high": 0.05327,
+          "wins": 27,
+          "losses": 23,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "risk_rate_per_100",
+          "direction": "lower",
+          "n": 50,
+          "effect": -3.862672,
+          "low": -12.061348,
+          "high": 4.526668,
+          "wins": 27,
+          "losses": 23,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "completion_fraction",
+          "direction": "higher",
+          "n": 50,
+          "effect": 0.027439,
+          "low": -0.053791,
+          "high": 0.105994,
+          "wins": 27,
+          "losses": 22,
+          "ties": 1
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "final_backlog_total",
+          "direction": "lower",
+          "n": 50,
+          "effect": -31.18,
+          "low": -116,
+          "high": 56.98,
+          "wins": 27,
+          "losses": 21,
+          "ties": 2
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "final_backlog_fraction",
+          "direction": "lower",
+          "n": 50,
+          "effect": -0.054612,
+          "low": -0.209719,
+          "high": 0.106538,
+          "wins": 27,
+          "losses": 21,
+          "ties": 2
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "completed_orders_per_congestion_event",
+          "direction": "higher",
+          "n": 50,
+          "effect": -0.091828,
+          "low": -0.751859,
+          "high": 0.437903,
+          "wins": 27,
+          "losses": 23,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "JSQ",
+          "metric": "completed_orders_per_severe_event",
+          "direction": "higher",
+          "n": 50,
+          "effect": -0.219613,
+          "low": -1.943933,
+          "high": 1.033329,
+          "wins": 27,
+          "losses": 23,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "completed_orders",
+          "direction": "higher",
+          "n": 50,
+          "effect": 31.14,
+          "low": -17.34,
+          "high": 79.34,
+          "wins": 31,
+          "losses": 19,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "completed_tasks",
+          "direction": "higher",
+          "n": 50,
+          "effect": 142,
+          "low": -61.72,
+          "high": 343.76,
+          "wins": 32,
+          "losses": 18,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "avg_task_duration",
+          "direction": "lower",
+          "n": 50,
+          "effect": 0.884737,
+          "low": -0.642695,
+          "high": 2.359689,
+          "wins": 19,
+          "losses": 31,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "avg_excess_delay",
+          "direction": "lower",
+          "n": 50,
+          "effect": 0.858024,
+          "low": -0.633427,
+          "high": 2.307577,
+          "wins": 20,
+          "losses": 30,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "open_order_count",
+          "direction": "lower",
+          "n": 50,
+          "effect": -31.14,
+          "low": -79.34,
+          "high": 17.34,
+          "wins": 31,
+          "losses": 19,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "pending_order_count",
+          "direction": "lower",
+          "n": 50,
+          "effect": -30.1,
+          "low": -77.08,
+          "high": 17.38,
+          "wins": 30,
+          "losses": 17,
+          "ties": 3
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "congestion_events",
+          "direction": "lower",
+          "n": 50,
+          "effect": -59.94,
+          "low": -187.36,
+          "high": 70.26,
+          "wins": 32,
+          "losses": 18,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "severe_events",
+          "direction": "lower",
+          "n": 50,
+          "effect": -63.56,
+          "low": -198.82,
+          "high": 74.36,
+          "wins": 31,
+          "losses": 19,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "stall_ratio_mean",
+          "direction": "lower",
+          "n": 50,
+          "effect": -0.003754,
+          "low": -0.023068,
+          "high": 0.014654,
+          "wins": 29,
+          "losses": 21,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "deadlock_ratio_mean",
+          "direction": "lower",
+          "n": 50,
+          "effect": -0.056788,
+          "low": -0.148432,
+          "high": 0.036889,
+          "wins": 30,
+          "losses": 20,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "risk_rate_per_100",
+          "direction": "lower",
+          "n": 50,
+          "effect": -3.996002,
+          "low": -12.490668,
+          "high": 4.683994,
+          "wins": 32,
+          "losses": 18,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "completion_fraction",
+          "direction": "higher",
+          "n": 50,
+          "effect": 0.054295,
+          "low": -0.035076,
+          "high": 0.14194,
+          "wins": 31,
+          "losses": 19,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "final_backlog_total",
+          "direction": "lower",
+          "n": 50,
+          "effect": -61.24,
+          "low": -156.7,
+          "high": 34.62,
+          "wins": 32,
+          "losses": 18,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "final_backlog_fraction",
+          "direction": "lower",
+          "n": 50,
+          "effect": -0.106707,
+          "low": -0.280662,
+          "high": 0.070097,
+          "wins": 32,
+          "losses": 18,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "completed_orders_per_congestion_event",
+          "direction": "higher",
+          "n": 50,
+          "effect": -0.167578,
+          "low": -0.825871,
+          "high": 0.323096,
+          "wins": 32,
+          "losses": 18,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "completed_orders_per_severe_event",
+          "direction": "higher",
+          "n": 50,
+          "effect": -0.326286,
+          "low": -1.702995,
+          "high": 0.656099,
+          "wins": 31,
+          "losses": 19,
+          "ties": 0
+        }
+      ]
+    },
+    "station6": {
+      "label": "Six-station adaptation",
+      "detail": "20×20 · 48 robots · 6 stations · 10 held-out seeds · 1,500 ticks",
+      "aggregate": [
+        {
+          "load": "low",
+          "arm": "ComboS1J1",
+          "n": 10,
+          "values": {
+            "completed_orders": {
+              "mean": 642.1,
+              "std": 56.592314,
+              "n": 10
+            },
+            "completed_tasks": {
+              "mean": 2741.9,
+              "std": 208.879606,
+              "n": 10
+            },
+            "avg_task_duration": {
+              "mean": 35.522326,
+              "std": 0.950266,
+              "n": 10
+            },
+            "avg_excess_delay": {
+              "mean": 22.257398,
+              "std": 0.935701,
+              "n": 10
+            },
+            "open_order_count": {
+              "mean": 31.5,
+              "std": 9.124144,
+              "n": 10
+            },
+            "pending_order_count": {
+              "mean": 2.9,
+              "std": 2.736786,
+              "n": 10
+            },
+            "congestion_events": {
+              "mean": 50.4,
+              "std": 54.514585,
+              "n": 10
+            },
+            "severe_events": {
+              "mean": 25,
+              "std": 36.207734,
+              "n": 10
+            },
+            "stall_ratio_mean": {
+              "mean": 0.016725,
+              "std": 0.005586,
+              "n": 10
+            },
+            "stall_ratio_max": {
+              "mean": 0.139583,
+              "std": 0.033657,
+              "n": 10
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.008524,
+              "std": 0.005099,
+              "n": 10
+            },
+            "deadlock_ratio_max": {
+              "mean": 0.129167,
+              "std": 0.041458,
+              "n": 10
+            },
+            "risk_rate_per_100": {
+              "mean": 3.36001,
+              "std": 3.634307,
+              "n": 10
+            },
+            "wall_time_s": {
+              "mean": 310.887,
+              "std": 63.948757,
+              "n": 10
+            },
+            "assignment_time_ms_mean": {
+              "mean": 152.17687,
+              "std": 14.092088,
+              "n": 10
+            }
+          }
+        },
+        {
+          "load": "low",
+          "arm": "Greedy",
+          "n": 10,
+          "values": {
+            "completed_orders": {
+              "mean": 640.9,
+              "std": 61.920029,
+              "n": 10
+            },
+            "completed_tasks": {
+              "mean": 2751.9,
+              "std": 230.746376,
+              "n": 10
+            },
+            "avg_task_duration": {
+              "mean": 36.552136,
+              "std": 1.329667,
+              "n": 10
+            },
+            "avg_excess_delay": {
+              "mean": 23.12365,
+              "std": 1.249014,
+              "n": 10
+            },
+            "open_order_count": {
+              "mean": 32.7,
+              "std": 5.478138,
+              "n": 10
+            },
+            "pending_order_count": {
+              "mean": 2.3,
+              "std": 1.951922,
+              "n": 10
+            },
+            "congestion_events": {
+              "mean": 135.5,
+              "std": 211.04419,
+              "n": 10
+            },
+            "severe_events": {
+              "mean": 123.3,
+              "std": 207.22261,
+              "n": 10
+            },
+            "stall_ratio_mean": {
+              "mean": 0.021031,
+              "std": 0.015529,
+              "n": 10
+            },
+            "stall_ratio_max": {
+              "mean": 0.15,
+              "std": 0.027639,
+              "n": 10
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.036887,
+              "std": 0.069367,
+              "n": 10
+            },
+            "deadlock_ratio_max": {
+              "mean": 0.24375,
+              "std": 0.232747,
+              "n": 10
+            },
+            "risk_rate_per_100": {
+              "mean": 9.03333,
+              "std": 14.069605,
+              "n": 10
+            },
+            "wall_time_s": {
+              "mean": 123.781,
+              "std": 142.771782,
+              "n": 10
+            }
+          }
+        },
+        {
+          "load": "low",
+          "arm": "Hungarian",
+          "n": 10,
+          "values": {
+            "completed_orders": {
+              "mean": 518.1,
+              "std": 168.648421,
+              "n": 10
+            },
+            "completed_tasks": {
+              "mean": 2334.5,
+              "std": 693.147207,
+              "n": 10
+            },
+            "avg_task_duration": {
+              "mean": 35.104231,
+              "std": 2.764077,
+              "n": 10
+            },
+            "avg_excess_delay": {
+              "mean": 21.879197,
+              "std": 2.602058,
+              "n": 10
+            },
+            "open_order_count": {
+              "mean": 155.5,
+              "std": 157.632643,
+              "n": 10
+            },
+            "pending_order_count": {
+              "mean": 127.1,
+              "std": 155.433233,
+              "n": 10
+            },
+            "congestion_events": {
+              "mean": 422.7,
+              "std": 500.31671,
+              "n": 10
+            },
+            "severe_events": {
+              "mean": 401.8,
+              "std": 499.879345,
+              "n": 10
+            },
+            "stall_ratio_mean": {
+              "mean": 0.047143,
+              "std": 0.048913,
+              "n": 10
+            },
+            "stall_ratio_max": {
+              "mean": 0.177083,
+              "std": 0.039802,
+              "n": 10
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.188909,
+              "std": 0.244014,
+              "n": 10
+            },
+            "deadlock_ratio_max": {
+              "mean": 0.485416,
+              "std": 0.388758,
+              "n": 10
+            },
+            "risk_rate_per_100": {
+              "mean": 28.18001,
+              "std": 33.354454,
+              "n": 10
+            },
+            "wall_time_s": {
+              "mean": 293.521,
+              "std": 349.908837,
+              "n": 10
+            }
+          }
+        },
+        {
+          "load": "low",
+          "arm": "WM-Base",
+          "n": 10,
+          "values": {
+            "completed_orders": {
+              "mean": 640.7,
+              "std": 57.963868,
+              "n": 10
+            },
+            "completed_tasks": {
+              "mean": 2722,
+              "std": 215.869868,
+              "n": 10
+            },
+            "avg_task_duration": {
+              "mean": 35.69687,
+              "std": 0.888602,
+              "n": 10
+            },
+            "avg_excess_delay": {
+              "mean": 22.34213,
+              "std": 0.821933,
+              "n": 10
+            },
+            "open_order_count": {
+              "mean": 32.9,
+              "std": 9.027181,
+              "n": 10
+            },
+            "pending_order_count": {
+              "mean": 4,
+              "std": 3.768289,
+              "n": 10
+            },
+            "congestion_events": {
+              "mean": 227.3,
+              "std": 256.540465,
+              "n": 10
+            },
+            "severe_events": {
+              "mean": 94,
+              "std": 95.878048,
+              "n": 10
+            },
+            "stall_ratio_mean": {
+              "mean": 0.03546,
+              "std": 0.019467,
+              "n": 10
+            },
+            "stall_ratio_max": {
+              "mean": 0.185417,
+              "std": 0.036622,
+              "n": 10
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.028336,
+              "std": 0.019783,
+              "n": 10
+            },
+            "deadlock_ratio_max": {
+              "mean": 0.1875,
+              "std": 0.098601,
+              "n": 10
+            },
+            "risk_rate_per_100": {
+              "mean": 15.15333,
+              "std": 17.102681,
+              "n": 10
+            },
+            "wall_time_s": {
+              "mean": 471.782,
+              "std": 211.717729,
+              "n": 10
+            },
+            "assignment_time_ms_mean": {
+              "mean": 132.88286,
+              "std": 13.058686,
+              "n": 10
+            }
+          }
+        },
+        {
+          "load": "mid",
+          "arm": "ComboS1J1",
+          "n": 10,
+          "values": {
+            "completed_orders": {
+              "mean": 594.1,
+              "std": 197.862301,
+              "n": 10
+            },
+            "completed_tasks": {
+              "mean": 2514.6,
+              "std": 749.975493,
+              "n": 10
+            },
+            "avg_task_duration": {
+              "mean": 35.607823,
+              "std": 2.046772,
+              "n": 10
+            },
+            "avg_excess_delay": {
+              "mean": 22.162287,
+              "std": 2.004491,
+              "n": 10
+            },
+            "open_order_count": {
+              "mean": 92.1,
+              "std": 124.076952,
+              "n": 10
+            },
+            "pending_order_count": {
+              "mean": 61,
+              "std": 123.435003,
+              "n": 10
+            },
+            "congestion_events": {
+              "mean": 340.8,
+              "std": 519.304496,
+              "n": 10
+            },
+            "severe_events": {
+              "mean": 296.4,
+              "std": 533.725997,
+              "n": 10
+            },
+            "stall_ratio_mean": {
+              "mean": 0.039233,
+              "std": 0.035976,
+              "n": 10
+            },
+            "stall_ratio_max": {
+              "mean": 0.160417,
+              "std": 0.033657,
+              "n": 10
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.13673,
+              "std": 0.243416,
+              "n": 10
+            },
+            "deadlock_ratio_max": {
+              "mean": 0.320833,
+              "std": 0.310158,
+              "n": 10
+            },
+            "risk_rate_per_100": {
+              "mean": 22.72001,
+              "std": 34.620304,
+              "n": 10
+            },
+            "wall_time_s": {
+              "mean": 463.05,
+              "std": 291.362321,
+              "n": 10
+            },
+            "assignment_time_ms_mean": {
+              "mean": 118.80996,
+              "std": 31.743462,
+              "n": 10
+            }
+          }
+        },
+        {
+          "load": "mid",
+          "arm": "Greedy",
+          "n": 10,
+          "values": {
+            "completed_orders": {
+              "mean": 608.5,
+              "std": 222.17977,
+              "n": 10
+            },
+            "completed_tasks": {
+              "mean": 2585.1,
+              "std": 879.802302,
+              "n": 10
+            },
+            "avg_task_duration": {
+              "mean": 36.440043,
+              "std": 2.376772,
+              "n": 10
+            },
+            "avg_excess_delay": {
+              "mean": 22.983354,
+              "std": 2.181121,
+              "n": 10
+            },
+            "open_order_count": {
+              "mean": 77.7,
+              "std": 80.919775,
+              "n": 10
+            },
+            "pending_order_count": {
+              "mean": 44.9,
+              "std": 82.522058,
+              "n": 10
+            },
+            "congestion_events": {
+              "mean": 321.1,
+              "std": 533.114894,
+              "n": 10
+            },
+            "severe_events": {
+              "mean": 302.9,
+              "std": 538.455281,
+              "n": 10
+            },
+            "stall_ratio_mean": {
+              "mean": 0.056881,
+              "std": 0.082543,
+              "n": 10
+            },
+            "stall_ratio_max": {
+              "mean": 0.166667,
+              "std": 0.074536,
+              "n": 10
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.149401,
+              "std": 0.281942,
+              "n": 10
+            },
+            "deadlock_ratio_max": {
+              "mean": 0.308333,
+              "std": 0.341285,
+              "n": 10
+            },
+            "risk_rate_per_100": {
+              "mean": 21.40666,
+              "std": 35.540988,
+              "n": 10
+            },
+            "wall_time_s": {
+              "mean": 255.225,
+              "std": 408.534235,
+              "n": 10
+            }
+          }
+        },
+        {
+          "load": "mid",
+          "arm": "Hungarian",
+          "n": 10,
+          "values": {
+            "completed_orders": {
+              "mean": 543.1,
+              "std": 180.199584,
+              "n": 10
+            },
+            "completed_tasks": {
+              "mean": 2596.2,
+              "std": 668.803678,
+              "n": 10
+            },
+            "avg_task_duration": {
+              "mean": 36.329265,
+              "std": 2.900674,
+              "n": 10
+            },
+            "avg_excess_delay": {
+              "mean": 23.130654,
+              "std": 2.841192,
+              "n": 10
+            },
+            "open_order_count": {
+              "mean": 143.1,
+              "std": 172.995058,
+              "n": 10
+            },
+            "pending_order_count": {
+              "mean": 121.7,
+              "std": 177.612528,
+              "n": 10
+            },
+            "congestion_events": {
+              "mean": 244.6,
+              "std": 304.500969,
+              "n": 10
+            },
+            "severe_events": {
+              "mean": 215.8,
+              "std": 302.97089,
+              "n": 10
+            },
+            "stall_ratio_mean": {
+              "mean": 0.035942,
+              "std": 0.048137,
+              "n": 10
+            },
+            "stall_ratio_max": {
+              "mean": 0.189583,
+              "std": 0.067475,
+              "n": 10
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.088232,
+              "std": 0.187023,
+              "n": 10
+            },
+            "deadlock_ratio_max": {
+              "mean": 0.39375,
+              "std": 0.248336,
+              "n": 10
+            },
+            "risk_rate_per_100": {
+              "mean": 16.30667,
+              "std": 20.300057,
+              "n": 10
+            },
+            "wall_time_s": {
+              "mean": 213.218,
+              "std": 322.683878,
+              "n": 10
+            }
+          }
+        },
+        {
+          "load": "mid",
+          "arm": "WM-Base",
+          "n": 10,
+          "values": {
+            "completed_orders": {
+              "mean": 609.8,
+              "std": 169.067915,
+              "n": 10
+            },
+            "completed_tasks": {
+              "mean": 2563.3,
+              "std": 631.475581,
+              "n": 10
+            },
+            "avg_task_duration": {
+              "mean": 37.383322,
+              "std": 4.290322,
+              "n": 10
+            },
+            "avg_excess_delay": {
+              "mean": 23.920626,
+              "std": 4.340272,
+              "n": 10
+            },
+            "open_order_count": {
+              "mean": 76.4,
+              "std": 125.060146,
+              "n": 10
+            },
+            "pending_order_count": {
+              "mean": 46.7,
+              "std": 124.493413,
+              "n": 10
+            },
+            "congestion_events": {
+              "mean": 269.8,
+              "std": 404.954269,
+              "n": 10
+            },
+            "severe_events": {
+              "mean": 245.2,
+              "std": 397.044532,
+              "n": 10
+            },
+            "stall_ratio_mean": {
+              "mean": 0.041674,
+              "std": 0.042323,
+              "n": 10
+            },
+            "stall_ratio_max": {
+              "mean": 0.20625,
+              "std": 0.148911,
+              "n": 10
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.090725,
+              "std": 0.187733,
+              "n": 10
+            },
+            "deadlock_ratio_max": {
+              "mean": 0.279167,
+              "std": 0.277826,
+              "n": 10
+            },
+            "risk_rate_per_100": {
+              "mean": 17.98666,
+              "std": 26.996952,
+              "n": 10
+            },
+            "wall_time_s": {
+              "mean": 477.94,
+              "std": 426.996871,
+              "n": 10
+            },
+            "assignment_time_ms_mean": {
+              "mean": 115.83788,
+              "std": 43.288775,
+              "n": 10
+            }
+          }
+        },
+        {
+          "load": "high",
+          "arm": "ComboS1J1",
+          "n": 10,
+          "values": {
+            "completed_orders": {
+              "mean": 696.6,
+              "std": 55.210868,
+              "n": 10
+            },
+            "completed_tasks": {
+              "mean": 2929.5,
+              "std": 142.065654,
+              "n": 10
+            },
+            "avg_task_duration": {
+              "mean": 36.722398,
+              "std": 1.413217,
+              "n": 10
+            },
+            "avg_excess_delay": {
+              "mean": 23.224139,
+              "std": 1.282016,
+              "n": 10
+            },
+            "open_order_count": {
+              "mean": 34.3,
+              "std": 9.413288,
+              "n": 10
+            },
+            "pending_order_count": {
+              "mean": 4,
+              "std": 2.898275,
+              "n": 10
+            },
+            "congestion_events": {
+              "mean": 125.9,
+              "std": 138.341931,
+              "n": 10
+            },
+            "severe_events": {
+              "mean": 79.7,
+              "std": 84.261557,
+              "n": 10
+            },
+            "stall_ratio_mean": {
+              "mean": 0.029372,
+              "std": 0.01617,
+              "n": 10
+            },
+            "stall_ratio_max": {
+              "mean": 0.160416,
+              "std": 0.026435,
+              "n": 10
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.022719,
+              "std": 0.015962,
+              "n": 10
+            },
+            "deadlock_ratio_max": {
+              "mean": 0.164583,
+              "std": 0.02543,
+              "n": 10
+            },
+            "risk_rate_per_100": {
+              "mean": 8.39333,
+              "std": 9.222783,
+              "n": 10
+            },
+            "wall_time_s": {
+              "mean": 358.163,
+              "std": 181.807191,
+              "n": 10
+            },
+            "assignment_time_ms_mean": {
+              "mean": 104.80063,
+              "std": 17.074934,
+              "n": 10
+            }
+          }
+        },
+        {
+          "load": "high",
+          "arm": "Greedy",
+          "n": 10,
+          "values": {
+            "completed_orders": {
+              "mean": 667.4,
+              "std": 107.235442,
+              "n": 10
+            },
+            "completed_tasks": {
+              "mean": 2830.8,
+              "std": 425.398119,
+              "n": 10
+            },
+            "avg_task_duration": {
+              "mean": 37.853365,
+              "std": 1.317865,
+              "n": 10
+            },
+            "avg_excess_delay": {
+              "mean": 24.126618,
+              "std": 1.293853,
+              "n": 10
+            },
+            "open_order_count": {
+              "mean": 63.5,
+              "std": 47.415715,
+              "n": 10
+            },
+            "pending_order_count": {
+              "mean": 30.5,
+              "std": 47.710062,
+              "n": 10
+            },
+            "congestion_events": {
+              "mean": 248.6,
+              "std": 325.358633,
+              "n": 10
+            },
+            "severe_events": {
+              "mean": 222.5,
+              "std": 331.800618,
+              "n": 10
+            },
+            "stall_ratio_mean": {
+              "mean": 0.025854,
+              "std": 0.014377,
+              "n": 10
+            },
+            "stall_ratio_max": {
+              "mean": 0.147917,
+              "std": 0.028641,
+              "n": 10
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.089417,
+              "std": 0.142866,
+              "n": 10
+            },
+            "deadlock_ratio_max": {
+              "mean": 0.370833,
+              "std": 0.341412,
+              "n": 10
+            },
+            "risk_rate_per_100": {
+              "mean": 16.57333,
+              "std": 21.690572,
+              "n": 10
+            },
+            "wall_time_s": {
+              "mean": 128.888,
+              "std": 130.950804,
+              "n": 10
+            }
+          }
+        },
+        {
+          "load": "high",
+          "arm": "Hungarian",
+          "n": 10,
+          "values": {
+            "completed_orders": {
+              "mean": 504.9,
+              "std": 138.603355,
+              "n": 10
+            },
+            "completed_tasks": {
+              "mean": 2795.9,
+              "std": 356.445353,
+              "n": 10
+            },
+            "avg_task_duration": {
+              "mean": 37.715169,
+              "std": 2.340993,
+              "n": 10
+            },
+            "avg_excess_delay": {
+              "mean": 24.435402,
+              "std": 2.312667,
+              "n": 10
+            },
+            "open_order_count": {
+              "mean": 226,
+              "std": 161.572894,
+              "n": 10
+            },
+            "pending_order_count": {
+              "mean": 204.4,
+              "std": 165.865729,
+              "n": 10
+            },
+            "congestion_events": {
+              "mean": 277,
+              "std": 269.768049,
+              "n": 10
+            },
+            "severe_events": {
+              "mean": 239.5,
+              "std": 261.06369,
+              "n": 10
+            },
+            "stall_ratio_mean": {
+              "mean": 0.03766,
+              "std": 0.035067,
+              "n": 10
+            },
+            "stall_ratio_max": {
+              "mean": 0.18125,
+              "std": 0.059694,
+              "n": 10
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.090364,
+              "std": 0.132435,
+              "n": 10
+            },
+            "deadlock_ratio_max": {
+              "mean": 0.429167,
+              "std": 0.356268,
+              "n": 10
+            },
+            "risk_rate_per_100": {
+              "mean": 18.46667,
+              "std": 17.984527,
+              "n": 10
+            },
+            "wall_time_s": {
+              "mean": 216.439,
+              "std": 227.065587,
+              "n": 10
+            }
+          }
+        },
+        {
+          "load": "high",
+          "arm": "WM-Base",
+          "n": 10,
+          "values": {
+            "completed_orders": {
+              "mean": 620,
+              "std": 147.881709,
+              "n": 10
+            },
+            "completed_tasks": {
+              "mean": 2610.8,
+              "std": 596.575192,
+              "n": 10
+            },
+            "avg_task_duration": {
+              "mean": 36.540572,
+              "std": 2.185394,
+              "n": 10
+            },
+            "avg_excess_delay": {
+              "mean": 23.04079,
+              "std": 2.088561,
+              "n": 10
+            },
+            "open_order_count": {
+              "mean": 110.9,
+              "std": 157.012388,
+              "n": 10
+            },
+            "pending_order_count": {
+              "mean": 81.4,
+              "std": 153.775291,
+              "n": 10
+            },
+            "congestion_events": {
+              "mean": 301.6,
+              "std": 392.992672,
+              "n": 10
+            },
+            "severe_events": {
+              "mean": 258,
+              "std": 401.716567,
+              "n": 10
+            },
+            "stall_ratio_mean": {
+              "mean": 0.032265,
+              "std": 0.030643,
+              "n": 10
+            },
+            "stall_ratio_max": {
+              "mean": 0.152083,
+              "std": 0.034923,
+              "n": 10
+            },
+            "deadlock_ratio_mean": {
+              "mean": 0.125103,
+              "std": 0.22363,
+              "n": 10
+            },
+            "deadlock_ratio_max": {
+              "mean": 0.335417,
+              "std": 0.328275,
+              "n": 10
+            },
+            "risk_rate_per_100": {
+              "mean": 20.10665,
+              "std": 26.199502,
+              "n": 10
+            },
+            "wall_time_s": {
+              "mean": 358.341,
+              "std": 209.836029,
+              "n": 10
+            },
+            "assignment_time_ms_mean": {
+              "mean": 99.21838,
+              "std": 36.624359,
+              "n": 10
+            }
+          }
+        }
+      ],
+      "paired": [
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "completed_orders",
+          "direction": "higher",
+          "n": 10,
+          "effect": 1.2,
+          "low": -3.7,
+          "high": 8.2,
+          "wins": 2,
+          "losses": 4,
+          "ties": 4
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "completed_tasks",
+          "direction": "higher",
+          "n": 10,
+          "effect": -10,
+          "low": -31.9,
+          "high": 21.1,
+          "wins": 1,
+          "losses": 9,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "avg_task_duration",
+          "direction": "lower",
+          "n": 10,
+          "effect": -1.029811,
+          "low": -2.31494,
+          "high": -0.148314,
+          "wins": 8,
+          "losses": 2,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "avg_excess_delay",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.866252,
+          "low": -2.048649,
+          "high": -0.058162,
+          "wins": 8,
+          "losses": 2,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "open_order_count",
+          "direction": "lower",
+          "n": 10,
+          "effect": -1.2,
+          "low": -8.2,
+          "high": 3.7,
+          "wins": 2,
+          "losses": 4,
+          "ties": 4
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "pending_order_count",
+          "direction": "lower",
+          "n": 10,
+          "effect": 0.6,
+          "low": -1.9,
+          "high": 3.1,
+          "wins": 3,
+          "losses": 5,
+          "ties": 2
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "stall_ratio_mean",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.004306,
+          "low": -0.016512,
+          "high": 0.00406,
+          "wins": 7,
+          "losses": 3,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "stall_ratio_max",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.010416,
+          "low": -0.035417,
+          "high": 0.016667,
+          "wins": 5,
+          "losses": 2,
+          "ties": 3
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "deadlock_ratio_mean",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.028364,
+          "low": -0.075358,
+          "high": 0.001567,
+          "wins": 6,
+          "losses": 4,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "deadlock_ratio_max",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.114583,
+          "low": -0.266667,
+          "high": -0.002083,
+          "wins": 5,
+          "losses": 4,
+          "ties": 1
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "congestion_events",
+          "direction": "lower",
+          "n": 10,
+          "effect": -85.1,
+          "low": -230.7,
+          "high": 28.8,
+          "wins": 7,
+          "losses": 3,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "severe_events",
+          "direction": "lower",
+          "n": 10,
+          "effect": -98.3,
+          "low": -234.4,
+          "high": 5.2,
+          "wins": 6,
+          "losses": 3,
+          "ties": 1
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "risk_rate_per_100",
+          "direction": "lower",
+          "n": 10,
+          "effect": -5.67332,
+          "low": -15.37998,
+          "high": 1.92,
+          "wins": 7,
+          "losses": 3,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "wall_time_s",
+          "direction": "lower",
+          "n": 10,
+          "effect": 187.106,
+          "low": 107.465,
+          "high": 257.33,
+          "wins": 1,
+          "losses": 9,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "completed_orders",
+          "direction": "higher",
+          "n": 10,
+          "effect": 1.4,
+          "low": -1.8,
+          "high": 4.7,
+          "wins": 6,
+          "losses": 3,
+          "ties": 1
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "completed_tasks",
+          "direction": "higher",
+          "n": 10,
+          "effect": 19.9,
+          "low": -4.6,
+          "high": 44.8,
+          "wins": 7,
+          "losses": 3,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "avg_task_duration",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.174545,
+          "low": -0.864479,
+          "high": 0.517593,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "avg_excess_delay",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.084732,
+          "low": -0.730064,
+          "high": 0.573281,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "open_order_count",
+          "direction": "lower",
+          "n": 10,
+          "effect": -1.4,
+          "low": -4.7,
+          "high": 1.8,
+          "wins": 6,
+          "losses": 3,
+          "ties": 1
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "pending_order_count",
+          "direction": "lower",
+          "n": 10,
+          "effect": -1.1,
+          "low": -3.3,
+          "high": 0.8,
+          "wins": 3,
+          "losses": 3,
+          "ties": 4
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "stall_ratio_mean",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.018735,
+          "low": -0.030715,
+          "high": -0.008039,
+          "wins": 9,
+          "losses": 1,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "stall_ratio_max",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.045833,
+          "low": -0.06875,
+          "high": -0.020833,
+          "wins": 8,
+          "losses": 1,
+          "ties": 1
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "deadlock_ratio_mean",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.019813,
+          "low": -0.031543,
+          "high": -0.008703,
+          "wins": 10,
+          "losses": 0,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "deadlock_ratio_max",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.058333,
+          "low": -0.133333,
+          "high": -0.00625,
+          "wins": 8,
+          "losses": 2,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "congestion_events",
+          "direction": "lower",
+          "n": 10,
+          "effect": -176.9,
+          "low": -351.4,
+          "high": -48.5,
+          "wins": 8,
+          "losses": 1,
+          "ties": 1
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "severe_events",
+          "direction": "lower",
+          "n": 10,
+          "effect": -69,
+          "low": -123.4,
+          "high": -21.7,
+          "wins": 9,
+          "losses": 1,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "risk_rate_per_100",
+          "direction": "lower",
+          "n": 10,
+          "effect": -11.79332,
+          "low": -23.42665,
+          "high": -3.23332,
+          "wins": 8,
+          "losses": 1,
+          "ties": 1
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "assignment_time_ms_mean",
+          "direction": "lower",
+          "n": 10,
+          "effect": 19.29401,
+          "low": 13.35569,
+          "high": 25.22443,
+          "wins": 0,
+          "losses": 10,
+          "ties": 0
+        },
+        {
+          "load": "low",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "wall_time_s",
+          "direction": "lower",
+          "n": 10,
+          "effect": -160.895,
+          "low": -286.691,
+          "high": -48.41,
+          "wins": 8,
+          "losses": 2,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "completed_orders",
+          "direction": "higher",
+          "n": 10,
+          "effect": -14.4,
+          "low": -117.9,
+          "high": 71,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "completed_tasks",
+          "direction": "higher",
+          "n": 10,
+          "effect": -70.5,
+          "low": -516.6,
+          "high": 317.5,
+          "wins": 3,
+          "losses": 7,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "avg_task_duration",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.83222,
+          "low": -1.642081,
+          "high": 0.06444,
+          "wins": 7,
+          "losses": 3,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "avg_excess_delay",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.821067,
+          "low": -1.579182,
+          "high": -0.017361,
+          "wins": 6,
+          "losses": 4,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "open_order_count",
+          "direction": "lower",
+          "n": 10,
+          "effect": 14.4,
+          "low": -71,
+          "high": 117.9,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "pending_order_count",
+          "direction": "lower",
+          "n": 10,
+          "effect": 16.1,
+          "low": -65.8,
+          "high": 117.9,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "stall_ratio_mean",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.017647,
+          "low": -0.071961,
+          "high": 0.023148,
+          "wins": 7,
+          "losses": 3,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "stall_ratio_max",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.00625,
+          "low": -0.052083,
+          "high": 0.033333,
+          "wins": 3,
+          "losses": 5,
+          "ties": 2
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "deadlock_ratio_mean",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.012671,
+          "low": -0.212203,
+          "high": 0.174396,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "deadlock_ratio_max",
+          "direction": "lower",
+          "n": 10,
+          "effect": 0.0125,
+          "low": -0.227083,
+          "high": 0.235416,
+          "wins": 2,
+          "losses": 6,
+          "ties": 2
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "congestion_events",
+          "direction": "lower",
+          "n": 10,
+          "effect": 19.7,
+          "low": -355.1,
+          "high": 377,
+          "wins": 2,
+          "losses": 8,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "severe_events",
+          "direction": "lower",
+          "n": 10,
+          "effect": -6.5,
+          "low": -388.5,
+          "high": 367.1,
+          "wins": 4,
+          "losses": 5,
+          "ties": 1
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "risk_rate_per_100",
+          "direction": "lower",
+          "n": 10,
+          "effect": 1.31335,
+          "low": -23.67333,
+          "high": 25.13337,
+          "wins": 2,
+          "losses": 8,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "wall_time_s",
+          "direction": "lower",
+          "n": 10,
+          "effect": 207.825,
+          "low": 20.077,
+          "high": 380.285,
+          "wins": 2,
+          "losses": 8,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "completed_orders",
+          "direction": "higher",
+          "n": 10,
+          "effect": -15.7,
+          "low": -132.6,
+          "high": 106.4,
+          "wins": 4,
+          "losses": 4,
+          "ties": 2
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "completed_tasks",
+          "direction": "higher",
+          "n": 10,
+          "effect": -48.7,
+          "low": -525.7,
+          "high": 453.2,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "avg_task_duration",
+          "direction": "lower",
+          "n": 10,
+          "effect": -1.775499,
+          "low": -5.719361,
+          "high": 0.851305,
+          "wins": 6,
+          "losses": 4,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "avg_excess_delay",
+          "direction": "lower",
+          "n": 10,
+          "effect": -1.758338,
+          "low": -5.702514,
+          "high": 0.867396,
+          "wins": 6,
+          "losses": 4,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "open_order_count",
+          "direction": "lower",
+          "n": 10,
+          "effect": 15.7,
+          "low": -106.4,
+          "high": 132.6,
+          "wins": 4,
+          "losses": 4,
+          "ties": 2
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "pending_order_count",
+          "direction": "lower",
+          "n": 10,
+          "effect": 14.3,
+          "low": -108.7,
+          "high": 130,
+          "wins": 5,
+          "losses": 3,
+          "ties": 2
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "stall_ratio_mean",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.00244,
+          "low": -0.030193,
+          "high": 0.022096,
+          "wins": 6,
+          "losses": 4,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "stall_ratio_max",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.045833,
+          "low": -0.147917,
+          "high": 0.022916,
+          "wins": 5,
+          "losses": 4,
+          "ties": 1
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "deadlock_ratio_mean",
+          "direction": "lower",
+          "n": 10,
+          "effect": 0.046005,
+          "low": -0.13897,
+          "high": 0.22704,
+          "wins": 4,
+          "losses": 6,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "deadlock_ratio_max",
+          "direction": "lower",
+          "n": 10,
+          "effect": 0.041667,
+          "low": -0.208333,
+          "high": 0.260416,
+          "wins": 2,
+          "losses": 5,
+          "ties": 3
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "congestion_events",
+          "direction": "lower",
+          "n": 10,
+          "effect": 71,
+          "low": -288.9,
+          "high": 411.4,
+          "wins": 4,
+          "losses": 6,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "severe_events",
+          "direction": "lower",
+          "n": 10,
+          "effect": 51.2,
+          "low": -306.3,
+          "high": 409.6,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "risk_rate_per_100",
+          "direction": "lower",
+          "n": 10,
+          "effect": 4.73335,
+          "low": -19.25999,
+          "high": 27.42669,
+          "wins": 4,
+          "losses": 6,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "assignment_time_ms_mean",
+          "direction": "lower",
+          "n": 10,
+          "effect": 2.97208,
+          "low": -21.06294,
+          "high": 28.82941,
+          "wins": 4,
+          "losses": 6,
+          "ties": 0
+        },
+        {
+          "load": "mid",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "wall_time_s",
+          "direction": "lower",
+          "n": 10,
+          "effect": -14.89,
+          "low": -170.435,
+          "high": 135.212,
+          "wins": 4,
+          "losses": 6,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "completed_orders",
+          "direction": "higher",
+          "n": 10,
+          "effect": 29.2,
+          "low": 1.2,
+          "high": 66.4,
+          "wins": 7,
+          "losses": 2,
+          "ties": 1
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "completed_tasks",
+          "direction": "higher",
+          "n": 10,
+          "effect": 98.7,
+          "low": -57.5,
+          "high": 301.7,
+          "wins": 3,
+          "losses": 7,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "avg_task_duration",
+          "direction": "lower",
+          "n": 10,
+          "effect": -1.130967,
+          "low": -1.674702,
+          "high": -0.599734,
+          "wins": 9,
+          "losses": 1,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "avg_excess_delay",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.902479,
+          "low": -1.320829,
+          "high": -0.476866,
+          "wins": 8,
+          "losses": 2,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "open_order_count",
+          "direction": "lower",
+          "n": 10,
+          "effect": -29.2,
+          "low": -66.4,
+          "high": -1.2,
+          "wins": 7,
+          "losses": 2,
+          "ties": 1
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "pending_order_count",
+          "direction": "lower",
+          "n": 10,
+          "effect": -26.5,
+          "low": -61.6,
+          "high": -0.9,
+          "wins": 6,
+          "losses": 3,
+          "ties": 1
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "stall_ratio_mean",
+          "direction": "lower",
+          "n": 10,
+          "effect": 0.003518,
+          "low": -0.003799,
+          "high": 0.011444,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "stall_ratio_max",
+          "direction": "lower",
+          "n": 10,
+          "effect": 0.0125,
+          "low": -1e-06,
+          "high": 0.025,
+          "wins": 2,
+          "losses": 6,
+          "ties": 2
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "deadlock_ratio_mean",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.066697,
+          "low": -0.160154,
+          "high": 0.004221,
+          "wins": 4,
+          "losses": 6,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "deadlock_ratio_max",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.20625,
+          "low": -0.439584,
+          "high": 0.004167,
+          "wins": 5,
+          "losses": 4,
+          "ties": 1
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "congestion_events",
+          "direction": "lower",
+          "n": 10,
+          "effect": -122.7,
+          "low": -272.3,
+          "high": 6.4,
+          "wins": 6,
+          "losses": 4,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "severe_events",
+          "direction": "lower",
+          "n": 10,
+          "effect": -142.8,
+          "low": -324.9,
+          "high": 6.5,
+          "wins": 4,
+          "losses": 5,
+          "ties": 1
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "risk_rate_per_100",
+          "direction": "lower",
+          "n": 10,
+          "effect": -8.18,
+          "low": -18.15334,
+          "high": 0.42668,
+          "wins": 6,
+          "losses": 4,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "Greedy",
+          "metric": "wall_time_s",
+          "direction": "lower",
+          "n": 10,
+          "effect": 229.275,
+          "low": 164.078,
+          "high": 301.977,
+          "wins": 0,
+          "losses": 10,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "completed_orders",
+          "direction": "higher",
+          "n": 10,
+          "effect": 76.6,
+          "low": -0.4,
+          "high": 187.6,
+          "wins": 5,
+          "losses": 4,
+          "ties": 1
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "completed_tasks",
+          "direction": "higher",
+          "n": 10,
+          "effect": 318.7,
+          "low": -4,
+          "high": 772.9,
+          "wins": 7,
+          "losses": 3,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "avg_task_duration",
+          "direction": "lower",
+          "n": 10,
+          "effect": 0.181826,
+          "low": -0.5398,
+          "high": 1.071077,
+          "wins": 7,
+          "losses": 3,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "avg_excess_delay",
+          "direction": "lower",
+          "n": 10,
+          "effect": 0.183348,
+          "low": -0.539605,
+          "high": 1.059064,
+          "wins": 7,
+          "losses": 3,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "open_order_count",
+          "direction": "lower",
+          "n": 10,
+          "effect": -76.6,
+          "low": -187.6,
+          "high": 0.4,
+          "wins": 5,
+          "losses": 4,
+          "ties": 1
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "pending_order_count",
+          "direction": "lower",
+          "n": 10,
+          "effect": -77.4,
+          "low": -189,
+          "high": -0.7,
+          "wins": 5,
+          "losses": 2,
+          "ties": 3
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "stall_ratio_mean",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.002893,
+          "low": -0.0234,
+          "high": 0.014887,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "stall_ratio_max",
+          "direction": "lower",
+          "n": 10,
+          "effect": 0.008333,
+          "low": -0.00625,
+          "high": 0.022917,
+          "wins": 1,
+          "losses": 4,
+          "ties": 5
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "deadlock_ratio_mean",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.102383,
+          "low": -0.262364,
+          "high": 0.013692,
+          "wins": 6,
+          "losses": 4,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "deadlock_ratio_max",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.170833,
+          "low": -0.4125,
+          "high": 0.002083,
+          "wins": 4,
+          "losses": 2,
+          "ties": 4
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "congestion_events",
+          "direction": "lower",
+          "n": 10,
+          "effect": -175.7,
+          "low": -478.5,
+          "high": 56.8,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "severe_events",
+          "direction": "lower",
+          "n": 10,
+          "effect": -178.3,
+          "low": -479.2,
+          "high": 50.3,
+          "wins": 4,
+          "losses": 6,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "risk_rate_per_100",
+          "direction": "lower",
+          "n": 10,
+          "effect": -11.71332,
+          "low": -31.89998,
+          "high": 3.78667,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "assignment_time_ms_mean",
+          "direction": "lower",
+          "n": 10,
+          "effect": 5.58225,
+          "low": -11.53309,
+          "high": 24.38887,
+          "wins": 4,
+          "losses": 6,
+          "ties": 0
+        },
+        {
+          "load": "high",
+          "proposed": "ComboS1J1",
+          "baseline": "WM-Base",
+          "metric": "wall_time_s",
+          "direction": "lower",
+          "n": 10,
+          "effect": -0.178,
+          "low": -127.479,
+          "high": 126.303,
+          "wins": 5,
+          "losses": 5,
+          "ties": 0
+        }
+      ]
+    }
+  }
+}

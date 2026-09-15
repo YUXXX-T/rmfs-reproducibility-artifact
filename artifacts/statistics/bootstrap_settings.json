@@ -1,0 +1,8 @@
+{
+  "schema_version": "paired_bootstrap_settings_v1",
+  "unit": "paired simulation seed within one load",
+  "statistic": "mean(proposed - baseline)",
+  "iterations": 10000,
+  "seed": 20260905,
+  "interval": "percentile 2.5% and 97.5%"
+}

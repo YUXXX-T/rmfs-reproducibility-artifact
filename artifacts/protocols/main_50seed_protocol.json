@@ -1,0 +1,99 @@
+{
+  "schema_version": "phase_c_physical_only_pp_50seed_protocol_v1",
+  "protocol": {
+    "variant": "map20_r48_s4",
+    "map_rows": 20,
+    "map_cols": 20,
+    "num_robots": 48,
+    "num_stations": 4,
+    "planner": "PP",
+    "station_admission": "physical_only_legacy",
+    "loads": [
+      "low",
+      "mid",
+      "high"
+    ],
+    "seeds": [
+      900,
+      901,
+      902,
+      903,
+      904,
+      905,
+      906,
+      907,
+      908,
+      909,
+      910,
+      911,
+      912,
+      913,
+      914,
+      915,
+      916,
+      917,
+      918,
+      919,
+      920,
+      921,
+      922,
+      923,
+      924,
+      925,
+      926,
+      927,
+      928,
+      929,
+      930,
+      931,
+      932,
+      933,
+      934,
+      935,
+      936,
+      937,
+      938,
+      939,
+      940,
+      941,
+      942,
+      943,
+      944,
+      945,
+      946,
+      947,
+      948,
+      949
+    ],
+    "ticks": 1500,
+    "arms": [
+      "Greedy",
+      "Hungarian",
+      "JSQ",
+      "PhaseC",
+      "ComboS1J1"
+    ],
+    "manifest_source": "GreedyTaskAssigner",
+    "exact_manifest_replay": true,
+    "checkpoint": {
+      "path": "WorldModel/checkpoints/phaseC_wm_onpolicy_longrisk_head_repair_681_700_v1/training/long_risk_head_only_v1/best_long_risk_world_model.pt"
+    },
+    "psi_head": {
+      "path": "WorldModel/checkpoints/phaseC_wm_onpolicy_longrisk_head_repair_681_700_v1/training/station_head_rebound_v1/best_station_congestion_head.pt"
+    },
+    "psi_scale_contract": {
+      "path": "WorldModel/checkpoints/phaseC_wm_onpolicy_round1_v1/station_congestion_head_region_dev_511_520_v1/station_congestion_scale_contract.json"
+    },
+    "configs": {
+      "low": {
+        "path": "Config/world_model_config_PP_48_low.json"
+      },
+      "mid": {
+        "path": "Config/world_model_config_PP_48_mid.json"
+      },
+      "high": {
+        "path": "Config/world_model_config_PP_48_high.json"
+      }
+    }
+  }
+}

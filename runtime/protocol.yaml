@@ -1,0 +1,12 @@
+schema_version: runtime_protocol_v1
+source: same online evaluation runs as outcome metrics
+ticks_per_run: 1500
+fields:
+  wall_time_s:
+    scope: whole arm run
+    includes: [simulator, dispatch, path_planning, inference, process_scheduling]
+  assignment_time_ms_mean:
+    scope: mean measured assignment call within run
+    missing_values: preserved_not_zero_imputed
+aggregation: [count_non_missing, arithmetic_mean, population_standard_deviation]
+hardware_normalized: false

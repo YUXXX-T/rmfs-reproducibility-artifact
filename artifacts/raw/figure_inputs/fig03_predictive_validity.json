@@ -1,0 +1,138 @@
+{
+  "rollout_depth_spearman": [
+    {
+      "horizon": 10,
+      "channel": "Stall ratio",
+      "spearman": 0.8463337032926378
+    },
+    {
+      "horizon": 10,
+      "channel": "Bottleneck CVaR",
+      "spearman": 0.6925857373734001
+    },
+    {
+      "horizon": 10,
+      "channel": "Unified risk",
+      "spearman": 0.7477291452827407
+    },
+    {
+      "horizon": 20,
+      "channel": "Stall ratio",
+      "spearman": 0.8356579573239424
+    },
+    {
+      "horizon": 20,
+      "channel": "Bottleneck CVaR",
+      "spearman": 0.6671606875123436
+    },
+    {
+      "horizon": 20,
+      "channel": "Unified risk",
+      "spearman": 0.6877925112448158
+    },
+    {
+      "horizon": 50,
+      "channel": "Stall ratio",
+      "spearman": -0.009436688280078709
+    },
+    {
+      "horizon": 50,
+      "channel": "Bottleneck CVaR",
+      "spearman": -0.11676705637567841
+    },
+    {
+      "horizon": 50,
+      "channel": "Unified risk",
+      "spearman": -0.10384051137833494
+    },
+    {
+      "horizon": 80,
+      "channel": "Stall ratio",
+      "spearman": -0.049444699428927485
+    },
+    {
+      "horizon": 80,
+      "channel": "Bottleneck CVaR",
+      "spearman": -0.1382763234390081
+    },
+    {
+      "horizon": 80,
+      "channel": "Unified risk",
+      "spearman": -0.22253335892450332
+    },
+    {
+      "horizon": 100,
+      "channel": "Stall ratio",
+      "spearman": -0.04983368521191989
+    },
+    {
+      "horizon": 100,
+      "channel": "Bottleneck CVaR",
+      "spearman": -0.15052670522032052
+    },
+    {
+      "horizon": 100,
+      "channel": "Unified risk",
+      "spearman": -0.22091132381453082
+    }
+  ],
+  "longrisk_heldout_ranking": [
+    {
+      "metric": "Peak q90",
+      "pairwise_accuracy": 0.7818791946308725,
+      "best_hit_rate": 0.6387096774193548,
+      "top1_regret": 0.006272402021192735
+    },
+    {
+      "metric": "CVaR q90",
+      "pairwise_accuracy": 0.6908678389109473,
+      "best_hit_rate": 0.4967741935483871,
+      "top1_regret": 0.005900537270692087
+    },
+    {
+      "metric": "Terminal q90",
+      "pairwise_accuracy": 0.8005952380952381,
+      "best_hit_rate": 0.6064516129032258,
+      "top1_regret": 0.00404121873434633
+    },
+    {
+      "metric": "Increment q90",
+      "pairwise_accuracy": 0.5961968680089486,
+      "best_hit_rate": 0.23870967741935484,
+      "top1_regret": 0.037813619836684194
+    },
+    {
+      "metric": "Deployed combo",
+      "pairwise_accuracy": 0.7057613168724279,
+      "best_hit_rate": 0.5870967741935483,
+      "top1_regret": 0.004323924501096049
+    }
+  ],
+  "decoder_validity": [
+    {
+      "metric": "Wait",
+      "group": "Node AUC",
+      "value": 99.29
+    },
+    {
+      "metric": "Blocked",
+      "group": "Node AUC",
+      "value": 99.9
+    },
+    {
+      "metric": "Congestion",
+      "group": "Node AUC",
+      "value": 98.71
+    },
+    {
+      "metric": "Queue",
+      "group": "Station absolute MAE",
+      "value": 0.095673
+    },
+    {
+      "metric": "Assigned\nload",
+      "group": "Station absolute MAE",
+      "value": 0.035594
+    }
+  ]
+}

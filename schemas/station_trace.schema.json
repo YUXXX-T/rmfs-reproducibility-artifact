@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "station_trace.schema.json",
+  "title": "Station-attempt and order-throughput trace",
+  "type": "object",
+  "required": ["tick", "stations", "throughput"],
+  "properties": {
+    "tick": {"type": "integer", "minimum": 0},
+    "stations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["station_id", "admission_attempts"],
+        "properties": {
+          "station_id": {"type": "integer"},
+          "admission_attempts": {"type": "number", "minimum": 0}
+        }
+      }
+    },
+    "throughput": {
+      "type": "object",
+      "required": ["completed", "pending", "in_progress"],
+      "properties": {
+        "completed": {"type": "number", "minimum": 0},
+        "pending": {"type": "number", "minimum": 0},
+        "in_progress": {"type": "number", "minimum": 0}
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "inherits": "../simulator/world_model_config_PP_48_low.json",
+  "note": "scripts/smoke_simulation.py materializes this override before invoking the real simulator",
+  "overrides": {
+    "simulation.max_ticks": 20,
+    "simulation.tick_delay": 0,
+    "simulation.log_level": "WARNING",
+    "simulation.seed": 7,
+    "snapshot.enabled": false
+  }
+}

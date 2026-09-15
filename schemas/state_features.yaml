@@ -1,0 +1,35 @@
+schema_version: tensor_schema_v1
+name: observable_state
+history_length: 4
+node_features:
+  shape: [history, nodes, 10]
+  channels:
+    - {index: 0, name: self_occupancy, definition: robot occupancy clipped to one}
+    - {index: 1, name: local_density, definition: robots in closed neighborhood divided by local capacity}
+    - {index: 2, name: local_wait_pressure, definition: non-idle stuck non-service-waiting robots in closed neighborhood divided by capacity}
+    - {index: 3, name: local_blocked_pressure, definition: non-idle robots with plan_failed_streak at least two in closed neighborhood divided by capacity}
+    - {index: 4, name: reservation_pressure, definition: future reservation count divided by reservation window and local capacity clipped to one}
+    - {index: 5, name: recent_flow_pressure, definition: decayed node flow divided by local capacity}
+    - {index: 6, name: pod_pressure, definition: inventory-weighted stationary pod pressure normalized by frame maximum}
+    - {index: 7, name: station_queue, definition: in-progress orders at station nodes normalized by frame maximum}
+    - {index: 8, name: bottleneck_score, definition: sampled betweenness centrality normalized by graph maximum}
+    - {index: 9, name: node_type, definition: free=0 station=0.5 pod_home=1}
+edge_features:
+  shape: [directed_edges, 6]
+  channels:
+    - {index: 0, name: physical_distance, definition: one grid step}
+    - {index: 1, name: topological_capacity, definition: mean endpoint local capacity normalized by graph maximum}
+    - {index: 2, name: pod_aware_pressure, definition: endpoint loaded-mobility capacity with stationary-pod blocking}
+    - {index: 3, name: recent_edge_flow, definition: decayed directed traversal count normalized by frame maximum}
+    - {index: 4, name: reservation_load, definition: directional future-W reservation count divided by W}
+    - {index: 5, name: opposite_reservation_load, definition: reservation load of the reverse directed edge}
+demand_context:
+  shape: [5_plus_station_count]
+  global_channels:
+    - {index: 0, name: pending_pressure, scale: robot_count}
+    - {index: 1, name: pending_item_pressure, scale: 100}
+    - {index: 2, name: active_order_pressure, scale: robot_count}
+    - {index: 3, name: total_station_backlog, scale: robot_count}
+    - {index: 4, name: station_backlog_skew, definition: one_minus_normalized_entropy}
+  station_channels: per-station pending-plus-in-progress backlog normalized by maximum station backlog
+canonical_source: src/WorldModel/graph/graph_builder.py

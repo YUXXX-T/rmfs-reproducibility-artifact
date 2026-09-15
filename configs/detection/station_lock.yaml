@@ -1,0 +1,10 @@
+schema_version: station_lock_detection_contract_v1
+signal: maximum_station_share_of_per_interval_admission_attempts
+formula: max_station_delta_attempts / sum_station_delta_attempts
+negative_attempt_deltas_clipped_to_zero: true
+smoothing: {method: centered_rolling_mean, samples: 5}
+primary_threshold: 0.8
+sensitivity_thresholds: [0.6, 0.7, 0.8, 0.9]
+sustain_samples: 3
+trace_stride_ticks: 10
+onset_tick: first_tick_of_first_sustained_crossing

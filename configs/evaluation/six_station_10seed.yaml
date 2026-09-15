@@ -1,0 +1,12 @@
+schema_version: evaluation_contract_v1
+id: station6_20x20_adapted_held_out
+variant: map20_r48_s6
+loads: [low, mid, high]
+seeds: {start: 721, stop_exclusive: 731, count: 10}
+ticks: 1500
+arms: [greedy, hungarian, phasec, combo_s1_j1]
+planner: PP
+adapted_model: true
+zero_shot: false
+online_test_disjoint_from_adaptation_data: true
+simulations: 120

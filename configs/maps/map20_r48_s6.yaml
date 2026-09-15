@@ -1,0 +1,25 @@
+schema_version: map_contract_v1
+id: map20_r48_s6
+rows: 20
+cols: 20
+robots: 48
+obstacles: []
+base_map: map20_r48_s4
+change_under_test: station_count_and_layout
+stations:
+  - {id: 1, service: [0, 4], entry: [1, 4], exit: [0, 5]}
+  - {id: 2, service: [0, 15], entry: [1, 15], exit: [0, 14]}
+  - {id: 3, service: [19, 4], entry: [18, 4], exit: [19, 5]}
+  - {id: 4, service: [19, 15], entry: [18, 15], exit: [19, 14]}
+  - {id: 5, service: [9, 0], entry: [9, 1], exit: [8, 0]}
+  - {id: 6, service: [9, 19], entry: [9, 18], exit: [8, 19]}
+station_zone:
+  service_slots: 1
+  queue_slots: 5
+  buffer_slots: 1
+  physical_capacity: 7
+demand_dimension: 11
+exact_simulator_configs:
+  - ../simulator/world_model_config_PP_48_low_6stations.json
+  - ../simulator/world_model_config_PP_48_mid_6stations.json
+  - ../simulator/world_model_config_PP_48_high_6stations.json

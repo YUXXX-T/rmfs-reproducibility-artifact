@@ -1,0 +1,8 @@
+schema_version: policy_contract_v1
+paper_name: JSQ
+implementation: Policies.TaskAssigner.JSQTaskAssigner.jsq_task_assigner.JSQTaskAssigner
+context_order: ascending_virtual_station_committed_load
+context_tie_break: original_proposal_order
+robot_selection: nearest_idle_robot_by_manhattan_distance_to_pod
+virtual_load_update_after_each_selection: 1
+trainable_parameters: false

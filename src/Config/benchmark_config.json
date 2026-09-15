@@ -1,0 +1,16 @@
+{
+    "benchmark": {
+        "enabled": true,
+        "map_path": "Env/maps/warehouse-10-20-10-2-1.map",
+        "scen_path": "",
+        "num_agents": 20,
+        "max_ticks": 1000,
+        "random_seed": 42
+    },
+    "policies": {
+        "path_planner": {
+            "name": "AStarPathPlanner",
+            "params": {}
+        }
+    }
+}

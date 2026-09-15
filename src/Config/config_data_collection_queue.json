@@ -1,0 +1,244 @@
+{
+    "map": {
+        "rows": 40,
+        "cols": 40,
+        "obstacles": [],
+        "stations": [
+            {
+                "id": 1,
+                "row": 0,
+                "col": 7,
+                "queue": {
+                    "service": [0, 7],
+                    "queue": [[0, 6], [0, 5], [0, 4], [1, 4], [1, 5]],
+                    "buffer": [[1, 6]],
+                    "entry": [1, 7],
+                    "exit": [0, 8]
+                }
+            },
+            {
+                "id": 2,
+                "row": 0,
+                "col": 15,
+                "queue": {
+                    "service": [0, 15],
+                    "queue": [[0, 14], [0, 13], [0, 12], [1, 12], [1, 13]],
+                    "buffer": [[1, 14]],
+                    "entry": [1, 15],
+                    "exit": [0, 16]
+                }
+            },
+            {
+                "id": 3,
+                "row": 0,
+                "col": 23,
+                "queue": {
+                    "service": [0, 23],
+                    "queue": [[0, 24], [0, 25], [0, 26], [1, 26], [1, 25]],
+                    "buffer": [[1, 24]],
+                    "entry": [1, 23],
+                    "exit": [0, 22]
+                }
+            },
+            {
+                "id": 4,
+                "row": 0,
+                "col": 31,
+                "queue": {
+                    "service": [0, 31],
+                    "queue": [[0, 32], [0, 33], [0, 34], [1, 34], [1, 33]],
+                    "buffer": [[1, 32]],
+                    "entry": [1, 31],
+                    "exit": [0, 30]
+                }
+            },
+            {
+                "id": 5,
+                "row": 39,
+                "col": 7,
+                "queue": {
+                    "service": [39, 7],
+                    "queue": [[39, 6], [39, 5], [39, 4], [38, 4], [38, 5]],
+                    "buffer": [[38, 6]],
+                    "entry": [38, 7],
+                    "exit": [39, 8]
+                }
+            },
+            {
+                "id": 6,
+                "row": 39,
+                "col": 15,
+                "queue": {
+                    "service": [39, 15],
+                    "queue": [[39, 14], [39, 13], [39, 12], [38, 12], [38, 13]],
+                    "buffer": [[38, 14]],
+                    "entry": [38, 15],
+                    "exit": [39, 16]
+                }
+            },
+            {
+                "id": 7,
+                "row": 39,
+                "col": 23,
+                "queue": {
+                    "service": [39, 23],
+                    "queue": [[39, 24], [39, 25], [39, 26], [38, 26], [38, 25]],
+                    "buffer": [[38, 24]],
+                    "entry": [38, 23],
+                    "exit": [39, 22]
+                }
+            },
+            {
+                "id": 8,
+                "row": 39,
+                "col": 31,
+                "queue": {
+                    "service": [39, 31],
+                    "queue": [[39, 32], [39, 33], [39, 34], [38, 34], [38, 33]],
+                    "buffer": [[38, 32]],
+                    "entry": [38, 31],
+                    "exit": [39, 30]
+                }
+            },
+            {
+                "id": 9,
+                "row": 9,
+                "col": 0,
+                "queue": {
+                    "service": [9, 0],
+                    "queue": [[8, 0], [7, 0], [6, 0], [6, 1], [7, 1]],
+                    "buffer": [[8, 1]],
+                    "entry": [9, 1],
+                    "exit": [10, 0]
+                }
+            },
+            {
+                "id": 10,
+                "row": 19,
+                "col": 0,
+                "queue": {
+                    "service": [19, 0],
+                    "queue": [[18, 0], [17, 0], [16, 0], [16, 1], [17, 1]],
+                    "buffer": [[18, 1]],
+                    "entry": [19, 1],
+                    "exit": [20, 0]
+                }
+            },
+            {
+                "id": 11,
+                "row": 29,
+                "col": 0,
+                "queue": {
+                    "service": [29, 0],
+                    "queue": [[30, 0], [31, 0], [32, 0], [32, 1], [31, 1]],
+                    "buffer": [[30, 1]],
+                    "entry": [29, 1],
+                    "exit": [28, 0]
+                }
+            },
+            {
+                "id": 12,
+                "row": 9,
+                "col": 39,
+                "queue": {
+                    "service": [9, 39],
+                    "queue": [[8, 39], [7, 39], [6, 39], [6, 38], [7, 38]],
+                    "buffer": [[8, 38]],
+                    "entry": [9, 38],
+                    "exit": [10, 39]
+                }
+            },
+            {
+                "id": 13,
+                "row": 19,
+                "col": 39,
+                "queue": {
+                    "service": [19, 39],
+                    "queue": [[18, 39], [17, 39], [16, 39], [16, 38], [17, 38]],
+                    "buffer": [[18, 38]],
+                    "entry": [19, 38],
+                    "exit": [20, 39]
+                }
+            },
+            {
+                "id": 14,
+                "row": 29,
+                "col": 39,
+                "queue": {
+                    "service": [29, 39],
+                    "queue": [[30, 39], [31, 39], [32, 39], [32, 38], [31, 38]],
+                    "buffer": [[30, 38]],
+                    "entry": [29, 38],
+                    "exit": [28, 39]
+                }
+            }
+        ],
+        "pod_layout": {
+            "num_rows": 7,
+            "num_cols": 2,
+            "row_step": 9,
+            "col_step": 4,
+            "margin": 3,
+            "max_pods": 0
+        }
+    },
+    "robots": {
+        "num_robots": 120,
+        "starts": [],
+        "speed": 1
+    },
+    "pods": {
+        "pod_types": [
+            "A",
+            "B",
+            "C"
+        ],
+        "skus_per_pod": 3,
+        "sku_pool_size_per_type": 10,
+        "items_per_sku": 50
+    },
+    "simulation": {
+        "order_interval": 2,
+        "max_items_per_order": 2,
+        "pickup_duration": 2,
+        "dropoff_duration": 2,
+        "station_process_duration": 5,
+        "tick_delay": 0,
+        "p3d_view_mode": "2d",
+        "p3d_use_gpu": false,
+        "night_mode": false,
+        "log_level": "WARNING",
+        "log_file": null,
+        "fixed_order_size": true,
+        "task_execution_mode": "serial",
+        "max_items_per_sku": 3
+    },
+    "policies": {
+        "order_generator": {
+            "name": "ZipfOrderGenerator",
+            "params": {
+                "zipf_param": 1.5
+            }
+        },
+        "task_assigner": "GreedyTaskAssigner",
+        "path_planner": {
+            "name": "PrioritizedPathPlanner",
+            "params": {
+                "max_horizon": 100,
+                "goal_reserve": 6
+            }
+        },
+        "pod_return_planner": "HomeReturnPlanner",
+        "pod_initializer": "DefaultPodInitializer",
+        "pod_retriever": "DefaultPodRetriever"
+    },
+    "station_queue": {
+        "queue_length": 5,
+        "buffer_length": 1,
+        "direction": "auto"
+    },
+    "replay": {
+        "mode": "list",
+        "layout": "1x2"
+    }
+}

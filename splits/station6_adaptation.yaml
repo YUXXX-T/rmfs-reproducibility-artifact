@@ -1,0 +1,11 @@
+schema_version: seed_split_v1
+core_adaptation:
+  train: {start: 711, stop_inclusive: 717}
+  validation: [718, 719]
+  test: [720]
+online_held_out_test: {start: 721, stop_inclusive: 730}
+long_risk_and_j1_adaptation:
+  train: {start: 731, stop_inclusive: 737}
+  validation: [738, 739]
+  test: [740]
+all_partitions_disjoint: true

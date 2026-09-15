@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "arrival_manifest.schema.json",
+  "title": "Paired arrival manifest",
+  "type": "object",
+  "required": ["schema_version", "orders"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "orders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["tick", "order_id", "station_id", "sku_demands"],
+        "properties": {
+          "tick": {"type": "integer", "minimum": 0},
+          "order_id": {"type": "integer", "minimum": 0},
+          "station_id": {"type": "integer", "minimum": 1},
+          "sku_demands": {
+            "type": "object",
+            "additionalProperties": {"type": "integer", "minimum": 1}
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

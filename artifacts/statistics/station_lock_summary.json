@@ -1,0 +1,109 @@
+{
+  "trace_root": "WorldModel/checkpoints/phaseC_wm_onpolicy_round1_v1/phasec_physical_only_pp_trace_v1",
+  "paper_aligned_report": "WorldModel/checkpoints/phaseC_wm_onpolicy_round1_v1/phasec_physical_only_pp_factorial_900_950_v1/station_lock_causal_analysis/collapse_align_paper/lock_precedence_multiseed.json",
+  "main_figure_scope": "paper endpoint-collapse label (completed orders + deadlock), then independent temporal onset localization within labelled runs",
+  "groups": [
+    {
+      "policy": "Greedy",
+      "n_seeds": 50,
+      "main_paper_aligned_events": {
+        "lock_onset_share_0_8": {
+          "n": 50,
+          "median_tick": 185.0
+        },
+        "throughput_collapse_onset": {
+          "n": 22,
+          "median_tick": 595.0
+        },
+        "lead": {
+          "n": 22,
+          "median_ticks": 445.0,
+          "positive": 22
+        }
+      },
+      "share_0_9_sensitivity": {
+        "lock_onset": {
+          "n": 47,
+          "median_tick": 390.0
+        },
+        "lead": {
+          "n": 22,
+          "median_ticks": 335.0,
+          "positive": 22
+        }
+      },
+      "paper_endpoint_collapse_subset": {
+        "definition": "completed_orders < 300 AND deadlock_ratio_mean >= 0.4",
+        "collapsed_runs": 22,
+        "lead": {
+          "n": 22,
+          "median_ticks": 445.0,
+          "positive": 22
+        }
+      },
+      "temporal_onset_not_endpoint_collapse": 15,
+      "all_run_temporal_diagnostic": {
+        "throughput_onset": {
+          "n": 37,
+          "median_tick": 860.0
+        },
+        "lead": {
+          "n": 37,
+          "median_ticks": 650.0,
+          "positive": 37
+        }
+      }
+    },
+    {
+      "policy": "ComboS1J1",
+      "n_seeds": 50,
+      "main_paper_aligned_events": {
+        "lock_onset_share_0_8": {
+          "n": 49,
+          "median_tick": 240.0
+        },
+        "throughput_collapse_onset": {
+          "n": 15,
+          "median_tick": 640.0
+        },
+        "lead": {
+          "n": 14,
+          "median_ticks": 460.0,
+          "positive": 14
+        }
+      },
+      "share_0_9_sensitivity": {
+        "lock_onset": {
+          "n": 42,
+          "median_tick": 430.0
+        },
+        "lead": {
+          "n": 14,
+          "median_ticks": 305.0,
+          "positive": 14
+        }
+      },
+      "paper_endpoint_collapse_subset": {
+        "definition": "completed_orders < 300 AND deadlock_ratio_mean >= 0.4",
+        "collapsed_runs": 15,
+        "lead": {
+          "n": 14,
+          "median_ticks": 460.0,
+          "positive": 14
+        }
+      },
+      "temporal_onset_not_endpoint_collapse": 13,
+      "all_run_temporal_diagnostic": {
+        "throughput_onset": {
+          "n": 28,
+          "median_tick": 990.0
+        },
+        "lead": {
+          "n": 27,
+          "median_ticks": 680.0,
+          "positive": 27
+        }
+      }
+    }
+  ]
+}

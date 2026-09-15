@@ -1,0 +1,19 @@
+schema_version: evaluation_contract_v1
+id: physical_only_pp_main_50seed
+variant: map20_r48_s4
+loads: [low, mid, high]
+seeds: {start: 900, stop_exclusive: 950, count: 50}
+ticks: 1500
+arms: [Greedy, Hungarian, JSQ, PhaseC, ComboS1J1]
+planner: PP
+station_admission: physical_only_legacy
+manifest_source: GreedyTaskAssigner
+exact_manifest_replay: true
+jobs: 150
+simulations: 750
+bootstrap:
+  unit: paired_seed
+  statistic: mean_arm_minus_baseline
+  iterations: 10000
+  seed: 20260905
+  interval: percentile_2.5_97.5

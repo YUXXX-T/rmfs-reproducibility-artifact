@@ -1,0 +1,6 @@
+schema_version: runtime_contract_v1
+source: frozen_per_seed_online_results
+reported_fields: [wall_time_s, assignment_time_ms_mean]
+aggregation: arithmetic_mean_and_sample_standard_deviation
+warning: wall_time_includes_simulation_and machine load; compare only within the recorded campaign
+dedicated_latency_benchmark_available: false

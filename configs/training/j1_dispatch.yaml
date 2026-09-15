@@ -1,0 +1,21 @@
+schema_version: j1_dispatch_training_contract_v1
+component: j1_station_congestion_predictor
+role: dispatch_auxiliary
+world_model_encoder: frozen
+representation: station_node_latent
+outputs: [traffic, service]
+targets:
+  scope: current_station_state
+  traffic_components: [stationary_ticks_max, node_density_cvar90, bottleneck_density_excess]
+  service_components: [assigned_agent_capacity_ratio, in_progress_pressure]
+data_seeds:
+  train: {start: 511, stop_inclusive: 516}
+  validation: [517, 518]
+  test: [519, 520]
+loads: [low, mid, high]
+source_arms: [greedy, hungarian, phasec, phasec_s1]
+objective: equal_channel_mse
+runtime_consumer: Policies.TaskAssigner.WorldModelTaskAssigner.psi_dispatch_context_assigner
+runtime_score: 0.5 * service + 0.5 * traffic - service_debt
+canonical_dataset_builder: WorldModel.data.build_station_congestion_head_dataset
+canonical_trainer: WorldModel.training.train_station_congestion_head

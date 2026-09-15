@@ -1,0 +1,16 @@
+load,branch,completed_orders,avg_excess_delay,deadlock_ratio,risk_per_100,pareto
+low,Greedy,356.42,30.1217,0.3453,50.1293,False
+low,Hungarian,341.14,27.208,0.2777,38.912,True
+low,JSQ,350.84,27.6268,0.3004,43.3253,True
+low,PhaseC,345.14,27.4217,0.2839,39.8893,True
+low,ComboS1J1,380.56,27.7115,0.2093,31.448,True
+mid,Greedy,358.3,31.786,0.3697,54.224,False
+mid,Hungarian,325.36,29.501,0.367,51.5613,False
+mid,JSQ,337.52,28.3798,0.368,53.364,False
+mid,PhaseC,356.9,28.6482,0.3099,43.744,True
+mid,ComboS1J1,361.56,28.28,0.3093,45.6947,True
+high,Greedy,318.36,31.1115,0.4482,62.7293,False
+high,Hungarian,290.44,30.7583,0.4404,61.4627,False
+high,JSQ,367.74,29.9963,0.3518,52.7467,True
+high,PhaseC,352.28,29.7378,0.3764,52.88,True
+high,ComboS1J1,383.42,30.5959,0.3196,48.884,True

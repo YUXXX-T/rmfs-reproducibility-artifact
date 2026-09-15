@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "run_result.schema.json",
+  "title": "Flattened per-seed run result",
+  "type": "object",
+  "required": ["variant", "load", "seed", "arm", "ticks", "completed_orders", "deadlock_ratio_mean"],
+  "properties": {
+    "variant": {"type": "string"},
+    "load": {"enum": ["low", "mid", "high"]},
+    "seed": {"type": "integer"},
+    "arm": {"type": "string"},
+    "ticks": {"type": "integer", "minimum": 1},
+    "completed_orders": {"type": "number", "minimum": 0},
+    "deadlock_ratio_mean": {"type": "number", "minimum": 0, "maximum": 1}
+  },
+  "additionalProperties": true
+}

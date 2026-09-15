@@ -1,0 +1,5 @@
+schema_version: planner_contract_v1
+paper_name: PP
+implementation: Policies.PathPlanner.PrioritizedPathPlanner.prioritized_path_planner.PrioritizedPathPlanner
+parameters: {max_horizon: 100, goal_reserve: 6}
+motion_per_tick: at_most_one_grid_edge

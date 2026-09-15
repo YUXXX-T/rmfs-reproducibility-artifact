@@ -1,0 +1,17 @@
+schema_version: tensor_schema_v1
+name: future_node_and_station_labels
+node:
+  shape: [horizon, nodes, 6]
+  channels:
+    - {index: 0, name: self_occupancy}
+    - {index: 1, name: local_density}
+    - {index: 2, name: local_wait_pressure}
+    - {index: 3, name: local_blocked_pressure}
+    - {index: 4, name: reservation_pressure}
+    - {index: 5, name: congestion_score, formula: 0.30*density + 0.30*wait + 0.20*blocked + 0.20*reservation}
+station:
+  shape: [horizon, stations, 2]
+  channels:
+    - {index: 0, name: physical_queue_occupancy_ratio}
+    - {index: 1, name: assigned_delivery_load, scale: robot_count}
+canonical_source: src/WorldModel/graph/graph_builder.py

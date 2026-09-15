@@ -1,0 +1,11 @@
+schema_version: policy_contract_v1
+paper_name: WM-Base
+artifact_arm_name: PhaseC
+implementation: Policies.TaskAssigner.WorldModelTaskAssigner.world_model_task_assigner.WorldModelTaskAssigner
+candidate_top_m: 10
+context_mode: prefix
+robot_mode: nearest_candidates_then_world_model_score
+include_no_assign: false
+long_risk_correction: false
+cross_context_j1: false
+station_admission_change: false

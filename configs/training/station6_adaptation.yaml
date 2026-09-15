@@ -1,0 +1,22 @@
+schema_version: station6_adaptation_contract_v1
+target: {rows: 20, cols: 20, robots: 48, stations: 6, demand_dim: 11}
+zero_shot: false
+core_data:
+  all: {start: 711, stop_inclusive: 720}
+  train: {start: 711, stop_inclusive: 717}
+  validation: [718, 719]
+  test: [720]
+held_out_online_test: {start: 721, stop_inclusive: 730}
+auxiliary_label_data:
+  all: {start: 731, stop_inclusive: 740}
+  train: {start: 731, stop_inclusive: 737}
+  validation: [738, 739]
+  test: [740]
+  provides: [world_model_long_risk_labels, j1_station_predictor_targets]
+online_test_disjoint_from_all_adaptation_data: true
+ticks: 1500
+short_rollout_horizon: 10
+long_risk_horizon: 200
+long_risk_training: joint_with_world_model
+j1_predictor_training: frozen_encoder_dispatch_auxiliary
+canonical_runner: WorldModel.evaluation.run_station6_20x20_adaptation

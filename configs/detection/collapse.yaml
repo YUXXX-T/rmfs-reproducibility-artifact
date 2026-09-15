@@ -1,0 +1,17 @@
+schema_version: collapse_detection_contract_v1
+run_level_label:
+  conjunction: true
+  completed_orders: {operator: less_than, threshold: 300}
+  deadlock_ratio_mean: {operator: greater_than_or_equal, threshold: 0.4}
+temporal_onset_localization:
+  applied_only_to_run_level_collapsed_runs: true
+  signal: completed_orders_first_difference_per_tick
+  smoothing: {method: centered_rolling_mean, samples: 5}
+  early_reference_window_fraction: 0.3333333333333333
+  completion_rate_threshold_fraction_of_early_median: 0.25
+  backlog: pending_plus_in_progress
+  backlog_threshold_multiplier_of_early_median: 1.5
+  minimum_backlog_threshold: 1.0
+  sustain_samples: 3
+  trace_stride_ticks: 10
+independence_note: temporal localization uses order-side completion and backlog signals, not station-attempt concentration

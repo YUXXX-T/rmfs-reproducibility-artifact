@@ -1,0 +1,4893 @@
+{
+  "schema_version": "layer5_order_arrival_manifest_v1",
+  "orders": [
+    {
+      "tick": 0,
+      "order_id": 0,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 0,
+      "order_id": 1,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_5": 1,
+        "B_SKU_4": 1
+      }
+    },
+    {
+      "tick": 0,
+      "order_id": 2,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_2": 3
+      }
+    },
+    {
+      "tick": 0,
+      "order_id": 3,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_2": 1
+      }
+    },
+    {
+      "tick": 0,
+      "order_id": 4,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "B_SKU_4": 2
+      }
+    },
+    {
+      "tick": 0,
+      "order_id": 5,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_9": 2
+      }
+    },
+    {
+      "tick": 0,
+      "order_id": 6,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_3": 1
+      }
+    },
+    {
+      "tick": 0,
+      "order_id": 7,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_1": 3
+      }
+    },
+    {
+      "tick": 0,
+      "order_id": 8,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_5": 1
+      }
+    },
+    {
+      "tick": 0,
+      "order_id": 9,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_9": 3
+      }
+    },
+    {
+      "tick": 0,
+      "order_id": 10,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_3": 2,
+        "B_SKU_3": 1
+      }
+    },
+    {
+      "tick": 0,
+      "order_id": 11,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_2": 2
+      }
+    },
+    {
+      "tick": 1,
+      "order_id": 12,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_0": 2
+      }
+    },
+    {
+      "tick": 1,
+      "order_id": 13,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_2": 1
+      }
+    },
+    {
+      "tick": 2,
+      "order_id": 14,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "B_SKU_1": 3
+      }
+    },
+    {
+      "tick": 3,
+      "order_id": 15,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_3": 3
+      }
+    },
+    {
+      "tick": 4,
+      "order_id": 16,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "B_SKU_0": 2
+      }
+    },
+    {
+      "tick": 5,
+      "order_id": 17,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_5": 2,
+        "A_SKU_7": 1
+      }
+    },
+    {
+      "tick": 6,
+      "order_id": 18,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_3": 2
+      }
+    },
+    {
+      "tick": 7,
+      "order_id": 19,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "B_SKU_3": 3
+      }
+    },
+    {
+      "tick": 8,
+      "order_id": 20,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_6": 2,
+        "B_SKU_3": 2
+      }
+    },
+    {
+      "tick": 9,
+      "order_id": 21,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_0": 1
+      }
+    },
+    {
+      "tick": 10,
+      "order_id": 22,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_4": 1,
+        "A_SKU_8": 3
+      }
+    },
+    {
+      "tick": 11,
+      "order_id": 23,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 12,
+      "order_id": 24,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "B_SKU_8": 2
+      }
+    },
+    {
+      "tick": 13,
+      "order_id": 25,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_1": 3,
+        "C_SKU_1": 1
+      }
+    },
+    {
+      "tick": 14,
+      "order_id": 26,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "B_SKU_4": 3
+      }
+    },
+    {
+      "tick": 15,
+      "order_id": 27,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 3,
+        "A_SKU_5": 2
+      }
+    },
+    {
+      "tick": 16,
+      "order_id": 28,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "A_SKU_5": 1
+      }
+    },
+    {
+      "tick": 17,
+      "order_id": 29,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_3": 1
+      }
+    },
+    {
+      "tick": 18,
+      "order_id": 30,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "B_SKU_0": 3
+      }
+    },
+    {
+      "tick": 19,
+      "order_id": 31,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 20,
+      "order_id": 32,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_5": 3
+      }
+    },
+    {
+      "tick": 21,
+      "order_id": 33,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "A_SKU_3": 1
+      }
+    },
+    {
+      "tick": 22,
+      "order_id": 34,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_2": 3
+      }
+    },
+    {
+      "tick": 23,
+      "order_id": 35,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_2": 3
+      }
+    },
+    {
+      "tick": 24,
+      "order_id": 36,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "A_SKU_3": 2
+      }
+    },
+    {
+      "tick": 27,
+      "order_id": 37,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "B_SKU_0": 2
+      }
+    },
+    {
+      "tick": 30,
+      "order_id": 38,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "C_SKU_4": 2
+      }
+    },
+    {
+      "tick": 33,
+      "order_id": 39,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_9": 3
+      }
+    },
+    {
+      "tick": 36,
+      "order_id": 40,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_3": 3,
+        "B_SKU_3": 3
+      }
+    },
+    {
+      "tick": 39,
+      "order_id": 41,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 42,
+      "order_id": 42,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_3": 3
+      }
+    },
+    {
+      "tick": 45,
+      "order_id": 43,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_6": 2
+      }
+    },
+    {
+      "tick": 48,
+      "order_id": 44,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "B_SKU_3": 1
+      }
+    },
+    {
+      "tick": 51,
+      "order_id": 45,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_3": 2
+      }
+    },
+    {
+      "tick": 54,
+      "order_id": 46,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_5": 3,
+        "A_SKU_6": 2
+      }
+    },
+    {
+      "tick": 57,
+      "order_id": 47,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_5": 2
+      }
+    },
+    {
+      "tick": 60,
+      "order_id": 48,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_3": 2
+      }
+    },
+    {
+      "tick": 63,
+      "order_id": 49,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_1": 3
+      }
+    },
+    {
+      "tick": 66,
+      "order_id": 50,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_1": 2
+      }
+    },
+    {
+      "tick": 69,
+      "order_id": 51,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_2": 1
+      }
+    },
+    {
+      "tick": 72,
+      "order_id": 52,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_1": 2
+      }
+    },
+    {
+      "tick": 75,
+      "order_id": 53,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_2": 3
+      }
+    },
+    {
+      "tick": 78,
+      "order_id": 54,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_9": 2,
+        "C_SKU_6": 1
+      }
+    },
+    {
+      "tick": 81,
+      "order_id": 55,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_5": 2
+      }
+    },
+    {
+      "tick": 84,
+      "order_id": 56,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_6": 2
+      }
+    },
+    {
+      "tick": 87,
+      "order_id": 57,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_5": 3
+      }
+    },
+    {
+      "tick": 90,
+      "order_id": 58,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_3": 3
+      }
+    },
+    {
+      "tick": 93,
+      "order_id": 59,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_7": 1
+      }
+    },
+    {
+      "tick": 96,
+      "order_id": 60,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_7": 3
+      }
+    },
+    {
+      "tick": 99,
+      "order_id": 61,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_6": 3
+      }
+    },
+    {
+      "tick": 102,
+      "order_id": 62,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_3": 1,
+        "B_SKU_5": 3
+      }
+    },
+    {
+      "tick": 105,
+      "order_id": 63,
+      "station_id": 3,
+      "sku_demands": {
+        "B_SKU_2": 1,
+        "B_SKU_9": 3
+      }
+    },
+    {
+      "tick": 108,
+      "order_id": 64,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_3": 1,
+        "C_SKU_0": 1
+      }
+    },
+    {
+      "tick": 111,
+      "order_id": 65,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_6": 3,
+        "B_SKU_0": 1
+      }
+    },
+    {
+      "tick": 114,
+      "order_id": 66,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_3": 1,
+        "A_SKU_4": 3
+      }
+    },
+    {
+      "tick": 117,
+      "order_id": 67,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_1": 1
+      }
+    },
+    {
+      "tick": 120,
+      "order_id": 68,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "B_SKU_8": 3
+      }
+    },
+    {
+      "tick": 123,
+      "order_id": 69,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "C_SKU_4": 1
+      }
+    },
+    {
+      "tick": 126,
+      "order_id": 70,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_3": 3,
+        "B_SKU_0": 2
+      }
+    },
+    {
+      "tick": 129,
+      "order_id": 71,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_1": 3,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 132,
+      "order_id": 72,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 135,
+      "order_id": 73,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_1": 3,
+        "B_SKU_8": 1
+      }
+    },
+    {
+      "tick": 138,
+      "order_id": 74,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_2": 2
+      }
+    },
+    {
+      "tick": 141,
+      "order_id": 75,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_1": 2
+      }
+    },
+    {
+      "tick": 144,
+      "order_id": 76,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_5": 2
+      }
+    },
+    {
+      "tick": 147,
+      "order_id": 77,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_6": 1
+      }
+    },
+    {
+      "tick": 150,
+      "order_id": 78,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 3,
+        "A_SKU_6": 1
+      }
+    },
+    {
+      "tick": 153,
+      "order_id": 79,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_3": 3,
+        "C_SKU_3": 1
+      }
+    },
+    {
+      "tick": 156,
+      "order_id": 80,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "A_SKU_5": 2
+      }
+    },
+    {
+      "tick": 158,
+      "order_id": 81,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "C_SKU_5": 2
+      }
+    },
+    {
+      "tick": 159,
+      "order_id": 82,
+      "station_id": 1,
+      "sku_demands": {
+        "B_SKU_2": 3,
+        "B_SKU_9": 2
+      }
+    },
+    {
+      "tick": 160,
+      "order_id": 83,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "C_SKU_7": 1
+      }
+    },
+    {
+      "tick": 162,
+      "order_id": 84,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_6": 2,
+        "A_SKU_7": 1
+      }
+    },
+    {
+      "tick": 165,
+      "order_id": 85,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_3": 3,
+        "A_SKU_6": 3
+      }
+    },
+    {
+      "tick": 168,
+      "order_id": 86,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_6": 3,
+        "A_SKU_7": 3
+      }
+    },
+    {
+      "tick": 171,
+      "order_id": 87,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_6": 1
+      }
+    },
+    {
+      "tick": 174,
+      "order_id": 88,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_3": 1
+      }
+    },
+    {
+      "tick": 177,
+      "order_id": 89,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 179,
+      "order_id": 90,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_4": 3
+      }
+    },
+    {
+      "tick": 180,
+      "order_id": 91,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 183,
+      "order_id": 92,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_6": 2
+      }
+    },
+    {
+      "tick": 186,
+      "order_id": 93,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_5": 1
+      }
+    },
+    {
+      "tick": 189,
+      "order_id": 94,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_3": 3
+      }
+    },
+    {
+      "tick": 191,
+      "order_id": 95,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_3": 1
+      }
+    },
+    {
+      "tick": 192,
+      "order_id": 96,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 195,
+      "order_id": 97,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "B_SKU_2": 1
+      }
+    },
+    {
+      "tick": 198,
+      "order_id": 98,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "A_SKU_2": 2
+      }
+    },
+    {
+      "tick": 199,
+      "order_id": 99,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_1": 3,
+        "A_SKU_3": 1
+      }
+    },
+    {
+      "tick": 201,
+      "order_id": 100,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_4": 3,
+        "B_SKU_7": 3
+      }
+    },
+    {
+      "tick": 204,
+      "order_id": 101,
+      "station_id": 4,
+      "sku_demands": {
+        "B_SKU_0": 1,
+        "B_SKU_4": 3
+      }
+    },
+    {
+      "tick": 207,
+      "order_id": 102,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_1": 3,
+        "B_SKU_6": 1
+      }
+    },
+    {
+      "tick": 210,
+      "order_id": 103,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_4": 1,
+        "B_SKU_2": 3
+      }
+    },
+    {
+      "tick": 213,
+      "order_id": 104,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_3": 1,
+        "A_SKU_8": 3
+      }
+    },
+    {
+      "tick": 216,
+      "order_id": 105,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_4": 3,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 219,
+      "order_id": 106,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "A_SKU_3": 3
+      }
+    },
+    {
+      "tick": 222,
+      "order_id": 107,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_2": 1
+      }
+    },
+    {
+      "tick": 224,
+      "order_id": 108,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "C_SKU_2": 3
+      }
+    },
+    {
+      "tick": 225,
+      "order_id": 109,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 228,
+      "order_id": 110,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_3": 3
+      }
+    },
+    {
+      "tick": 231,
+      "order_id": 111,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_6": 3
+      }
+    },
+    {
+      "tick": 234,
+      "order_id": 112,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_6": 3
+      }
+    },
+    {
+      "tick": 237,
+      "order_id": 113,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_3": 1
+      }
+    },
+    {
+      "tick": 240,
+      "order_id": 114,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_1": 3
+      }
+    },
+    {
+      "tick": 243,
+      "order_id": 115,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 246,
+      "order_id": 116,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_1": 2
+      }
+    },
+    {
+      "tick": 248,
+      "order_id": 117,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_1": 2
+      }
+    },
+    {
+      "tick": 249,
+      "order_id": 118,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_1": 2
+      }
+    },
+    {
+      "tick": 252,
+      "order_id": 119,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_5": 2
+      }
+    },
+    {
+      "tick": 255,
+      "order_id": 120,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "B_SKU_2": 2
+      }
+    },
+    {
+      "tick": 256,
+      "order_id": 121,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "B_SKU_4": 3
+      }
+    },
+    {
+      "tick": 257,
+      "order_id": 122,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_3": 2
+      }
+    },
+    {
+      "tick": 258,
+      "order_id": 123,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_1": 3
+      }
+    },
+    {
+      "tick": 261,
+      "order_id": 124,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_2": 3
+      }
+    },
+    {
+      "tick": 263,
+      "order_id": 125,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_2": 3
+      }
+    },
+    {
+      "tick": 264,
+      "order_id": 126,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "B_SKU_1": 2
+      }
+    },
+    {
+      "tick": 267,
+      "order_id": 127,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "B_SKU_8": 3
+      }
+    },
+    {
+      "tick": 269,
+      "order_id": 128,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_1": 2
+      }
+    },
+    {
+      "tick": 270,
+      "order_id": 129,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_1": 3
+      }
+    },
+    {
+      "tick": 273,
+      "order_id": 130,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_5": 1,
+        "B_SKU_1": 1
+      }
+    },
+    {
+      "tick": 276,
+      "order_id": 131,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_4": 3,
+        "B_SKU_8": 1
+      }
+    },
+    {
+      "tick": 279,
+      "order_id": 132,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_4": 3,
+        "A_SKU_7": 2
+      }
+    },
+    {
+      "tick": 282,
+      "order_id": 133,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_1": 3
+      }
+    },
+    {
+      "tick": 285,
+      "order_id": 134,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "C_SKU_8": 1
+      }
+    },
+    {
+      "tick": 288,
+      "order_id": 135,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "C_SKU_7": 3
+      }
+    },
+    {
+      "tick": 291,
+      "order_id": 136,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_4": 2,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 294,
+      "order_id": 137,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_2": 3
+      }
+    },
+    {
+      "tick": 297,
+      "order_id": 138,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_4": 3
+      }
+    },
+    {
+      "tick": 300,
+      "order_id": 139,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_2": 3
+      }
+    },
+    {
+      "tick": 303,
+      "order_id": 140,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_3": 2
+      }
+    },
+    {
+      "tick": 306,
+      "order_id": 141,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "A_SKU_5": 1
+      }
+    },
+    {
+      "tick": 309,
+      "order_id": 142,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "B_SKU_3": 3
+      }
+    },
+    {
+      "tick": 312,
+      "order_id": 143,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_4": 3
+      }
+    },
+    {
+      "tick": 315,
+      "order_id": 144,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "B_SKU_0": 2
+      }
+    },
+    {
+      "tick": 316,
+      "order_id": 145,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_1": 3
+      }
+    },
+    {
+      "tick": 317,
+      "order_id": 146,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_1": 1
+      }
+    },
+    {
+      "tick": 318,
+      "order_id": 147,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_7": 2
+      }
+    },
+    {
+      "tick": 321,
+      "order_id": 148,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_9": 2,
+        "B_SKU_0": 1
+      }
+    },
+    {
+      "tick": 324,
+      "order_id": 149,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "B_SKU_6": 1
+      }
+    },
+    {
+      "tick": 327,
+      "order_id": 150,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_3": 2,
+        "B_SKU_6": 2
+      }
+    },
+    {
+      "tick": 330,
+      "order_id": 151,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_3": 2,
+        "A_SKU_5": 1
+      }
+    },
+    {
+      "tick": 333,
+      "order_id": 152,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_6": 2
+      }
+    },
+    {
+      "tick": 336,
+      "order_id": 153,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_6": 3
+      }
+    },
+    {
+      "tick": 339,
+      "order_id": 154,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_4": 3
+      }
+    },
+    {
+      "tick": 342,
+      "order_id": 155,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_3": 1
+      }
+    },
+    {
+      "tick": 345,
+      "order_id": 156,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_1": 3
+      }
+    },
+    {
+      "tick": 348,
+      "order_id": 157,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "B_SKU_3": 3
+      }
+    },
+    {
+      "tick": 351,
+      "order_id": 158,
+      "station_id": 4,
+      "sku_demands": {
+        "B_SKU_0": 2,
+        "B_SKU_4": 2
+      }
+    },
+    {
+      "tick": 354,
+      "order_id": 159,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "B_SKU_8": 2
+      }
+    },
+    {
+      "tick": 357,
+      "order_id": 160,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "B_SKU_3": 3
+      }
+    },
+    {
+      "tick": 360,
+      "order_id": 161,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_1": 2
+      }
+    },
+    {
+      "tick": 363,
+      "order_id": 162,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 366,
+      "order_id": 163,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_2": 1
+      }
+    },
+    {
+      "tick": 367,
+      "order_id": 164,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "B_SKU_3": 2
+      }
+    },
+    {
+      "tick": 368,
+      "order_id": 165,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 369,
+      "order_id": 166,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "A_SKU_2": 1
+      }
+    },
+    {
+      "tick": 372,
+      "order_id": 167,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_3": 3
+      }
+    },
+    {
+      "tick": 375,
+      "order_id": 168,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_3": 3
+      }
+    },
+    {
+      "tick": 378,
+      "order_id": 169,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_2": 3
+      }
+    },
+    {
+      "tick": 381,
+      "order_id": 170,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_4": 1,
+        "C_SKU_4": 1
+      }
+    },
+    {
+      "tick": 384,
+      "order_id": 171,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_6": 1,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 387,
+      "order_id": 172,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "C_SKU_3": 1
+      }
+    },
+    {
+      "tick": 390,
+      "order_id": 173,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_4": 3,
+        "B_SKU_2": 3
+      }
+    },
+    {
+      "tick": 393,
+      "order_id": 174,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_5": 2
+      }
+    },
+    {
+      "tick": 396,
+      "order_id": 175,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_3": 3,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 399,
+      "order_id": 176,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_2": 3
+      }
+    },
+    {
+      "tick": 402,
+      "order_id": 177,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_5": 3
+      }
+    },
+    {
+      "tick": 405,
+      "order_id": 178,
+      "station_id": 4,
+      "sku_demands": {
+        "B_SKU_0": 2,
+        "C_SKU_0": 2
+      }
+    },
+    {
+      "tick": 408,
+      "order_id": 179,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "B_SKU_5": 2
+      }
+    },
+    {
+      "tick": 411,
+      "order_id": 180,
+      "station_id": 4,
+      "sku_demands": {
+        "B_SKU_1": 1,
+        "B_SKU_8": 2
+      }
+    },
+    {
+      "tick": 414,
+      "order_id": 181,
+      "station_id": 2,
+      "sku_demands": {
+        "B_SKU_0": 3,
+        "B_SKU_2": 3
+      }
+    },
+    {
+      "tick": 417,
+      "order_id": 182,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_2": 1
+      }
+    },
+    {
+      "tick": 420,
+      "order_id": 183,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_3": 3
+      }
+    },
+    {
+      "tick": 423,
+      "order_id": 184,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_2": 2
+      }
+    },
+    {
+      "tick": 426,
+      "order_id": 185,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_4": 2,
+        "B_SKU_3": 1
+      }
+    },
+    {
+      "tick": 429,
+      "order_id": 186,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "C_SKU_3": 1
+      }
+    },
+    {
+      "tick": 432,
+      "order_id": 187,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_1": 1
+      }
+    },
+    {
+      "tick": 435,
+      "order_id": 188,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 438,
+      "order_id": 189,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "B_SKU_3": 1
+      }
+    },
+    {
+      "tick": 441,
+      "order_id": 190,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "C_SKU_7": 2
+      }
+    },
+    {
+      "tick": 444,
+      "order_id": 191,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_7": 1
+      }
+    },
+    {
+      "tick": 447,
+      "order_id": 192,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "B_SKU_4": 3
+      }
+    },
+    {
+      "tick": 450,
+      "order_id": 193,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "B_SKU_7": 3
+      }
+    },
+    {
+      "tick": 453,
+      "order_id": 194,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "B_SKU_0": 3
+      }
+    },
+    {
+      "tick": 456,
+      "order_id": 195,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_7": 2,
+        "B_SKU_0": 2
+      }
+    },
+    {
+      "tick": 459,
+      "order_id": 196,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_2": 2
+      }
+    },
+    {
+      "tick": 462,
+      "order_id": 197,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "A_SKU_4": 3
+      }
+    },
+    {
+      "tick": 465,
+      "order_id": 198,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_4": 2,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 468,
+      "order_id": 199,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_6": 1
+      }
+    },
+    {
+      "tick": 471,
+      "order_id": 200,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_4": 2,
+        "B_SKU_5": 2
+      }
+    },
+    {
+      "tick": 474,
+      "order_id": 201,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_3": 2
+      }
+    },
+    {
+      "tick": 477,
+      "order_id": 202,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_5": 3
+      }
+    },
+    {
+      "tick": 480,
+      "order_id": 203,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_1": 3
+      }
+    },
+    {
+      "tick": 483,
+      "order_id": 204,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "C_SKU_1": 3
+      }
+    },
+    {
+      "tick": 486,
+      "order_id": 205,
+      "station_id": 4,
+      "sku_demands": {
+        "B_SKU_1": 2,
+        "B_SKU_9": 2
+      }
+    },
+    {
+      "tick": 489,
+      "order_id": 206,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_5": 3
+      }
+    },
+    {
+      "tick": 492,
+      "order_id": 207,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_8": 2
+      }
+    },
+    {
+      "tick": 495,
+      "order_id": 208,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "C_SKU_7": 1
+      }
+    },
+    {
+      "tick": 498,
+      "order_id": 209,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_6": 3
+      }
+    },
+    {
+      "tick": 501,
+      "order_id": 210,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_5": 3,
+        "B_SKU_0": 2
+      }
+    },
+    {
+      "tick": 504,
+      "order_id": 211,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_5": 3
+      }
+    },
+    {
+      "tick": 507,
+      "order_id": 212,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_6": 2
+      }
+    },
+    {
+      "tick": 510,
+      "order_id": 213,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "C_SKU_8": 3
+      }
+    },
+    {
+      "tick": 513,
+      "order_id": 214,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "B_SKU_5": 2
+      }
+    },
+    {
+      "tick": 516,
+      "order_id": 215,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_8": 3
+      }
+    },
+    {
+      "tick": 519,
+      "order_id": 216,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "B_SKU_4": 2
+      }
+    },
+    {
+      "tick": 522,
+      "order_id": 217,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_2": 1
+      }
+    },
+    {
+      "tick": 525,
+      "order_id": 218,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "B_SKU_0": 3
+      }
+    },
+    {
+      "tick": 528,
+      "order_id": 219,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_6": 3
+      }
+    },
+    {
+      "tick": 531,
+      "order_id": 220,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_7": 2,
+        "B_SKU_1": 2
+      }
+    },
+    {
+      "tick": 534,
+      "order_id": 221,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_1": 3
+      }
+    },
+    {
+      "tick": 537,
+      "order_id": 222,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "B_SKU_4": 2
+      }
+    },
+    {
+      "tick": 540,
+      "order_id": 223,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_1": 2
+      }
+    },
+    {
+      "tick": 543,
+      "order_id": 224,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "B_SKU_6": 2
+      }
+    },
+    {
+      "tick": 546,
+      "order_id": 225,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_1": 3,
+        "A_SKU_2": 1
+      }
+    },
+    {
+      "tick": 549,
+      "order_id": 226,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_6": 3
+      }
+    },
+    {
+      "tick": 552,
+      "order_id": 227,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_0": 2
+      }
+    },
+    {
+      "tick": 555,
+      "order_id": 228,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_3": 3,
+        "B_SKU_3": 2
+      }
+    },
+    {
+      "tick": 558,
+      "order_id": 229,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_7": 1
+      }
+    },
+    {
+      "tick": 561,
+      "order_id": 230,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_2": 3
+      }
+    },
+    {
+      "tick": 564,
+      "order_id": 231,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_3": 3,
+        "B_SKU_2": 1
+      }
+    },
+    {
+      "tick": 567,
+      "order_id": 232,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_3": 3
+      }
+    },
+    {
+      "tick": 570,
+      "order_id": 233,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_6": 1
+      }
+    },
+    {
+      "tick": 573,
+      "order_id": 234,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_3": 3
+      }
+    },
+    {
+      "tick": 576,
+      "order_id": 235,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_1": 2
+      }
+    },
+    {
+      "tick": 579,
+      "order_id": 236,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "B_SKU_0": 1
+      }
+    },
+    {
+      "tick": 582,
+      "order_id": 237,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "A_SKU_2": 2
+      }
+    },
+    {
+      "tick": 585,
+      "order_id": 238,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_1": 3,
+        "B_SKU_0": 1
+      }
+    },
+    {
+      "tick": 588,
+      "order_id": 239,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_3": 1,
+        "A_SKU_9": 3
+      }
+    },
+    {
+      "tick": 591,
+      "order_id": 240,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_9": 1,
+        "B_SKU_0": 3
+      }
+    },
+    {
+      "tick": 594,
+      "order_id": 241,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_6": 3,
+        "B_SKU_0": 2
+      }
+    },
+    {
+      "tick": 597,
+      "order_id": 242,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_3": 1
+      }
+    },
+    {
+      "tick": 600,
+      "order_id": 243,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_5": 2
+      }
+    },
+    {
+      "tick": 603,
+      "order_id": 244,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_3": 1
+      }
+    },
+    {
+      "tick": 606,
+      "order_id": 245,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_3": 1
+      }
+    },
+    {
+      "tick": 609,
+      "order_id": 246,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "C_SKU_2": 2
+      }
+    },
+    {
+      "tick": 612,
+      "order_id": 247,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "A_SKU_2": 2
+      }
+    },
+    {
+      "tick": 615,
+      "order_id": 248,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_5": 2
+      }
+    },
+    {
+      "tick": 618,
+      "order_id": 249,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_3": 3,
+        "A_SKU_5": 1
+      }
+    },
+    {
+      "tick": 621,
+      "order_id": 250,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_5": 3,
+        "C_SKU_1": 1
+      }
+    },
+    {
+      "tick": 624,
+      "order_id": 251,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 2,
+        "C_SKU_3": 2
+      }
+    },
+    {
+      "tick": 627,
+      "order_id": 252,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_3": 1,
+        "B_SKU_1": 2
+      }
+    },
+    {
+      "tick": 630,
+      "order_id": 253,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "B_SKU_1": 1
+      }
+    },
+    {
+      "tick": 633,
+      "order_id": 254,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "B_SKU_0": 1
+      }
+    },
+    {
+      "tick": 636,
+      "order_id": 255,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_4": 2,
+        "B_SKU_5": 2
+      }
+    },
+    {
+      "tick": 639,
+      "order_id": 256,
+      "station_id": 2,
+      "sku_demands": {
+        "B_SKU_2": 1,
+        "B_SKU_6": 1
+      }
+    },
+    {
+      "tick": 642,
+      "order_id": 257,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_3": 1
+      }
+    },
+    {
+      "tick": 645,
+      "order_id": 258,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_1": 1
+      }
+    },
+    {
+      "tick": 648,
+      "order_id": 259,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_4": 3,
+        "B_SKU_0": 2
+      }
+    },
+    {
+      "tick": 651,
+      "order_id": 260,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_0": 3,
+        "A_SKU_1": 1
+      }
+    },
+    {
+      "tick": 654,
+      "order_id": 261,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_3": 3
+      }
+    },
+    {
+      "tick": 657,
+      "order_id": 262,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_1": 3,
+        "C_SKU_2": 2
+      }
+    },
+    {
+      "tick": 660,
+      "order_id": 263,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_1": 3,
+        "A_SKU_2": 1
+      }
+    },
+    {
+      "tick": 663,
+      "order_id": 264,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 666,
+      "order_id": 265,
+      "station_id": 2,
+      "sku_demands": {
+        "B_SKU_0": 2,
+        "C_SKU_0": 3
+      }
+    },
+    {
+      "tick": 669,
+      "order_id": 266,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "B_SKU_1": 3
+      }
+    },
+    {
+      "tick": 672,
+      "order_id": 267,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_7": 2,
+        "C_SKU_2": 2
+      }
+    },
+    {
+      "tick": 675,
+      "order_id": 268,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "B_SKU_1": 1
+      }
+    },
+    {
+      "tick": 678,
+      "order_id": 269,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_1": 3,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 681,
+      "order_id": 270,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_1": 3,
+        "B_SKU_1": 3
+      }
+    },
+    {
+      "tick": 684,
+      "order_id": 271,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_7": 1
+      }
+    },
+    {
+      "tick": 687,
+      "order_id": 272,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "B_SKU_3": 1
+      }
+    },
+    {
+      "tick": 690,
+      "order_id": 273,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_7": 2
+      }
+    },
+    {
+      "tick": 693,
+      "order_id": 274,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_1": 3,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 696,
+      "order_id": 275,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "C_SKU_6": 3
+      }
+    },
+    {
+      "tick": 699,
+      "order_id": 276,
+      "station_id": 3,
+      "sku_demands": {
+        "B_SKU_0": 3,
+        "C_SKU_4": 2
+      }
+    },
+    {
+      "tick": 702,
+      "order_id": 277,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_1": 3,
+        "B_SKU_3": 3
+      }
+    },
+    {
+      "tick": 705,
+      "order_id": 278,
+      "station_id": 3,
+      "sku_demands": {
+        "B_SKU_0": 1,
+        "B_SKU_8": 1
+      }
+    },
+    {
+      "tick": 708,
+      "order_id": 279,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "C_SKU_2": 2
+      }
+    },
+    {
+      "tick": 711,
+      "order_id": 280,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_4": 2,
+        "B_SKU_7": 1
+      }
+    },
+    {
+      "tick": 714,
+      "order_id": 281,
+      "station_id": 2,
+      "sku_demands": {
+        "B_SKU_1": 3,
+        "B_SKU_2": 1
+      }
+    },
+    {
+      "tick": 717,
+      "order_id": 282,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "B_SKU_0": 1
+      }
+    },
+    {
+      "tick": 720,
+      "order_id": 283,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_0": 1,
+        "A_SKU_1": 3
+      }
+    },
+    {
+      "tick": 723,
+      "order_id": 284,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_7": 1,
+        "C_SKU_4": 1
+      }
+    },
+    {
+      "tick": 726,
+      "order_id": 285,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "A_SKU_7": 2
+      }
+    },
+    {
+      "tick": 729,
+      "order_id": 286,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 732,
+      "order_id": 287,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_2": 1
+      }
+    },
+    {
+      "tick": 735,
+      "order_id": 288,
+      "station_id": 3,
+      "sku_demands": {
+        "B_SKU_1": 2,
+        "C_SKU_6": 3
+      }
+    },
+    {
+      "tick": 738,
+      "order_id": 289,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_1": 3,
+        "A_SKU_7": 1
+      }
+    },
+    {
+      "tick": 741,
+      "order_id": 290,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "B_SKU_9": 1
+      }
+    },
+    {
+      "tick": 744,
+      "order_id": 291,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 747,
+      "order_id": 292,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "A_SKU_7": 1
+      }
+    },
+    {
+      "tick": 750,
+      "order_id": 293,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "B_SKU_2": 1
+      }
+    },
+    {
+      "tick": 753,
+      "order_id": 294,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 3,
+        "C_SKU_3": 1
+      }
+    },
+    {
+      "tick": 756,
+      "order_id": 295,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_4": 3
+      }
+    },
+    {
+      "tick": 759,
+      "order_id": 296,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_9": 3
+      }
+    },
+    {
+      "tick": 762,
+      "order_id": 297,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_4": 2,
+        "B_SKU_2": 1
+      }
+    },
+    {
+      "tick": 765,
+      "order_id": 298,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "C_SKU_4": 1
+      }
+    },
+    {
+      "tick": 768,
+      "order_id": 299,
+      "station_id": 4,
+      "sku_demands": {
+        "B_SKU_0": 1,
+        "B_SKU_7": 3
+      }
+    },
+    {
+      "tick": 771,
+      "order_id": 300,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_4": 3
+      }
+    },
+    {
+      "tick": 774,
+      "order_id": 301,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_3": 1
+      }
+    },
+    {
+      "tick": 777,
+      "order_id": 302,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "C_SKU_6": 3
+      }
+    },
+    {
+      "tick": 780,
+      "order_id": 303,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_9": 2
+      }
+    },
+    {
+      "tick": 783,
+      "order_id": 304,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 786,
+      "order_id": 305,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 789,
+      "order_id": 306,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "B_SKU_0": 1
+      }
+    },
+    {
+      "tick": 792,
+      "order_id": 307,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_1": 3,
+        "A_SKU_7": 3
+      }
+    },
+    {
+      "tick": 795,
+      "order_id": 308,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 798,
+      "order_id": 309,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_7": 3
+      }
+    },
+    {
+      "tick": 801,
+      "order_id": 310,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "B_SKU_4": 3
+      }
+    },
+    {
+      "tick": 804,
+      "order_id": 311,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "B_SKU_3": 3
+      }
+    },
+    {
+      "tick": 807,
+      "order_id": 312,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_2": 3
+      }
+    },
+    {
+      "tick": 810,
+      "order_id": 313,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_1": 3,
+        "B_SKU_0": 2
+      }
+    },
+    {
+      "tick": 813,
+      "order_id": 314,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_1": 3,
+        "A_SKU_2": 3
+      }
+    },
+    {
+      "tick": 816,
+      "order_id": 315,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_2": 1
+      }
+    },
+    {
+      "tick": 819,
+      "order_id": 316,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "B_SKU_9": 3
+      }
+    },
+    {
+      "tick": 822,
+      "order_id": 317,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_3": 1
+      }
+    },
+    {
+      "tick": 825,
+      "order_id": 318,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_1": 3,
+        "C_SKU_3": 2
+      }
+    },
+    {
+      "tick": 828,
+      "order_id": 319,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_9": 2
+      }
+    },
+    {
+      "tick": 831,
+      "order_id": 320,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 1,
+        "C_SKU_9": 1
+      }
+    },
+    {
+      "tick": 834,
+      "order_id": 321,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_7": 3
+      }
+    },
+    {
+      "tick": 837,
+      "order_id": 322,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 2,
+        "A_SKU_2": 2
+      }
+    },
+    {
+      "tick": 840,
+      "order_id": 323,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_1": 3,
+        "A_SKU_4": 3
+      }
+    },
+    {
+      "tick": 843,
+      "order_id": 324,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_4": 3
+      }
+    },
+    {
+      "tick": 846,
+      "order_id": 325,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 849,
+      "order_id": 326,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_3": 1
+      }
+    },
+    {
+      "tick": 852,
+      "order_id": 327,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 855,
+      "order_id": 328,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_1": 2
+      }
+    },
+    {
+      "tick": 858,
+      "order_id": 329,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_9": 3
+      }
+    },
+    {
+      "tick": 861,
+      "order_id": 330,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 864,
+      "order_id": 331,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_1": 3
+      }
+    },
+    {
+      "tick": 867,
+      "order_id": 332,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "C_SKU_6": 1
+      }
+    },
+    {
+      "tick": 870,
+      "order_id": 333,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_4": 3
+      }
+    },
+    {
+      "tick": 873,
+      "order_id": 334,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_6": 2
+      }
+    },
+    {
+      "tick": 876,
+      "order_id": 335,
+      "station_id": 3,
+      "sku_demands": {
+        "B_SKU_2": 3,
+        "C_SKU_4": 3
+      }
+    },
+    {
+      "tick": 879,
+      "order_id": 336,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 882,
+      "order_id": 337,
+      "station_id": 1,
+      "sku_demands": {
+        "B_SKU_0": 3,
+        "B_SKU_2": 2
+      }
+    },
+    {
+      "tick": 885,
+      "order_id": 338,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 888,
+      "order_id": 339,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_6": 3
+      }
+    },
+    {
+      "tick": 891,
+      "order_id": 340,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_4": 2,
+        "A_SKU_9": 3
+      }
+    },
+    {
+      "tick": 894,
+      "order_id": 341,
+      "station_id": 1,
+      "sku_demands": {
+        "B_SKU_2": 1,
+        "C_SKU_3": 3
+      }
+    },
+    {
+      "tick": 897,
+      "order_id": 342,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 900,
+      "order_id": 343,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_4": 1,
+        "B_SKU_2": 1
+      }
+    },
+    {
+      "tick": 903,
+      "order_id": 344,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 906,
+      "order_id": 345,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_3": 3
+      }
+    },
+    {
+      "tick": 909,
+      "order_id": 346,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_4": 1,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 912,
+      "order_id": 347,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 915,
+      "order_id": 348,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_0": 3
+      }
+    },
+    {
+      "tick": 918,
+      "order_id": 349,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_2": 3
+      }
+    },
+    {
+      "tick": 921,
+      "order_id": 350,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 924,
+      "order_id": 351,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "C_SKU_0": 3
+      }
+    },
+    {
+      "tick": 927,
+      "order_id": 352,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_4": 3,
+        "B_SKU_8": 3
+      }
+    },
+    {
+      "tick": 930,
+      "order_id": 353,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_4": 2,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 933,
+      "order_id": 354,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 936,
+      "order_id": 355,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 939,
+      "order_id": 356,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 942,
+      "order_id": 357,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 945,
+      "order_id": 358,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_4": 2,
+        "C_SKU_7": 2
+      }
+    },
+    {
+      "tick": 948,
+      "order_id": 359,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_1": 3
+      }
+    },
+    {
+      "tick": 951,
+      "order_id": 360,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_0": 2
+      }
+    },
+    {
+      "tick": 954,
+      "order_id": 361,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_1": 2
+      }
+    },
+    {
+      "tick": 957,
+      "order_id": 362,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_4": 1
+      }
+    },
+    {
+      "tick": 960,
+      "order_id": 363,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_9": 1,
+        "B_SKU_1": 3
+      }
+    },
+    {
+      "tick": 963,
+      "order_id": 364,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_5": 1
+      }
+    },
+    {
+      "tick": 966,
+      "order_id": 365,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_0": 3
+      }
+    },
+    {
+      "tick": 969,
+      "order_id": 366,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 972,
+      "order_id": 367,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_0": 1
+      }
+    },
+    {
+      "tick": 975,
+      "order_id": 368,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_9": 2,
+        "B_SKU_1": 3
+      }
+    },
+    {
+      "tick": 978,
+      "order_id": 369,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 981,
+      "order_id": 370,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 984,
+      "order_id": 371,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 987,
+      "order_id": 372,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "C_SKU_6": 2
+      }
+    },
+    {
+      "tick": 990,
+      "order_id": 373,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_3": 2
+      }
+    },
+    {
+      "tick": 993,
+      "order_id": 374,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_9": 1
+      }
+    },
+    {
+      "tick": 996,
+      "order_id": 375,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_0": 2
+      }
+    },
+    {
+      "tick": 999,
+      "order_id": 376,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 1002,
+      "order_id": 377,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_9": 3,
+        "B_SKU_0": 1
+      }
+    },
+    {
+      "tick": 1005,
+      "order_id": 378,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 1008,
+      "order_id": 379,
+      "station_id": 4,
+      "sku_demands": {
+        "B_SKU_4": 1,
+        "C_SKU_7": 3
+      }
+    },
+    {
+      "tick": 1011,
+      "order_id": 380,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_4": 3,
+        "A_SKU_9": 2
+      }
+    },
+    {
+      "tick": 1014,
+      "order_id": 381,
+      "station_id": 1,
+      "sku_demands": {
+        "B_SKU_1": 3,
+        "C_SKU_4": 2
+      }
+    },
+    {
+      "tick": 1017,
+      "order_id": 382,
+      "station_id": 4,
+      "sku_demands": {
+        "B_SKU_7": 2,
+        "C_SKU_2": 3
+      }
+    },
+    {
+      "tick": 1020,
+      "order_id": 383,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 1023,
+      "order_id": 384,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_3": 3
+      }
+    },
+    {
+      "tick": 1026,
+      "order_id": 385,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_1": 2
+      }
+    },
+    {
+      "tick": 1029,
+      "order_id": 386,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 1032,
+      "order_id": 387,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_9": 2
+      }
+    },
+    {
+      "tick": 1035,
+      "order_id": 388,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_4": 1,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 1038,
+      "order_id": 389,
+      "station_id": 1,
+      "sku_demands": {
+        "B_SKU_0": 2,
+        "B_SKU_2": 3
+      }
+    },
+    {
+      "tick": 1041,
+      "order_id": 390,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_0": 2
+      }
+    },
+    {
+      "tick": 1044,
+      "order_id": 391,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 1047,
+      "order_id": 392,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_1": 2
+      }
+    },
+    {
+      "tick": 1050,
+      "order_id": 393,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_0": 2
+      }
+    },
+    {
+      "tick": 1053,
+      "order_id": 394,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 1056,
+      "order_id": 395,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_9": 1
+      }
+    },
+    {
+      "tick": 1059,
+      "order_id": 396,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_9": 2
+      }
+    },
+    {
+      "tick": 1062,
+      "order_id": 397,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_4": 2,
+        "B_SKU_6": 2
+      }
+    },
+    {
+      "tick": 1065,
+      "order_id": 398,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_4": 3,
+        "B_SKU_6": 3
+      }
+    },
+    {
+      "tick": 1068,
+      "order_id": 399,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_4": 3
+      }
+    },
+    {
+      "tick": 1071,
+      "order_id": 400,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_5": 3
+      }
+    },
+    {
+      "tick": 1074,
+      "order_id": 401,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 1077,
+      "order_id": 402,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_9": 3,
+        "B_SKU_1": 1
+      }
+    },
+    {
+      "tick": 1080,
+      "order_id": 403,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_5": 3
+      }
+    },
+    {
+      "tick": 1083,
+      "order_id": 404,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_8": 1
+      }
+    },
+    {
+      "tick": 1086,
+      "order_id": 405,
+      "station_id": 3,
+      "sku_demands": {
+        "B_SKU_0": 1,
+        "B_SKU_2": 2
+      }
+    },
+    {
+      "tick": 1089,
+      "order_id": 406,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 1092,
+      "order_id": 407,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 1095,
+      "order_id": 408,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 1098,
+      "order_id": 409,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_2": 3
+      }
+    },
+    {
+      "tick": 1101,
+      "order_id": 410,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_7": 2
+      }
+    },
+    {
+      "tick": 1104,
+      "order_id": 411,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_1": 1
+      }
+    },
+    {
+      "tick": 1107,
+      "order_id": 412,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_9": 3
+      }
+    },
+    {
+      "tick": 1110,
+      "order_id": 413,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_4": 3,
+        "B_SKU_0": 3
+      }
+    },
+    {
+      "tick": 1113,
+      "order_id": 414,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_4": 2
+      }
+    },
+    {
+      "tick": 1116,
+      "order_id": 415,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_1": 2
+      }
+    },
+    {
+      "tick": 1119,
+      "order_id": 416,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_9": 3
+      }
+    },
+    {
+      "tick": 1122,
+      "order_id": 417,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_9": 2
+      }
+    },
+    {
+      "tick": 1125,
+      "order_id": 418,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_4": 1,
+        "B_SKU_7": 1
+      }
+    },
+    {
+      "tick": 1128,
+      "order_id": 419,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_3": 1
+      }
+    },
+    {
+      "tick": 1131,
+      "order_id": 420,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_1": 1
+      }
+    },
+    {
+      "tick": 1134,
+      "order_id": 421,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_6": 1
+      }
+    },
+    {
+      "tick": 1137,
+      "order_id": 422,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_4": 3
+      }
+    },
+    {
+      "tick": 1140,
+      "order_id": 423,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_4": 1,
+        "B_SKU_2": 1
+      }
+    },
+    {
+      "tick": 1143,
+      "order_id": 424,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 1146,
+      "order_id": 425,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "C_SKU_9": 1
+      }
+    },
+    {
+      "tick": 1149,
+      "order_id": 426,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 1152,
+      "order_id": 427,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_4": 2
+      }
+    },
+    {
+      "tick": 1155,
+      "order_id": 428,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_9": 3
+      }
+    },
+    {
+      "tick": 1158,
+      "order_id": 429,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "C_SKU_4": 3
+      }
+    },
+    {
+      "tick": 1161,
+      "order_id": 430,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_4": 3
+      }
+    },
+    {
+      "tick": 1164,
+      "order_id": 431,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_4": 2
+      }
+    },
+    {
+      "tick": 1167,
+      "order_id": 432,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_9": 2
+      }
+    },
+    {
+      "tick": 1170,
+      "order_id": 433,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_4": 1,
+        "A_SKU_9": 2
+      }
+    },
+    {
+      "tick": 1173,
+      "order_id": 434,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_4": 2,
+        "C_SKU_6": 2
+      }
+    },
+    {
+      "tick": 1176,
+      "order_id": 435,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_4": 2,
+        "B_SKU_5": 2
+      }
+    },
+    {
+      "tick": 1179,
+      "order_id": 436,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_9": 2
+      }
+    },
+    {
+      "tick": 1182,
+      "order_id": 437,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_9": 1
+      }
+    },
+    {
+      "tick": 1185,
+      "order_id": 438,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_4": 3,
+        "B_SKU_4": 1
+      }
+    },
+    {
+      "tick": 1188,
+      "order_id": 439,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_4": 2,
+        "B_SKU_1": 1
+      }
+    },
+    {
+      "tick": 1191,
+      "order_id": 440,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_1": 1
+      }
+    },
+    {
+      "tick": 1194,
+      "order_id": 441,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_2": 2
+      }
+    },
+    {
+      "tick": 1197,
+      "order_id": 442,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_4": 1,
+        "C_SKU_3": 3
+      }
+    },
+    {
+      "tick": 1200,
+      "order_id": 443,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_6": 1
+      }
+    },
+    {
+      "tick": 1203,
+      "order_id": 444,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_0": 3
+      }
+    },
+    {
+      "tick": 1206,
+      "order_id": 445,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "C_SKU_7": 1
+      }
+    },
+    {
+      "tick": 1209,
+      "order_id": 446,
+      "station_id": 3,
+      "sku_demands": {
+        "B_SKU_5": 3,
+        "C_SKU_3": 3
+      }
+    },
+    {
+      "tick": 1212,
+      "order_id": 447,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 1215,
+      "order_id": 448,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_2": 2
+      }
+    },
+    {
+      "tick": 1218,
+      "order_id": 449,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_0": 1
+      }
+    },
+    {
+      "tick": 1221,
+      "order_id": 450,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_9": 3
+      }
+    },
+    {
+      "tick": 1224,
+      "order_id": 451,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_8": 2
+      }
+    },
+    {
+      "tick": 1227,
+      "order_id": 452,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 1230,
+      "order_id": 453,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_6": 3
+      }
+    },
+    {
+      "tick": 1233,
+      "order_id": 454,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_0": 1
+      }
+    },
+    {
+      "tick": 1236,
+      "order_id": 455,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_9": 3,
+        "B_SKU_0": 3
+      }
+    },
+    {
+      "tick": 1239,
+      "order_id": 456,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "C_SKU_4": 2
+      }
+    },
+    {
+      "tick": 1242,
+      "order_id": 457,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_4": 3,
+        "C_SKU_2": 1
+      }
+    },
+    {
+      "tick": 1245,
+      "order_id": 458,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "C_SKU_5": 2
+      }
+    },
+    {
+      "tick": 1248,
+      "order_id": 459,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_1": 2
+      }
+    },
+    {
+      "tick": 1251,
+      "order_id": 460,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "C_SKU_2": 2
+      }
+    },
+    {
+      "tick": 1254,
+      "order_id": 461,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 1257,
+      "order_id": 462,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_3": 1
+      }
+    },
+    {
+      "tick": 1260,
+      "order_id": 463,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 1263,
+      "order_id": 464,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_4": 1,
+        "C_SKU_0": 1
+      }
+    },
+    {
+      "tick": 1266,
+      "order_id": 465,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_9": 3,
+        "B_SKU_0": 3
+      }
+    },
+    {
+      "tick": 1269,
+      "order_id": 466,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 1272,
+      "order_id": 467,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_2": 2
+      }
+    },
+    {
+      "tick": 1275,
+      "order_id": 468,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_9": 3
+      }
+    },
+    {
+      "tick": 1278,
+      "order_id": 469,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_5": 3
+      }
+    },
+    {
+      "tick": 1281,
+      "order_id": 470,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_9": 3
+      }
+    },
+    {
+      "tick": 1284,
+      "order_id": 471,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_2": 1
+      }
+    },
+    {
+      "tick": 1287,
+      "order_id": 472,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_5": 3
+      }
+    },
+    {
+      "tick": 1290,
+      "order_id": 473,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_3": 2
+      }
+    },
+    {
+      "tick": 1293,
+      "order_id": 474,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 1296,
+      "order_id": 475,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 1299,
+      "order_id": 476,
+      "station_id": 1,
+      "sku_demands": {
+        "B_SKU_0": 2,
+        "B_SKU_7": 3
+      }
+    },
+    {
+      "tick": 1302,
+      "order_id": 477,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 1305,
+      "order_id": 478,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_0": 2
+      }
+    },
+    {
+      "tick": 1308,
+      "order_id": 479,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_9": 3
+      }
+    },
+    {
+      "tick": 1311,
+      "order_id": 480,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_2": 2
+      }
+    },
+    {
+      "tick": 1314,
+      "order_id": 481,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_1": 3
+      }
+    },
+    {
+      "tick": 1317,
+      "order_id": 482,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "C_SKU_1": 3
+      }
+    },
+    {
+      "tick": 1320,
+      "order_id": 483,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_9": 3
+      }
+    },
+    {
+      "tick": 1323,
+      "order_id": 484,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 1326,
+      "order_id": 485,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 1329,
+      "order_id": 486,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_9": 3
+      }
+    },
+    {
+      "tick": 1332,
+      "order_id": 487,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_2": 2
+      }
+    },
+    {
+      "tick": 1335,
+      "order_id": 488,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_9": 3,
+        "B_SKU_7": 2
+      }
+    },
+    {
+      "tick": 1338,
+      "order_id": 489,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_4": 3,
+        "C_SKU_3": 3
+      }
+    },
+    {
+      "tick": 1341,
+      "order_id": 490,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 1344,
+      "order_id": 491,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "C_SKU_7": 3
+      }
+    },
+    {
+      "tick": 1347,
+      "order_id": 492,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_4": 1,
+        "B_SKU_4": 1
+      }
+    },
+    {
+      "tick": 1350,
+      "order_id": 493,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_9": 2,
+        "C_SKU_1": 2
+      }
+    },
+    {
+      "tick": 1353,
+      "order_id": 494,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 1356,
+      "order_id": 495,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 1359,
+      "order_id": 496,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_4": 3
+      }
+    },
+    {
+      "tick": 1362,
+      "order_id": 497,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 1365,
+      "order_id": 498,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_1": 3
+      }
+    },
+    {
+      "tick": 1368,
+      "order_id": 499,
+      "station_id": 1,
+      "sku_demands": {
+        "C_SKU_0": 1,
+        "C_SKU_7": 2
+      }
+    },
+    {
+      "tick": 1371,
+      "order_id": 500,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_4": 3
+      }
+    },
+    {
+      "tick": 1374,
+      "order_id": 501,
+      "station_id": 3,
+      "sku_demands": {
+        "B_SKU_0": 3,
+        "B_SKU_7": 3
+      }
+    },
+    {
+      "tick": 1377,
+      "order_id": 502,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 1380,
+      "order_id": 503,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_5": 3
+      }
+    },
+    {
+      "tick": 1383,
+      "order_id": 504,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_4": 1,
+        "B_SKU_7": 1
+      }
+    },
+    {
+      "tick": 1386,
+      "order_id": 505,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_4": 3
+      }
+    },
+    {
+      "tick": 1389,
+      "order_id": 506,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_9": 3
+      }
+    },
+    {
+      "tick": 1392,
+      "order_id": 507,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_9": 2
+      }
+    },
+    {
+      "tick": 1395,
+      "order_id": 508,
+      "station_id": 2,
+      "sku_demands": {
+        "B_SKU_1": 1,
+        "C_SKU_8": 3
+      }
+    },
+    {
+      "tick": 1398,
+      "order_id": 509,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_4": 3
+      }
+    },
+    {
+      "tick": 1401,
+      "order_id": 510,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_4": 2
+      }
+    },
+    {
+      "tick": 1404,
+      "order_id": 511,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 1407,
+      "order_id": 512,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 1410,
+      "order_id": 513,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_4": 3
+      }
+    },
+    {
+      "tick": 1413,
+      "order_id": 514,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_9": 2
+      }
+    },
+    {
+      "tick": 1416,
+      "order_id": 515,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "A_SKU_9": 3
+      }
+    },
+    {
+      "tick": 1419,
+      "order_id": 516,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_0": 1
+      }
+    },
+    {
+      "tick": 1422,
+      "order_id": 517,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_4": 2,
+        "B_SKU_0": 2
+      }
+    },
+    {
+      "tick": 1425,
+      "order_id": 518,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_0": 2
+      }
+    },
+    {
+      "tick": 1428,
+      "order_id": 519,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 1,
+        "B_SKU_0": 1
+      }
+    },
+    {
+      "tick": 1431,
+      "order_id": 520,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_1": 2
+      }
+    },
+    {
+      "tick": 1434,
+      "order_id": 521,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_4": 2,
+        "B_SKU_0": 2
+      }
+    },
+    {
+      "tick": 1437,
+      "order_id": 522,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 1440,
+      "order_id": 523,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_1": 1
+      }
+    },
+    {
+      "tick": 1443,
+      "order_id": 524,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_9": 1,
+        "B_SKU_0": 2
+      }
+    },
+    {
+      "tick": 1446,
+      "order_id": 525,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_1": 1
+      }
+    },
+    {
+      "tick": 1449,
+      "order_id": 526,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_9": 1,
+        "B_SKU_2": 2
+      }
+    },
+    {
+      "tick": 1452,
+      "order_id": 527,
+      "station_id": 4,
+      "sku_demands": {
+        "B_SKU_0": 2,
+        "B_SKU_1": 3
+      }
+    },
+    {
+      "tick": 1455,
+      "order_id": 528,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_1": 1
+      }
+    },
+    {
+      "tick": 1458,
+      "order_id": 529,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_9": 1
+      }
+    },
+    {
+      "tick": 1461,
+      "order_id": 530,
+      "station_id": 1,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "C_SKU_3": 3
+      }
+    },
+    {
+      "tick": 1464,
+      "order_id": 531,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_9": 2,
+        "B_SKU_3": 1
+      }
+    },
+    {
+      "tick": 1467,
+      "order_id": 532,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_1": 3
+      }
+    },
+    {
+      "tick": 1470,
+      "order_id": 533,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 1473,
+      "order_id": 534,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_2": 3
+      }
+    },
+    {
+      "tick": 1476,
+      "order_id": 535,
+      "station_id": 2,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "C_SKU_4": 1
+      }
+    },
+    {
+      "tick": 1479,
+      "order_id": 536,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_4": 2,
+        "B_SKU_4": 1
+      }
+    },
+    {
+      "tick": 1482,
+      "order_id": 537,
+      "station_id": 4,
+      "sku_demands": {
+        "B_SKU_3": 1,
+        "B_SKU_7": 1
+      }
+    },
+    {
+      "tick": 1485,
+      "order_id": 538,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_0": 1
+      }
+    },
+    {
+      "tick": 1488,
+      "order_id": 539,
+      "station_id": 4,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "A_SKU_4": 1
+      }
+    },
+    {
+      "tick": 1491,
+      "order_id": 540,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "A_SKU_4": 2
+      }
+    },
+    {
+      "tick": 1494,
+      "order_id": 541,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 2,
+        "B_SKU_2": 2
+      }
+    },
+    {
+      "tick": 1497,
+      "order_id": 542,
+      "station_id": 3,
+      "sku_demands": {
+        "A_SKU_2": 3,
+        "B_SKU_2": 3
+      }
+    }
+  ],
+  "total_orders": 543
+}

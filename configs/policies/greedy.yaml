@@ -1,0 +1,7 @@
+schema_version: policy_contract_v1
+paper_name: Greedy
+implementation: Policies.TaskAssigner.GreedyTaskAssigner.greedy_task_assigner.GreedyTaskAssigner
+context_order: proposal_order
+robot_score: manhattan_distance_robot_to_pod
+selection: minimum
+trainable_parameters: false

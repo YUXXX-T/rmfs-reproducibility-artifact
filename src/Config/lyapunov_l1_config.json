@@ -1,0 +1,19 @@
+{
+  "work_weight": 1.0,
+  "station_weight": 1.0,
+  "traffic_weight": 0.0,
+  "stall_weight": 0.0,
+  "plan_fail_weight": 0.0,
+  "arrival_weight": 1.0,
+  "station_safe_ratio": 0.7,
+  "stall_threshold": 10,
+  "plan_fail_threshold": 2,
+  "reservation_window": 10,
+  "opposite_reservation_weight": 1.0,
+  "movement_blocked_weight": 1.0,
+  "realized_conflict_weight": 1.0,
+  "eta_bin_edges": [10, 25, 50],
+  "arrival_capacity_scale": 1.0,
+  "work_capacity": 0.0,
+  "unresolved_pending_mass": 1.0
+}

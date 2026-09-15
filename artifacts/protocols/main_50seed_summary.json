@@ -1,0 +1,6005 @@
+{
+  "schema_version": "phase_c_physical_only_pp_50seed_summary_v1",
+  "expected_jobs": 150,
+  "completed_jobs": 150,
+  "missing_jobs": [],
+  "variant": "map20_r48_s4",
+  "loads": [
+    "low",
+    "mid",
+    "high"
+  ],
+  "seeds": [
+    900,
+    901,
+    902,
+    903,
+    904,
+    905,
+    906,
+    907,
+    908,
+    909,
+    910,
+    911,
+    912,
+    913,
+    914,
+    915,
+    916,
+    917,
+    918,
+    919,
+    920,
+    921,
+    922,
+    923,
+    924,
+    925,
+    926,
+    927,
+    928,
+    929,
+    930,
+    931,
+    932,
+    933,
+    934,
+    935,
+    936,
+    937,
+    938,
+    939,
+    940,
+    941,
+    942,
+    943,
+    944,
+    945,
+    946,
+    947,
+    948,
+    949
+  ],
+  "ticks": 1500,
+  "arms": [
+    "Greedy",
+    "Hungarian",
+    "JSQ",
+    "PhaseC",
+    "ComboS1J1"
+  ],
+  "aggregate": {
+    "low": {
+      "ComboS1J1": {
+        "completed_orders_mean": 380.56,
+        "completed_orders_std": 128.982,
+        "completed_tasks_mean": 1685.88,
+        "completed_tasks_std": 534.7792,
+        "avg_task_duration_mean": 41.524,
+        "avg_task_duration_std": 4.3807,
+        "avg_excess_delay_mean": 27.7115,
+        "avg_excess_delay_std": 4.3409,
+        "wall_time_s_mean": 684.7398,
+        "wall_time_s_std": 455.3346,
+        "ticks_mean": 1500.0,
+        "ticks_std": 0.0,
+        "num_agents_mean": 48.0,
+        "num_agents_std": 0.0,
+        "open_order_count_mean": 82.06,
+        "open_order_count_std": 102.5728,
+        "pending_order_count_mean": 59.76,
+        "pending_order_count_std": 95.4056,
+        "open_order_age_p95_mean": 428.347,
+        "open_order_age_p95_std": 465.3416,
+        "pending_order_age_p95_mean": 278.187,
+        "pending_order_age_p95_std": 384.5837,
+        "completed_order_flow_time_p95_mean": 167.147,
+        "completed_order_flow_time_p95_std": 52.0992,
+        "action_path_mode_mean": 0.0,
+        "action_path_mode_std": 0.0,
+        "world_model_path_planner_injected_mean": 1.0,
+        "world_model_path_planner_injected_std": 0.0,
+        "assign_calls_mean": 1500.0,
+        "assign_calls_std": 0.0,
+        "model_assign_calls_mean": 1497.0,
+        "model_assign_calls_std": 0.0,
+        "fallback_greedy_calls_mean": 0.0,
+        "fallback_greedy_calls_std": 0.0,
+        "warmup_defer_calls_mean": 3.0,
+        "warmup_defer_calls_std": 0.0,
+        "model_inference_calls_mean": 7804.24,
+        "model_inference_calls_std": 3736.4365,
+        "fallback_greedy_ratio_mean": 0.0,
+        "fallback_greedy_ratio_std": 0.0,
+        "assignment_time_ms_mean_mean": 177.9387,
+        "assignment_time_ms_mean_std": 56.1691,
+        "model_inference_time_ms_mean_mean": 24.9797,
+        "model_inference_time_ms_mean_std": 0.2039,
+        "risk_guard_filtered_mean": 0.0,
+        "risk_guard_filtered_std": 0.0,
+        "risk_guard_fallback_mean": 0.0,
+        "risk_guard_fallback_std": 0.0,
+        "all_idle_candidate_contexts_mean": 581.58,
+        "all_idle_candidate_contexts_std": 172.7039,
+        "all_idle_candidates_scored_mean": 7804.24,
+        "all_idle_candidates_scored_std": 3736.4365,
+        "all_idle_candidates_per_context_mean_mean": 13.2938,
+        "all_idle_candidates_per_context_mean_std": 5.798,
+        "decision_contexts_total_mean": 581.58,
+        "decision_contexts_total_std": 172.7039,
+        "risk_max_mean_mean": 0.4033,
+        "risk_max_mean_std": 0.079,
+        "risk_max_max_mean": 1.0384,
+        "risk_max_max_std": 0.0428,
+        "risk_max_min_mean": 0.0162,
+        "risk_max_min_std": 0.0372,
+        "risk_max_count_mean": 7804.24,
+        "risk_max_count_std": 3736.4365,
+        "energy_scoring_contexts_mean": 581.58,
+        "energy_scoring_contexts_std": 172.7039,
+        "energy_scoring_candidates_mean": 0.0,
+        "energy_scoring_candidates_std": 0.0,
+        "energy_candidates_per_context_mean": 0.0,
+        "energy_candidates_per_context_std": 0.0,
+        "energy_score_mean_mean": 0.0,
+        "energy_score_mean_std": 0.0,
+        "energy_potential_mean_mean": 0.0,
+        "energy_potential_mean_std": 0.0,
+        "energy_service_relief_mean_mean": 0.0,
+        "energy_service_relief_mean_std": 0.0,
+        "energy_noop_contexts_mean": 0.0,
+        "energy_noop_contexts_std": 0.0,
+        "energy_noop_deferred_mean": 0.0,
+        "energy_noop_deferred_std": 0.0,
+        "energy_noop_rate_mean": 0.0,
+        "energy_noop_rate_std": 0.0,
+        "energy_noop_score_mean_mean": 0.0,
+        "energy_noop_score_mean_std": 0.0,
+        "energy_noop_cost_mean_mean": 0.0,
+        "energy_noop_cost_mean_std": 0.0,
+        "energy_noop_best_action_score_mean_mean": 0.0,
+        "energy_noop_best_action_score_mean_std": 0.0,
+        "energy_conv_contexts_mean": 581.58,
+        "energy_conv_contexts_std": 172.7039,
+        "energy_conv_active_contexts_mean": 154.48,
+        "energy_conv_active_contexts_std": 41.5236,
+        "energy_conv_warmup_contexts_mean": 50.0,
+        "energy_conv_warmup_contexts_std": 0.0,
+        "energy_conv_modified_decisions_mean": 6.3,
+        "energy_conv_modified_decisions_std": 3.5398,
+        "energy_conv_modified_decision_rate_mean": 0.0107,
+        "energy_conv_modified_decision_rate_std": 0.0054,
+        "energy_conv_active_rate_mean": 0.2858,
+        "energy_conv_active_rate_std": 0.0953,
+        "energy_conv_gate_g_mean_mean": 0.2935,
+        "energy_conv_gate_g_mean_std": 0.0914,
+        "energy_conv_v_state_mean_mean": 8.51,
+        "energy_conv_v_state_mean_std": 2.3623,
+        "energy_conv_signal_selected_mean_mean": 0.6647,
+        "energy_conv_signal_selected_mean_std": 0.0453,
+        "energy_conv_z_base_selected_mean_mean": -2.1316,
+        "energy_conv_z_base_selected_mean_std": 0.5969,
+        "energy_conv_z_delta_selected_mean_mean": 0.2237,
+        "energy_conv_z_delta_selected_mean_std": 0.0551,
+        "risk_max_p50_mean": 0.3701,
+        "risk_max_p50_std": 0.0958,
+        "risk_max_p90_mean": 0.7182,
+        "risk_max_p90_std": 0.1392,
+        "risk_max_p95_mean": 0.8042,
+        "risk_max_p95_std": 0.1217,
+        "risk_max_p99_mean": 0.9233,
+        "risk_max_p99_std": 0.0831,
+        "wm_label_cost_mean": 4.3333,
+        "wm_label_cost_std": 0.4473,
+        "wait_or_stall_mean": 0.0542,
+        "wait_or_stall_std": 0.0586,
+        "avg_excess_delay_label_mean": 2.6555,
+        "avg_excess_delay_label_std": 0.2812,
+        "station_pressure_mean": 1.6428,
+        "station_pressure_std": 0.8896,
+        "bottleneck_CVaR_mean": 0.13,
+        "bottleneck_CVaR_std": 0.0135,
+        "completed_orders_delta_sum_mean": 380.56,
+        "completed_orders_delta_sum_std": 128.982,
+        "unified_risk_mean": 1.0,
+        "unified_risk_std": 0.0,
+        "congestion_events_mean": 471.72,
+        "congestion_events_std": 465.5343,
+        "severe_events_mean": 431.26,
+        "severe_events_std": 474.1018,
+        "risk_rate_per_100_mean": 31.448,
+        "risk_rate_per_100_std": 31.0356,
+        "stall_ratio_mean_mean": 0.0542,
+        "stall_ratio_mean_std": 0.0586,
+        "stall_ratio_max_mean": 0.1896,
+        "stall_ratio_max_std": 0.0539,
+        "deadlock_ratio_mean_mean": 0.2093,
+        "deadlock_ratio_mean_std": 0.2829,
+        "deadlock_ratio_max_mean": 0.4733,
+        "deadlock_ratio_max_std": 0.3543,
+        "handoff_ratio_mean_mean": 0.0041,
+        "handoff_ratio_mean_std": 0.0022,
+        "handoff_ratio_max_mean": 0.0825,
+        "handoff_ratio_max_std": 0.0144,
+        "order_arrival_count_mean": 462.62,
+        "order_arrival_count_std": 75.2441,
+        "order_arrival_replayed_mean": 1.0,
+        "order_arrival_replayed_std": 0.0,
+        "psi_dispatch_head_loaded_mean": 1.0,
+        "psi_dispatch_head_loaded_std": 0.0,
+        "psi_dispatch_encoder_contract_verified_mean": 1.0,
+        "psi_dispatch_encoder_contract_verified_std": 0.0,
+        "psi_dispatch_proposal_calls_mean": 1497.0,
+        "psi_dispatch_proposal_calls_std": 0.0,
+        "psi_dispatch_requested_budget_mean_mean": 11.7098,
+        "psi_dispatch_requested_budget_mean_std": 7.874,
+        "psi_dispatch_superset_size_mean_mean": 2.2885,
+        "psi_dispatch_superset_size_mean_std": 3.0052,
+        "psi_dispatch_eval_calls_mean": 683.36,
+        "psi_dispatch_eval_calls_std": 307.1577,
+        "psi_dispatch_eval_time_ms_mean_mean": 24.9694,
+        "psi_dispatch_eval_time_ms_mean_std": 0.3272,
+        "psi_dispatch_contexts_seen_mean": 3425.82,
+        "psi_dispatch_contexts_seen_std": 4498.8217,
+        "psi_dispatch_unique_stations_mean_mean": 1.4412,
+        "psi_dispatch_unique_stations_mean_std": 0.5994,
+        "psi_dispatch_reordered_calls_mean": 270.82,
+        "psi_dispatch_reordered_calls_std": 399.7592,
+        "psi_dispatch_changed_positions_mean": 2483.8,
+        "psi_dispatch_changed_positions_std": 4066.8131,
+        "psi_dispatch_replacement_calls_mean": 19.28,
+        "psi_dispatch_replacement_calls_std": 27.1566,
+        "psi_dispatch_replacement_count_mean": 19.72,
+        "psi_dispatch_replacement_count_std": 28.0821,
+        "psi_dispatch_service_mean_mean": 0.3252,
+        "psi_dispatch_service_mean_std": 0.1765,
+        "psi_dispatch_traffic_mean_mean": 0.2693,
+        "psi_dispatch_traffic_mean_std": 0.0737,
+        "psi_dispatch_backlog_mean_mean": 0.3929,
+        "psi_dispatch_backlog_mean_std": 0.2561,
+        "psi_dispatch_age_mean_mean": 0.2348,
+        "psi_dispatch_age_mean_std": 0.3077,
+        "psi_dispatch_service_debt_mean_mean": 0.3139,
+        "psi_dispatch_service_debt_mean_std": 0.2814,
+        "psi_dispatch_j_mean_mean": -0.0166,
+        "psi_dispatch_j_mean_std": 0.1655,
+        "psi_dispatch_trace_records_mean": 0.0,
+        "psi_dispatch_trace_records_std": 0.0,
+        "psi_dispatch_trace_dropped_mean": 0.0,
+        "psi_dispatch_trace_dropped_std": 0.0,
+        "psi_dispatch_s1_within_context_mean": 1.0,
+        "psi_dispatch_s1_within_context_std": 0.0,
+        "psi_dispatch_no_assign_added_mean": 0.0,
+        "psi_dispatch_no_assign_added_std": 0.0,
+        "psi_dispatch_hard_gate_added_mean": 0.0,
+        "psi_dispatch_hard_gate_added_std": 0.0,
+        "psi_dispatch_e_demand_modified_mean": 0.0,
+        "psi_dispatch_e_demand_modified_std": 0.0,
+        "psi_dispatch_attention_added_mean": 0.0,
+        "psi_dispatch_attention_added_std": 0.0,
+        "station_capacity_rejections_mean": 9411.0,
+        "station_capacity_rejections_std": 11737.8509,
+        "station_max_occupancy_mean": 7.0,
+        "station_max_occupancy_std": 0.0,
+        "station_max_committed_load_mean": 17.78,
+        "station_max_committed_load_std": 2.0908,
+        "completion_fraction_mean": 0.8168,
+        "completion_fraction_std": 0.2313,
+        "final_backlog_total_mean": 141.82,
+        "final_backlog_total_std": 197.824,
+        "final_backlog_fraction_mean": 0.3179,
+        "final_backlog_fraction_std": 0.4438,
+        "completed_orders_per_congestion_event_mean": 3.405,
+        "completed_orders_per_congestion_event_std": 4.5391,
+        "completed_orders_per_severe_event_mean": 6.0303,
+        "completed_orders_per_severe_event_std": 9.713
+      },
+      "Greedy": {
+        "completed_orders_mean": 356.42,
+        "completed_orders_std": 147.1704,
+        "completed_tasks_mean": 1593.62,
+        "completed_tasks_std": 623.954,
+        "avg_task_duration_mean": 43.9615,
+        "avg_task_duration_std": 4.1903,
+        "avg_excess_delay_mean": 30.1217,
+        "avg_excess_delay_std": 4.0256,
+        "wall_time_s_mean": 616.5888,
+        "wall_time_s_std": 498.807,
+        "ticks_mean": 1500.0,
+        "ticks_std": 0.0,
+        "num_agents_mean": 48.0,
+        "num_agents_std": 0.0,
+        "open_order_count_mean": 106.2,
+        "open_order_count_std": 75.1361,
+        "pending_order_count_mean": 74.5,
+        "pending_order_count_std": 73.5653,
+        "open_order_age_p95_mean": 667.748,
+        "open_order_age_p95_std": 440.6963,
+        "pending_order_age_p95_mean": 417.604,
+        "pending_order_age_p95_std": 321.8639,
+        "completed_order_flow_time_p95_mean": 159.248,
+        "completed_order_flow_time_p95_std": 19.1271,
+        "wm_label_cost_mean": 4.6735,
+        "wm_label_cost_std": 0.3604,
+        "wait_or_stall_mean": 0.0806,
+        "wait_or_stall_std": 0.0554,
+        "avg_excess_delay_label_mean": 2.7654,
+        "avg_excess_delay_label_std": 0.3098,
+        "station_pressure_mean": 2.1714,
+        "station_pressure_std": 0.7604,
+        "bottleneck_CVaR_mean": 0.1245,
+        "bottleneck_CVaR_std": 0.0129,
+        "completed_orders_delta_sum_mean": 356.42,
+        "completed_orders_delta_sum_std": 147.1704,
+        "unified_risk_mean": 1.0,
+        "unified_risk_std": 0.0,
+        "congestion_events_mean": 751.94,
+        "congestion_events_std": 398.5096,
+        "severe_events_mean": 702.38,
+        "severe_events_std": 421.0252,
+        "risk_rate_per_100_mean": 50.1293,
+        "risk_rate_per_100_std": 26.5673,
+        "stall_ratio_mean_mean": 0.0806,
+        "stall_ratio_mean_std": 0.0554,
+        "stall_ratio_max_mean": 0.2192,
+        "stall_ratio_max_std": 0.0526,
+        "deadlock_ratio_mean_mean": 0.3453,
+        "deadlock_ratio_mean_std": 0.2713,
+        "deadlock_ratio_max_mean": 0.7592,
+        "deadlock_ratio_max_std": 0.3223,
+        "handoff_ratio_mean_mean": 0.0051,
+        "handoff_ratio_mean_std": 0.0024,
+        "handoff_ratio_max_mean": 0.0917,
+        "handoff_ratio_max_std": 0.0191,
+        "order_arrival_count_mean": 462.62,
+        "order_arrival_count_std": 75.2441,
+        "order_arrival_replayed_mean": 0.0,
+        "order_arrival_replayed_std": 0.0,
+        "station_capacity_rejections_mean": 15293.02,
+        "station_capacity_rejections_std": 11458.7935,
+        "station_max_occupancy_mean": 7.0,
+        "station_max_occupancy_std": 0.0,
+        "station_max_committed_load_mean": 18.66,
+        "station_max_committed_load_std": 1.8827,
+        "completion_fraction_mean": 0.7379,
+        "completion_fraction_std": 0.2178,
+        "final_backlog_total_mean": 180.7,
+        "final_backlog_total_std": 148.6688,
+        "final_backlog_fraction_mean": 0.4532,
+        "final_backlog_fraction_std": 0.4211,
+        "completed_orders_per_congestion_event_mean": 0.9264,
+        "completed_orders_per_congestion_event_std": 0.9715,
+        "completed_orders_per_severe_event_mean": 1.2909,
+        "completed_orders_per_severe_event_std": 1.6116
+      },
+      "Hungarian": {
+        "completed_orders_mean": 341.14,
+        "completed_orders_std": 131.4844,
+        "completed_tasks_mean": 1537.82,
+        "completed_tasks_std": 542.2256,
+        "avg_task_duration_mean": 40.8516,
+        "avg_task_duration_std": 4.1995,
+        "avg_excess_delay_mean": 27.208,
+        "avg_excess_delay_std": 4.1277,
+        "wall_time_s_mean": 461.3578,
+        "wall_time_s_std": 488.5956,
+        "ticks_mean": 1500.0,
+        "ticks_std": 0.0,
+        "num_agents_mean": 48.0,
+        "num_agents_std": 0.0,
+        "open_order_count_mean": 121.48,
+        "open_order_count_std": 130.1593,
+        "pending_order_count_mean": 98.84,
+        "pending_order_count_std": 124.4028,
+        "open_order_age_p95_mean": 517.672,
+        "open_order_age_p95_std": 485.4965,
+        "pending_order_age_p95_mean": 352.722,
+        "pending_order_age_p95_std": 424.6435,
+        "completed_order_flow_time_p95_mean": 146.679,
+        "completed_order_flow_time_p95_std": 32.1427,
+        "wm_label_cost_mean": 4.4345,
+        "wm_label_cost_std": 0.5407,
+        "wait_or_stall_mean": 0.0606,
+        "wait_or_stall_std": 0.0559,
+        "avg_excess_delay_label_mean": 2.646,
+        "avg_excess_delay_label_std": 0.3,
+        "station_pressure_mean": 1.8491,
+        "station_pressure_std": 1.0121,
+        "bottleneck_CVaR_mean": 0.1331,
+        "bottleneck_CVaR_std": 0.0157,
+        "completed_orders_delta_sum_mean": 341.14,
+        "completed_orders_delta_sum_std": 131.4844,
+        "unified_risk_mean": 0.9967,
+        "unified_risk_std": 0.0233,
+        "congestion_events_mean": 583.68,
+        "congestion_events_std": 490.6284,
+        "severe_events_mean": 543.54,
+        "severe_events_std": 502.2611,
+        "risk_rate_per_100_mean": 38.912,
+        "risk_rate_per_100_std": 32.7085,
+        "stall_ratio_mean_mean": 0.0606,
+        "stall_ratio_mean_std": 0.0559,
+        "stall_ratio_max_mean": 0.1896,
+        "stall_ratio_max_std": 0.0516,
+        "deadlock_ratio_mean_mean": 0.2777,
+        "deadlock_ratio_mean_std": 0.3024,
+        "deadlock_ratio_max_mean": 0.5658,
+        "deadlock_ratio_max_std": 0.3952,
+        "handoff_ratio_mean_mean": 0.004,
+        "handoff_ratio_mean_std": 0.0022,
+        "handoff_ratio_max_mean": 0.0871,
+        "handoff_ratio_max_std": 0.0185,
+        "order_arrival_count_mean": 462.62,
+        "order_arrival_count_std": 75.2441,
+        "order_arrival_replayed_mean": 1.0,
+        "order_arrival_replayed_std": 0.0,
+        "station_capacity_rejections_mean": 12795.92,
+        "station_capacity_rejections_std": 13657.3581,
+        "station_max_occupancy_mean": 7.0,
+        "station_max_occupancy_std": 0.0,
+        "station_max_committed_load_mean": 17.96,
+        "station_max_committed_load_std": 2.1162,
+        "completion_fraction_mean": 0.7449,
+        "completion_fraction_std": 0.2728,
+        "final_backlog_total_mean": 220.32,
+        "final_backlog_total_std": 254.4117,
+        "final_backlog_fraction_mean": 0.462,
+        "final_backlog_fraction_std": 0.533,
+        "completed_orders_per_congestion_event_mean": 4.6709,
+        "completed_orders_per_congestion_event_std": 15.3185,
+        "completed_orders_per_severe_event_mean": 18.2669,
+        "completed_orders_per_severe_event_std": 73.4856
+      },
+      "JSQ": {
+        "completed_orders_mean": 350.84,
+        "completed_orders_std": 129.7096,
+        "completed_tasks_mean": 1562.0,
+        "completed_tasks_std": 539.9203,
+        "avg_task_duration_mean": 41.4564,
+        "avg_task_duration_std": 3.9055,
+        "avg_excess_delay_mean": 27.6268,
+        "avg_excess_delay_std": 3.8317,
+        "wall_time_s_mean": 457.1274,
+        "wall_time_s_std": 391.9581,
+        "ticks_mean": 1500.0,
+        "ticks_std": 0.0,
+        "num_agents_mean": 48.0,
+        "num_agents_std": 0.0,
+        "open_order_count_mean": 111.78,
+        "open_order_count_std": 104.5825,
+        "pending_order_count_mean": 84.9,
+        "pending_order_count_std": 97.5254,
+        "open_order_age_p95_mean": 586.745,
+        "open_order_age_p95_std": 479.5299,
+        "pending_order_age_p95_mean": 419.288,
+        "pending_order_age_p95_std": 405.4204,
+        "completed_order_flow_time_p95_mean": 161.969,
+        "completed_order_flow_time_p95_std": 34.0884,
+        "wm_label_cost_mean": 4.5005,
+        "wm_label_cost_std": 0.4522,
+        "wait_or_stall_mean": 0.0569,
+        "wait_or_stall_std": 0.0432,
+        "avg_excess_delay_label_mean": 2.6531,
+        "avg_excess_delay_label_std": 0.2759,
+        "station_pressure_mean": 1.9677,
+        "station_pressure_std": 0.9228,
+        "bottleneck_CVaR_mean": 0.1332,
+        "bottleneck_CVaR_std": 0.0116,
+        "completed_orders_delta_sum_mean": 350.84,
+        "completed_orders_delta_sum_std": 129.7096,
+        "unified_risk_mean": 1.0,
+        "unified_risk_std": 0.0,
+        "congestion_events_mean": 649.88,
+        "congestion_events_std": 465.9172,
+        "severe_events_mean": 609.78,
+        "severe_events_std": 485.1732,
+        "risk_rate_per_100_mean": 43.3253,
+        "risk_rate_per_100_std": 31.0611,
+        "stall_ratio_mean_mean": 0.0569,
+        "stall_ratio_mean_std": 0.0432,
+        "stall_ratio_max_mean": 0.1883,
+        "stall_ratio_max_std": 0.0406,
+        "deadlock_ratio_mean_mean": 0.3004,
+        "deadlock_ratio_mean_std": 0.2889,
+        "deadlock_ratio_max_mean": 0.6421,
+        "deadlock_ratio_max_std": 0.3547,
+        "handoff_ratio_mean_mean": 0.0042,
+        "handoff_ratio_mean_std": 0.0022,
+        "handoff_ratio_max_mean": 0.085,
+        "handoff_ratio_max_std": 0.0208,
+        "order_arrival_count_mean": 462.62,
+        "order_arrival_count_std": 75.2441,
+        "order_arrival_replayed_mean": 1.0,
+        "order_arrival_replayed_std": 0.0,
+        "station_capacity_rejections_mean": 14451.06,
+        "station_capacity_rejections_std": 13420.1241,
+        "station_max_occupancy_mean": 7.0,
+        "station_max_occupancy_std": 0.0,
+        "station_max_committed_load_mean": 17.86,
+        "station_max_committed_load_std": 2.1449,
+        "completion_fraction_mean": 0.7507,
+        "completion_fraction_std": 0.2391,
+        "final_backlog_total_mean": 196.68,
+        "final_backlog_total_std": 201.9351,
+        "final_backlog_fraction_mean": 0.4401,
+        "final_backlog_fraction_std": 0.4589,
+        "completed_orders_per_congestion_event_mean": 1.7668,
+        "completed_orders_per_congestion_event_std": 2.8824,
+        "completed_orders_per_severe_event_mean": 2.6837,
+        "completed_orders_per_severe_event_std": 4.6136
+      },
+      "PhaseC": {
+        "completed_orders_mean": 345.14,
+        "completed_orders_std": 136.132,
+        "completed_tasks_mean": 1532.24,
+        "completed_tasks_std": 583.9161,
+        "avg_task_duration_mean": 41.2637,
+        "avg_task_duration_std": 4.0591,
+        "avg_excess_delay_mean": 27.4217,
+        "avg_excess_delay_std": 3.9096,
+        "wall_time_s_mean": 684.292,
+        "wall_time_s_std": 345.8998,
+        "ticks_mean": 1500.0,
+        "ticks_std": 0.0,
+        "num_agents_mean": 48.0,
+        "num_agents_std": 0.0,
+        "open_order_count_mean": 117.48,
+        "open_order_count_std": 132.4851,
+        "pending_order_count_mean": 92.12,
+        "pending_order_count_std": 126.1208,
+        "open_order_age_p95_mean": 527.558,
+        "open_order_age_p95_std": 476.8469,
+        "pending_order_age_p95_mean": 367.48,
+        "pending_order_age_p95_std": 414.3951,
+        "completed_order_flow_time_p95_mean": 164.495,
+        "completed_order_flow_time_p95_std": 31.9183,
+        "action_path_mode_mean": 0.0,
+        "action_path_mode_std": 0.0,
+        "world_model_path_planner_injected_mean": 1.0,
+        "world_model_path_planner_injected_std": 0.0,
+        "assign_calls_mean": 1500.0,
+        "assign_calls_std": 0.0,
+        "model_assign_calls_mean": 1497.0,
+        "model_assign_calls_std": 0.0,
+        "fallback_greedy_calls_mean": 0.0,
+        "fallback_greedy_calls_std": 0.0,
+        "warmup_defer_calls_mean": 3.0,
+        "warmup_defer_calls_std": 0.0,
+        "model_inference_calls_mean": 7131.96,
+        "model_inference_calls_std": 4081.5668,
+        "fallback_greedy_ratio_mean": 0.0,
+        "fallback_greedy_ratio_std": 0.0,
+        "assignment_time_ms_mean_mean": 143.3674,
+        "assignment_time_ms_mean_std": 78.0149,
+        "model_inference_time_ms_mean_mean": 24.9417,
+        "model_inference_time_ms_mean_std": 0.1229,
+        "risk_guard_filtered_mean": 0.0,
+        "risk_guard_filtered_std": 0.0,
+        "risk_guard_fallback_mean": 0.0,
+        "risk_guard_fallback_std": 0.0,
+        "all_idle_candidate_contexts_mean": 533.22,
+        "all_idle_candidate_contexts_std": 189.3875,
+        "all_idle_candidates_scored_mean": 7131.96,
+        "all_idle_candidates_scored_std": 4081.5668,
+        "all_idle_candidates_per_context_mean_mean": 12.9987,
+        "all_idle_candidates_per_context_mean_std": 5.935,
+        "decision_contexts_total_mean": 533.22,
+        "decision_contexts_total_std": 189.3875,
+        "risk_max_mean_mean": 0.4006,
+        "risk_max_mean_std": 0.0738,
+        "risk_max_max_mean": 1.0393,
+        "risk_max_max_std": 0.0463,
+        "risk_max_min_mean": 0.0158,
+        "risk_max_min_std": 0.0375,
+        "risk_max_count_mean": 7131.96,
+        "risk_max_count_std": 4081.5668,
+        "risk_max_p50_mean": 0.3626,
+        "risk_max_p50_std": 0.0983,
+        "risk_max_p90_mean": 0.729,
+        "risk_max_p90_std": 0.1405,
+        "risk_max_p95_mean": 0.8119,
+        "risk_max_p95_std": 0.1221,
+        "risk_max_p99_mean": 0.9274,
+        "risk_max_p99_std": 0.0828,
+        "wm_label_cost_mean": 4.4503,
+        "wm_label_cost_std": 0.5504,
+        "wait_or_stall_mean": 0.0627,
+        "wait_or_stall_std": 0.0538,
+        "avg_excess_delay_label_mean": 2.6303,
+        "avg_excess_delay_label_std": 0.2791,
+        "station_pressure_mean": 1.8895,
+        "station_pressure_std": 1.0327,
+        "bottleneck_CVaR_mean": 0.1345,
+        "bottleneck_CVaR_std": 0.0125,
+        "completed_orders_delta_sum_mean": 345.14,
+        "completed_orders_delta_sum_std": 136.132,
+        "unified_risk_mean": 0.9967,
+        "unified_risk_std": 0.0233,
+        "congestion_events_mean": 598.34,
+        "congestion_events_std": 482.5634,
+        "severe_events_mean": 557.06,
+        "severe_events_std": 494.5527,
+        "risk_rate_per_100_mean": 39.8893,
+        "risk_rate_per_100_std": 32.1709,
+        "stall_ratio_mean_mean": 0.0627,
+        "stall_ratio_mean_std": 0.0538,
+        "stall_ratio_max_mean": 0.1888,
+        "stall_ratio_max_std": 0.0442,
+        "deadlock_ratio_mean_mean": 0.2839,
+        "deadlock_ratio_mean_std": 0.3074,
+        "deadlock_ratio_max_mean": 0.5921,
+        "deadlock_ratio_max_std": 0.3865,
+        "handoff_ratio_mean_mean": 0.0039,
+        "handoff_ratio_mean_std": 0.0021,
+        "handoff_ratio_max_mean": 0.0804,
+        "handoff_ratio_max_std": 0.0156,
+        "order_arrival_count_mean": 462.62,
+        "order_arrival_count_std": 75.2441,
+        "order_arrival_replayed_mean": 1.0,
+        "order_arrival_replayed_std": 0.0,
+        "station_capacity_rejections_mean": 13210.22,
+        "station_capacity_rejections_std": 14027.8756,
+        "station_max_occupancy_mean": 7.0,
+        "station_max_occupancy_std": 0.0,
+        "station_max_committed_load_mean": 17.46,
+        "station_max_committed_load_std": 2.22,
+        "completion_fraction_mean": 0.7505,
+        "completion_fraction_std": 0.2727,
+        "final_backlog_total_mean": 209.6,
+        "final_backlog_total_std": 258.4524,
+        "final_backlog_fraction_mean": 0.4445,
+        "final_backlog_fraction_std": 0.5303,
+        "completed_orders_per_congestion_event_mean": 4.1245,
+        "completed_orders_per_congestion_event_std": 14.9226,
+        "completed_orders_per_severe_event_mean": 10.3611,
+        "completed_orders_per_severe_event_std": 45.0331
+      }
+    },
+    "mid": {
+      "ComboS1J1": {
+        "completed_orders_mean": 361.56,
+        "completed_orders_std": 129.4601,
+        "completed_tasks_mean": 1617.46,
+        "completed_tasks_std": 553.9031,
+        "avg_task_duration_mean": 42.2789,
+        "avg_task_duration_std": 4.0857,
+        "avg_excess_delay_mean": 28.28,
+        "avg_excess_delay_std": 4.0066,
+        "wall_time_s_mean": 824.841,
+        "wall_time_s_std": 501.5351,
+        "ticks_mean": 1500.0,
+        "ticks_std": 0.0,
+        "num_agents_mean": 48.0,
+        "num_agents_std": 0.0,
+        "open_order_count_mean": 141.24,
+        "open_order_count_std": 122.3462,
+        "pending_order_count_mean": 112.7,
+        "pending_order_count_std": 116.5088,
+        "open_order_age_p95_mean": 611.542,
+        "open_order_age_p95_std": 468.8642,
+        "pending_order_age_p95_mean": 438.473,
+        "pending_order_age_p95_std": 415.8784,
+        "completed_order_flow_time_p95_mean": 173.38,
+        "completed_order_flow_time_p95_std": 27.0479,
+        "action_path_mode_mean": 0.0,
+        "action_path_mode_std": 0.0,
+        "world_model_path_planner_injected_mean": 1.0,
+        "world_model_path_planner_injected_std": 0.0,
+        "assign_calls_mean": 1500.0,
+        "assign_calls_std": 0.0,
+        "model_assign_calls_mean": 1497.0,
+        "model_assign_calls_std": 0.0,
+        "fallback_greedy_calls_mean": 0.0,
+        "fallback_greedy_calls_std": 0.0,
+        "warmup_defer_calls_mean": 3.0,
+        "warmup_defer_calls_std": 0.0,
+        "model_inference_calls_mean": 5984.06,
+        "model_inference_calls_std": 3881.554,
+        "fallback_greedy_ratio_mean": 0.0,
+        "fallback_greedy_ratio_std": 0.0,
+        "assignment_time_ms_mean_mean": 153.2959,
+        "assignment_time_ms_mean_std": 56.9867,
+        "model_inference_time_ms_mean_mean": 24.9643,
+        "model_inference_time_ms_mean_std": 0.1295,
+        "risk_guard_filtered_mean": 0.0,
+        "risk_guard_filtered_std": 0.0,
+        "risk_guard_fallback_mean": 0.0,
+        "risk_guard_fallback_std": 0.0,
+        "all_idle_candidate_contexts_mean": 564.68,
+        "all_idle_candidate_contexts_std": 179.9849,
+        "all_idle_candidates_scored_mean": 5984.06,
+        "all_idle_candidates_scored_std": 3881.554,
+        "all_idle_candidates_per_context_mean_mean": 10.1401,
+        "all_idle_candidates_per_context_mean_std": 5.0766,
+        "decision_contexts_total_mean": 564.68,
+        "decision_contexts_total_std": 179.9849,
+        "risk_max_mean_mean": 0.4203,
+        "risk_max_mean_std": 0.0642,
+        "risk_max_max_mean": 1.0488,
+        "risk_max_max_std": 0.045,
+        "risk_max_min_mean": 0.0143,
+        "risk_max_min_std": 0.0315,
+        "risk_max_count_mean": 5984.06,
+        "risk_max_count_std": 3881.554,
+        "energy_scoring_contexts_mean": 564.68,
+        "energy_scoring_contexts_std": 179.9849,
+        "energy_scoring_candidates_mean": 0.0,
+        "energy_scoring_candidates_std": 0.0,
+        "energy_candidates_per_context_mean": 0.0,
+        "energy_candidates_per_context_std": 0.0,
+        "energy_score_mean_mean": 0.0,
+        "energy_score_mean_std": 0.0,
+        "energy_potential_mean_mean": 0.0,
+        "energy_potential_mean_std": 0.0,
+        "energy_service_relief_mean_mean": 0.0,
+        "energy_service_relief_mean_std": 0.0,
+        "energy_noop_contexts_mean": 0.0,
+        "energy_noop_contexts_std": 0.0,
+        "energy_noop_deferred_mean": 0.0,
+        "energy_noop_deferred_std": 0.0,
+        "energy_noop_rate_mean": 0.0,
+        "energy_noop_rate_std": 0.0,
+        "energy_noop_score_mean_mean": 0.0,
+        "energy_noop_score_mean_std": 0.0,
+        "energy_noop_cost_mean_mean": 0.0,
+        "energy_noop_cost_mean_std": 0.0,
+        "energy_noop_best_action_score_mean_mean": 0.0,
+        "energy_noop_best_action_score_mean_std": 0.0,
+        "energy_conv_contexts_mean": 564.68,
+        "energy_conv_contexts_std": 179.9849,
+        "energy_conv_active_contexts_mean": 163.26,
+        "energy_conv_active_contexts_std": 37.1622,
+        "energy_conv_warmup_contexts_mean": 50.0,
+        "energy_conv_warmup_contexts_std": 0.0,
+        "energy_conv_modified_decisions_mean": 6.14,
+        "energy_conv_modified_decisions_std": 3.6987,
+        "energy_conv_modified_decision_rate_mean": 0.0108,
+        "energy_conv_modified_decision_rate_std": 0.0059,
+        "energy_conv_active_rate_mean": 0.3135,
+        "energy_conv_active_rate_std": 0.0955,
+        "energy_conv_gate_g_mean_mean": 0.3213,
+        "energy_conv_gate_g_mean_std": 0.0888,
+        "energy_conv_v_state_mean_mean": 9.759,
+        "energy_conv_v_state_mean_std": 2.1711,
+        "energy_conv_signal_selected_mean_mean": 0.6826,
+        "energy_conv_signal_selected_mean_std": 0.0421,
+        "energy_conv_z_base_selected_mean_mean": -1.7492,
+        "energy_conv_z_base_selected_mean_std": 0.6607,
+        "energy_conv_z_delta_selected_mean_mean": 0.2343,
+        "energy_conv_z_delta_selected_mean_std": 0.0544,
+        "risk_max_p50_mean": 0.381,
+        "risk_max_p50_std": 0.1035,
+        "risk_max_p90_mean": 0.7776,
+        "risk_max_p90_std": 0.1133,
+        "risk_max_p95_mean": 0.8513,
+        "risk_max_p95_std": 0.096,
+        "risk_max_p99_mean": 0.9481,
+        "risk_max_p99_std": 0.0613,
+        "wm_label_cost_mean": 4.5633,
+        "wm_label_cost_std": 0.4573,
+        "wait_or_stall_mean": 0.0745,
+        "wait_or_stall_std": 0.0619,
+        "avg_excess_delay_label_mean": 2.7224,
+        "avg_excess_delay_label_std": 0.315,
+        "station_pressure_mean": 2.0001,
+        "station_pressure_std": 0.872,
+        "bottleneck_CVaR_mean": 0.1276,
+        "bottleneck_CVaR_std": 0.0124,
+        "completed_orders_delta_sum_mean": 361.56,
+        "completed_orders_delta_sum_std": 129.4601,
+        "unified_risk_mean": 1.0,
+        "unified_risk_std": 0.0,
+        "congestion_events_mean": 685.42,
+        "congestion_events_std": 454.9137,
+        "severe_events_mean": 635.48,
+        "severe_events_std": 469.9189,
+        "risk_rate_per_100_mean": 45.6947,
+        "risk_rate_per_100_std": 30.3276,
+        "stall_ratio_mean_mean": 0.0745,
+        "stall_ratio_mean_std": 0.062,
+        "stall_ratio_max_mean": 0.2054,
+        "stall_ratio_max_std": 0.0543,
+        "deadlock_ratio_mean_mean": 0.3093,
+        "deadlock_ratio_mean_std": 0.282,
+        "deadlock_ratio_max_mean": 0.6308,
+        "deadlock_ratio_max_std": 0.3716,
+        "handoff_ratio_mean_mean": 0.0042,
+        "handoff_ratio_mean_std": 0.0021,
+        "handoff_ratio_max_mean": 0.085,
+        "handoff_ratio_max_std": 0.019,
+        "order_arrival_count_mean": 502.8,
+        "order_arrival_count_std": 61.708,
+        "order_arrival_replayed_mean": 1.0,
+        "order_arrival_replayed_std": 0.0,
+        "psi_dispatch_head_loaded_mean": 1.0,
+        "psi_dispatch_head_loaded_std": 0.0,
+        "psi_dispatch_encoder_contract_verified_mean": 1.0,
+        "psi_dispatch_encoder_contract_verified_std": 0.0,
+        "psi_dispatch_proposal_calls_mean": 1497.0,
+        "psi_dispatch_proposal_calls_std": 0.0,
+        "psi_dispatch_requested_budget_mean_mean": 7.6357,
+        "psi_dispatch_requested_budget_mean_std": 6.5125,
+        "psi_dispatch_superset_size_mean_mean": 3.2732,
+        "psi_dispatch_superset_size_mean_std": 3.1019,
+        "psi_dispatch_eval_calls_mean": 837.22,
+        "psi_dispatch_eval_calls_std": 318.8429,
+        "psi_dispatch_eval_time_ms_mean_mean": 24.8666,
+        "psi_dispatch_eval_time_ms_mean_std": 0.3048,
+        "psi_dispatch_contexts_seen_mean": 4900.0,
+        "psi_dispatch_contexts_seen_std": 4643.5821,
+        "psi_dispatch_unique_stations_mean_mean": 1.6167,
+        "psi_dispatch_unique_stations_mean_std": 0.5919,
+        "psi_dispatch_reordered_calls_mean": 435.04,
+        "psi_dispatch_reordered_calls_std": 420.4643,
+        "psi_dispatch_changed_positions_mean": 3766.0,
+        "psi_dispatch_changed_positions_std": 4284.8175,
+        "psi_dispatch_replacement_calls_mean": 37.9,
+        "psi_dispatch_replacement_calls_std": 36.1127,
+        "psi_dispatch_replacement_count_mean": 39.54,
+        "psi_dispatch_replacement_count_std": 37.6676,
+        "psi_dispatch_service_mean_mean": 0.4107,
+        "psi_dispatch_service_mean_std": 0.1942,
+        "psi_dispatch_traffic_mean_mean": 0.3049,
+        "psi_dispatch_traffic_mean_std": 0.0874,
+        "psi_dispatch_backlog_mean_mean": 0.5225,
+        "psi_dispatch_backlog_mean_std": 0.2696,
+        "psi_dispatch_age_mean_mean": 0.3595,
+        "psi_dispatch_age_mean_std": 0.3131,
+        "psi_dispatch_service_debt_mean_mean": 0.441,
+        "psi_dispatch_service_debt_mean_std": 0.2906,
+        "psi_dispatch_j_mean_mean": -0.0832,
+        "psi_dispatch_j_mean_std": 0.1724,
+        "psi_dispatch_trace_records_mean": 0.0,
+        "psi_dispatch_trace_records_std": 0.0,
+        "psi_dispatch_trace_dropped_mean": 0.0,
+        "psi_dispatch_trace_dropped_std": 0.0,
+        "psi_dispatch_s1_within_context_mean": 1.0,
+        "psi_dispatch_s1_within_context_std": 0.0,
+        "psi_dispatch_no_assign_added_mean": 0.0,
+        "psi_dispatch_no_assign_added_std": 0.0,
+        "psi_dispatch_hard_gate_added_mean": 0.0,
+        "psi_dispatch_hard_gate_added_std": 0.0,
+        "psi_dispatch_e_demand_modified_mean": 0.0,
+        "psi_dispatch_e_demand_modified_std": 0.0,
+        "psi_dispatch_attention_added_mean": 0.0,
+        "psi_dispatch_attention_added_std": 0.0,
+        "station_capacity_rejections_mean": 13736.9,
+        "station_capacity_rejections_std": 11953.1378,
+        "station_max_occupancy_mean": 7.0,
+        "station_max_occupancy_std": 0.0,
+        "station_max_committed_load_mean": 18.54,
+        "station_max_committed_load_std": 2.0901,
+        "completion_fraction_mean": 0.719,
+        "completion_fraction_std": 0.2464,
+        "final_backlog_total_mean": 253.94,
+        "final_backlog_total_std": 238.7703,
+        "final_backlog_fraction_mean": 0.5052,
+        "final_backlog_fraction_std": 0.4799,
+        "completed_orders_per_congestion_event_mean": 1.8019,
+        "completed_orders_per_congestion_event_std": 2.9443,
+        "completed_orders_per_severe_event_mean": 3.3527,
+        "completed_orders_per_severe_event_std": 8.8769
+      },
+      "Greedy": {
+        "completed_orders_mean": 358.3,
+        "completed_orders_std": 159.8689,
+        "completed_tasks_mean": 1585.54,
+        "completed_tasks_std": 668.1193,
+        "avg_task_duration_mean": 45.8417,
+        "avg_task_duration_std": 4.6799,
+        "avg_excess_delay_mean": 31.786,
+        "avg_excess_delay_std": 4.4991,
+        "wall_time_s_mean": 696.801,
+        "wall_time_s_std": 536.4636,
+        "ticks_mean": 1500.0,
+        "ticks_std": 0.0,
+        "num_agents_mean": 48.0,
+        "num_agents_std": 0.0,
+        "open_order_count_mean": 144.5,
+        "open_order_count_std": 99.9076,
+        "pending_order_count_mean": 111.42,
+        "pending_order_count_std": 100.1687,
+        "open_order_age_p95_mean": 685.999,
+        "open_order_age_p95_std": 440.9103,
+        "pending_order_age_p95_mean": 505.795,
+        "pending_order_age_p95_std": 338.5361,
+        "completed_order_flow_time_p95_mean": 189.705,
+        "completed_order_flow_time_p95_std": 42.809,
+        "wm_label_cost_mean": 4.7986,
+        "wm_label_cost_std": 0.3588,
+        "wait_or_stall_mean": 0.0902,
+        "wait_or_stall_std": 0.0605,
+        "avg_excess_delay_label_mean": 2.886,
+        "avg_excess_delay_label_std": 0.3328,
+        "station_pressure_mean": 2.2846,
+        "station_pressure_std": 0.7823,
+        "bottleneck_CVaR_mean": 0.123,
+        "bottleneck_CVaR_std": 0.0122,
+        "completed_orders_delta_sum_mean": 358.3,
+        "completed_orders_delta_sum_std": 159.8689,
+        "unified_risk_mean": 1.0,
+        "unified_risk_std": 0.0,
+        "congestion_events_mean": 813.36,
+        "congestion_events_std": 390.4135,
+        "severe_events_mean": 757.0,
+        "severe_events_std": 420.5689,
+        "risk_rate_per_100_mean": 54.224,
+        "risk_rate_per_100_std": 26.0276,
+        "stall_ratio_mean_mean": 0.0902,
+        "stall_ratio_mean_std": 0.0605,
+        "stall_ratio_max_mean": 0.2263,
+        "stall_ratio_max_std": 0.0464,
+        "deadlock_ratio_mean_mean": 0.3697,
+        "deadlock_ratio_mean_std": 0.2824,
+        "deadlock_ratio_max_mean": 0.7679,
+        "deadlock_ratio_max_std": 0.3186,
+        "handoff_ratio_mean_mean": 0.0058,
+        "handoff_ratio_mean_std": 0.0031,
+        "handoff_ratio_max_mean": 0.0925,
+        "handoff_ratio_max_std": 0.0247,
+        "order_arrival_count_mean": 502.8,
+        "order_arrival_count_std": 61.708,
+        "order_arrival_replayed_mean": 0.0,
+        "order_arrival_replayed_std": 0.0,
+        "station_capacity_rejections_mean": 16427.4,
+        "station_capacity_rejections_std": 11639.0626,
+        "station_max_occupancy_mean": 7.0,
+        "station_max_occupancy_std": 0.0,
+        "station_max_committed_load_mean": 18.96,
+        "station_max_committed_load_std": 1.5995,
+        "completion_fraction_mean": 0.6842,
+        "completion_fraction_std": 0.2422,
+        "final_backlog_total_mean": 255.92,
+        "final_backlog_total_std": 200.0595,
+        "final_backlog_fraction_mean": 0.5649,
+        "final_backlog_fraction_std": 0.4768,
+        "completed_orders_per_congestion_event_mean": 0.7724,
+        "completed_orders_per_congestion_event_std": 0.7555,
+        "completed_orders_per_severe_event_mean": 1.0687,
+        "completed_orders_per_severe_event_std": 1.2842
+      },
+      "Hungarian": {
+        "completed_orders_mean": 325.36,
+        "completed_orders_std": 138.1529,
+        "completed_tasks_mean": 1504.66,
+        "completed_tasks_std": 580.2704,
+        "avg_task_duration_mean": 43.1724,
+        "avg_task_duration_std": 4.3491,
+        "avg_excess_delay_mean": 29.501,
+        "avg_excess_delay_std": 4.1841,
+        "wall_time_s_mean": 658.0478,
+        "wall_time_s_std": 543.1771,
+        "ticks_mean": 1500.0,
+        "ticks_std": 0.0,
+        "num_agents_mean": 48.0,
+        "num_agents_std": 0.0,
+        "open_order_count_mean": 177.44,
+        "open_order_count_std": 135.7445,
+        "pending_order_count_mean": 151.2,
+        "pending_order_count_std": 132.4361,
+        "open_order_age_p95_mean": 652.295,
+        "open_order_age_p95_std": 459.8619,
+        "pending_order_age_p95_mean": 492.318,
+        "pending_order_age_p95_std": 416.1593,
+        "completed_order_flow_time_p95_mean": 173.244,
+        "completed_order_flow_time_p95_std": 65.349,
+        "wm_label_cost_mean": 4.7486,
+        "wm_label_cost_std": 0.5033,
+        "wait_or_stall_mean": 0.0877,
+        "wait_or_stall_std": 0.0663,
+        "avg_excess_delay_label_mean": 2.8208,
+        "avg_excess_delay_label_std": 0.3153,
+        "station_pressure_mean": 2.2454,
+        "station_pressure_std": 0.9444,
+        "bottleneck_CVaR_mean": 0.1278,
+        "bottleneck_CVaR_std": 0.0123,
+        "completed_orders_delta_sum_mean": 325.36,
+        "completed_orders_delta_sum_std": 138.1529,
+        "unified_risk_mean": 1.0,
+        "unified_risk_std": 0.0,
+        "congestion_events_mean": 773.42,
+        "congestion_events_std": 463.6711,
+        "severe_events_mean": 731.46,
+        "severe_events_std": 476.2132,
+        "risk_rate_per_100_mean": 51.5613,
+        "risk_rate_per_100_std": 30.9114,
+        "stall_ratio_mean_mean": 0.0877,
+        "stall_ratio_mean_std": 0.0663,
+        "stall_ratio_max_mean": 0.2092,
+        "stall_ratio_max_std": 0.0529,
+        "deadlock_ratio_mean_mean": 0.367,
+        "deadlock_ratio_mean_std": 0.2935,
+        "deadlock_ratio_max_mean": 0.7263,
+        "deadlock_ratio_max_std": 0.3515,
+        "handoff_ratio_mean_mean": 0.0048,
+        "handoff_ratio_mean_std": 0.0024,
+        "handoff_ratio_max_mean": 0.0883,
+        "handoff_ratio_max_std": 0.0215,
+        "order_arrival_count_mean": 502.8,
+        "order_arrival_count_std": 61.708,
+        "order_arrival_replayed_mean": 1.0,
+        "order_arrival_replayed_std": 0.0,
+        "station_capacity_rejections_mean": 16549.6,
+        "station_capacity_rejections_std": 12650.0202,
+        "station_max_occupancy_mean": 7.0,
+        "station_max_occupancy_std": 0.0,
+        "station_max_committed_load_mean": 18.82,
+        "station_max_committed_load_std": 1.9768,
+        "completion_fraction_mean": 0.6483,
+        "completion_fraction_std": 0.2675,
+        "final_backlog_total_mean": 328.64,
+        "final_backlog_total_std": 268.0465,
+        "final_backlog_fraction_mean": 0.6512,
+        "final_backlog_fraction_std": 0.5276,
+        "completed_orders_per_congestion_event_mean": 1.3286,
+        "completed_orders_per_congestion_event_std": 2.0391,
+        "completed_orders_per_severe_event_mean": 2.2453,
+        "completed_orders_per_severe_event_std": 4.3498
+      },
+      "JSQ": {
+        "completed_orders_mean": 337.52,
+        "completed_orders_std": 125.2226,
+        "completed_tasks_mean": 1518.16,
+        "completed_tasks_std": 521.0665,
+        "avg_task_duration_mean": 42.3586,
+        "avg_task_duration_std": 3.9313,
+        "avg_excess_delay_mean": 28.3798,
+        "avg_excess_delay_std": 3.9087,
+        "wall_time_s_mean": 621.1758,
+        "wall_time_s_std": 449.324,
+        "ticks_mean": 1500.0,
+        "ticks_std": 0.0,
+        "num_agents_mean": 48.0,
+        "num_agents_std": 0.0,
+        "open_order_count_mean": 165.28,
+        "open_order_count_std": 124.6095,
+        "pending_order_count_mean": 135.14,
+        "pending_order_count_std": 119.7658,
+        "open_order_age_p95_mean": 689.122,
+        "open_order_age_p95_std": 461.5762,
+        "pending_order_age_p95_mean": 501.2,
+        "pending_order_age_p95_std": 394.6505,
+        "completed_order_flow_time_p95_mean": 176.256,
+        "completed_order_flow_time_p95_std": 30.4354,
+        "wm_label_cost_mean": 4.6959,
+        "wm_label_cost_std": 0.4037,
+        "wait_or_stall_mean": 0.081,
+        "wait_or_stall_std": 0.0549,
+        "avg_excess_delay_label_mean": 2.7369,
+        "avg_excess_delay_label_std": 0.2982,
+        "station_pressure_mean": 2.2393,
+        "station_pressure_std": 0.8465,
+        "bottleneck_CVaR_mean": 0.1268,
+        "bottleneck_CVaR_std": 0.0091,
+        "completed_orders_delta_sum_mean": 337.52,
+        "completed_orders_delta_sum_std": 125.2226,
+        "unified_risk_mean": 1.0,
+        "unified_risk_std": 0.0,
+        "congestion_events_mean": 800.46,
+        "congestion_events_std": 423.1031,
+        "severe_events_mean": 761.02,
+        "severe_events_std": 436.4589,
+        "risk_rate_per_100_mean": 53.364,
+        "risk_rate_per_100_std": 28.2069,
+        "stall_ratio_mean_mean": 0.081,
+        "stall_ratio_mean_std": 0.0549,
+        "stall_ratio_max_mean": 0.2142,
+        "stall_ratio_max_std": 0.0535,
+        "deadlock_ratio_mean_mean": 0.368,
+        "deadlock_ratio_mean_std": 0.2714,
+        "deadlock_ratio_max_mean": 0.7375,
+        "deadlock_ratio_max_std": 0.3191,
+        "handoff_ratio_mean_mean": 0.0044,
+        "handoff_ratio_mean_std": 0.0025,
+        "handoff_ratio_max_mean": 0.0875,
+        "handoff_ratio_max_std": 0.0217,
+        "order_arrival_count_mean": 502.8,
+        "order_arrival_count_std": 61.708,
+        "order_arrival_replayed_mean": 1.0,
+        "order_arrival_replayed_std": 0.0,
+        "station_capacity_rejections_mean": 16918.72,
+        "station_capacity_rejections_std": 12092.3904,
+        "station_max_occupancy_mean": 7.0,
+        "station_max_occupancy_std": 0.0,
+        "station_max_committed_load_mean": 18.66,
+        "station_max_committed_load_std": 1.872,
+        "completion_fraction_mean": 0.6728,
+        "completion_fraction_std": 0.2434,
+        "final_backlog_total_mean": 300.42,
+        "final_backlog_total_std": 244.2816,
+        "final_backlog_fraction_mean": 0.5942,
+        "final_backlog_fraction_std": 0.4763,
+        "completed_orders_per_congestion_event_mean": 1.0117,
+        "completed_orders_per_congestion_event_std": 1.4167,
+        "completed_orders_per_severe_event_mean": 1.3202,
+        "completed_orders_per_severe_event_std": 1.9995
+      },
+      "PhaseC": {
+        "completed_orders_mean": 356.9,
+        "completed_orders_std": 133.6672,
+        "completed_tasks_mean": 1573.04,
+        "completed_tasks_std": 577.9211,
+        "avg_task_duration_mean": 42.6465,
+        "avg_task_duration_std": 4.241,
+        "avg_excess_delay_mean": 28.6482,
+        "avg_excess_delay_std": 4.1506,
+        "wall_time_s_mean": 710.9684,
+        "wall_time_s_std": 352.3166,
+        "ticks_mean": 1500.0,
+        "ticks_std": 0.0,
+        "num_agents_mean": 48.0,
+        "num_agents_std": 0.0,
+        "open_order_count_mean": 145.9,
+        "open_order_count_std": 137.5316,
+        "pending_order_count_mean": 116.98,
+        "pending_order_count_std": 130.6278,
+        "open_order_age_p95_mean": 587.36,
+        "open_order_age_p95_std": 471.1863,
+        "pending_order_age_p95_mean": 418.429,
+        "pending_order_age_p95_std": 415.2854,
+        "completed_order_flow_time_p95_mean": 191.896,
+        "completed_order_flow_time_p95_std": 80.3404,
+        "action_path_mode_mean": 0.0,
+        "action_path_mode_std": 0.0,
+        "world_model_path_planner_injected_mean": 1.0,
+        "world_model_path_planner_injected_std": 0.0,
+        "assign_calls_mean": 1500.0,
+        "assign_calls_std": 0.0,
+        "model_assign_calls_mean": 1497.0,
+        "model_assign_calls_std": 0.0,
+        "fallback_greedy_calls_mean": 0.0,
+        "fallback_greedy_calls_std": 0.0,
+        "warmup_defer_calls_mean": 3.0,
+        "warmup_defer_calls_std": 0.0,
+        "model_inference_calls_mean": 6193.34,
+        "model_inference_calls_std": 4068.5281,
+        "fallback_greedy_ratio_mean": 0.0,
+        "fallback_greedy_ratio_std": 0.0,
+        "assignment_time_ms_mean_mean": 126.011,
+        "assignment_time_ms_mean_std": 77.7829,
+        "model_inference_time_ms_mean_mean": 24.9393,
+        "model_inference_time_ms_mean_std": 0.1301,
+        "risk_guard_filtered_mean": 0.0,
+        "risk_guard_filtered_std": 0.0,
+        "risk_guard_fallback_mean": 0.0,
+        "risk_guard_fallback_std": 0.0,
+        "all_idle_candidate_contexts_mean": 549.12,
+        "all_idle_candidate_contexts_std": 187.6245,
+        "all_idle_candidates_scored_mean": 6193.34,
+        "all_idle_candidates_scored_std": 4068.5281,
+        "all_idle_candidates_per_context_mean_mean": 10.7128,
+        "all_idle_candidates_per_context_mean_std": 5.2009,
+        "decision_contexts_total_mean": 549.12,
+        "decision_contexts_total_std": 187.6245,
+        "risk_max_mean_mean": 0.4076,
+        "risk_max_mean_std": 0.0733,
+        "risk_max_max_mean": 1.0488,
+        "risk_max_max_std": 0.0372,
+        "risk_max_min_mean": 0.0157,
+        "risk_max_min_std": 0.0361,
+        "risk_max_count_mean": 6193.34,
+        "risk_max_count_std": 4068.5281,
+        "risk_max_p50_mean": 0.3714,
+        "risk_max_p50_std": 0.1173,
+        "risk_max_p90_mean": 0.7532,
+        "risk_max_p90_std": 0.1128,
+        "risk_max_p95_mean": 0.8346,
+        "risk_max_p95_std": 0.0919,
+        "risk_max_p99_mean": 0.9413,
+        "risk_max_p99_std": 0.0541,
+        "wm_label_cost_mean": 4.5609,
+        "wm_label_cost_std": 0.4805,
+        "wait_or_stall_mean": 0.0669,
+        "wait_or_stall_std": 0.0527,
+        "avg_excess_delay_label_mean": 2.7332,
+        "avg_excess_delay_label_std": 0.3033,
+        "station_pressure_mean": 1.9938,
+        "station_pressure_std": 0.9236,
+        "bottleneck_CVaR_mean": 0.1305,
+        "bottleneck_CVaR_std": 0.0128,
+        "completed_orders_delta_sum_mean": 356.9,
+        "completed_orders_delta_sum_std": 133.6672,
+        "unified_risk_mean": 1.0,
+        "unified_risk_std": 0.0,
+        "congestion_events_mean": 656.16,
+        "congestion_events_std": 460.0856,
+        "severe_events_mean": 610.74,
+        "severe_events_std": 476.0307,
+        "risk_rate_per_100_mean": 43.744,
+        "risk_rate_per_100_std": 30.6724,
+        "stall_ratio_mean_mean": 0.0669,
+        "stall_ratio_mean_std": 0.0527,
+        "stall_ratio_max_mean": 0.2004,
+        "stall_ratio_max_std": 0.0596,
+        "deadlock_ratio_mean_mean": 0.3099,
+        "deadlock_ratio_mean_std": 0.2933,
+        "deadlock_ratio_max_mean": 0.6633,
+        "deadlock_ratio_max_std": 0.3683,
+        "handoff_ratio_mean_mean": 0.0044,
+        "handoff_ratio_mean_std": 0.0024,
+        "handoff_ratio_max_mean": 0.0862,
+        "handoff_ratio_max_std": 0.0177,
+        "order_arrival_count_mean": 502.8,
+        "order_arrival_count_std": 61.708,
+        "order_arrival_replayed_mean": 1.0,
+        "order_arrival_replayed_std": 0.0,
+        "station_capacity_rejections_mean": 14219.96,
+        "station_capacity_rejections_std": 13231.8794,
+        "station_max_occupancy_mean": 7.0,
+        "station_max_occupancy_std": 0.0,
+        "station_max_committed_load_mean": 18.16,
+        "station_max_committed_load_std": 2.0235,
+        "completion_fraction_mean": 0.7153,
+        "completion_fraction_std": 0.2636,
+        "final_backlog_total_mean": 262.88,
+        "final_backlog_total_std": 268.0402,
+        "final_backlog_fraction_mean": 0.5123,
+        "final_backlog_fraction_std": 0.5139,
+        "completed_orders_per_congestion_event_mean": 1.7295,
+        "completed_orders_per_congestion_event_std": 2.3661,
+        "completed_orders_per_severe_event_mean": 2.9624,
+        "completed_orders_per_severe_event_std": 4.707
+      }
+    },
+    "high": {
+      "ComboS1J1": {
+        "completed_orders_mean": 383.42,
+        "completed_orders_std": 149.9727,
+        "completed_tasks_mean": 1674.88,
+        "completed_tasks_std": 615.777,
+        "avg_task_duration_mean": 44.7566,
+        "avg_task_duration_std": 3.9465,
+        "avg_excess_delay_mean": 30.5959,
+        "avg_excess_delay_std": 3.9611,
+        "wall_time_s_mean": 796.5562,
+        "wall_time_s_std": 484.4184,
+        "ticks_mean": 1500.0,
+        "ticks_std": 0.0,
+        "num_agents_mean": 48.0,
+        "num_agents_std": 0.0,
+        "open_order_count_mean": 168.86,
+        "open_order_count_std": 144.6755,
+        "pending_order_count_mean": 137.7,
+        "pending_order_count_std": 142.6565,
+        "open_order_age_p95_mean": 599.031,
+        "open_order_age_p95_std": 450.357,
+        "pending_order_age_p95_mean": 458.468,
+        "pending_order_age_p95_std": 417.2953,
+        "completed_order_flow_time_p95_mean": 193.131,
+        "completed_order_flow_time_p95_std": 32.8244,
+        "action_path_mode_mean": 0.0,
+        "action_path_mode_std": 0.0,
+        "world_model_path_planner_injected_mean": 1.0,
+        "world_model_path_planner_injected_std": 0.0,
+        "assign_calls_mean": 1500.0,
+        "assign_calls_std": 0.0,
+        "model_assign_calls_mean": 1497.0,
+        "model_assign_calls_std": 0.0,
+        "fallback_greedy_calls_mean": 0.0,
+        "fallback_greedy_calls_std": 0.0,
+        "warmup_defer_calls_mean": 3.0,
+        "warmup_defer_calls_std": 0.0,
+        "model_inference_calls_mean": 4594.16,
+        "model_inference_calls_std": 2547.654,
+        "fallback_greedy_ratio_mean": 0.0,
+        "fallback_greedy_ratio_std": 0.0,
+        "assignment_time_ms_mean_mean": 130.442,
+        "assignment_time_ms_mean_std": 32.5085,
+        "model_inference_time_ms_mean_mean": 24.934,
+        "model_inference_time_ms_mean_std": 0.1427,
+        "risk_guard_filtered_mean": 0.0,
+        "risk_guard_filtered_std": 0.0,
+        "risk_guard_fallback_mean": 0.0,
+        "risk_guard_fallback_std": 0.0,
+        "all_idle_candidate_contexts_mean": 585.86,
+        "all_idle_candidate_contexts_std": 201.6783,
+        "all_idle_candidates_scored_mean": 4594.16,
+        "all_idle_candidates_scored_std": 2547.654,
+        "all_idle_candidates_per_context_mean_mean": 7.6081,
+        "all_idle_candidates_per_context_mean_std": 2.4186,
+        "decision_contexts_total_mean": 585.86,
+        "decision_contexts_total_std": 201.6783,
+        "risk_max_mean_mean": 0.4481,
+        "risk_max_mean_std": 0.0645,
+        "risk_max_max_mean": 1.0568,
+        "risk_max_max_std": 0.0351,
+        "risk_max_min_mean": 0.0201,
+        "risk_max_min_std": 0.0376,
+        "risk_max_count_mean": 4594.16,
+        "risk_max_count_std": 2547.654,
+        "energy_scoring_contexts_mean": 585.86,
+        "energy_scoring_contexts_std": 201.6783,
+        "energy_scoring_candidates_mean": 0.0,
+        "energy_scoring_candidates_std": 0.0,
+        "energy_candidates_per_context_mean": 0.0,
+        "energy_candidates_per_context_std": 0.0,
+        "energy_score_mean_mean": 0.0,
+        "energy_score_mean_std": 0.0,
+        "energy_potential_mean_mean": 0.0,
+        "energy_potential_mean_std": 0.0,
+        "energy_service_relief_mean_mean": 0.0,
+        "energy_service_relief_mean_std": 0.0,
+        "energy_noop_contexts_mean": 0.0,
+        "energy_noop_contexts_std": 0.0,
+        "energy_noop_deferred_mean": 0.0,
+        "energy_noop_deferred_std": 0.0,
+        "energy_noop_rate_mean": 0.0,
+        "energy_noop_rate_std": 0.0,
+        "energy_noop_score_mean_mean": 0.0,
+        "energy_noop_score_mean_std": 0.0,
+        "energy_noop_cost_mean_mean": 0.0,
+        "energy_noop_cost_mean_std": 0.0,
+        "energy_noop_best_action_score_mean_mean": 0.0,
+        "energy_noop_best_action_score_mean_std": 0.0,
+        "energy_conv_contexts_mean": 585.86,
+        "energy_conv_contexts_std": 201.6783,
+        "energy_conv_active_contexts_mean": 173.38,
+        "energy_conv_active_contexts_std": 44.8151,
+        "energy_conv_warmup_contexts_mean": 50.0,
+        "energy_conv_warmup_contexts_std": 0.0,
+        "energy_conv_modified_decisions_mean": 5.64,
+        "energy_conv_modified_decisions_std": 3.3809,
+        "energy_conv_modified_decision_rate_mean": 0.0096,
+        "energy_conv_modified_decision_rate_std": 0.0053,
+        "energy_conv_active_rate_mean": 0.314,
+        "energy_conv_active_rate_std": 0.068,
+        "energy_conv_gate_g_mean_mean": 0.3241,
+        "energy_conv_gate_g_mean_std": 0.0649,
+        "energy_conv_v_state_mean_mean": 10.5284,
+        "energy_conv_v_state_mean_std": 1.3941,
+        "energy_conv_signal_selected_mean_mean": 0.6991,
+        "energy_conv_signal_selected_mean_std": 0.034,
+        "energy_conv_z_base_selected_mean_mean": -1.4787,
+        "energy_conv_z_base_selected_mean_std": 0.5127,
+        "energy_conv_z_delta_selected_mean_mean": 0.2431,
+        "energy_conv_z_delta_selected_mean_std": 0.0477,
+        "risk_max_p50_mean": 0.418,
+        "risk_max_p50_std": 0.121,
+        "risk_max_p90_mean": 0.8146,
+        "risk_max_p90_std": 0.0631,
+        "risk_max_p95_mean": 0.8807,
+        "risk_max_p95_std": 0.0462,
+        "risk_max_p99_mean": 0.9623,
+        "risk_max_p99_std": 0.0333,
+        "wm_label_cost_mean": 4.6611,
+        "wm_label_cost_std": 0.3685,
+        "wait_or_stall_mean": 0.0785,
+        "wait_or_stall_std": 0.0603,
+        "avg_excess_delay_label_mean": 2.8309,
+        "avg_excess_delay_label_std": 0.289,
+        "station_pressure_mean": 2.0817,
+        "station_pressure_std": 0.7683,
+        "bottleneck_CVaR_mean": 0.1263,
+        "bottleneck_CVaR_std": 0.0135,
+        "completed_orders_delta_sum_mean": 383.42,
+        "completed_orders_delta_sum_std": 149.9727,
+        "unified_risk_mean": 1.0,
+        "unified_risk_std": 0.0,
+        "congestion_events_mean": 733.26,
+        "congestion_events_std": 424.1533,
+        "severe_events_mean": 678.84,
+        "severe_events_std": 446.537,
+        "risk_rate_per_100_mean": 48.884,
+        "risk_rate_per_100_std": 28.2769,
+        "stall_ratio_mean_mean": 0.0785,
+        "stall_ratio_mean_std": 0.0603,
+        "stall_ratio_max_mean": 0.2204,
+        "stall_ratio_max_std": 0.0589,
+        "deadlock_ratio_mean_mean": 0.3196,
+        "deadlock_ratio_mean_std": 0.2815,
+        "deadlock_ratio_max_mean": 0.6762,
+        "deadlock_ratio_max_std": 0.3514,
+        "handoff_ratio_mean_mean": 0.0055,
+        "handoff_ratio_mean_std": 0.0027,
+        "handoff_ratio_max_mean": 0.0896,
+        "handoff_ratio_max_std": 0.0197,
+        "order_arrival_count_mean": 552.28,
+        "order_arrival_count_std": 22.569,
+        "order_arrival_replayed_mean": 1.0,
+        "order_arrival_replayed_std": 0.0,
+        "psi_dispatch_head_loaded_mean": 1.0,
+        "psi_dispatch_head_loaded_std": 0.0,
+        "psi_dispatch_encoder_contract_verified_mean": 1.0,
+        "psi_dispatch_encoder_contract_verified_std": 0.0,
+        "psi_dispatch_proposal_calls_mean": 1497.0,
+        "psi_dispatch_proposal_calls_std": 0.0,
+        "psi_dispatch_requested_budget_mean_mean": 5.0205,
+        "psi_dispatch_requested_budget_mean_std": 3.5043,
+        "psi_dispatch_superset_size_mean_mean": 4.0441,
+        "psi_dispatch_superset_size_mean_std": 4.1429,
+        "psi_dispatch_eval_calls_mean": 900.42,
+        "psi_dispatch_eval_calls_std": 298.9435,
+        "psi_dispatch_eval_time_ms_mean_mean": 24.8099,
+        "psi_dispatch_eval_time_ms_mean_std": 0.3522,
+        "psi_dispatch_contexts_seen_mean": 6054.06,
+        "psi_dispatch_contexts_seen_std": 6201.9194,
+        "psi_dispatch_unique_stations_mean_mean": 1.7064,
+        "psi_dispatch_unique_stations_mean_std": 0.6609,
+        "psi_dispatch_reordered_calls_mean": 476.98,
+        "psi_dispatch_reordered_calls_std": 451.331,
+        "psi_dispatch_changed_positions_mean": 4858.28,
+        "psi_dispatch_changed_positions_std": 5884.8162,
+        "psi_dispatch_replacement_calls_mean": 44.14,
+        "psi_dispatch_replacement_calls_std": 36.553,
+        "psi_dispatch_replacement_count_mean": 45.88,
+        "psi_dispatch_replacement_count_std": 38.33,
+        "psi_dispatch_service_mean_mean": 0.4325,
+        "psi_dispatch_service_mean_std": 0.1793,
+        "psi_dispatch_traffic_mean_mean": 0.298,
+        "psi_dispatch_traffic_mean_std": 0.0779,
+        "psi_dispatch_backlog_mean_mean": 0.5549,
+        "psi_dispatch_backlog_mean_std": 0.2645,
+        "psi_dispatch_age_mean_mean": 0.3842,
+        "psi_dispatch_age_mean_std": 0.3063,
+        "psi_dispatch_service_debt_mean_mean": 0.4695,
+        "psi_dispatch_service_debt_mean_std": 0.2848,
+        "psi_dispatch_j_mean_mean": -0.1043,
+        "psi_dispatch_j_mean_std": 0.1849,
+        "psi_dispatch_trace_records_mean": 0.0,
+        "psi_dispatch_trace_records_std": 0.0,
+        "psi_dispatch_trace_dropped_mean": 0.0,
+        "psi_dispatch_trace_dropped_std": 0.0,
+        "psi_dispatch_s1_within_context_mean": 1.0,
+        "psi_dispatch_s1_within_context_std": 0.0,
+        "psi_dispatch_no_assign_added_mean": 0.0,
+        "psi_dispatch_no_assign_added_std": 0.0,
+        "psi_dispatch_hard_gate_added_mean": 0.0,
+        "psi_dispatch_hard_gate_added_std": 0.0,
+        "psi_dispatch_e_demand_modified_mean": 0.0,
+        "psi_dispatch_e_demand_modified_std": 0.0,
+        "psi_dispatch_attention_added_mean": 0.0,
+        "psi_dispatch_attention_added_std": 0.0,
+        "station_capacity_rejections_mean": 14103.38,
+        "station_capacity_rejections_std": 11650.7824,
+        "station_max_occupancy_mean": 7.0,
+        "station_max_occupancy_std": 0.0,
+        "station_max_committed_load_mean": 18.8,
+        "station_max_committed_load_std": 2.0396,
+        "completion_fraction_mean": 0.6921,
+        "completion_fraction_std": 0.2654,
+        "final_backlog_total_mean": 306.56,
+        "final_backlog_total_std": 287.293,
+        "final_backlog_fraction_mean": 0.5593,
+        "final_backlog_fraction_std": 0.5266,
+        "completed_orders_per_congestion_event_mean": 1.1073,
+        "completed_orders_per_congestion_event_std": 1.1607,
+        "completed_orders_per_severe_event_mean": 1.7758,
+        "completed_orders_per_severe_event_std": 2.5263
+      },
+      "Greedy": {
+        "completed_orders_mean": 318.36,
+        "completed_orders_std": 157.6894,
+        "completed_tasks_mean": 1429.38,
+        "completed_tasks_std": 659.7074,
+        "avg_task_duration_mean": 45.5222,
+        "avg_task_duration_std": 5.945,
+        "avg_excess_delay_mean": 31.1115,
+        "avg_excess_delay_std": 5.8393,
+        "wall_time_s_mean": 737.3234,
+        "wall_time_s_std": 503.9805,
+        "ticks_mean": 1500.0,
+        "ticks_std": 0.0,
+        "num_agents_mean": 48.0,
+        "num_agents_std": 0.0,
+        "open_order_count_mean": 233.92,
+        "open_order_count_std": 139.3833,
+        "pending_order_count_mean": 201.4,
+        "pending_order_count_std": 139.7625,
+        "open_order_age_p95_mean": 797.013,
+        "open_order_age_p95_std": 405.656,
+        "pending_order_age_p95_mean": 655.282,
+        "pending_order_age_p95_std": 349.1216,
+        "completed_order_flow_time_p95_mean": 219.348,
+        "completed_order_flow_time_p95_std": 43.5365,
+        "wm_label_cost_mean": 4.9142,
+        "wm_label_cost_std": 0.3003,
+        "wait_or_stall_mean": 0.0964,
+        "wait_or_stall_std": 0.0547,
+        "avg_excess_delay_label_mean": 2.8334,
+        "avg_excess_delay_label_std": 0.4362,
+        "station_pressure_mean": 2.5452,
+        "station_pressure_std": 0.776,
+        "bottleneck_CVaR_mean": 0.1285,
+        "bottleneck_CVaR_std": 0.012,
+        "completed_orders_delta_sum_mean": 318.36,
+        "completed_orders_delta_sum_std": 157.6894,
+        "unified_risk_mean": 1.0,
+        "unified_risk_std": 0.0,
+        "congestion_events_mean": 940.94,
+        "congestion_events_std": 342.5256,
+        "severe_events_mean": 891.06,
+        "severe_events_std": 372.3351,
+        "risk_rate_per_100_mean": 62.7293,
+        "risk_rate_per_100_std": 22.835,
+        "stall_ratio_mean_mean": 0.0964,
+        "stall_ratio_mean_std": 0.0547,
+        "stall_ratio_max_mean": 0.2296,
+        "stall_ratio_max_std": 0.0499,
+        "deadlock_ratio_mean_mean": 0.4482,
+        "deadlock_ratio_mean_std": 0.2737,
+        "deadlock_ratio_max_mean": 0.85,
+        "deadlock_ratio_max_std": 0.2735,
+        "handoff_ratio_mean_mean": 0.0054,
+        "handoff_ratio_mean_std": 0.0037,
+        "handoff_ratio_max_mean": 0.0892,
+        "handoff_ratio_max_std": 0.0209,
+        "order_arrival_count_mean": 552.28,
+        "order_arrival_count_std": 22.569,
+        "order_arrival_replayed_mean": 0.0,
+        "order_arrival_replayed_std": 0.0,
+        "station_capacity_rejections_mean": 20739.4,
+        "station_capacity_rejections_std": 12293.0241,
+        "station_max_occupancy_mean": 7.0,
+        "station_max_occupancy_std": 0.0,
+        "station_max_committed_load_mean": 18.56,
+        "station_max_committed_load_std": 1.8348,
+        "completion_fraction_mean": 0.5678,
+        "completion_fraction_std": 0.2662,
+        "final_backlog_total_mean": 435.32,
+        "final_backlog_total_std": 279.1286,
+        "final_backlog_fraction_mean": 0.8055,
+        "final_backlog_fraction_std": 0.5311,
+        "completed_orders_per_congestion_event_mean": 0.5173,
+        "completed_orders_per_congestion_event_std": 0.5365,
+        "completed_orders_per_severe_event_mean": 0.6404,
+        "completed_orders_per_severe_event_std": 0.785
+      },
+      "Hungarian": {
+        "completed_orders_mean": 290.44,
+        "completed_orders_std": 146.9573,
+        "completed_tasks_mean": 1444.7,
+        "completed_tasks_std": 627.1527,
+        "avg_task_duration_mean": 44.4376,
+        "avg_task_duration_std": 4.5669,
+        "avg_excess_delay_mean": 30.7583,
+        "avg_excess_delay_std": 4.4183,
+        "wall_time_s_mean": 740.5024,
+        "wall_time_s_std": 479.8031,
+        "ticks_mean": 1500.0,
+        "ticks_std": 0.0,
+        "num_agents_mean": 48.0,
+        "num_agents_std": 0.0,
+        "open_order_count_mean": 261.84,
+        "open_order_count_std": 145.0125,
+        "pending_order_count_mean": 236.82,
+        "pending_order_count_std": 146.1569,
+        "open_order_age_p95_mean": 808.306,
+        "open_order_age_p95_std": 405.2627,
+        "pending_order_age_p95_mean": 688.83,
+        "pending_order_age_p95_std": 417.8372,
+        "completed_order_flow_time_p95_mean": 231.233,
+        "completed_order_flow_time_p95_std": 127.2991,
+        "wm_label_cost_mean": 4.9264,
+        "wm_label_cost_std": 0.3884,
+        "wait_or_stall_mean": 0.0968,
+        "wait_or_stall_std": 0.0573,
+        "avg_excess_delay_label_mean": 2.8754,
+        "avg_excess_delay_label_std": 0.3255,
+        "station_pressure_mean": 2.5406,
+        "station_pressure_std": 0.816,
+        "bottleneck_CVaR_mean": 0.1216,
+        "bottleneck_CVaR_std": 0.0137,
+        "completed_orders_delta_sum_mean": 290.44,
+        "completed_orders_delta_sum_std": 146.9573,
+        "unified_risk_mean": 1.0,
+        "unified_risk_std": 0.0,
+        "congestion_events_mean": 921.94,
+        "congestion_events_std": 382.6656,
+        "severe_events_mean": 876.48,
+        "severe_events_std": 403.7333,
+        "risk_rate_per_100_mean": 61.4627,
+        "risk_rate_per_100_std": 25.511,
+        "stall_ratio_mean_mean": 0.0968,
+        "stall_ratio_mean_std": 0.0573,
+        "stall_ratio_max_mean": 0.2271,
+        "stall_ratio_max_std": 0.0476,
+        "deadlock_ratio_mean_mean": 0.4404,
+        "deadlock_ratio_mean_std": 0.2757,
+        "deadlock_ratio_max_mean": 0.8129,
+        "deadlock_ratio_max_std": 0.306,
+        "handoff_ratio_mean_mean": 0.0052,
+        "handoff_ratio_mean_std": 0.0029,
+        "handoff_ratio_max_mean": 0.0858,
+        "handoff_ratio_max_std": 0.0175,
+        "order_arrival_count_mean": 552.28,
+        "order_arrival_count_std": 22.569,
+        "order_arrival_replayed_mean": 1.0,
+        "order_arrival_replayed_std": 0.0,
+        "station_capacity_rejections_mean": 20387.1,
+        "station_capacity_rejections_std": 12279.2054,
+        "station_max_occupancy_mean": 7.0,
+        "station_max_occupancy_std": 0.0,
+        "station_max_committed_load_mean": 18.9,
+        "station_max_committed_load_std": 2.2113,
+        "completion_fraction_mean": 0.5251,
+        "completion_fraction_std": 0.2652,
+        "final_backlog_total_mean": 498.66,
+        "final_backlog_total_std": 291.0531,
+        "final_backlog_fraction_mean": 0.9043,
+        "final_backlog_fraction_std": 0.5318,
+        "completed_orders_per_congestion_event_mean": 0.7544,
+        "completed_orders_per_congestion_event_std": 1.5052,
+        "completed_orders_per_severe_event_mean": 1.0411,
+        "completed_orders_per_severe_event_std": 2.5053
+      },
+      "JSQ": {
+        "completed_orders_mean": 367.74,
+        "completed_orders_std": 142.5782,
+        "completed_tasks_mean": 1619.92,
+        "completed_tasks_std": 577.0168,
+        "avg_task_duration_mean": 44.1386,
+        "avg_task_duration_std": 4.0089,
+        "avg_excess_delay_mean": 29.9963,
+        "avg_excess_delay_std": 4.0281,
+        "wall_time_s_mean": 622.3906,
+        "wall_time_s_std": 480.3487,
+        "ticks_mean": 1500.0,
+        "ticks_std": 0.0,
+        "num_agents_mean": 48.0,
+        "num_agents_std": 0.0,
+        "open_order_count_mean": 184.54,
+        "open_order_count_std": 139.2289,
+        "pending_order_count_mean": 153.2,
+        "pending_order_count_std": 137.583,
+        "open_order_age_p95_mean": 652.802,
+        "open_order_age_p95_std": 424.3207,
+        "pending_order_age_p95_mean": 504.283,
+        "pending_order_age_p95_std": 396.232,
+        "completed_order_flow_time_p95_mean": 190.932,
+        "completed_order_flow_time_p95_std": 34.6981,
+        "wm_label_cost_mean": 4.7275,
+        "wm_label_cost_std": 0.3643,
+        "wait_or_stall_mean": 0.0793,
+        "wait_or_stall_std": 0.056,
+        "avg_excess_delay_label_mean": 2.8144,
+        "avg_excess_delay_label_std": 0.298,
+        "station_pressure_mean": 2.232,
+        "station_pressure_std": 0.8089,
+        "bottleneck_CVaR_mean": 0.1249,
+        "bottleneck_CVaR_std": 0.012,
+        "completed_orders_delta_sum_mean": 367.74,
+        "completed_orders_delta_sum_std": 142.5782,
+        "unified_risk_mean": 1.0,
+        "unified_risk_std": 0.0,
+        "congestion_events_mean": 791.2,
+        "congestion_events_std": 411.0309,
+        "severe_events_mean": 743.84,
+        "severe_events_std": 430.7285,
+        "risk_rate_per_100_mean": 52.7467,
+        "risk_rate_per_100_std": 27.4021,
+        "stall_ratio_mean_mean": 0.0793,
+        "stall_ratio_mean_std": 0.056,
+        "stall_ratio_max_mean": 0.2067,
+        "stall_ratio_max_std": 0.0478,
+        "deadlock_ratio_mean_mean": 0.3518,
+        "deadlock_ratio_mean_std": 0.268,
+        "deadlock_ratio_max_mean": 0.7387,
+        "deadlock_ratio_max_std": 0.3296,
+        "handoff_ratio_mean_mean": 0.0052,
+        "handoff_ratio_mean_std": 0.0025,
+        "handoff_ratio_max_mean": 0.0867,
+        "handoff_ratio_max_std": 0.0179,
+        "order_arrival_count_mean": 552.28,
+        "order_arrival_count_std": 22.569,
+        "order_arrival_replayed_mean": 1.0,
+        "order_arrival_replayed_std": 0.0,
+        "station_capacity_rejections_mean": 16256.62,
+        "station_capacity_rejections_std": 11657.5035,
+        "station_max_occupancy_mean": 7.0,
+        "station_max_occupancy_std": 0.0,
+        "station_max_committed_load_mean": 18.56,
+        "station_max_committed_load_std": 1.9714,
+        "completion_fraction_mean": 0.6646,
+        "completion_fraction_std": 0.2543,
+        "final_backlog_total_mean": 337.74,
+        "final_backlog_total_std": 276.7726,
+        "final_backlog_fraction_mean": 0.6139,
+        "final_backlog_fraction_std": 0.5053,
+        "completed_orders_per_congestion_event_mean": 1.1992,
+        "completed_orders_per_congestion_event_std": 2.1332,
+        "completed_orders_per_severe_event_mean": 1.9955,
+        "completed_orders_per_severe_event_std": 5.1628
+      },
+      "PhaseC": {
+        "completed_orders_mean": 352.28,
+        "completed_orders_std": 152.6485,
+        "completed_tasks_mean": 1532.88,
+        "completed_tasks_std": 645.5105,
+        "avg_task_duration_mean": 43.8719,
+        "avg_task_duration_std": 4.1215,
+        "avg_excess_delay_mean": 29.7378,
+        "avg_excess_delay_std": 4.0284,
+        "wall_time_s_mean": 761.2666,
+        "wall_time_s_std": 384.5379,
+        "ticks_mean": 1500.0,
+        "ticks_std": 0.0,
+        "num_agents_mean": 48.0,
+        "num_agents_std": 0.0,
+        "open_order_count_mean": 200.0,
+        "open_order_count_std": 151.895,
+        "pending_order_count_mean": 167.8,
+        "pending_order_count_std": 148.8959,
+        "open_order_age_p95_mean": 680.726,
+        "open_order_age_p95_std": 454.802,
+        "pending_order_age_p95_mean": 502.612,
+        "pending_order_age_p95_std": 416.3448,
+        "completed_order_flow_time_p95_mean": 201.03,
+        "completed_order_flow_time_p95_std": 59.4887,
+        "action_path_mode_mean": 0.0,
+        "action_path_mode_std": 0.0,
+        "world_model_path_planner_injected_mean": 1.0,
+        "world_model_path_planner_injected_std": 0.0,
+        "assign_calls_mean": 1500.0,
+        "assign_calls_std": 0.0,
+        "model_assign_calls_mean": 1497.0,
+        "model_assign_calls_std": 0.0,
+        "fallback_greedy_calls_mean": 0.0,
+        "fallback_greedy_calls_std": 0.0,
+        "warmup_defer_calls_mean": 3.0,
+        "warmup_defer_calls_std": 0.0,
+        "model_inference_calls_mean": 4395.58,
+        "model_inference_calls_std": 2691.3248,
+        "fallback_greedy_ratio_mean": 0.0,
+        "fallback_greedy_ratio_std": 0.0,
+        "assignment_time_ms_mean_mean": 92.2505,
+        "assignment_time_ms_mean_std": 52.8717,
+        "model_inference_time_ms_mean_mean": 24.928,
+        "model_inference_time_ms_mean_std": 0.1172,
+        "risk_guard_filtered_mean": 0.0,
+        "risk_guard_filtered_std": 0.0,
+        "risk_guard_fallback_mean": 0.0,
+        "risk_guard_fallback_std": 0.0,
+        "all_idle_candidate_contexts_mean": 539.12,
+        "all_idle_candidate_contexts_std": 211.1832,
+        "all_idle_candidates_scored_mean": 4395.58,
+        "all_idle_candidates_scored_std": 2691.3248,
+        "all_idle_candidates_per_context_mean_mean": 7.7801,
+        "all_idle_candidates_per_context_mean_std": 2.3449,
+        "decision_contexts_total_mean": 539.12,
+        "decision_contexts_total_std": 211.1832,
+        "risk_max_mean_mean": 0.4346,
+        "risk_max_mean_std": 0.0826,
+        "risk_max_max_mean": 1.0541,
+        "risk_max_max_std": 0.0352,
+        "risk_max_min_mean": 0.0186,
+        "risk_max_min_std": 0.0359,
+        "risk_max_count_mean": 4395.58,
+        "risk_max_count_std": 2691.3248,
+        "risk_max_p50_mean": 0.4009,
+        "risk_max_p50_std": 0.1402,
+        "risk_max_p90_mean": 0.8097,
+        "risk_max_p90_std": 0.0647,
+        "risk_max_p95_mean": 0.8797,
+        "risk_max_p95_std": 0.0508,
+        "risk_max_p99_mean": 0.9625,
+        "risk_max_p99_std": 0.0373,
+        "wm_label_cost_mean": 4.7363,
+        "wm_label_cost_std": 0.4183,
+        "wait_or_stall_mean": 0.0822,
+        "wait_or_stall_std": 0.0627,
+        "avg_excess_delay_label_mean": 2.7616,
+        "avg_excess_delay_label_std": 0.3095,
+        "station_pressure_mean": 2.2919,
+        "station_pressure_std": 0.8923,
+        "bottleneck_CVaR_mean": 0.1274,
+        "bottleneck_CVaR_std": 0.0126,
+        "completed_orders_delta_sum_mean": 352.28,
+        "completed_orders_delta_sum_std": 152.6485,
+        "unified_risk_mean": 1.0,
+        "unified_risk_std": 0.0,
+        "congestion_events_mean": 793.2,
+        "congestion_events_std": 440.5235,
+        "severe_events_mean": 742.4,
+        "severe_events_std": 466.5099,
+        "risk_rate_per_100_mean": 52.88,
+        "risk_rate_per_100_std": 29.3682,
+        "stall_ratio_mean_mean": 0.0822,
+        "stall_ratio_mean_std": 0.0627,
+        "stall_ratio_max_mean": 0.2008,
+        "stall_ratio_max_std": 0.0619,
+        "deadlock_ratio_mean_mean": 0.3764,
+        "deadlock_ratio_mean_std": 0.2935,
+        "deadlock_ratio_max_mean": 0.7421,
+        "deadlock_ratio_max_std": 0.3484,
+        "handoff_ratio_mean_mean": 0.0048,
+        "handoff_ratio_mean_std": 0.0024,
+        "handoff_ratio_max_mean": 0.0862,
+        "handoff_ratio_max_std": 0.0172,
+        "order_arrival_count_mean": 552.28,
+        "order_arrival_count_std": 22.569,
+        "order_arrival_replayed_mean": 1.0,
+        "order_arrival_replayed_std": 0.0,
+        "station_capacity_rejections_mean": 17448.9,
+        "station_capacity_rejections_std": 13139.0581,
+        "station_max_occupancy_mean": 7.0,
+        "station_max_occupancy_std": 0.0,
+        "station_max_committed_load_mean": 18.56,
+        "station_max_committed_load_std": 2.3508,
+        "completion_fraction_mean": 0.6378,
+        "completion_fraction_std": 0.2759,
+        "final_backlog_total_mean": 367.8,
+        "final_backlog_total_std": 300.7512,
+        "final_backlog_fraction_mean": 0.666,
+        "final_backlog_fraction_std": 0.5462,
+        "completed_orders_per_congestion_event_mean": 1.2749,
+        "completed_orders_per_congestion_event_std": 2.3316,
+        "completed_orders_per_severe_event_mean": 2.1021,
+        "completed_orders_per_severe_event_std": 4.7053
+      }
+    }
+  },
+  "paired_comparisons": {
+    "low": {
+      "Greedy": {
+        "PhaseC": {
+          "completed_orders": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -11.28,
+            "arm_minus_baseline_ci95": [
+              -56.74,
+              31.1
+            ],
+            "wins": 27,
+            "losses": 22,
+            "ties": 1
+          },
+          "completed_tasks": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -61.38,
+            "arm_minus_baseline_ci95": [
+              -258.2,
+              126.66
+            ],
+            "wins": 23,
+            "losses": 27,
+            "ties": 0
+          },
+          "avg_task_duration": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -2.697779,
+            "arm_minus_baseline_ci95": [
+              -3.780788,
+              -1.704328
+            ],
+            "wins": 40,
+            "losses": 10,
+            "ties": 0
+          },
+          "avg_excess_delay": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -2.699982,
+            "arm_minus_baseline_ci95": [
+              -3.715653,
+              -1.756236
+            ],
+            "wins": 42,
+            "losses": 8,
+            "ties": 0
+          },
+          "open_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 11.28,
+            "arm_minus_baseline_ci95": [
+              -31.1,
+              56.74
+            ],
+            "wins": 27,
+            "losses": 22,
+            "ties": 1
+          },
+          "pending_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 17.62,
+            "arm_minus_baseline_ci95": [
+              -23.06,
+              61.28
+            ],
+            "wins": 26,
+            "losses": 23,
+            "ties": 1
+          },
+          "congestion_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -153.6,
+            "arm_minus_baseline_ci95": [
+              -325.8,
+              15.42
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "severe_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -145.32,
+            "arm_minus_baseline_ci95": [
+              -324.62,
+              32.66
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "stall_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.017948,
+            "arm_minus_baseline_ci95": [
+              -0.035151,
+              -0.000643
+            ],
+            "wins": 28,
+            "losses": 22,
+            "ties": 0
+          },
+          "deadlock_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.06142,
+            "arm_minus_baseline_ci95": [
+              -0.17247,
+              0.049179
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "risk_rate_per_100": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -10.24,
+            "arm_minus_baseline_ci95": [
+              -21.720014,
+              1.028002
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "completion_fraction": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.012542,
+            "arm_minus_baseline_ci95": [
+              -0.084592,
+              0.108672
+            ],
+            "wins": 27,
+            "losses": 22,
+            "ties": 1
+          },
+          "final_backlog_total": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 28.9,
+            "arm_minus_baseline_ci95": [
+              -54.26,
+              117.92
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "final_backlog_fraction": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.00868,
+            "arm_minus_baseline_ci95": [
+              -0.194338,
+              0.180979
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "completed_orders_per_congestion_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 3.198111,
+            "arm_minus_baseline_ci95": [
+              0.541286,
+              7.835574
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "completed_orders_per_severe_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 9.070237,
+            "arm_minus_baseline_ci95": [
+              1.292001,
+              23.006939
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          }
+        },
+        "ComboS1J1": {
+          "completed_orders": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 24.14,
+            "arm_minus_baseline_ci95": [
+              -9.46,
+              56.2
+            ],
+            "wins": 34,
+            "losses": 14,
+            "ties": 2
+          },
+          "completed_tasks": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 92.26,
+            "arm_minus_baseline_ci95": [
+              -52.14,
+              234.28
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "avg_task_duration": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -2.437528,
+            "arm_minus_baseline_ci95": [
+              -3.39317,
+              -1.533732
+            ],
+            "wins": 40,
+            "losses": 10,
+            "ties": 0
+          },
+          "avg_excess_delay": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -2.410243,
+            "arm_minus_baseline_ci95": [
+              -3.353758,
+              -1.518188
+            ],
+            "wins": 39,
+            "losses": 11,
+            "ties": 0
+          },
+          "open_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -24.14,
+            "arm_minus_baseline_ci95": [
+              -56.2,
+              9.46
+            ],
+            "wins": 34,
+            "losses": 14,
+            "ties": 2
+          },
+          "pending_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -14.74,
+            "arm_minus_baseline_ci95": [
+              -44.66,
+              16.54
+            ],
+            "wins": 33,
+            "losses": 15,
+            "ties": 2
+          },
+          "congestion_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -280.22,
+            "arm_minus_baseline_ci95": [
+              -437.2,
+              -126.32
+            ],
+            "wins": 32,
+            "losses": 18,
+            "ties": 0
+          },
+          "severe_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -271.12,
+            "arm_minus_baseline_ci95": [
+              -430.58,
+              -112.42
+            ],
+            "wins": 33,
+            "losses": 17,
+            "ties": 0
+          },
+          "stall_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.026418,
+            "arm_minus_baseline_ci95": [
+              -0.043582,
+              -0.009566
+            ],
+            "wins": 35,
+            "losses": 15,
+            "ties": 0
+          },
+          "deadlock_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.135977,
+            "arm_minus_baseline_ci95": [
+              -0.228657,
+              -0.044561
+            ],
+            "wins": 35,
+            "losses": 15,
+            "ties": 0
+          },
+          "risk_rate_per_100": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -18.681334,
+            "arm_minus_baseline_ci95": [
+              -29.146672,
+              -8.421324
+            ],
+            "wins": 32,
+            "losses": 18,
+            "ties": 0
+          },
+          "completion_fraction": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.078832,
+            "arm_minus_baseline_ci95": [
+              0.002978,
+              0.154755
+            ],
+            "wins": 34,
+            "losses": 14,
+            "ties": 2
+          },
+          "final_backlog_total": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -38.88,
+            "arm_minus_baseline_ci95": [
+              -101.02,
+              25.94
+            ],
+            "wins": 34,
+            "losses": 15,
+            "ties": 1
+          },
+          "final_backlog_fraction": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.135317,
+            "arm_minus_baseline_ci95": [
+              -0.281935,
+              0.010628
+            ],
+            "wins": 34,
+            "losses": 15,
+            "ties": 1
+          },
+          "completed_orders_per_congestion_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 2.478569,
+            "arm_minus_baseline_ci95": [
+              1.274328,
+              3.953912
+            ],
+            "wins": 34,
+            "losses": 16,
+            "ties": 0
+          },
+          "completed_orders_per_severe_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 4.739363,
+            "arm_minus_baseline_ci95": [
+              2.241585,
+              7.837968
+            ],
+            "wins": 35,
+            "losses": 15,
+            "ties": 0
+          }
+        },
+        "Hungarian": {
+          "completed_orders": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -15.28,
+            "arm_minus_baseline_ci95": [
+              -59.7,
+              29.56
+            ],
+            "wins": 28,
+            "losses": 21,
+            "ties": 1
+          },
+          "completed_tasks": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -55.8,
+            "arm_minus_baseline_ci95": [
+              -243.88,
+              135.9
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "avg_task_duration": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -3.109946,
+            "arm_minus_baseline_ci95": [
+              -4.150254,
+              -2.145772
+            ],
+            "wins": 43,
+            "losses": 7,
+            "ties": 0
+          },
+          "avg_excess_delay": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -2.913745,
+            "arm_minus_baseline_ci95": [
+              -3.911135,
+              -1.994363
+            ],
+            "wins": 41,
+            "losses": 9,
+            "ties": 0
+          },
+          "open_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 15.28,
+            "arm_minus_baseline_ci95": [
+              -29.56,
+              59.7
+            ],
+            "wins": 28,
+            "losses": 21,
+            "ties": 1
+          },
+          "pending_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 24.34,
+            "arm_minus_baseline_ci95": [
+              -18.64,
+              66.96
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          },
+          "congestion_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -168.26,
+            "arm_minus_baseline_ci95": [
+              -354.64,
+              12.2
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "severe_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -158.84,
+            "arm_minus_baseline_ci95": [
+              -351.12,
+              26.78
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "stall_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.020021,
+            "arm_minus_baseline_ci95": [
+              -0.041355,
+              0.000634
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "deadlock_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.067577,
+            "arm_minus_baseline_ci95": [
+              -0.184759,
+              0.045349
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "risk_rate_per_100": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -11.217334,
+            "arm_minus_baseline_ci95": [
+              -23.642668,
+              0.813332
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "completion_fraction": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.006903,
+            "arm_minus_baseline_ci95": [
+              -0.093262,
+              0.1106
+            ],
+            "wins": 28,
+            "losses": 21,
+            "ties": 1
+          },
+          "final_backlog_total": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 39.62,
+            "arm_minus_baseline_ci95": [
+              -47.98,
+              126.74
+            ],
+            "wins": 29,
+            "losses": 19,
+            "ties": 2
+          },
+          "final_backlog_fraction": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.008823,
+            "arm_minus_baseline_ci95": [
+              -0.193404,
+              0.204166
+            ],
+            "wins": 29,
+            "losses": 19,
+            "ties": 2
+          },
+          "completed_orders_per_congestion_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 3.744561,
+            "arm_minus_baseline_ci95": [
+              0.67502,
+              8.756421
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "completed_orders_per_severe_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 16.975992,
+            "arm_minus_baseline_ci95": [
+              1.403873,
+              40.370332
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          }
+        },
+        "JSQ": {
+          "completed_orders": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -5.58,
+            "arm_minus_baseline_ci95": [
+              -40.6,
+              28.26
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "completed_tasks": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -31.62,
+            "arm_minus_baseline_ci95": [
+              -183.34,
+              118.56
+            ],
+            "wins": 26,
+            "losses": 23,
+            "ties": 1
+          },
+          "avg_task_duration": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -2.505148,
+            "arm_minus_baseline_ci95": [
+              -3.328247,
+              -1.746769
+            ],
+            "wins": 42,
+            "losses": 8,
+            "ties": 0
+          },
+          "avg_excess_delay": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -2.494886,
+            "arm_minus_baseline_ci95": [
+              -3.327768,
+              -1.723658
+            ],
+            "wins": 43,
+            "losses": 7,
+            "ties": 0
+          },
+          "open_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 5.58,
+            "arm_minus_baseline_ci95": [
+              -28.26,
+              40.6
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "pending_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 10.4,
+            "arm_minus_baseline_ci95": [
+              -21.06,
+              43.02
+            ],
+            "wins": 30,
+            "losses": 19,
+            "ties": 1
+          },
+          "congestion_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -102.06,
+            "arm_minus_baseline_ci95": [
+              -257.28,
+              44.84
+            ],
+            "wins": 23,
+            "losses": 20,
+            "ties": 7
+          },
+          "severe_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -92.6,
+            "arm_minus_baseline_ci95": [
+              -252.66,
+              60.78
+            ],
+            "wins": 23,
+            "losses": 19,
+            "ties": 8
+          },
+          "stall_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.023728,
+            "arm_minus_baseline_ci95": [
+              -0.041932,
+              -0.006985
+            ],
+            "wins": 32,
+            "losses": 16,
+            "ties": 2
+          },
+          "deadlock_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.04489,
+            "arm_minus_baseline_ci95": [
+              -0.139666,
+              0.047113
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          },
+          "risk_rate_per_100": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -6.804,
+            "arm_minus_baseline_ci95": [
+              -17.15201,
+              2.989336
+            ],
+            "wins": 23,
+            "losses": 20,
+            "ties": 7
+          },
+          "completion_fraction": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.012705,
+            "arm_minus_baseline_ci95": [
+              -0.064769,
+              0.091764
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "final_backlog_total": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 15.98,
+            "arm_minus_baseline_ci95": [
+              -49.18,
+              83.46
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "final_backlog_fraction": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.01312,
+            "arm_minus_baseline_ci95": [
+              -0.164737,
+              0.13591
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "completed_orders_per_congestion_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.840455,
+            "arm_minus_baseline_ci95": [
+              0.142977,
+              1.802399
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          },
+          "completed_orders_per_severe_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 1.392858,
+            "arm_minus_baseline_ci95": [
+              0.257429,
+              2.879463
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          }
+        }
+      },
+      "JSQ": {
+        "PhaseC": {
+          "completed_orders": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -5.7,
+            "arm_minus_baseline_ci95": [
+              -54.8,
+              41.92
+            ],
+            "wins": 28,
+            "losses": 20,
+            "ties": 2
+          },
+          "completed_tasks": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -29.76,
+            "arm_minus_baseline_ci95": [
+              -243.12,
+              177.2
+            ],
+            "wins": 29,
+            "losses": 20,
+            "ties": 1
+          },
+          "avg_task_duration": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.192631,
+            "arm_minus_baseline_ci95": [
+              -1.327672,
+              0.887355
+            ],
+            "wins": 23,
+            "losses": 27,
+            "ties": 0
+          },
+          "avg_excess_delay": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.205096,
+            "arm_minus_baseline_ci95": [
+              -1.304436,
+              0.855545
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "open_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 5.7,
+            "arm_minus_baseline_ci95": [
+              -41.92,
+              54.8
+            ],
+            "wins": 28,
+            "losses": 20,
+            "ties": 2
+          },
+          "pending_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 7.22,
+            "arm_minus_baseline_ci95": [
+              -37.94,
+              54.1
+            ],
+            "wins": 25,
+            "losses": 18,
+            "ties": 7
+          },
+          "congestion_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -51.54,
+            "arm_minus_baseline_ci95": [
+              -236.38,
+              131.22
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          },
+          "severe_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -52.72,
+            "arm_minus_baseline_ci95": [
+              -246.28,
+              139.68
+            ],
+            "wins": 29,
+            "losses": 21,
+            "ties": 0
+          },
+          "stall_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.00578,
+            "arm_minus_baseline_ci95": [
+              -0.012929,
+              0.024894
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "deadlock_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.01653,
+            "arm_minus_baseline_ci95": [
+              -0.137526,
+              0.104322
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          },
+          "risk_rate_per_100": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -3.436,
+            "arm_minus_baseline_ci95": [
+              -15.75867,
+              8.748002
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          },
+          "completion_fraction": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.000163,
+            "arm_minus_baseline_ci95": [
+              -0.104971,
+              0.103805
+            ],
+            "wins": 28,
+            "losses": 20,
+            "ties": 2
+          },
+          "final_backlog_total": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 12.92,
+            "arm_minus_baseline_ci95": [
+              -79.82,
+              109.46
+            ],
+            "wins": 28,
+            "losses": 20,
+            "ties": 2
+          },
+          "final_backlog_fraction": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.00444,
+            "arm_minus_baseline_ci95": [
+              -0.19785,
+              0.208993
+            ],
+            "wins": 28,
+            "losses": 20,
+            "ties": 2
+          },
+          "completed_orders_per_congestion_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 2.357656,
+            "arm_minus_baseline_ci95": [
+              0.016358,
+              6.331556
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          },
+          "completed_orders_per_severe_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 7.677378,
+            "arm_minus_baseline_ci95": [
+              0.353127,
+              20.499219
+            ],
+            "wins": 29,
+            "losses": 21,
+            "ties": 0
+          }
+        },
+        "ComboS1J1": {
+          "completed_orders": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 29.72,
+            "arm_minus_baseline_ci95": [
+              -10.3,
+              68.24
+            ],
+            "wins": 27,
+            "losses": 18,
+            "ties": 5
+          },
+          "completed_tasks": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 123.88,
+            "arm_minus_baseline_ci95": [
+              -44.02,
+              289.72
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          },
+          "avg_task_duration": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.067619,
+            "arm_minus_baseline_ci95": [
+              -1.057564,
+              1.141742
+            ],
+            "wins": 23,
+            "losses": 27,
+            "ties": 0
+          },
+          "avg_excess_delay": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.084643,
+            "arm_minus_baseline_ci95": [
+              -1.027151,
+              1.150842
+            ],
+            "wins": 22,
+            "losses": 28,
+            "ties": 0
+          },
+          "open_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -29.72,
+            "arm_minus_baseline_ci95": [
+              -68.24,
+              10.3
+            ],
+            "wins": 27,
+            "losses": 18,
+            "ties": 5
+          },
+          "pending_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -25.14,
+            "arm_minus_baseline_ci95": [
+              -61.78,
+              12.52
+            ],
+            "wins": 27,
+            "losses": 12,
+            "ties": 11
+          },
+          "congestion_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -178.16,
+            "arm_minus_baseline_ci95": [
+              -342.3,
+              -12.68
+            ],
+            "wins": 35,
+            "losses": 15,
+            "ties": 0
+          },
+          "severe_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -178.52,
+            "arm_minus_baseline_ci95": [
+              -348.06,
+              -7.28
+            ],
+            "wins": 36,
+            "losses": 14,
+            "ties": 0
+          },
+          "stall_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.002689,
+            "arm_minus_baseline_ci95": [
+              -0.019709,
+              0.014685
+            ],
+            "wins": 28,
+            "losses": 22,
+            "ties": 0
+          },
+          "deadlock_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.091087,
+            "arm_minus_baseline_ci95": [
+              -0.190693,
+              0.011498
+            ],
+            "wins": 35,
+            "losses": 15,
+            "ties": 0
+          },
+          "risk_rate_per_100": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -11.877334,
+            "arm_minus_baseline_ci95": [
+              -22.820006,
+              -0.845334
+            ],
+            "wins": 35,
+            "losses": 15,
+            "ties": 0
+          },
+          "completion_fraction": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.066127,
+            "arm_minus_baseline_ci95": [
+              -0.02183,
+              0.150563
+            ],
+            "wins": 27,
+            "losses": 18,
+            "ties": 5
+          },
+          "final_backlog_total": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -54.86,
+            "arm_minus_baseline_ci95": [
+              -130.04,
+              22.86
+            ],
+            "wins": 27,
+            "losses": 19,
+            "ties": 4
+          },
+          "final_backlog_fraction": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.122198,
+            "arm_minus_baseline_ci95": [
+              -0.286291,
+              0.047642
+            ],
+            "wins": 27,
+            "losses": 19,
+            "ties": 4
+          },
+          "completed_orders_per_congestion_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 1.638114,
+            "arm_minus_baseline_ci95": [
+              0.769389,
+              2.562665
+            ],
+            "wins": 35,
+            "losses": 15,
+            "ties": 0
+          },
+          "completed_orders_per_severe_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 3.346505,
+            "arm_minus_baseline_ci95": [
+              1.008722,
+              6.304446
+            ],
+            "wins": 36,
+            "losses": 14,
+            "ties": 0
+          }
+        },
+        "Hungarian": {
+          "completed_orders": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -9.7,
+            "arm_minus_baseline_ci95": [
+              -58.34,
+              38.26
+            ],
+            "wins": 20,
+            "losses": 24,
+            "ties": 6
+          },
+          "completed_tasks": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -24.18,
+            "arm_minus_baseline_ci95": [
+              -231.18,
+              180.26
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "avg_task_duration": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.604798,
+            "arm_minus_baseline_ci95": [
+              -1.882568,
+              0.677447
+            ],
+            "wins": 29,
+            "losses": 21,
+            "ties": 0
+          },
+          "avg_excess_delay": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.418859,
+            "arm_minus_baseline_ci95": [
+              -1.708719,
+              0.870005
+            ],
+            "wins": 29,
+            "losses": 21,
+            "ties": 0
+          },
+          "open_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 9.7,
+            "arm_minus_baseline_ci95": [
+              -38.26,
+              58.34
+            ],
+            "wins": 20,
+            "losses": 24,
+            "ties": 6
+          },
+          "pending_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 13.94,
+            "arm_minus_baseline_ci95": [
+              -31.38,
+              59.92
+            ],
+            "wins": 23,
+            "losses": 20,
+            "ties": 7
+          },
+          "congestion_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -66.2,
+            "arm_minus_baseline_ci95": [
+              -255.5,
+              123.82
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "severe_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -66.24,
+            "arm_minus_baseline_ci95": [
+              -261.82,
+              132.46
+            ],
+            "wins": 27,
+            "losses": 22,
+            "ties": 1
+          },
+          "stall_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.003707,
+            "arm_minus_baseline_ci95": [
+              -0.015891,
+              0.022856
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "deadlock_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.022687,
+            "arm_minus_baseline_ci95": [
+              -0.142702,
+              0.099133
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "risk_rate_per_100": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -4.413334,
+            "arm_minus_baseline_ci95": [
+              -17.033338,
+              8.254658
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "completion_fraction": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.005802,
+            "arm_minus_baseline_ci95": [
+              -0.111835,
+              0.097993
+            ],
+            "wins": 20,
+            "losses": 24,
+            "ties": 6
+          },
+          "final_backlog_total": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 23.64,
+            "arm_minus_baseline_ci95": [
+              -69.76,
+              118.08
+            ],
+            "wins": 24,
+            "losses": 24,
+            "ties": 2
+          },
+          "final_backlog_fraction": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.021942,
+            "arm_minus_baseline_ci95": [
+              -0.180244,
+              0.227055
+            ],
+            "wins": 24,
+            "losses": 24,
+            "ties": 2
+          },
+          "completed_orders_per_congestion_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 2.904106,
+            "arm_minus_baseline_ci95": [
+              0.183208,
+              7.135038
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "completed_orders_per_severe_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 15.583134,
+            "arm_minus_baseline_ci95": [
+              0.575458,
+              38.338905
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          }
+        }
+      }
+    },
+    "mid": {
+      "Greedy": {
+        "PhaseC": {
+          "completed_orders": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -1.4,
+            "arm_minus_baseline_ci95": [
+              -55.6,
+              50.8
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "completed_tasks": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -12.5,
+            "arm_minus_baseline_ci95": [
+              -251.56,
+              220.26
+            ],
+            "wins": 22,
+            "losses": 28,
+            "ties": 0
+          },
+          "avg_task_duration": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -3.19516,
+            "arm_minus_baseline_ci95": [
+              -4.413323,
+              -2.07009
+            ],
+            "wins": 44,
+            "losses": 6,
+            "ties": 0
+          },
+          "avg_excess_delay": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -3.1378,
+            "arm_minus_baseline_ci95": [
+              -4.348882,
+              -2.019746
+            ],
+            "wins": 44,
+            "losses": 6,
+            "ties": 0
+          },
+          "open_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 1.4,
+            "arm_minus_baseline_ci95": [
+              -50.8,
+              55.6
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "pending_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 5.56,
+            "arm_minus_baseline_ci95": [
+              -44.64,
+              57.72
+            ],
+            "wins": 28,
+            "losses": 21,
+            "ties": 1
+          },
+          "congestion_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -157.2,
+            "arm_minus_baseline_ci95": [
+              -339.78,
+              22.88
+            ],
+            "wins": 28,
+            "losses": 22,
+            "ties": 0
+          },
+          "severe_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -146.26,
+            "arm_minus_baseline_ci95": [
+              -336.88,
+              42.22
+            ],
+            "wins": 28,
+            "losses": 22,
+            "ties": 0
+          },
+          "stall_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.023262,
+            "arm_minus_baseline_ci95": [
+              -0.048215,
+              0.001214
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "deadlock_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.059887,
+            "arm_minus_baseline_ci95": [
+              -0.180992,
+              0.06064
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "risk_rate_per_100": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -10.480002,
+            "arm_minus_baseline_ci95": [
+              -22.651996,
+              1.525328
+            ],
+            "wins": 28,
+            "losses": 22,
+            "ties": 0
+          },
+          "completion_fraction": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.031101,
+            "arm_minus_baseline_ci95": [
+              -0.077728,
+              0.138309
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "final_backlog_total": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 6.96,
+            "arm_minus_baseline_ci95": [
+              -95.4,
+              113.32
+            ],
+            "wins": 27,
+            "losses": 22,
+            "ties": 1
+          },
+          "final_backlog_fraction": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.052596,
+            "arm_minus_baseline_ci95": [
+              -0.26223,
+              0.16068
+            ],
+            "wins": 27,
+            "losses": 22,
+            "ties": 1
+          },
+          "completed_orders_per_congestion_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.957079,
+            "arm_minus_baseline_ci95": [
+              0.296198,
+              1.736269
+            ],
+            "wins": 28,
+            "losses": 22,
+            "ties": 0
+          },
+          "completed_orders_per_severe_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 1.893766,
+            "arm_minus_baseline_ci95": [
+              0.652911,
+              3.372187
+            ],
+            "wins": 28,
+            "losses": 22,
+            "ties": 0
+          }
+        },
+        "ComboS1J1": {
+          "completed_orders": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 3.26,
+            "arm_minus_baseline_ci95": [
+              -43.28,
+              48.14
+            ],
+            "wins": 27,
+            "losses": 22,
+            "ties": 1
+          },
+          "completed_tasks": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 31.92,
+            "arm_minus_baseline_ci95": [
+              -171.38,
+              229.46
+            ],
+            "wins": 24,
+            "losses": 26,
+            "ties": 0
+          },
+          "avg_task_duration": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -3.562789,
+            "arm_minus_baseline_ci95": [
+              -4.587895,
+              -2.617759
+            ],
+            "wins": 44,
+            "losses": 6,
+            "ties": 0
+          },
+          "avg_excess_delay": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -3.505962,
+            "arm_minus_baseline_ci95": [
+              -4.552624,
+              -2.539711
+            ],
+            "wins": 47,
+            "losses": 3,
+            "ties": 0
+          },
+          "open_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -3.26,
+            "arm_minus_baseline_ci95": [
+              -48.14,
+              43.28
+            ],
+            "wins": 27,
+            "losses": 22,
+            "ties": 1
+          },
+          "pending_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 1.28,
+            "arm_minus_baseline_ci95": [
+              -42.06,
+              46.2
+            ],
+            "wins": 28,
+            "losses": 21,
+            "ties": 1
+          },
+          "congestion_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -127.94,
+            "arm_minus_baseline_ci95": [
+              -287.3,
+              30.74
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "severe_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -121.52,
+            "arm_minus_baseline_ci95": [
+              -292.9,
+              49.14
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "stall_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.015751,
+            "arm_minus_baseline_ci95": [
+              -0.034966,
+              0.003576
+            ],
+            "wins": 29,
+            "losses": 21,
+            "ties": 0
+          },
+          "deadlock_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.060427,
+            "arm_minus_baseline_ci95": [
+              -0.166824,
+              0.045534
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "risk_rate_per_100": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -8.529336,
+            "arm_minus_baseline_ci95": [
+              -19.153348,
+              2.049338
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "completion_fraction": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.034748,
+            "arm_minus_baseline_ci95": [
+              -0.059476,
+              0.128398
+            ],
+            "wins": 27,
+            "losses": 22,
+            "ties": 1
+          },
+          "final_backlog_total": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -1.98,
+            "arm_minus_baseline_ci95": [
+              -90.1,
+              89.4
+            ],
+            "wins": 27,
+            "losses": 22,
+            "ties": 1
+          },
+          "final_backlog_fraction": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.059628,
+            "arm_minus_baseline_ci95": [
+              -0.242234,
+              0.125642
+            ],
+            "wins": 27,
+            "losses": 22,
+            "ties": 1
+          },
+          "completed_orders_per_congestion_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 1.029519,
+            "arm_minus_baseline_ci95": [
+              0.319504,
+              1.876573
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "completed_orders_per_severe_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 2.284062,
+            "arm_minus_baseline_ci95": [
+              0.511944,
+              4.973431
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          }
+        },
+        "Hungarian": {
+          "completed_orders": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -32.94,
+            "arm_minus_baseline_ci95": [
+              -84.58,
+              17.02
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "completed_tasks": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -80.88,
+            "arm_minus_baseline_ci95": [
+              -305.44,
+              135.2
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "avg_task_duration": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -2.669255,
+            "arm_minus_baseline_ci95": [
+              -3.856811,
+              -1.50809
+            ],
+            "wins": 35,
+            "losses": 15,
+            "ties": 0
+          },
+          "avg_excess_delay": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -2.284965,
+            "arm_minus_baseline_ci95": [
+              -3.407736,
+              -1.184408
+            ],
+            "wins": 34,
+            "losses": 16,
+            "ties": 0
+          },
+          "open_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 32.94,
+            "arm_minus_baseline_ci95": [
+              -17.02,
+              84.58
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "pending_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 39.78,
+            "arm_minus_baseline_ci95": [
+              -9.34,
+              90.48
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "congestion_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -39.94,
+            "arm_minus_baseline_ci95": [
+              -205.32,
+              126.12
+            ],
+            "wins": 22,
+            "losses": 28,
+            "ties": 0
+          },
+          "severe_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -25.54,
+            "arm_minus_baseline_ci95": [
+              -199.28,
+              148.52
+            ],
+            "wins": 24,
+            "losses": 26,
+            "ties": 0
+          },
+          "stall_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.002546,
+            "arm_minus_baseline_ci95": [
+              -0.024199,
+              0.019392
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "deadlock_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.002766,
+            "arm_minus_baseline_ci95": [
+              -0.112569,
+              0.109638
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "risk_rate_per_100": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -2.662666,
+            "arm_minus_baseline_ci95": [
+              -13.687998,
+              8.407998
+            ],
+            "wins": 22,
+            "losses": 28,
+            "ties": 0
+          },
+          "completion_fraction": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.035947,
+            "arm_minus_baseline_ci95": [
+              -0.138485,
+              0.063852
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "final_backlog_total": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 72.72,
+            "arm_minus_baseline_ci95": [
+              -26.84,
+              175.02
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "final_backlog_fraction": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.086388,
+            "arm_minus_baseline_ci95": [
+              -0.111676,
+              0.288685
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "completed_orders_per_congestion_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.556257,
+            "arm_minus_baseline_ci95": [
+              0.045602,
+              1.111852
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "completed_orders_per_severe_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 1.176621,
+            "arm_minus_baseline_ci95": [
+              0.122401,
+              2.39475
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          }
+        },
+        "JSQ": {
+          "completed_orders": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -20.78,
+            "arm_minus_baseline_ci95": [
+              -70.2,
+              27.44
+            ],
+            "wins": 23,
+            "losses": 26,
+            "ties": 1
+          },
+          "completed_tasks": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -67.38,
+            "arm_minus_baseline_ci95": [
+              -280.1,
+              142.52
+            ],
+            "wins": 24,
+            "losses": 26,
+            "ties": 0
+          },
+          "avg_task_duration": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -3.483086,
+            "arm_minus_baseline_ci95": [
+              -4.48163,
+              -2.535976
+            ],
+            "wins": 41,
+            "losses": 9,
+            "ties": 0
+          },
+          "avg_excess_delay": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -3.406158,
+            "arm_minus_baseline_ci95": [
+              -4.429296,
+              -2.437751
+            ],
+            "wins": 43,
+            "losses": 7,
+            "ties": 0
+          },
+          "open_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 20.78,
+            "arm_minus_baseline_ci95": [
+              -27.44,
+              70.2
+            ],
+            "wins": 23,
+            "losses": 26,
+            "ties": 1
+          },
+          "pending_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 23.72,
+            "arm_minus_baseline_ci95": [
+              -22.76,
+              71.86
+            ],
+            "wins": 25,
+            "losses": 24,
+            "ties": 1
+          },
+          "congestion_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -12.9,
+            "arm_minus_baseline_ci95": [
+              -175.74,
+              146.8
+            ],
+            "wins": 22,
+            "losses": 25,
+            "ties": 3
+          },
+          "severe_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 4.02,
+            "arm_minus_baseline_ci95": [
+              -165.82,
+              171.64
+            ],
+            "wins": 19,
+            "losses": 28,
+            "ties": 3
+          },
+          "stall_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.00923,
+            "arm_minus_baseline_ci95": [
+              -0.03179,
+              0.012728
+            ],
+            "wins": 24,
+            "losses": 26,
+            "ties": 0
+          },
+          "deadlock_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.001709,
+            "arm_minus_baseline_ci95": [
+              -0.107438,
+              0.105549
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "risk_rate_per_100": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.859998,
+            "arm_minus_baseline_ci95": [
+              -11.716006,
+              9.786672
+            ],
+            "wins": 22,
+            "losses": 25,
+            "ties": 3
+          },
+          "completion_fraction": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.01139,
+            "arm_minus_baseline_ci95": [
+              -0.109076,
+              0.084505
+            ],
+            "wins": 23,
+            "losses": 26,
+            "ties": 1
+          },
+          "final_backlog_total": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 44.5,
+            "arm_minus_baseline_ci95": [
+              -50.06,
+              141.96
+            ],
+            "wins": 24,
+            "losses": 25,
+            "ties": 1
+          },
+          "final_backlog_fraction": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.029357,
+            "arm_minus_baseline_ci95": [
+              -0.159587,
+              0.221706
+            ],
+            "wins": 24,
+            "losses": 25,
+            "ties": 1
+          },
+          "completed_orders_per_congestion_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.239315,
+            "arm_minus_baseline_ci95": [
+              -0.183043,
+              0.726182
+            ],
+            "wins": 23,
+            "losses": 26,
+            "ties": 1
+          },
+          "completed_orders_per_severe_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.251531,
+            "arm_minus_baseline_ci95": [
+              -0.385868,
+              0.948015
+            ],
+            "wins": 22,
+            "losses": 27,
+            "ties": 1
+          }
+        }
+      },
+      "JSQ": {
+        "PhaseC": {
+          "completed_orders": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 19.38,
+            "arm_minus_baseline_ci95": [
+              -28.44,
+              66.86
+            ],
+            "wins": 31,
+            "losses": 18,
+            "ties": 1
+          },
+          "completed_tasks": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 54.88,
+            "arm_minus_baseline_ci95": [
+              -145.98,
+              254.04
+            ],
+            "wins": 29,
+            "losses": 21,
+            "ties": 0
+          },
+          "avg_task_duration": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.287925,
+            "arm_minus_baseline_ci95": [
+              -0.933465,
+              1.492288
+            ],
+            "wins": 23,
+            "losses": 27,
+            "ties": 0
+          },
+          "avg_excess_delay": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.268357,
+            "arm_minus_baseline_ci95": [
+              -0.97664,
+              1.503964
+            ],
+            "wins": 22,
+            "losses": 28,
+            "ties": 0
+          },
+          "open_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -19.38,
+            "arm_minus_baseline_ci95": [
+              -66.86,
+              28.44
+            ],
+            "wins": 31,
+            "losses": 18,
+            "ties": 1
+          },
+          "pending_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -18.16,
+            "arm_minus_baseline_ci95": [
+              -63.68,
+              27.94
+            ],
+            "wins": 27,
+            "losses": 16,
+            "ties": 7
+          },
+          "congestion_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -144.3,
+            "arm_minus_baseline_ci95": [
+              -303.9,
+              13.46
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          },
+          "severe_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -150.28,
+            "arm_minus_baseline_ci95": [
+              -317.02,
+              15.94
+            ],
+            "wins": 32,
+            "losses": 18,
+            "ties": 0
+          },
+          "stall_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.014032,
+            "arm_minus_baseline_ci95": [
+              -0.034456,
+              0.005583
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "deadlock_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.058178,
+            "arm_minus_baseline_ci95": [
+              -0.162851,
+              0.04594
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          },
+          "risk_rate_per_100": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -9.620004,
+            "arm_minus_baseline_ci95": [
+              -20.260006,
+              0.897332
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          },
+          "completion_fraction": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.042491,
+            "arm_minus_baseline_ci95": [
+              -0.05141,
+              0.136745
+            ],
+            "wins": 31,
+            "losses": 18,
+            "ties": 1
+          },
+          "final_backlog_total": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -37.54,
+            "arm_minus_baseline_ci95": [
+              -130.66,
+              56.04
+            ],
+            "wins": 30,
+            "losses": 18,
+            "ties": 2
+          },
+          "final_backlog_fraction": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.081952,
+            "arm_minus_baseline_ci95": [
+              -0.266331,
+              0.101786
+            ],
+            "wins": 30,
+            "losses": 18,
+            "ties": 2
+          },
+          "completed_orders_per_congestion_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.717764,
+            "arm_minus_baseline_ci95": [
+              0.073581,
+              1.507569
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          },
+          "completed_orders_per_severe_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 1.642235,
+            "arm_minus_baseline_ci95": [
+              0.463054,
+              3.129449
+            ],
+            "wins": 32,
+            "losses": 18,
+            "ties": 0
+          }
+        },
+        "ComboS1J1": {
+          "completed_orders": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 24.04,
+            "arm_minus_baseline_ci95": [
+              -28.52,
+              76.58
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "completed_tasks": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 99.3,
+            "arm_minus_baseline_ci95": [
+              -128.08,
+              326.72
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "avg_task_duration": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.079703,
+            "arm_minus_baseline_ci95": [
+              -1.214304,
+              1.033292
+            ],
+            "wins": 29,
+            "losses": 21,
+            "ties": 0
+          },
+          "avg_excess_delay": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.099804,
+            "arm_minus_baseline_ci95": [
+              -1.273986,
+              1.053419
+            ],
+            "wins": 28,
+            "losses": 22,
+            "ties": 0
+          },
+          "open_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -24.04,
+            "arm_minus_baseline_ci95": [
+              -76.58,
+              28.52
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "pending_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -22.44,
+            "arm_minus_baseline_ci95": [
+              -72.84,
+              27.9
+            ],
+            "wins": 25,
+            "losses": 21,
+            "ties": 4
+          },
+          "congestion_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -115.04,
+            "arm_minus_baseline_ci95": [
+              -303.58,
+              75.52
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "severe_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -125.54,
+            "arm_minus_baseline_ci95": [
+              -322.3,
+              74.3
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "stall_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.006521,
+            "arm_minus_baseline_ci95": [
+              -0.031554,
+              0.018358
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "deadlock_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.058718,
+            "arm_minus_baseline_ci95": [
+              -0.179591,
+              0.063836
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "risk_rate_per_100": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -7.669338,
+            "arm_minus_baseline_ci95": [
+              -20.23868,
+              5.034668
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "completion_fraction": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.046138,
+            "arm_minus_baseline_ci95": [
+              -0.061333,
+              0.151628
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "final_backlog_total": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -46.48,
+            "arm_minus_baseline_ci95": [
+              -149.46,
+              56.44
+            ],
+            "wins": 25,
+            "losses": 24,
+            "ties": 1
+          },
+          "final_backlog_fraction": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.088984,
+            "arm_minus_baseline_ci95": [
+              -0.295162,
+              0.119668
+            ],
+            "wins": 25,
+            "losses": 24,
+            "ties": 1
+          },
+          "completed_orders_per_congestion_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.790204,
+            "arm_minus_baseline_ci95": [
+              0.00099,
+              1.730195
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "completed_orders_per_severe_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 2.03253,
+            "arm_minus_baseline_ci95": [
+              0.153448,
+              4.964841
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          }
+        },
+        "Hungarian": {
+          "completed_orders": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -12.16,
+            "arm_minus_baseline_ci95": [
+              -63.16,
+              37.62
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "completed_tasks": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -13.5,
+            "arm_minus_baseline_ci95": [
+              -227.48,
+              196.44
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "avg_task_duration": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.813831,
+            "arm_minus_baseline_ci95": [
+              -0.462748,
+              2.079248
+            ],
+            "wins": 20,
+            "losses": 30,
+            "ties": 0
+          },
+          "avg_excess_delay": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 1.121193,
+            "arm_minus_baseline_ci95": [
+              -0.133182,
+              2.370425
+            ],
+            "wins": 18,
+            "losses": 32,
+            "ties": 0
+          },
+          "open_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 12.16,
+            "arm_minus_baseline_ci95": [
+              -37.62,
+              63.16
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "pending_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 16.06,
+            "arm_minus_baseline_ci95": [
+              -32.54,
+              65.68
+            ],
+            "wins": 24,
+            "losses": 21,
+            "ties": 5
+          },
+          "congestion_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -27.04,
+            "arm_minus_baseline_ci95": [
+              -189.12,
+              137.44
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "severe_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -29.56,
+            "arm_minus_baseline_ci95": [
+              -197.82,
+              141.82
+            ],
+            "wins": 28,
+            "losses": 22,
+            "ties": 0
+          },
+          "stall_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.006684,
+            "arm_minus_baseline_ci95": [
+              -0.015295,
+              0.02957
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "deadlock_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.001057,
+            "arm_minus_baseline_ci95": [
+              -0.108963,
+              0.109132
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "risk_rate_per_100": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -1.802668,
+            "arm_minus_baseline_ci95": [
+              -12.608004,
+              9.162664
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "completion_fraction": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.024557,
+            "arm_minus_baseline_ci95": [
+              -0.125331,
+              0.074234
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "final_backlog_total": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 28.22,
+            "arm_minus_baseline_ci95": [
+              -70.26,
+              128.8
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "final_backlog_fraction": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.057031,
+            "arm_minus_baseline_ci95": [
+              -0.137965,
+              0.255116
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "completed_orders_per_congestion_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.316942,
+            "arm_minus_baseline_ci95": [
+              -0.233286,
+              0.912845
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "completed_orders_per_severe_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.925089,
+            "arm_minus_baseline_ci95": [
+              -0.053347,
+              2.079257
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          }
+        }
+      }
+    },
+    "high": {
+      "Greedy": {
+        "PhaseC": {
+          "completed_orders": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 33.92,
+            "arm_minus_baseline_ci95": [
+              -23.08,
+              91.36
+            ],
+            "wins": 29,
+            "losses": 21,
+            "ties": 0
+          },
+          "completed_tasks": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 103.5,
+            "arm_minus_baseline_ci95": [
+              -135.08,
+              343.26
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "avg_task_duration": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -1.650335,
+            "arm_minus_baseline_ci95": [
+              -3.39505,
+              0.104282
+            ],
+            "wins": 32,
+            "losses": 18,
+            "ties": 0
+          },
+          "avg_excess_delay": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -1.373649,
+            "arm_minus_baseline_ci95": [
+              -3.085218,
+              0.356551
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          },
+          "open_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -33.92,
+            "arm_minus_baseline_ci95": [
+              -91.36,
+              23.08
+            ],
+            "wins": 29,
+            "losses": 21,
+            "ties": 0
+          },
+          "pending_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -33.6,
+            "arm_minus_baseline_ci95": [
+              -90.5,
+              23.24
+            ],
+            "wins": 29,
+            "losses": 21,
+            "ties": 0
+          },
+          "congestion_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -147.74,
+            "arm_minus_baseline_ci95": [
+              -295.4,
+              -5.54
+            ],
+            "wins": 24,
+            "losses": 26,
+            "ties": 0
+          },
+          "severe_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -148.66,
+            "arm_minus_baseline_ci95": [
+              -306.86,
+              4.6
+            ],
+            "wins": 24,
+            "losses": 26,
+            "ties": 0
+          },
+          "stall_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.014182,
+            "arm_minus_baseline_ci95": [
+              -0.032375,
+              0.003252
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "deadlock_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.071734,
+            "arm_minus_baseline_ci95": [
+              -0.17906,
+              0.034438
+            ],
+            "wins": 28,
+            "losses": 22,
+            "ties": 0
+          },
+          "risk_rate_per_100": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -9.849336,
+            "arm_minus_baseline_ci95": [
+              -19.693332,
+              -0.369334
+            ],
+            "wins": 24,
+            "losses": 26,
+            "ties": 0
+          },
+          "completion_fraction": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.070013,
+            "arm_minus_baseline_ci95": [
+              -0.034485,
+              0.175226
+            ],
+            "wins": 29,
+            "losses": 21,
+            "ties": 0
+          },
+          "final_backlog_total": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -67.52,
+            "arm_minus_baseline_ci95": [
+              -181.9,
+              46.04
+            ],
+            "wins": 29,
+            "losses": 21,
+            "ties": 0
+          },
+          "final_backlog_fraction": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.139502,
+            "arm_minus_baseline_ci95": [
+              -0.348967,
+              0.068889
+            ],
+            "wins": 29,
+            "losses": 21,
+            "ties": 0
+          },
+          "completed_orders_per_congestion_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.757632,
+            "arm_minus_baseline_ci95": [
+              0.200507,
+              1.490839
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "completed_orders_per_severe_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 1.461751,
+            "arm_minus_baseline_ci95": [
+              0.405559,
+              2.973458
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          }
+        },
+        "ComboS1J1": {
+          "completed_orders": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 65.06,
+            "arm_minus_baseline_ci95": [
+              15.76,
+              114.86
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          },
+          "completed_tasks": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 245.5,
+            "arm_minus_baseline_ci95": [
+              39.64,
+              454.54
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "avg_task_duration": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.765598,
+            "arm_minus_baseline_ci95": [
+              -2.340958,
+              0.826947
+            ],
+            "wins": 29,
+            "losses": 21,
+            "ties": 0
+          },
+          "avg_excess_delay": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.515625,
+            "arm_minus_baseline_ci95": [
+              -2.101751,
+              1.083853
+            ],
+            "wins": 29,
+            "losses": 21,
+            "ties": 0
+          },
+          "open_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -65.06,
+            "arm_minus_baseline_ci95": [
+              -114.86,
+              -15.76
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          },
+          "pending_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -63.7,
+            "arm_minus_baseline_ci95": [
+              -113.06,
+              -14.98
+            ],
+            "wins": 32,
+            "losses": 18,
+            "ties": 0
+          },
+          "congestion_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -207.68,
+            "arm_minus_baseline_ci95": [
+              -339.98,
+              -83.46
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "severe_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -212.22,
+            "arm_minus_baseline_ci95": [
+              -353.48,
+              -78.26
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "stall_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.017936,
+            "arm_minus_baseline_ci95": [
+              -0.037223,
+              0.000889
+            ],
+            "wins": 29,
+            "losses": 20,
+            "ties": 1
+          },
+          "deadlock_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.128522,
+            "arm_minus_baseline_ci95": [
+              -0.223687,
+              -0.035251
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "risk_rate_per_100": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -13.845338,
+            "arm_minus_baseline_ci95": [
+              -22.665338,
+              -5.564004
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "completion_fraction": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.124307,
+            "arm_minus_baseline_ci95": [
+              0.034602,
+              0.215895
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          },
+          "final_backlog_total": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -128.76,
+            "arm_minus_baseline_ci95": [
+              -227.62,
+              -30.72
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          },
+          "final_backlog_fraction": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.246208,
+            "arm_minus_baseline_ci95": [
+              -0.428784,
+              -0.067651
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          },
+          "completed_orders_per_congestion_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.590054,
+            "arm_minus_baseline_ci95": [
+              0.279764,
+              0.942498
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          },
+          "completed_orders_per_severe_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 1.135465,
+            "arm_minus_baseline_ci95": [
+              0.487835,
+              1.914735
+            ],
+            "wins": 32,
+            "losses": 18,
+            "ties": 0
+          }
+        },
+        "Hungarian": {
+          "completed_orders": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -27.92,
+            "arm_minus_baseline_ci95": [
+              -77.22,
+              22.78
+            ],
+            "wins": 16,
+            "losses": 34,
+            "ties": 0
+          },
+          "completed_tasks": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 15.32,
+            "arm_minus_baseline_ci95": [
+              -179.1,
+              216.76
+            ],
+            "wins": 23,
+            "losses": 27,
+            "ties": 0
+          },
+          "avg_task_duration": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -1.08464,
+            "arm_minus_baseline_ci95": [
+              -2.834275,
+              0.695363
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          },
+          "avg_excess_delay": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.353142,
+            "arm_minus_baseline_ci95": [
+              -2.078727,
+              1.39692
+            ],
+            "wins": 29,
+            "losses": 21,
+            "ties": 0
+          },
+          "open_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 27.92,
+            "arm_minus_baseline_ci95": [
+              -22.78,
+              77.22
+            ],
+            "wins": 16,
+            "losses": 34,
+            "ties": 0
+          },
+          "pending_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 35.42,
+            "arm_minus_baseline_ci95": [
+              -15.76,
+              85.28
+            ],
+            "wins": 16,
+            "losses": 34,
+            "ties": 0
+          },
+          "congestion_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -19.0,
+            "arm_minus_baseline_ci95": [
+              -137.24,
+              94.98
+            ],
+            "wins": 20,
+            "losses": 30,
+            "ties": 0
+          },
+          "severe_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -14.58,
+            "arm_minus_baseline_ci95": [
+              -139.58,
+              107.52
+            ],
+            "wins": 21,
+            "losses": 29,
+            "ties": 0
+          },
+          "stall_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.000433,
+            "arm_minus_baseline_ci95": [
+              -0.017701,
+              0.018099
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "deadlock_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.007771,
+            "arm_minus_baseline_ci95": [
+              -0.096545,
+              0.078805
+            ],
+            "wins": 22,
+            "losses": 28,
+            "ties": 0
+          },
+          "risk_rate_per_100": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -1.266668,
+            "arm_minus_baseline_ci95": [
+              -9.149338,
+              6.332008
+            ],
+            "wins": 20,
+            "losses": 30,
+            "ties": 0
+          },
+          "completion_fraction": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.042721,
+            "arm_minus_baseline_ci95": [
+              -0.132034,
+              0.049351
+            ],
+            "wins": 16,
+            "losses": 34,
+            "ties": 0
+          },
+          "final_backlog_total": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 63.34,
+            "arm_minus_baseline_ci95": [
+              -38.22,
+              162.34
+            ],
+            "wins": 16,
+            "losses": 34,
+            "ties": 0
+          },
+          "final_backlog_fraction": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.098836,
+            "arm_minus_baseline_ci95": [
+              -0.085716,
+              0.278227
+            ],
+            "wins": 16,
+            "losses": 34,
+            "ties": 0
+          },
+          "completed_orders_per_congestion_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.237143,
+            "arm_minus_baseline_ci95": [
+              -0.127066,
+              0.722063
+            ],
+            "wins": 17,
+            "losses": 33,
+            "ties": 0
+          },
+          "completed_orders_per_severe_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.400726,
+            "arm_minus_baseline_ci95": [
+              -0.16833,
+              1.221861
+            ],
+            "wins": 17,
+            "losses": 33,
+            "ties": 0
+          }
+        },
+        "JSQ": {
+          "completed_orders": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 49.38,
+            "arm_minus_baseline_ci95": [
+              -0.98,
+              101.58
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "completed_tasks": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 190.54,
+            "arm_minus_baseline_ci95": [
+              -17.84,
+              405.26
+            ],
+            "wins": 29,
+            "losses": 21,
+            "ties": 0
+          },
+          "avg_task_duration": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -1.383655,
+            "arm_minus_baseline_ci95": [
+              -3.011628,
+              0.280369
+            ],
+            "wins": 32,
+            "losses": 18,
+            "ties": 0
+          },
+          "avg_excess_delay": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -1.115201,
+            "arm_minus_baseline_ci95": [
+              -2.76291,
+              0.561802
+            ],
+            "wins": 29,
+            "losses": 21,
+            "ties": 0
+          },
+          "open_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -49.38,
+            "arm_minus_baseline_ci95": [
+              -101.58,
+              0.98
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "pending_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -48.2,
+            "arm_minus_baseline_ci95": [
+              -99.72,
+              1.76
+            ],
+            "wins": 29,
+            "losses": 21,
+            "ties": 0
+          },
+          "congestion_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -149.74,
+            "arm_minus_baseline_ci95": [
+              -286.8,
+              -20.68
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          },
+          "severe_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -147.22,
+            "arm_minus_baseline_ci95": [
+              -291.6,
+              -10.64
+            ],
+            "wins": 29,
+            "losses": 20,
+            "ties": 1
+          },
+          "stall_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.01707,
+            "arm_minus_baseline_ci95": [
+              -0.038652,
+              0.003403
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "deadlock_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.096408,
+            "arm_minus_baseline_ci95": [
+              -0.194155,
+              -0.002552
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "risk_rate_per_100": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -9.982666,
+            "arm_minus_baseline_ci95": [
+              -19.119986,
+              -1.378658
+            ],
+            "wins": 31,
+            "losses": 19,
+            "ties": 0
+          },
+          "completion_fraction": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.096868,
+            "arm_minus_baseline_ci95": [
+              0.004928,
+              0.192562
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "final_backlog_total": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -97.58,
+            "arm_minus_baseline_ci95": [
+              -201.12,
+              2.8
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "final_backlog_fraction": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.191597,
+            "arm_minus_baseline_ci95": [
+              -0.381726,
+              -0.008487
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "completed_orders_per_congestion_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.681882,
+            "arm_minus_baseline_ci95": [
+              0.151755,
+              1.36878
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          },
+          "completed_orders_per_severe_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 1.355077,
+            "arm_minus_baseline_ci95": [
+              0.208042,
+              3.033943
+            ],
+            "wins": 30,
+            "losses": 20,
+            "ties": 0
+          }
+        }
+      },
+      "JSQ": {
+        "PhaseC": {
+          "completed_orders": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -15.46,
+            "arm_minus_baseline_ci95": [
+              -65.2,
+              32.78
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "completed_tasks": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -87.04,
+            "arm_minus_baseline_ci95": [
+              -292.54,
+              113.46
+            ],
+            "wins": 21,
+            "losses": 29,
+            "ties": 0
+          },
+          "avg_task_duration": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.26668,
+            "arm_minus_baseline_ci95": [
+              -1.497978,
+              1.000655
+            ],
+            "wins": 24,
+            "losses": 26,
+            "ties": 0
+          },
+          "avg_excess_delay": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.258447,
+            "arm_minus_baseline_ci95": [
+              -1.518064,
+              1.036677
+            ],
+            "wins": 24,
+            "losses": 26,
+            "ties": 0
+          },
+          "open_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 15.46,
+            "arm_minus_baseline_ci95": [
+              -32.78,
+              65.2
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "pending_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 14.6,
+            "arm_minus_baseline_ci95": [
+              -32.8,
+              63.64
+            ],
+            "wins": 25,
+            "losses": 21,
+            "ties": 4
+          },
+          "congestion_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 2.0,
+            "arm_minus_baseline_ci95": [
+              -137.28,
+              147.18
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "severe_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -1.44,
+            "arm_minus_baseline_ci95": [
+              -149.7,
+              153.12
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "stall_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.002888,
+            "arm_minus_baseline_ci95": [
+              -0.014674,
+              0.022424
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "deadlock_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.024673,
+            "arm_minus_baseline_ci95": [
+              -0.068216,
+              0.119815
+            ],
+            "wins": 24,
+            "losses": 26,
+            "ties": 0
+          },
+          "risk_rate_per_100": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.13333,
+            "arm_minus_baseline_ci95": [
+              -9.152002,
+              9.811996
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "completion_fraction": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.026855,
+            "arm_minus_baseline_ci95": [
+              -0.116237,
+              0.060502
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "final_backlog_total": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 30.06,
+            "arm_minus_baseline_ci95": [
+              -65.7,
+              128.86
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "final_backlog_fraction": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.052095,
+            "arm_minus_baseline_ci95": [
+              -0.120133,
+              0.229109
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "completed_orders_per_congestion_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.07575,
+            "arm_minus_baseline_ci95": [
+              -0.642081,
+              0.876172
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          },
+          "completed_orders_per_severe_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.106673,
+            "arm_minus_baseline_ci95": [
+              -1.700827,
+              1.900442
+            ],
+            "wins": 25,
+            "losses": 25,
+            "ties": 0
+          }
+        },
+        "ComboS1J1": {
+          "completed_orders": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 15.68,
+            "arm_minus_baseline_ci95": [
+              -28.62,
+              58.62
+            ],
+            "wins": 27,
+            "losses": 22,
+            "ties": 1
+          },
+          "completed_tasks": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 54.96,
+            "arm_minus_baseline_ci95": [
+              -126.72,
+              233.42
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "avg_task_duration": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.618058,
+            "arm_minus_baseline_ci95": [
+              -0.666357,
+              1.946355
+            ],
+            "wins": 23,
+            "losses": 27,
+            "ties": 0
+          },
+          "avg_excess_delay": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.599577,
+            "arm_minus_baseline_ci95": [
+              -0.709695,
+              1.948828
+            ],
+            "wins": 24,
+            "losses": 26,
+            "ties": 0
+          },
+          "open_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -15.68,
+            "arm_minus_baseline_ci95": [
+              -58.62,
+              28.62
+            ],
+            "wins": 27,
+            "losses": 22,
+            "ties": 1
+          },
+          "pending_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -15.5,
+            "arm_minus_baseline_ci95": [
+              -57.52,
+              28.04
+            ],
+            "wins": 25,
+            "losses": 20,
+            "ties": 5
+          },
+          "congestion_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -57.94,
+            "arm_minus_baseline_ci95": [
+              -180.92,
+              67.9
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "severe_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -65.0,
+            "arm_minus_baseline_ci95": [
+              -196.24,
+              68.42
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "stall_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.000865,
+            "arm_minus_baseline_ci95": [
+              -0.016959,
+              0.015669
+            ],
+            "wins": 26,
+            "losses": 24,
+            "ties": 0
+          },
+          "deadlock_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.032115,
+            "arm_minus_baseline_ci95": [
+              -0.115229,
+              0.05327
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "risk_rate_per_100": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -3.862672,
+            "arm_minus_baseline_ci95": [
+              -12.061348,
+              4.526668
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "completion_fraction": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.027439,
+            "arm_minus_baseline_ci95": [
+              -0.053791,
+              0.105994
+            ],
+            "wins": 27,
+            "losses": 22,
+            "ties": 1
+          },
+          "final_backlog_total": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -31.18,
+            "arm_minus_baseline_ci95": [
+              -116.0,
+              56.98
+            ],
+            "wins": 27,
+            "losses": 21,
+            "ties": 2
+          },
+          "final_backlog_fraction": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.054612,
+            "arm_minus_baseline_ci95": [
+              -0.209719,
+              0.106538
+            ],
+            "wins": 27,
+            "losses": 21,
+            "ties": 2
+          },
+          "completed_orders_per_congestion_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.091828,
+            "arm_minus_baseline_ci95": [
+              -0.751859,
+              0.437903
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          },
+          "completed_orders_per_severe_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.219613,
+            "arm_minus_baseline_ci95": [
+              -1.943933,
+              1.033329
+            ],
+            "wins": 27,
+            "losses": 23,
+            "ties": 0
+          }
+        },
+        "Hungarian": {
+          "completed_orders": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -77.3,
+            "arm_minus_baseline_ci95": [
+              -130.62,
+              -23.98
+            ],
+            "wins": 15,
+            "losses": 34,
+            "ties": 1
+          },
+          "completed_tasks": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -175.22,
+            "arm_minus_baseline_ci95": [
+              -398.92,
+              45.96
+            ],
+            "wins": 23,
+            "losses": 27,
+            "ties": 0
+          },
+          "avg_task_duration": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.299016,
+            "arm_minus_baseline_ci95": [
+              -1.32505,
+              1.914634
+            ],
+            "wins": 23,
+            "losses": 27,
+            "ties": 0
+          },
+          "avg_excess_delay": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.762059,
+            "arm_minus_baseline_ci95": [
+              -0.89547,
+              2.374486
+            ],
+            "wins": 24,
+            "losses": 26,
+            "ties": 0
+          },
+          "open_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 77.3,
+            "arm_minus_baseline_ci95": [
+              23.98,
+              130.62
+            ],
+            "wins": 15,
+            "losses": 34,
+            "ties": 1
+          },
+          "pending_order_count": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 83.62,
+            "arm_minus_baseline_ci95": [
+              30.68,
+              135.98
+            ],
+            "wins": 14,
+            "losses": 34,
+            "ties": 2
+          },
+          "congestion_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 130.74,
+            "arm_minus_baseline_ci95": [
+              -20.72,
+              286.56
+            ],
+            "wins": 20,
+            "losses": 30,
+            "ties": 0
+          },
+          "severe_events": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 132.64,
+            "arm_minus_baseline_ci95": [
+              -27.52,
+              297.48
+            ],
+            "wins": 20,
+            "losses": 29,
+            "ties": 1
+          },
+          "stall_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.017504,
+            "arm_minus_baseline_ci95": [
+              -0.001123,
+              0.036029
+            ],
+            "wins": 19,
+            "losses": 31,
+            "ties": 0
+          },
+          "deadlock_ratio_mean": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.088636,
+            "arm_minus_baseline_ci95": [
+              -0.014148,
+              0.193791
+            ],
+            "wins": 18,
+            "losses": 32,
+            "ties": 0
+          },
+          "risk_rate_per_100": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 8.715998,
+            "arm_minus_baseline_ci95": [
+              -1.381326,
+              19.103988
+            ],
+            "wins": 20,
+            "losses": 30,
+            "ties": 0
+          },
+          "completion_fraction": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.139589,
+            "arm_minus_baseline_ci95": [
+              -0.236814,
+              -0.042351
+            ],
+            "wins": 15,
+            "losses": 34,
+            "ties": 1
+          },
+          "final_backlog_total": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 160.92,
+            "arm_minus_baseline_ci95": [
+              54.62,
+              266.64
+            ],
+            "wins": 15,
+            "losses": 34,
+            "ties": 1
+          },
+          "final_backlog_fraction": {
+            "direction": "lower",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": 0.290433,
+            "arm_minus_baseline_ci95": [
+              0.097347,
+              0.483053
+            ],
+            "wins": 15,
+            "losses": 34,
+            "ties": 1
+          },
+          "completed_orders_per_congestion_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.444739,
+            "arm_minus_baseline_ci95": [
+              -1.079822,
+              0.066917
+            ],
+            "wins": 14,
+            "losses": 36,
+            "ties": 0
+          },
+          "completed_orders_per_severe_event": {
+            "direction": "higher",
+            "paired_seeds": 50,
+            "arm_minus_baseline_mean": -0.954351,
+            "arm_minus_baseline_ci95": [
+              -2.564157,
+              0.074862
+            ],
+            "wins": 16,
+            "losses": 34,
+            "ties": 0
+          }
+        }
+      }
+    }
+  },
+  "multiobjective_analysis": {
+    "low": {
+      "dimensions": {
+        "completed_orders": "higher",
+        "avg_excess_delay": "lower",
+        "deadlock_ratio_mean": "lower",
+        "congestion_events": "lower"
+      },
+      "pareto_front_arms": [
+        "Hungarian",
+        "JSQ",
+        "PhaseC",
+        "ComboS1J1"
+      ],
+      "dominated_by": {
+        "Greedy": [
+          "ComboS1J1"
+        ],
+        "Hungarian": [],
+        "JSQ": [],
+        "PhaseC": [],
+        "ComboS1J1": []
+      }
+    },
+    "mid": {
+      "dimensions": {
+        "completed_orders": "higher",
+        "avg_excess_delay": "lower",
+        "deadlock_ratio_mean": "lower",
+        "congestion_events": "lower"
+      },
+      "pareto_front_arms": [
+        "PhaseC",
+        "ComboS1J1"
+      ],
+      "dominated_by": {
+        "Greedy": [
+          "ComboS1J1"
+        ],
+        "Hungarian": [
+          "PhaseC",
+          "ComboS1J1"
+        ],
+        "JSQ": [
+          "ComboS1J1"
+        ],
+        "PhaseC": [],
+        "ComboS1J1": []
+      }
+    },
+    "high": {
+      "dimensions": {
+        "completed_orders": "higher",
+        "avg_excess_delay": "lower",
+        "deadlock_ratio_mean": "lower",
+        "congestion_events": "lower"
+      },
+      "pareto_front_arms": [
+        "JSQ",
+        "PhaseC",
+        "ComboS1J1"
+      ],
+      "dominated_by": {
+        "Greedy": [
+          "JSQ",
+          "PhaseC",
+          "ComboS1J1"
+        ],
+        "Hungarian": [
+          "JSQ",
+          "PhaseC",
+          "ComboS1J1"
+        ],
+        "JSQ": [],
+        "PhaseC": [],
+        "ComboS1J1": []
+      }
+    }
+  }
+}

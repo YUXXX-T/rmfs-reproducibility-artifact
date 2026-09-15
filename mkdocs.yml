@@ -1,0 +1,61 @@
+site_name: RMFS World-Model Artifact
+site_description: Anonymous reproducibility documentation
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - content.code.copy
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+extra_css:
+  - stylesheets/results-explorer.css
+extra_javascript:
+  - javascripts/results-explorer.js
+nav:
+  - Home: index.md
+  - Quick start: quickstart.md
+  - Artifact overview: artifact_overview.md
+  - Claims to artifacts: claims_to_artifacts.md
+  - Simulator:
+      - Environment: simulator/environment.md
+      - Tick semantics: simulator/tick_semantics.md
+      - Entities and lifecycle: simulator/entities_and_lifecycle.md
+      - Station admission: simulator/station_admission.md
+      - Order generation: simulator/order_generation.md
+  - Method:
+      - Overview: method/overview.md
+      - State, action, and labels: method/state_action_labels.md
+      - World model: method/world_model.md
+      - Frozen-Greedy continuation: method/frozen_greedy_continuation.md
+      - S1 robot selection: method/s1_robot_selection.md
+      - J1 context dispatch: method/j1_context_dispatch.md
+  - Experiments:
+      - Load definitions: experiments/load_definitions.md
+      - Seed splits: experiments/seed_splits.md
+      - Main protocol: experiments/main_protocol.md
+      - Six-station adaptation: experiments/six_station_adaptation.md
+      - Baselines: experiments/baselines.md
+      - Statistical analysis: experiments/statistical_analysis.md
+      - Runtime protocol: experiments/runtime_protocol.md
+      - Sensitivity analysis: experiments/sensitivity_analysis.md
+  - Mechanisms:
+      - Collapse definition: mechanisms/collapse_definition.md
+      - Station-lock definition: mechanisms/station_lock_definition.md
+      - Temporal precedence: mechanisms/temporal_precedence.md
+  - Results:
+      - Interactive explorer: results/explorer.md
+      - Main results: results/main_results.md
+      - Paired comparisons: results/paired_comparisons.md
+      - Six-station results: results/six_station_results.md
+      - Runtime results: results/runtime_results.md
+  - Reproduction:
+      - Figures: reproduction/reproduce_figures.md
+      - Tables: reproduction/reproduce_tables.md
+      - Full experiment: reproduction/full_experiment.md
+      - Troubleshooting: reproduction/troubleshooting.md
+  - Reproducibility appendix: reproducibility_appendix.md

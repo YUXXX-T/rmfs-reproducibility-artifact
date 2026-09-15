@@ -1,0 +1,6 @@
+load,arm,n_seeds,collapsed_runs,collapse_fraction,definition
+high,ComboS1J1,50,15,0.3,completed_orders < 300 AND deadlock_ratio_mean >= 0.4
+high,Greedy,50,22,0.44,completed_orders < 300 AND deadlock_ratio_mean >= 0.4
+high,Hungarian,50,29,0.58,completed_orders < 300 AND deadlock_ratio_mean >= 0.4
+high,JSQ,50,16,0.32,completed_orders < 300 AND deadlock_ratio_mean >= 0.4
+high,PhaseC,50,20,0.4,completed_orders < 300 AND deadlock_ratio_mean >= 0.4
