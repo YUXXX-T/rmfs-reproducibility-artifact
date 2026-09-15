@@ -1,7 +1,11 @@
 # Six-station results
 
-[Open the interactive comparison](explorer.md) and choose “Six-station
-adaptation” to explore every reported metric and paired interval.
+The lower row of each committed figure shows the held-out six-station results
+and renders directly on GitHub.
+
+![Aggregate outcomes including six-station adaptation](../assets/results_overview.png)
+
+![Six-station paired effects in the lower row](../assets/paired_effects_overview.png)
 
 Held-out means over seeds 721–730 are:
 

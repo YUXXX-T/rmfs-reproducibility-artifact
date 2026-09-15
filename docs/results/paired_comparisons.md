@@ -1,8 +1,9 @@
 # Paired comparisons
 
-[Open the interactive paired-effects view](explorer.md) to switch between
-metrics and baselines and inspect the bootstrap confidence intervals against
-the zero-effect line.
+The principal paired effects render directly below; intervals crossing the
+zero-effect line are inconclusive.
+
+![Paired policy effects with bootstrap intervals](../assets/paired_effects_overview.png)
 
 The proposed arm is compared with JSQ and WM-Base on every load and every common scalar metric. The CSV stores the raw arm-minus-baseline mean, percentile interval, favorable direction, paired count, and wins/losses/ties.
 

@@ -2,11 +2,11 @@
 
 | Paper claim | Evidence | Raw data | Reproduction command |
 |---|---|---|---|
-| Main PP high-load improvement over Greedy | Main table / Fig. 2 / [interactive view](results/explorer.md) | `artifacts/raw/main_per_seed.csv` | `make table-main` |
-| Complete Proposed–JSQ and Proposed–WM-Base paired intervals | [Interactive forest plot](results/explorer.md) / paired comparison supplement | `artifacts/raw/main_per_seed.csv` | `make paired-ci` |
+| Main PP high-load improvement over Greedy | Main table / Fig. 2 / [static result overview](assets/results_overview.png) | `artifacts/raw/main_per_seed.csv` | `make table-main` |
+| Complete Proposed–JSQ and Proposed–WM-Base paired intervals | [Static paired-effect plot](assets/paired_effects_overview.png) / paired comparison supplement | `artifacts/raw/main_per_seed.csv` | `make paired-ci` |
 | Station lock temporally precedes collapse in detected paired events | Fig. 5 | `artifacts/raw/station_lock_events.csv` | `make fig05` |
 | Run-level collapse uses both completed orders and mean deadlock ratio | Collapse summary | main per-seed rows + station events | `python scripts/reproduce_mechanism.py` |
-| Adaptation transfers to a six-station layout on held-out seeds | Six-station table / [interactive view](results/explorer.md) | `artifacts/raw/station6_per_seed.csv` | `make station6` |
+| Adaptation transfers to a six-station layout on held-out seeds | Six-station table / [static result overview](assets/results_overview.png) | `artifacts/raw/station6_per_seed.csv` | `make station6` |
 | Reported runtime observations come from the same frozen runs | Runtime table | `runtime/raw_measurements.csv` | `python scripts/reproduce_runtime.py` |
 | Arrival streams are paired within every load/seed cell | Manifest audit | `manifests/main_50seed`, `manifests/station6_10seed` | `make verify` |
 

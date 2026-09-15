@@ -2,6 +2,18 @@
 
 Anonymous review artifact for a robotic mobile fulfillment system (RMFS) dispatcher that evaluates candidate robot assignments with a horizon-separated, action-conditioned world model. The repository connects every reported claim to a frozen protocol, per-seed evidence, analysis code, and a reproduction command.
 
+## Results at a glance
+
+The following committed figures render directly on GitHub and anonymous repository mirrors; no download, notebook, or JavaScript execution is required.
+
+![Aggregate results across load and station layouts](artifacts/figures/results_overview.png)
+
+![Paired bootstrap effects](artifacts/figures/paired_effects_overview.png)
+
+Exact values and machine-readable files are linked from the [result tables](artifacts/tables/README.md).
+
+## Station-lock mechanism
+
 ![Aggregate station-lock mechanism](docs/assets/fig05_station_lock_mechanism.png)
 
 ## Start here
@@ -10,7 +22,7 @@ The repository is intentionally layered:
 
 - [Artifact overview](docs/artifact_overview.md) explains what is and is not included.
 - [Claims to artifacts](docs/claims_to_artifacts.md) maps paper claims to data and commands.
-- [Interactive results explorer](docs/results/explorer.md) visualizes aggregate means and paired confidence intervals with filters, sorting, and downloads.
+- [Result tables](artifacts/tables/README.md) render the principal figures and exact summary values directly in the repository.
 - [Quick start](docs/quickstart.md) gives copy-and-paste reproduction commands.
 - [Experiment protocol](docs/experiments/main_protocol.md) records the frozen 50-seed PP evaluation.
 - [Method and schemas](docs/method/state_action_labels.md) define every state, action, and label channel.
@@ -52,7 +64,7 @@ checkpoints         metadata only; model binaries are distributed separately
 runtime             measurement protocol and frozen timing observations
 ```
 
-Run `make help` for individual claims such as `make table-main`, `make paired-ci`, `make fig05`, and `make station6`. Run `make results-explorer` to refresh the browser-ready data bundle. The documentation is also configured as a MkDocs site via `mkdocs.yml`.
+Run `make help` for individual claims such as `make table-main`, `make paired-ci`, `make fig05`, `make station6`, and `make result-plots`. All documentation remains ordinary Markdown so it renders directly in repository and anonymous-mirror views.
 
 ## Review anonymity and provenance
 

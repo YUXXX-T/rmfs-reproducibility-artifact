@@ -10,6 +10,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def normalized_text_bytes(path: Path) -> bytes:
+    """Return text bytes with platform-specific line endings normalized."""
+
+    return path.read_bytes().replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+
+
 def main() -> None:
     names = (
         "tables/table_main.csv",
@@ -26,7 +32,7 @@ def main() -> None:
         generated = ROOT / "artifacts/generated" / name
         if not generated.is_file():
             failures.append(f"missing generated file: {name}")
-        elif frozen.read_bytes() != generated.read_bytes():
+        elif normalized_text_bytes(frozen) != normalized_text_bytes(generated):
             failures.append(f"content differs: {name}")
     if failures:
         print("\n".join(failures), file=sys.stderr)

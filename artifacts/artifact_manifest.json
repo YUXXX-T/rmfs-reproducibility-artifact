@@ -1,146 +1,134 @@
 {
-  "schema_version": "rmfs_artifact_index_v1",
+  "schema_version": "rmfs_artifact_index_v2",
   "generated_from": "committed anonymous evidence",
-  "entry_count": 28,
+  "entry_count": 32,
   "entries": [
     {
       "path": "figures/fig02_closed_loop_50seed.pdf",
-      "bytes": 70869,
       "role": "figures"
     },
     {
       "path": "figures/fig02_closed_loop_50seed.png",
-      "bytes": 662548,
       "role": "figures"
     },
     {
       "path": "figures/fig03_predictive_validity.pdf",
-      "bytes": 33796,
       "role": "figures"
     },
     {
       "path": "figures/fig03_predictive_validity.png",
-      "bytes": 299485,
       "role": "figures"
     },
     {
       "path": "figures/fig04_pareto_tradeoff.pdf",
-      "bytes": 28644,
       "role": "figures"
     },
     {
       "path": "figures/fig04_pareto_tradeoff.png",
-      "bytes": 276297,
       "role": "figures"
     },
     {
       "path": "figures/fig05_station_lock_mechanism.pdf",
-      "bytes": 31806,
       "role": "figures"
     },
     {
       "path": "figures/fig05_station_lock_mechanism.png",
-      "bytes": 232199,
+      "role": "figures"
+    },
+    {
+      "path": "figures/paired_effects_overview.pdf",
+      "role": "figures"
+    },
+    {
+      "path": "figures/paired_effects_overview.png",
+      "role": "figures"
+    },
+    {
+      "path": "figures/results_overview.pdf",
+      "role": "figures"
+    },
+    {
+      "path": "figures/results_overview.png",
       "role": "figures"
     },
     {
       "path": "protocols/lock_precedence_multiseed.json",
-      "bytes": 87027,
       "role": "protocols"
     },
     {
       "path": "protocols/main_50seed_protocol.json",
-      "bytes": 2030,
       "role": "protocols"
     },
     {
       "path": "protocols/main_50seed_summary.json",
-      "bytes": 199050,
       "role": "protocols"
     },
     {
       "path": "protocols/station6_summary_metadata.json",
-      "bytes": 25764,
       "role": "protocols"
     },
     {
       "path": "raw/figure_inputs/fig02_closed_loop_50seed.csv",
-      "bytes": 47112,
       "role": "raw"
     },
     {
       "path": "raw/figure_inputs/fig03_predictive_validity.json",
-      "bytes": 3183,
       "role": "raw"
     },
     {
       "path": "raw/figure_inputs/fig04_pareto_means.csv",
-      "bytes": 790,
       "role": "raw"
     },
     {
       "path": "raw/main_per_seed.csv",
-      "bytes": 437084,
       "role": "raw"
     },
     {
       "path": "raw/station6_per_seed.csv",
-      "bytes": 17765,
       "role": "raw"
     },
     {
       "path": "raw/station_lock_events.csv",
-      "bytes": 6606,
       "role": "raw"
     },
     {
       "path": "README.md",
-      "bytes": 751,
       "role": "README.md"
     },
     {
       "path": "statistics/bootstrap_settings.json",
-      "bytes": 245,
       "role": "statistics"
     },
     {
       "path": "statistics/collapse_summary.csv",
-      "bytes": 453,
       "role": "statistics"
     },
     {
       "path": "statistics/paired_confidence_intervals.csv",
-      "bytes": 8709,
       "role": "statistics"
     },
     {
       "path": "statistics/station6_paired_confidence_intervals.csv",
-      "bytes": 7743,
       "role": "statistics"
     },
     {
       "path": "statistics/station_lock_summary.json",
-      "bytes": 2989,
       "role": "statistics"
     },
     {
       "path": "tables/README.md",
-      "bytes": 1523,
       "role": "tables"
     },
     {
       "path": "tables/table_baselines.csv",
-      "bytes": 6440,
       "role": "tables"
     },
     {
       "path": "tables/table_main.csv",
-      "bytes": 7087,
       "role": "tables"
     },
     {
       "path": "tables/table_station6.csv",
-      "bytes": 4764,
       "role": "tables"
     }
   ]

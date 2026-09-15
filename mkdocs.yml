@@ -12,10 +12,6 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
-extra_css:
-  - stylesheets/results-explorer.css
-extra_javascript:
-  - javascripts/results-explorer.js
 nav:
   - Home: index.md
   - Quick start: quickstart.md
@@ -48,7 +44,6 @@ nav:
       - Station-lock definition: mechanisms/station_lock_definition.md
       - Temporal precedence: mechanisms/temporal_precedence.md
   - Results:
-      - Interactive explorer: results/explorer.md
       - Main results: results/main_results.md
       - Paired comparisons: results/paired_comparisons.md
       - Six-station results: results/six_station_results.md

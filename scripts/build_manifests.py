@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build compact, path-based indexes for committed artifact files."""
+"""Build a compact, cross-platform index of committed artifact files."""
 
 from __future__ import annotations
 
@@ -28,12 +28,11 @@ def main() -> None:
         entries.append(
             {
                 "path": relative,
-                "bytes": path.stat().st_size,
                 "role": relative.split("/", 1)[0],
             }
         )
     payload = {
-        "schema_version": "rmfs_artifact_index_v1",
+        "schema_version": "rmfs_artifact_index_v2",
         "generated_from": "committed anonymous evidence",
         "entry_count": len(entries),
         "entries": entries,

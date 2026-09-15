@@ -20,6 +20,7 @@ jobs:
       - run: python -m pip install -r requirements-artifact.txt
       - run: python scripts/reproduce_tables.py
       - run: python scripts/reproduce_figures.py --figure fig05
+      - run: python scripts/generate_results_overview.py
       - run: python scripts/compare_generated.py
       - uses: actions/upload-artifact@v4
         with:

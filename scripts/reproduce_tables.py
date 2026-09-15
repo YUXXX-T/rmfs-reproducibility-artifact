@@ -77,7 +77,11 @@ def write_csv(path: Path, rows: list[dict[str, Any]], fields: Iterable[str] | No
         fields = list(rows[0]) if rows else []
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(fields))
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=list(fields),
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(rows)
 

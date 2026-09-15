@@ -81,6 +81,8 @@ def verify_manifest_metadata() -> None:
 def verify_artifact_index() -> int:
     root = ROOT / "artifacts"
     index = json.loads((root / "artifact_manifest.json").read_text(encoding="utf-8"))
+    if index.get("schema_version") != "rmfs_artifact_index_v2":
+        raise AssertionError("artifact index schema mismatch")
     entries = index["entries"]
     if index["entry_count"] != len(entries):
         raise AssertionError("artifact index entry count mismatch")
@@ -94,9 +96,10 @@ def verify_artifact_index() -> int:
     indexed = {entry["path"]: entry for entry in entries}
     if set(indexed) != set(expected):
         raise AssertionError("artifact index paths do not match committed evidence")
-    for relative, path in expected.items():
-        if indexed[relative]["bytes"] != path.stat().st_size:
-            raise AssertionError(f"artifact byte size mismatch: {relative}")
+    for relative in expected:
+        expected_role = relative.split("/", 1)[0]
+        if indexed[relative].get("role") != expected_role:
+            raise AssertionError(f"artifact role mismatch: {relative}")
     return len(entries)
 
 
@@ -186,8 +189,9 @@ def main() -> None:
         ROOT / "src/WorldModel/graph/graph_builder.py",
         ROOT / "src/Policies/TaskAssigner/JSQTaskAssigner/jsq_task_assigner.py",
         ROOT / "artifacts/statistics/paired_confidence_intervals.csv",
+        ROOT / "artifacts/figures/results_overview.png",
+        ROOT / "artifacts/figures/paired_effects_overview.png",
         ROOT / "artifacts/figures/fig05_station_lock_mechanism.pdf",
-        ROOT / "docs/assets/data/results_explorer.json",
     ]
     missing = [str(path.relative_to(ROOT)) for path in required if not path.is_file()]
     if missing:

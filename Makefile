@@ -1,4 +1,4 @@
-.PHONY: help setup test reproduce table-main paired-ci station6 fig05 map-previews results-explorer verify docs serve smoke-sim
+.PHONY: help setup test reproduce table-main paired-ci station6 fig05 map-previews result-plots verify docs serve smoke-sim
 
 PYTHON ?= python
 
@@ -11,7 +11,7 @@ help:
 	@echo "station6    Regenerate the six-station table and paired summary"
 	@echo "fig05       Regenerate aggregate temporal Fig. 5"
 	@echo "map-previews Regenerate four- and six-station layout previews"
-	@echo "results-explorer Refresh interactive Pages data from frozen tables"
+	@echo "result-plots Regenerate static GitHub result figures"
 	@echo "verify      Check schemas, file indexes, counts, and anonymity"
 	@echo "docs        Build the MkDocs site"
 	@echo "serve       Serve documentation locally"
@@ -28,7 +28,7 @@ test:
 reproduce:
 	$(PYTHON) scripts/reproduce_tables.py
 	$(PYTHON) scripts/reproduce_figures.py --figure all
-	$(PYTHON) scripts/build_results_explorer.py
+	$(PYTHON) scripts/generate_results_overview.py
 
 table-main:
 	$(PYTHON) scripts/reproduce_tables.py --only main
@@ -45,14 +45,13 @@ fig05:
 map-previews:
 	$(PYTHON) scripts/generate_map_previews.py
 
-results-explorer:
-	$(PYTHON) scripts/build_results_explorer.py
+result-plots:
+	$(PYTHON) scripts/generate_results_overview.py
 
 verify:
 	$(PYTHON) scripts/verify_artifacts.py
 
 docs:
-	$(PYTHON) scripts/build_results_explorer.py
 	$(PYTHON) -m mkdocs build --strict
 
 serve:

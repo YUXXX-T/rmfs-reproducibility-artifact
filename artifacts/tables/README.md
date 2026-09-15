@@ -1,10 +1,11 @@
 # Result tables
 
-These CSV files are the machine-readable aggregate evidence. For visual
-inspection, filtering, sorting, and paired-CI plots, open the
-[interactive results explorer](../../docs/results/explorer.md). When the
-documentation is deployed with GitHub Pages, the same page provides direct CSV
-downloads and runs entirely in the browser.
+These figures and tables render directly on the GitHub file page. No local
+download, notebook, or JavaScript is needed.
+
+![Aggregate policy outcomes](../figures/results_overview.png)
+
+![Paired bootstrap effects](../figures/paired_effects_overview.png)
 
 ## Main four-station evaluation
 
@@ -27,13 +28,10 @@ Mean completed orders over 10 held-out seeds:
 | High | 667.4 | 504.9 | 620.0 | **696.6** |
 
 Bold marks the largest mean in each row and is descriptive, not a claim of
-statistical significance. Use the paired interval CSV files under
-`artifacts/statistics/` or the explorer's paired-effects view for inference.
-
-## Files
-
-- `table_main.csv`: full four-station means, standard deviations, and counts.
-- `table_baselines.csv`: the common comparison-metric subset.
-- `table_station6.csv`: six-station means, standard deviations, and counts.
+statistical significance. The paired-effect figure above reports the paired
+bootstrap 95% confidence intervals used for inference.
 
 All tables are regenerated from per-seed evidence with `make reproduce`.
+The static summaries are regenerated with `make result-plots`; maintainers use
+`python scripts/generate_results_overview.py --freeze` only when intentionally
+refreshing the committed copies.

@@ -1,8 +1,9 @@
 # Main PP results
 
-[Open the interactive comparison](explorer.md) to change the load and metric,
-inspect mean ± SD graphically, sort the displayed values, or download the
-current view.
+The committed summary below renders directly on GitHub as well as on the
+documentation site.
+
+![Aggregate outcomes across the four- and six-station studies](../assets/results_overview.png)
 
 Frozen means over seeds 900–949 are:
 
