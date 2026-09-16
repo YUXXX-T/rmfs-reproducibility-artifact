@@ -1,8 +1,24 @@
 {
   "schema_version": "rmfs_artifact_index_v2",
   "generated_from": "committed anonymous evidence",
-  "entry_count": 32,
+  "entry_count": 42,
   "entries": [
+    {
+      "path": "figures/density_scale_completed_orders_factorial.pdf",
+      "role": "figures"
+    },
+    {
+      "path": "figures/density_scale_completed_orders_factorial.png",
+      "role": "figures"
+    },
+    {
+      "path": "figures/density_scale_four_endpoint_summary.pdf",
+      "role": "figures"
+    },
+    {
+      "path": "figures/density_scale_four_endpoint_summary.png",
+      "role": "figures"
+    },
     {
       "path": "figures/fig02_closed_loop_50seed.pdf",
       "role": "figures"
@@ -68,6 +84,10 @@
       "role": "protocols"
     },
     {
+      "path": "raw/density_scale_per_seed.csv",
+      "role": "raw"
+    },
+    {
       "path": "raw/figure_inputs/fig02_closed_loop_50seed.csv",
       "role": "raw"
     },
@@ -104,6 +124,14 @@
       "role": "statistics"
     },
     {
+      "path": "statistics/density_scale_cell_membership.csv",
+      "role": "statistics"
+    },
+    {
+      "path": "statistics/density_scale_paired_effects.csv",
+      "role": "statistics"
+    },
+    {
       "path": "statistics/paired_confidence_intervals.csv",
       "role": "statistics"
     },
@@ -116,11 +144,23 @@
       "role": "statistics"
     },
     {
+      "path": "statistics/training_data_scale.json",
+      "role": "statistics"
+    },
+    {
       "path": "tables/README.md",
       "role": "tables"
     },
     {
       "path": "tables/table_baselines.csv",
+      "role": "tables"
+    },
+    {
+      "path": "tables/table_density_scale.csv",
+      "role": "tables"
+    },
+    {
+      "path": "tables/table_density_scale_cells.csv",
       "role": "tables"
     },
     {

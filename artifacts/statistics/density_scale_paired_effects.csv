@@ -1,0 +1,21 @@
+map_scope,method,baseline,paired_mean_difference,ci95_low,ci95_high,positive_load_seed_clusters,tied_load_seed_clusters,clusters,cluster_definition
+all,phasec,greedy,27.433333333333334,12.214722222222221,42.766666666666666,20,0,30,load-seed; mean over included map-density variants
+all,phasec,jsq,27.78148148148148,11.329629629629629,44.8963888888889,21,0,30,load-seed; mean over included map-density variants
+all,combo_s1_j1,greedy,33.95925925925926,18.977777777777778,48.822314814814824,25,0,30,load-seed; mean over included map-density variants
+all,combo_s1_j1,jsq,34.3074074074074,20.122222222222224,49.029629629629625,25,0,30,load-seed; mean over included map-density variants
+all,combo_s1_j1,phasec,6.525925925925928,-9.240740740740739,22.659351851851856,14,0,30,load-seed; mean over included map-density variants
+20,phasec,greedy,16.344444444444445,-10.777777777777775,43.422500000000014,18,0,30,load-seed; mean over included map-density variants
+20,phasec,jsq,12.377777777777776,-19.478055555555553,45.644444444444446,17,0,30,load-seed; mean over included map-density variants
+20,combo_s1_j1,greedy,2.7777777777777755,-30.599999999999998,35.599999999999994,18,0,30,load-seed; mean over included map-density variants
+20,combo_s1_j1,jsq,-1.1888888888888867,-32.90027777777778,29.31111111111111,16,0,30,load-seed; mean over included map-density variants
+20,combo_s1_j1,phasec,-13.56666666666667,-42.21111111111111,14.733611111111129,13,0,30,load-seed; mean over included map-density variants
+30,phasec,greedy,22.655555555555555,0.03305555555555609,46.01138888888891,17,1,30,load-seed; mean over included map-density variants
+30,phasec,jsq,18.688888888888886,-6.122500000000002,44.56666666666666,17,0,30,load-seed; mean over included map-density variants
+30,combo_s1_j1,greedy,37.222222222222214,13.166666666666668,60.17777777777777,21,0,30,load-seed; mean over included map-density variants
+30,combo_s1_j1,jsq,33.255555555555546,10.177499999999997,55.73333333333333,18,0,30,load-seed; mean over included map-density variants
+30,combo_s1_j1,phasec,14.566666666666663,-5.611111111111112,35.6,18,0,30,load-seed; mean over included map-density variants
+40,phasec,greedy,43.29999999999999,16.98888888888889,68.93333333333332,20,0,30,load-seed; mean over included map-density variants
+40,phasec,jsq,52.277777777777786,23.544166666666666,80.17777777777778,21,0,30,load-seed; mean over included map-density variants
+40,combo_s1_j1,greedy,61.87777777777777,42.43333333333333,80.96666666666667,25,0,30,load-seed; mean over included map-density variants
+40,combo_s1_j1,jsq,70.85555555555557,49.21111111111111,92.46666666666667,26,0,30,load-seed; mean over included map-density variants
+40,combo_s1_j1,phasec,18.57777777777778,1.4777777777777774,36.06694444444447,18,0,30,load-seed; mean over included map-density variants

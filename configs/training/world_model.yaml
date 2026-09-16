@@ -1,5 +1,6 @@
 schema_version: training_contract_v2
 component: phase_c_world_model_with_long_risk
+scope: canonical_from_scratch_joint_training_recipe
 history_length: 4
 short_rollout_horizon: 10
 candidate_top_m: 10

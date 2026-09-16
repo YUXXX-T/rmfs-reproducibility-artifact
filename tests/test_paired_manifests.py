@@ -11,9 +11,11 @@ ROOT = Path(__file__).resolve().parents[1]
 def test_manifest_index_is_complete_and_well_formed() -> None:
     with (ROOT / "manifests/metadata.csv").open(encoding="utf-8", newline="") as handle:
         rows = list(csv.DictReader(handle))
-    assert len(rows) == 180
+    assert len(rows) == 210
     assert set(rows[0]) == {"campaign", "relative_path", "schema_version", "total_orders"}
-    assert {row["campaign"] for row in rows} == {"main_50seed", "station6_10seed"}
+    assert {row["campaign"] for row in rows} == {
+        "main_50seed", "station6_10seed", "density_scale_10seed"
+    }
     for row in rows:
         path = ROOT / "manifests" / row["relative_path"]
         payload = json.loads(path.read_text(encoding="utf-8"))
@@ -38,3 +40,9 @@ def test_each_paired_campaign_has_one_manifest_per_load_and_seed() -> None:
                 and path.name == f"orders_{load}_seed{seed}.json"
                 for path in station6
             )
+    density_scale = {path.name for path in (ROOT / "manifests/density_scale_10seed").glob("*.json")}
+    assert density_scale == {
+        f"orders_{load}_seed{seed}.json"
+        for load in ("low", "mid", "high")
+        for seed in range(701, 711)
+    }

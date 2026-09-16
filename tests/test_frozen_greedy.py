@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+import json
 
 import yaml
 
@@ -56,7 +57,7 @@ def test_public_explanation_distinguishes_policy_from_physical_state() -> None:
     assert "not that the physical state is frozen" in text
 
 
-def test_long_risk_is_model_owned_and_exposed_only_through_joint_training() -> None:
+def test_long_risk_is_model_owned_and_canonical_cli_is_joint() -> None:
     model_source = (ROOT / "src/WorldModel/core/model.py").read_text(encoding="utf-8")
     trainer_source = (
         ROOT / "src/WorldModel/training/run_train_v6.py"
@@ -68,3 +69,31 @@ def test_long_risk_is_model_owned_and_exposed_only_through_joint_training() -> N
     assert '"world-model": "WorldModel.training.run_train_v6"' in public_cli
     assert '"long-risk"' not in public_cli
     assert "train_long_risk_head_only" not in public_cli
+
+
+def test_frozen_six_station_lineage_discloses_head_only_repair() -> None:
+    contract = yaml.safe_load(
+        (ROOT / "configs/training/station6_adaptation.yaml").read_text(encoding="utf-8")
+    )
+    runner = (ROOT / "src/WorldModel/evaluation/run_station6_20x20_adaptation.py").read_text(
+        encoding="utf-8"
+    )
+    page = (ROOT / "docs/reproduction/training_pipeline.md").read_text(
+        encoding="utf-8"
+    )
+    assert contract["long_risk_training"] == "head_only_repair_after_core_training"
+    assert contract["core_training_long_risk_loss_weight"] == 0.0
+    assert '"--alpha-long-risk", "0.0"' in runner
+    assert '"WorldModel.training.train_long_risk_head_only"' in runner
+    assert "actual frozen-checkpoint lineage" in page or "actual lineage" in page
+
+
+def test_training_scale_is_explicitly_stage_scoped() -> None:
+    payload = json.loads(
+        (ROOT / "artifacts/statistics/training_data_scale.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    stages = payload["world_model_training_splits"]
+    assert [stage["training_candidate_samples"] for stage in stages] == [7915, 10810]
+    assert payload["j1_station_predictor_development_data"]["development_only"] is True

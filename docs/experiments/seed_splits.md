@@ -7,6 +7,7 @@ No reported evaluation seed is selected by outcome.
 | World-model long-risk labels | 681–687 | 688–689 | 690 | 691–700 |
 | J1 station predictor | 511–516 | 517–518 | 519–520 | separate online campaigns |
 | PIBT adaptation | 461–467 | 468–469 | 470 | 551–560 |
+| Four-station map/fleet scale transfer | — | — | — | 701–710 |
 | Six-station core | 711–717 | 718–719 | 720 | 721–730 |
 | Six-station long-risk labels/J1 predictor | 731–737 | 738–739 | 740 | 721–730 |
 | Main PP paper evaluation | — | — | — | 900–949 |

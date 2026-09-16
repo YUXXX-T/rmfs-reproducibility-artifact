@@ -10,6 +10,7 @@ source .venv/bin/activate
 python -m pip install -r requirements-artifact.txt
 python scripts/reproduce_tables.py
 python scripts/reproduce_figures.py --figure fig05
+python scripts/reproduce_density_scale.py
 python scripts/verify_artifacts.py
 python -m pytest
 ```

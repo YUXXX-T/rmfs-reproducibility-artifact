@@ -1,4 +1,4 @@
-.PHONY: help setup test reproduce table-main paired-ci station6 fig05 map-previews result-plots verify docs serve smoke-sim
+.PHONY: help setup test reproduce table-main paired-ci station6 density-scale fig05 map-previews result-plots verify docs serve smoke-sim
 
 PYTHON ?= python
 
@@ -9,6 +9,7 @@ help:
 	@echo "table-main  Regenerate the main aggregate table"
 	@echo "paired-ci   Regenerate Proposed-vs-JSQ/WM-Base paired CIs"
 	@echo "station6    Regenerate the six-station table and paired summary"
+	@echo "density-scale Regenerate the 1,350-run map/fleet scale analysis"
 	@echo "fig05       Regenerate aggregate temporal Fig. 5"
 	@echo "map-previews Regenerate four- and six-station layout previews"
 	@echo "result-plots Regenerate static GitHub result figures"
@@ -28,6 +29,7 @@ test:
 reproduce:
 	$(PYTHON) scripts/reproduce_tables.py
 	$(PYTHON) scripts/reproduce_figures.py --figure all
+	$(PYTHON) scripts/reproduce_density_scale.py
 	$(PYTHON) scripts/generate_results_overview.py
 
 table-main:
@@ -38,6 +40,9 @@ paired-ci:
 
 station6:
 	$(PYTHON) scripts/reproduce_tables.py --only station6
+
+density-scale:
+	$(PYTHON) scripts/reproduce_density_scale.py
 
 fig05:
 	$(PYTHON) scripts/reproduce_figures.py --figure fig05

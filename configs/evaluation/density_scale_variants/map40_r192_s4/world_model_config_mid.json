@@ -1,0 +1,360 @@
+{
+  "map": {
+    "rows": 40,
+    "cols": 40,
+    "obstacles": [],
+    "stations": [
+      {
+        "id": 1,
+        "row": 0,
+        "col": 8,
+        "queue": {
+          "service": [
+            0,
+            8
+          ],
+          "queue": [
+            [
+              0,
+              7
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          "buffer": [
+            [
+              1,
+              7
+            ]
+          ],
+          "entry": [
+            1,
+            8
+          ],
+          "exit": [
+            0,
+            9
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "row": 0,
+        "col": 31,
+        "queue": {
+          "service": [
+            0,
+            31
+          ],
+          "queue": [
+            [
+              0,
+              32
+            ],
+            [
+              0,
+              33
+            ],
+            [
+              0,
+              34
+            ],
+            [
+              1,
+              34
+            ],
+            [
+              1,
+              33
+            ]
+          ],
+          "buffer": [
+            [
+              1,
+              32
+            ]
+          ],
+          "entry": [
+            1,
+            31
+          ],
+          "exit": [
+            0,
+            30
+          ]
+        }
+      },
+      {
+        "id": 3,
+        "row": 39,
+        "col": 8,
+        "queue": {
+          "service": [
+            39,
+            8
+          ],
+          "queue": [
+            [
+              39,
+              7
+            ],
+            [
+              39,
+              6
+            ],
+            [
+              39,
+              5
+            ],
+            [
+              38,
+              5
+            ],
+            [
+              38,
+              6
+            ]
+          ],
+          "buffer": [
+            [
+              38,
+              7
+            ]
+          ],
+          "entry": [
+            38,
+            8
+          ],
+          "exit": [
+            39,
+            9
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "row": 39,
+        "col": 31,
+        "queue": {
+          "service": [
+            39,
+            31
+          ],
+          "queue": [
+            [
+              39,
+              32
+            ],
+            [
+              39,
+              33
+            ],
+            [
+              39,
+              34
+            ],
+            [
+              38,
+              34
+            ],
+            [
+              38,
+              33
+            ]
+          ],
+          "buffer": [
+            [
+              38,
+              32
+            ]
+          ],
+          "entry": [
+            38,
+            31
+          ],
+          "exit": [
+            39,
+            30
+          ]
+        }
+      }
+    ],
+    "pod_zones": [
+      {
+        "origin_row": 6,
+        "origin_col": 4,
+        "num_rows": 12,
+        "num_cols": 2
+      },
+      {
+        "origin_row": 22,
+        "origin_col": 4,
+        "num_rows": 12,
+        "num_cols": 2
+      },
+      {
+        "origin_row": 6,
+        "origin_col": 8,
+        "num_rows": 12,
+        "num_cols": 2
+      },
+      {
+        "origin_row": 22,
+        "origin_col": 8,
+        "num_rows": 12,
+        "num_cols": 2
+      },
+      {
+        "origin_row": 6,
+        "origin_col": 12,
+        "num_rows": 12,
+        "num_cols": 2
+      },
+      {
+        "origin_row": 22,
+        "origin_col": 12,
+        "num_rows": 12,
+        "num_cols": 2
+      },
+      {
+        "origin_row": 6,
+        "origin_col": 16,
+        "num_rows": 12,
+        "num_cols": 2
+      },
+      {
+        "origin_row": 22,
+        "origin_col": 16,
+        "num_rows": 12,
+        "num_cols": 2
+      },
+      {
+        "origin_row": 6,
+        "origin_col": 20,
+        "num_rows": 12,
+        "num_cols": 2
+      },
+      {
+        "origin_row": 22,
+        "origin_col": 20,
+        "num_rows": 12,
+        "num_cols": 2
+      },
+      {
+        "origin_row": 6,
+        "origin_col": 24,
+        "num_rows": 12,
+        "num_cols": 2
+      },
+      {
+        "origin_row": 22,
+        "origin_col": 24,
+        "num_rows": 12,
+        "num_cols": 2
+      },
+      {
+        "origin_row": 6,
+        "origin_col": 28,
+        "num_rows": 12,
+        "num_cols": 2
+      },
+      {
+        "origin_row": 22,
+        "origin_col": 28,
+        "num_rows": 12,
+        "num_cols": 2
+      },
+      {
+        "origin_row": 6,
+        "origin_col": 32,
+        "num_rows": 12,
+        "num_cols": 2
+      },
+      {
+        "origin_row": 22,
+        "origin_col": 32,
+        "num_rows": 12,
+        "num_cols": 2
+      }
+    ]
+  },
+  "robots": {
+    "num_robots": 192,
+    "starts": [],
+    "speed": 1,
+    "random_starts": true
+  },
+  "pods": {
+    "pod_types": [
+      "A",
+      "B",
+      "C"
+    ],
+    "skus_per_pod": 3,
+    "sku_pool_size_per_type": 10,
+    "items_per_sku": 50
+  },
+  "simulation": {
+    "order_interval": 4,
+    "max_items_per_order": 2,
+    "pickup_duration": 2,
+    "dropoff_duration": 2,
+    "station_process_duration": 5,
+    "tick_delay": 0,
+    "log_level": "WARNING",
+    "log_file": null,
+    "fixed_order_size": true,
+    "task_execution_mode": "parallel",
+    "max_items_per_sku": 3,
+    "seed": 42,
+    "max_ticks": 200,
+    "use_recorded_orders": false,
+    "immediate_dispatch": false,
+    "initial_order_pool_size": 8,
+    "backlog_floor": 4,
+    "backlog_refill_mode": "on_pre_assignment"
+  },
+  "policies": {
+    "order_generator": {
+      "name": "ZipfOrderGenerator",
+      "params": {
+        "zipf_param": 1.5
+      }
+    },
+    "task_assigner": "GreedyTaskAssigner",
+    "path_planner": {
+      "name": "PrioritizedPathPlanner",
+      "params": {
+        "max_horizon": 100,
+        "goal_reserve": 6
+      }
+    },
+    "pod_return_planner": "HomeReturnPlanner",
+    "pod_initializer": "DefaultPodInitializer",
+    "pod_retriever": "DefaultPodRetriever"
+  },
+  "snapshot": {
+    "enabled": false,
+    "output_dir": "DataGen/snapshots",
+    "episode_id": "{map}_{planner}_{assigner}_r{robots}"
+  },
+  "station_queue": {
+    "queue_length": 3,
+    "buffer_length": 1,
+    "direction": "auto"
+  }
+}

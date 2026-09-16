@@ -1,0 +1,40 @@
+schema_version: density_scale_evaluation_v1
+claim_scope: zero-shot map-size and robot-density transfer with a fixed four-station interface
+simulation_ticks: 1500
+planner: PP
+planner_implementation: PrioritizedPathPlanner
+station_admission: physical_only_legacy
+stations: 4
+map_sizes: [20, 30, 40]
+robot_densities: [0.12, 0.15, 0.18]
+robot_counts:
+  20: [48, 60, 72]
+  30: [108, 135, 162]
+  40: [192, 240, 288]
+loads: [low, mid, high]
+seeds:
+  start: 701
+  stop_exclusive: 711
+  count: 10
+policies: [greedy, hungarian, jsq, phasec, combo_s1_j1]
+expected_runs: 1350
+pairing:
+  unit: load-seed
+  shared_arrival_manifest_across_all_map_density_and_policy_variants: true
+model_transfer:
+  world_model_frozen: true
+  long_risk_head_frozen: true
+  j1_predictor_frozen: true
+  s1_j1_retuned: false
+analysis:
+  map_summary_cluster: load-seed
+  average_within_cluster_over_robot_densities: true
+  bootstrap:
+    type: stratified_percentile
+    strata: [low, mid, high]
+    iterations: 50000
+    seed: 20260916
+    interval: 0.95
+scope_limits:
+  station_count_generalization: false
+  controlled_runtime_evidence: false

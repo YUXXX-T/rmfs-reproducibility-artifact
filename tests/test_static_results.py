@@ -7,7 +7,12 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_static_github_figures_are_committed_and_match_docs_copies() -> None:
-    for name in ("results_overview.png", "paired_effects_overview.png"):
+    for name in (
+        "results_overview.png",
+        "paired_effects_overview.png",
+        "density_scale_completed_orders_factorial.png",
+        "density_scale_four_endpoint_summary.png",
+    ):
         canonical = ROOT / "artifacts/figures" / name
         docs_copy = ROOT / "docs/assets" / name
         assert canonical.stat().st_size > 10_000
@@ -19,10 +24,13 @@ def test_repository_pages_embed_static_figures() -> None:
         "README.md": (
             "artifacts/figures/results_overview.png",
             "artifacts/figures/paired_effects_overview.png",
+            "artifacts/figures/density_scale_four_endpoint_summary.png",
         ),
         "artifacts/tables/README.md": (
             "../figures/results_overview.png",
             "../figures/paired_effects_overview.png",
+            "../figures/density_scale_completed_orders_factorial.png",
+            "../figures/density_scale_four_endpoint_summary.png",
         ),
     }
     for relative, references in required.items():

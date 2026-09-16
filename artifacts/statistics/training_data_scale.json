@@ -1,0 +1,31 @@
+{
+  "schema_version": "training_data_scale_v1",
+  "scope": "selected source training summaries, not aggregate totals for every later checkpoint",
+  "world_model_training_splits": [
+    {
+      "stage": "four_station_model_round1_v1_core",
+      "source_record": "model_round1_v1/train_summary.json:data_quality_snapshot",
+      "training_candidate_samples": 7915,
+      "training_candidate_groups": 902,
+      "available_training_pairwise_comparisons": 23979
+    },
+    {
+      "stage": "six_station_world_model_v1_base",
+      "source_record": "full_711_740_v1/training/world_model_v1/train_summary.json:data_quality_snapshot",
+      "training_candidate_samples": 10810,
+      "training_candidate_groups": 1420,
+      "available_training_pairwise_comparisons": 32110
+    }
+  ],
+  "j1_station_predictor_development_data": {
+    "source_record": "station_congestion_head_dev_511_520_v1/dataset_summary.json",
+    "development_only": true,
+    "source_runs": 120,
+    "station_rows": {
+      "train": 86112,
+      "validation": 28704,
+      "test": 28704
+    },
+    "not_formal_rebound_checkpoint_training_size": true
+  }
+}

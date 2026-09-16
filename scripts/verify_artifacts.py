@@ -24,6 +24,7 @@ def read_rows(path: Path) -> list[dict[str, str]]:
 def verify_counts() -> None:
     main = read_rows(ROOT / "artifacts/raw/main_per_seed.csv")
     six = read_rows(ROOT / "artifacts/raw/station6_per_seed.csv")
+    scale = read_rows(ROOT / "artifacts/raw/density_scale_per_seed.csv")
     events = read_rows(ROOT / "artifacts/raw/station_lock_events.csv")
     if len(main) != 750:
         raise AssertionError(f"main rows: expected 750, got {len(main)}")
@@ -43,6 +44,41 @@ def verify_counts() -> None:
         for arm in ("greedy", "hungarian", "phasec", "combo_s1_j1")
     }:
         raise AssertionError("six-station load/seed/arm grid is incomplete")
+    if len(scale) != 1350:
+        raise AssertionError(f"density-scale rows: expected 1350, got {len(scale)}")
+    if {
+        (
+            int(r["map_rows"]),
+            round(float(r["robot_density"]), 2),
+            r["load"],
+            int(r["seed"]),
+            r["arm"],
+        )
+        for r in scale
+    } != {
+        (size, density, load, seed, arm)
+        for size in (20, 30, 40)
+        for density in (0.12, 0.15, 0.18)
+        for load in ("low", "mid", "high")
+        for seed in range(701, 711)
+        for arm in ("greedy", "hungarian", "jsq", "phasec", "combo_s1_j1")
+    }:
+        raise AssertionError("density-scale factorial grid is incomplete")
+    paired_arrivals = {}
+    for row in scale:
+        key = (row["load"], int(row["seed"]))
+        paired_arrivals.setdefault(key, set()).add(int(row["order_arrival_count"]))
+    if len(paired_arrivals) != 30 or any(len(values) != 1 for values in paired_arrivals.values()):
+        raise AssertionError("density-scale arrival counts are not paired")
+    for row in scale:
+        size = int(row["map_rows"])
+        robots = int(row["num_robots"])
+        if int(row["map_cols"]) != size or int(row["num_stations"]) != 4:
+            raise AssertionError("density-scale maps are not square four-station maps")
+        if robots != round(size * size * float(row["robot_density"])):
+            raise AssertionError("density-scale robot count is inconsistent with density")
+        if row["variant"] != f"map{size}_r{robots}_s4":
+            raise AssertionError("density-scale variant label is inconsistent")
     if len(events) != 100:
         raise AssertionError(f"station event rows: expected 100, got {len(events)}")
 
@@ -61,12 +97,33 @@ def verify_protocols() -> None:
         raise AssertionError("collapse endpoint changed")
     if not label["conjunction"]:
         raise AssertionError("collapse endpoint must use conjunction")
+    with (ROOT / "configs/evaluation/density_scale_10seed.yaml").open(encoding="utf-8") as handle:
+        scale = yaml.safe_load(handle)
+    if scale["expected_runs"] != 1350 or scale["stations"] != 4:
+        raise AssertionError("density-scale protocol size or station count changed")
+    if scale["analysis"]["bootstrap"] != {
+        "type": "stratified_percentile",
+        "strata": ["low", "mid", "high"],
+        "iterations": 50_000,
+        "seed": 20260916,
+        "interval": 0.95,
+    }:
+        raise AssertionError("density-scale bootstrap contract changed")
 
 
 def verify_manifest_metadata() -> None:
     rows = read_rows(ROOT / "manifests/metadata.csv")
-    if len(rows) != 180:
-        raise AssertionError(f"manifest metadata rows: expected 180, got {len(rows)}")
+    scale_rows = read_rows(ROOT / "artifacts/raw/density_scale_per_seed.csv")
+    scale_counts = {
+        (row["load"], int(row["seed"])): int(row["order_arrival_count"])
+        for row in scale_rows
+    }
+    if len(rows) != 210:
+        raise AssertionError(f"manifest metadata rows: expected 210, got {len(rows)}")
+    if {row["campaign"] for row in rows} != {
+        "main_50seed", "station6_10seed", "density_scale_10seed"
+    }:
+        raise AssertionError("arrival-manifest campaign set changed")
     for row in rows:
         target = ROOT / "manifests" / row["relative_path"]
         if not target.is_file():
@@ -76,6 +133,10 @@ def verify_manifest_metadata() -> None:
             raise AssertionError(f"manifest schema mismatch: {target}")
         if int(row["total_orders"]) != payload["total_orders"] or payload["total_orders"] != len(payload["orders"]):
             raise AssertionError(f"manifest order count mismatch: {target}")
+        if row["campaign"] == "density_scale_10seed":
+            match = re.fullmatch(r"orders_(low|mid|high)_seed(\d+)\.json", target.name)
+            if match is None or scale_counts[(match.group(1), int(match.group(2)))] != payload["total_orders"]:
+                raise AssertionError(f"density-scale result/manifest mismatch: {target}")
 
 
 def verify_artifact_index() -> int:
@@ -192,11 +253,17 @@ def main() -> None:
         ROOT / "artifacts/figures/results_overview.png",
         ROOT / "artifacts/figures/paired_effects_overview.png",
         ROOT / "artifacts/figures/fig05_station_lock_mechanism.pdf",
+        ROOT / "artifacts/figures/density_scale_completed_orders_factorial.png",
+        ROOT / "artifacts/figures/density_scale_four_endpoint_summary.png",
+        ROOT / "artifacts/statistics/density_scale_paired_effects.csv",
     ]
     missing = [str(path.relative_to(ROOT)) for path in required if not path.is_file()]
     if missing:
         raise AssertionError(f"missing required artifacts: {missing}")
-    print(f"PASS: counts, protocols, 180 arrival manifests, {indexed} indexed artifacts, and anonymity verified")
+    print(
+        "PASS: main, six-station, and 1,350-run scale counts; protocols; "
+        f"210 arrival manifests; {indexed} indexed artifacts; and anonymity verified"
+    )
 
 
 if __name__ == "__main__":

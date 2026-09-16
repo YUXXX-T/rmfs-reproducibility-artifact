@@ -21,9 +21,13 @@ def main() -> None:
         "tables/table_main.csv",
         "tables/table_baselines.csv",
         "tables/table_station6.csv",
+        "tables/table_density_scale.csv",
+        "tables/table_density_scale_cells.csv",
         "statistics/collapse_summary.csv",
         "statistics/paired_confidence_intervals.csv",
         "statistics/station6_paired_confidence_intervals.csv",
+        "statistics/density_scale_paired_effects.csv",
+        "statistics/density_scale_cell_membership.csv",
         "statistics/bootstrap_settings.json",
     )
     failures = []

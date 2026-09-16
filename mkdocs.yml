@@ -34,6 +34,7 @@ nav:
       - Load definitions: experiments/load_definitions.md
       - Seed splits: experiments/seed_splits.md
       - Main protocol: experiments/main_protocol.md
+      - Map/fleet scale transfer: experiments/density_scale_generalization.md
       - Six-station adaptation: experiments/six_station_adaptation.md
       - Baselines: experiments/baselines.md
       - Statistical analysis: experiments/statistical_analysis.md
@@ -47,8 +48,10 @@ nav:
       - Main results: results/main_results.md
       - Paired comparisons: results/paired_comparisons.md
       - Six-station results: results/six_station_results.md
+      - Map/fleet scale transfer: results/density_scale_results.md
       - Runtime results: results/runtime_results.md
   - Reproduction:
+      - Training pipeline and checkpoint provenance: reproduction/training_pipeline.md
       - Figures: reproduction/reproduce_figures.md
       - Tables: reproduction/reproduce_tables.md
       - Full experiment: reproduction/full_experiment.md
