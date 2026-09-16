@@ -2,7 +2,12 @@
 
 This site is the detailed companion to the anonymous paper **“Congestion-Robust RMFS Dispatch via a Horizon-Separated Action-Conditioned World Model.”** It is organized as an evidence graph, not as a second paper.
 
-Use [Claims to artifacts](claims_to_artifacts.md) to move directly from a paper statement to its frozen evidence and reproduction command. The [training pipeline](reproduction/training_pipeline.md) documents data, optimization stages, checkpoint provenance, and seed separation beyond the brief commands in [Quick start](quickstart.md). The result figures below render directly in repository and anonymous-mirror views.
+Use [Claims to artifacts](claims_to_artifacts.md) to move directly from a paper statement to its frozen evidence and reproduction command. The [training pipeline](reproduction/training_pipeline.md) documents data, optimization stages, and seed separation beyond the brief commands in [Quick start](quickstart.md). The result figures below render directly in repository and anonymous-mirror views.
+
+For implementation-level inspection, the [simulator source guide](simulator/source_guide.md)
+maps the paper evaluation entry point and each transition within one tick to
+the corresponding modules under `src/`. The shorter simulator pages define
+the environment rules without duplicating that code map.
 
 ![Aggregate results across load and station layouts](assets/results_overview.png)
 

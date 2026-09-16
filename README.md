@@ -36,7 +36,8 @@ The repository is intentionally layered:
 - [Claims to artifacts](docs/claims_to_artifacts.md) maps paper claims to data and commands.
 - [Result tables](artifacts/tables/README.md) render the principal figures and exact summary values directly in the repository.
 - [Quick start](docs/quickstart.md) gives copy-and-paste reproduction commands.
-- [Training pipeline and checkpoint provenance](docs/reproduction/training_pipeline.md) details dataset construction, two-stage WM training, J1, six-station adaptation, seed splits, and what frozen checkpoints actually contain.
+- [Training pipeline and seed splits](docs/reproduction/training_pipeline.md) details dataset construction, two-stage WM training, J1, six-station adaptation, and training-data availability.
+- [Simulator source guide](docs/simulator/source_guide.md) maps the paper's execution path, one-tick transition, state ownership, policy injection, and metric collection to the exact files under `src/`.
 - [Experiment protocol](docs/experiments/main_protocol.md) records the frozen 50-seed PP evaluation.
 - [Method and schemas](docs/method/state_action_labels.md) define every state, action, and label channel.
 - [Mechanism analysis](docs/mechanisms/temporal_precedence.md) separates the endpoint collapse label from temporal onset localization.

@@ -16,7 +16,7 @@ python scripts/train.py world-model --execute \
   --alpha-long-risk 1.0
 ```
 
-The paper's frozen evaluation checkpoint lineage is a separate historical fact: the six-station runner explicitly trains its core with long-risk loss set to zero, then runs `train_long_risk_head_only.py` on seed-disjoint continuation labels. The four-station release manifest also identifies the evaluated long-risk checkpoint as a head-only repair. Thus the canonical joint recipe must not be presented as proof that every evaluated checkpoint was jointly trained. The head remains *part of the world model at inference* in either case. See the [training pipeline](../reproduction/training_pipeline.md) for data, stages, seeds, selection, and availability.
+The [training pipeline](../reproduction/training_pipeline.md) gives the data-generation and optimization details, seed splits, selection rules, and required training assets. This command describes a training recipe; it does not regenerate a frozen evaluated checkpoint without the original inputs.
 
 Canonical code:
 

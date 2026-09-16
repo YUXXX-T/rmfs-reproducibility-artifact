@@ -17,8 +17,5 @@ online_test_disjoint_from_all_adaptation_data: true
 ticks: 1500
 short_rollout_horizon: 10
 long_risk_horizon: 200
-long_risk_training: head_only_repair_after_core_training
-core_training_long_risk_loss_weight: 0.0
-head_repair_frozen_core: true
 j1_predictor_training: frozen_encoder_dispatch_auxiliary
 canonical_runner: WorldModel.evaluation.run_station6_20x20_adaptation

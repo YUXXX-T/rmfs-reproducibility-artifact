@@ -18,6 +18,7 @@ nav:
   - Artifact overview: artifact_overview.md
   - Claims to artifacts: claims_to_artifacts.md
   - Simulator:
+      - Source guide: simulator/source_guide.md
       - Environment: simulator/environment.md
       - Tick semantics: simulator/tick_semantics.md
       - Entities and lifecycle: simulator/entities_and_lifecycle.md
@@ -51,7 +52,7 @@ nav:
       - Map/fleet scale transfer: results/density_scale_results.md
       - Runtime results: results/runtime_results.md
   - Reproduction:
-      - Training pipeline and checkpoint provenance: reproduction/training_pipeline.md
+      - Training pipeline and seed splits: reproduction/training_pipeline.md
       - Figures: reproduction/reproduce_figures.md
       - Tables: reproduction/reproduce_tables.md
       - Full experiment: reproduction/full_experiment.md

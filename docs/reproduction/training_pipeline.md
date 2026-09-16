@@ -1,11 +1,9 @@
-# Training pipeline and checkpoint provenance
+# Training pipeline and seed splits
 
-This page separates a **supported from-scratch training recipe** from the
-**actual lineage of the frozen checkpoints used in the reported evaluations**.
-They share the same `RMFSWorldModel` inference architecture but do not always
-use the same order of optimization. Running a training command produces a new
-model; it does not reproduce the paper's exact evaluated weights unless its
-data, starting checkpoint, configuration, and selection match the frozen run.
+This page describes the world-model training recipe, the separate J1
+dispatch-side predictor, the data and seed partitions, and what is required
+to rerun training. A new training run does not reproduce the paper's exact
+evaluated weights without its original inputs and checkpoint selection.
 
 ## Data and supervision
 
@@ -47,9 +45,9 @@ The four-station J1 *development* latent dataset records 86,112 train,
 28,704 validation and 28,704 test station rows across 120 source runs. It is
 explicitly marked `development_only` in its source summary; those row counts
 must **not** be misreported as the formal training scale of the released
-rebound J1 checkpoint. Exact later core/repair counts cannot be recovered
-from the compact files committed here; the source tensors and complete
-training logs are distributed separately.
+J1 checkpoint. Exact counts for other training stages are not available in
+the compact files committed here; the source tensors and complete training
+logs are distributed separately.
 
 ## Canonical joint world-model recipe
 
@@ -93,32 +91,16 @@ python scripts/train.py world-model --execute \
 ```
 
 The published YAML contract `configs/training/world_model.yaml` describes
-this canonical joint recipe. It is *not* a byte-for-byte provenance record for
-every older evaluation checkpoint.
+this joint recipe and its model-owned long-risk output.
 
-## Frozen evaluation checkpoints: what was actually trained
+## Six-station adaptation and held-out evaluation
 
-The four-station asset manifest identifies a core WM checkpoint
-(`model_round1_v1/best_regret_world_model.pt`) and a separate historical
-long-risk **head-only repair** output (`long_risk_head_only_v1/`
-`best_long_risk_world_model.pt`). The head is inside the resulting WM
-checkpoint; the directory name records how its weights were obtained, not a
-second neural model running beside the WM. The artifact does not contain all
-the original training tensors or logs needed to assert that this frozen
-checkpoint came from the canonical joint Stage-2 command above.
-
-For the **six-station adaptation**, the staged runner gives an explicit
-lineage: create a 9→11 demand-channel adapter; collect Greedy counterfactual
-data; train a six-station behavior WM; collect WM-on-policy `H=10` samples
-and train a Phase-C core; then collect seed-disjoint `W=200` labels and fit
-only that core's `LongRiskHead`. Both core-training invocations set
-`--alpha-long-risk 0.0`; the last step calls
-`src/WorldModel/training/train_long_risk_head_only.py` and preserves the
-remaining core tensors. Thus it would be incorrect to claim that the actual
-six-station evaluation checkpoint trained long-risk jointly with its core.
-This staged procedure is **adaptation**, not four-to-six-station zero-shot
-transfer. `configs/training/station6_adaptation.yaml` now mirrors the actual
-head-repair lineage.
+The six-station study adapts the demand representation from `5+4=9` to
+`5+6=11`, builds six-station training data, and evaluates held-out policy
+runs. The world-model core data and long-risk/J1 auxiliary-label data use
+different seed blocks. This study is **adaptation**, not four-to-six-station
+zero-shot transfer; the training and evaluation split is recorded in
+`configs/training/station6_adaptation.yaml`.
 
 | Six-station use | Train seeds | Validation | Offline test | Online evaluation |
 |---|---|---|---|---|
@@ -126,12 +108,10 @@ head-repair lineage.
 | Long-risk labels and J1 auxiliary | 731–737 | 738–739 | 740 | — |
 | Final paired policy test | — | — | — | 721–730 |
 
-These blocks do not overlap. The runner
-`src/WorldModel/evaluation/run_station6_20x20_adaptation.py` defines the
-ordered `prepare → collect_base → train_base → collect_core → train_core →
-collect_repair → train_repair → evaluate` dependency chain and its per-stage
-commands. The separate 701–710 map/fleet-scale experiment **does not train**:
-it holds the WM, long-risk output and J1 predictor fixed.
+These blocks do not overlap. The executable stage definitions are in
+`src/WorldModel/evaluation/run_station6_20x20_adaptation.py`. The separate
+701–710 map/fleet-scale experiment **does not train**: it holds the WM,
+long-risk output and J1 predictor fixed.
 
 ## J1 predictor: a separate dispatch-side training job
 

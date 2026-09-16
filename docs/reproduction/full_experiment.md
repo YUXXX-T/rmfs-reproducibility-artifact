@@ -1,6 +1,6 @@
 # Full experiment
 
-The full path is intentionally separate from lightweight artifact validation. Read the [training pipeline and checkpoint provenance](training_pipeline.md) before running these commands: it distinguishes the supported canonical joint recipe from the head-only repair actually used by historical evaluation checkpoints. Canonical *from-scratch* training can optimize short-horizon decoders and the model-owned long-risk output in one world-model run:
+The full path is intentionally separate from lightweight artifact validation. Read the [training pipeline and seed splits](training_pipeline.md) for the data-generation, training-stage, and asset requirements. The documented *from-scratch* recipe optimizes short-horizon decoders and the model-owned long-risk output in one world-model run:
 
 ```bash
 python scripts/train.py world-model --execute \

@@ -8,8 +8,8 @@ This web appendix is the canonical review version; no identity-bearing PDF metad
 - Low/mid/high definitions: exact JSON plus YAML extraction.
 - Pod, station, return, service, and arrival rules: documented.
 - State/action/node/station/system/long-risk channels: machine-readable schemas.
-- Training scale, data generation, two-stage optimization, actual evaluated
-  checkpoint lineage, J1 auxiliary training, and seed separation: the
+- Training scale, data generation, two-stage optimization, J1 auxiliary
+  training, and seed separation: the
   [training pipeline](reproduction/training_pipeline.md), source, and splits.
 - Frozen-Greedy continuation: implementation and declared horizons.
 - Greedy, Hungarian, JSQ, WM-Base, S1/J1, PP, and PIBT: configuration files.

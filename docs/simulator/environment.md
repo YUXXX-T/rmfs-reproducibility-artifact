@@ -12,3 +12,8 @@ Exact coordinates live in `configs/simulator/*.json`; concise layout contracts l
 
 Both previews are rendered directly from the committed map JSON with
 `python scripts/generate_map_previews.py`.
+
+The [simulator source guide](source_guide.md) identifies the exact `src/`
+classes that construct this world and gives the ordered implementation path
+from configuration loading through dispatch, path planning, station service,
+and metric collection.

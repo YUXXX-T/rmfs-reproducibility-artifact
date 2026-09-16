@@ -2,12 +2,12 @@
 
 At a decision opportunity, upstream logic fixes a context `c=(order, pod, station, return_location)`. Candidate actions vary only the idle robot. The world model encodes the state once, rolls each candidate independently for `H=10` latent steps, and predicts node-, station-, and system-level consequences.
 
-The long-risk output head is part of the world model. In the canonical from-scratch recipe, Stage 2 optimizes it alongside the dynamics and ranking objectives. The evaluated frozen checkpoint lineage also includes historical head-only repair after core training; this is explicitly distinguished in the [training pipeline](../reproduction/training_pipeline.md). Its targets summarize a declared `W=200` frozen-Greedy simulator continuation, not a second deployed rollout. S1 uses the resulting candidate consequences to choose a robot within one context.
+The long-risk output head is part of the world model. In the documented training recipe, Stage 2 optimizes it alongside dynamics and ranking objectives. Its targets summarize a declared `W=200` frozen-Greedy simulator continuation, not a second deployed rollout. S1 uses the resulting candidate consequences to choose a robot within one context. The data and optimization stages are detailed in the [training pipeline](../reproduction/training_pipeline.md).
 
 J1 is dispatch-side. A small auxiliary predictor reads frozen station-node latents and estimates current traffic and service pressure. J1 combines those station channels with exact service debt to rank different contexts once per proposal batch; it never compares context-normalized S1 scores across jobs.
 
 ```text
-RMFSWorldModel (canonical joint recipe; evaluated lineage can repair the head)
+RMFSWorldModel (documented joint training recipe)
   short-horizon decoders + long-risk output head  ->  S1 robot choice
 
 Frozen WM station representation
