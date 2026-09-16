@@ -1,7 +1,7 @@
 {
   "schema_version": "rmfs_artifact_index_v2",
   "generated_from": "committed anonymous evidence",
-  "entry_count": 42,
+  "entry_count": 49,
   "entries": [
     {
       "path": "figures/density_scale_completed_orders_factorial.pdf",
@@ -52,6 +52,22 @@
       "role": "figures"
     },
     {
+      "path": "figures/fig06_runtime_benchmark.pdf",
+      "role": "figures"
+    },
+    {
+      "path": "figures/fig06_runtime_benchmark.png",
+      "role": "figures"
+    },
+    {
+      "path": "figures/fig06s_runtime_wall_time.pdf",
+      "role": "figures"
+    },
+    {
+      "path": "figures/fig06s_runtime_wall_time.png",
+      "role": "figures"
+    },
+    {
       "path": "figures/paired_effects_overview.pdf",
       "role": "figures"
     },
@@ -97,6 +113,18 @@
     },
     {
       "path": "raw/figure_inputs/fig04_pareto_means.csv",
+      "role": "raw"
+    },
+    {
+      "path": "raw/figure_inputs/fig06_runtime_benchmark_pooled.csv",
+      "role": "raw"
+    },
+    {
+      "path": "raw/figure_inputs/fig06_runtime_benchmark_runs.csv",
+      "role": "raw"
+    },
+    {
+      "path": "raw/figure_inputs/fig06_runtime_benchmark_stats.json",
       "role": "raw"
     },
     {

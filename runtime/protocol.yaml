@@ -1,12 +1,30 @@
-schema_version: runtime_protocol_v1
-source: same online evaluation runs as outcome metrics
+schema_version: runtime_protocol_v2
+benchmark: six_station_mid_heldout
+layout: map20_r48_s6
+load: mid
+seeds: {start: 721, stop_exclusive: 731, count: 10}
 ticks_per_run: 1500
-fields:
-  wall_time_s:
-    scope: whole arm run
-    includes: [simulator, dispatch, path_planning, inference, process_scheduling]
-  assignment_time_ms_mean:
-    scope: mean measured assignment call within run
-    missing_values: preserved_not_zero_imputed
-aggregation: [count_non_missing, arithmetic_mean, population_standard_deviation]
-hardware_normalized: false
+pairing: identical_recorded_arrival_manifest
+execution: sequential_interleaved_by_seed
+configurations: [greedy_cpu, jsq_cpu, hungarian_cpu, proposed_cpu, proposed_gpu]
+proposed_top_m: 10
+warmup_ticks_per_method_device: 30
+assignment_latency:
+  scope: synchronized_wall_time_around_task_assigner_assign
+  calls_per_seed: 1500
+  pooled_calls_per_configuration: 15000
+  initialization: separately_recorded_and_excluded
+  cuda_synchronization: before_and_after_each_measured_call
+  summaries: [mean, median, p95, maximum, total]
+paired_device_test:
+  statistic: gpu_over_cpu_ratio
+  test: two_sided_wilcoxon_signed_rank
+latency_driver:
+  predictor: world_model_inference_calls_per_tick
+  outcome: mean_assign_latency_ms
+  fit: ordinary_least_squares_cpu_runs
+whole_episode_wall_time:
+  scope: simulator_dispatch_planning_inference_and_system_overhead
+  interpretation: descriptive_not_hardware_normalized
+low_throughput_reference_completed_orders: 300
+formal_collapse_requires_deadlock_ratio: true

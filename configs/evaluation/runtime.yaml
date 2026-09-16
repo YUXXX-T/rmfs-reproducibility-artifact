@@ -1,6 +1,25 @@
-schema_version: runtime_contract_v1
-source: frozen_per_seed_online_results
-reported_fields: [wall_time_s, assignment_time_ms_mean]
-aggregation: arithmetic_mean_and_sample_standard_deviation
-warning: wall_time_includes_simulation_and machine load; compare only within the recorded campaign
-dedicated_latency_benchmark_available: false
+schema_version: runtime_contract_v2
+dedicated_latency_benchmark_available: true
+benchmark: six_station_mid_heldout
+layout: map20_r48_s6
+load: mid
+seeds: {start: 721, stop_exclusive: 731, count: 10}
+ticks_per_run: 1500
+paired_arrival_replay: true
+configurations: [greedy_cpu, jsq_cpu, hungarian_cpu, proposed_cpu, proposed_gpu]
+proposed_top_m: 10
+warmup_ticks_per_method_device: 30
+primary_metric: synchronized_task_assigner_assign_wall_latency_ms
+initialization_excluded: true
+cuda_synchronization: before_and_after_each_call
+calls_per_seed: 1500
+pooled_calls_per_configuration: 15000
+device_comparison:
+  unit: paired_seed
+  test: two_sided_wilcoxon_signed_rank
+latency_driver:
+  predictor: world_model_inference_calls_per_tick
+  outcome: mean_assign_latency_ms
+  fit: ordinary_least_squares_cpu_runs
+hardware_normalized: false
+whole_episode_wall_time: descriptive_only

@@ -28,6 +28,14 @@ analysis.
 
 ![Aggregate station-lock mechanism](docs/assets/fig05_station_lock_mechanism.png)
 
+## Runtime benchmark
+
+![Six-station dispatch runtime benchmark](artifacts/figures/fig06_runtime_benchmark.png)
+
+The [runtime results](docs/results/runtime_results.md) report the paired CPU/GPU
+analysis, latency-driver fit, hardware record, and supplementary episode-time
+figure.
+
 ## Start here
 
 The repository is intentionally layered:
@@ -53,7 +61,7 @@ python -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements-artifact.txt
 python scripts/reproduce_tables.py
-python scripts/reproduce_figures.py --figure fig05
+python scripts/reproduce_figures.py --figure all
 python scripts/reproduce_density_scale.py
 python scripts/verify_artifacts.py
 ```
@@ -62,7 +70,7 @@ Windows PowerShell activation is `.venv\Scripts\Activate.ps1`. Generated outputs
 
 ## Three reproduction levels
 
-1. **Statistics-only (minutes, no checkpoint):** regenerate tables, paired bootstrap confidence intervals, and Fig. 5 from committed per-seed/event data with `make reproduce`.
+1. **Statistics-only (minutes, no checkpoint):** regenerate tables, paired bootstrap confidence intervals, and Figs. 5/6/6s from committed compact evidence with `make reproduce`.
 2. **Smoke simulation (minutes to tens of minutes):** install `requirements.txt`, then run `make smoke-sim` to exercise the real simulator and baseline dispatch path on a short configuration.
 3. **Full campaign (compute intensive):** obtain checkpoints through [the checkpoint manifest](checkpoints/README.md), then follow [the full experiment guide](docs/reproduction/full_experiment.md). The main campaign contains 3 loads × 50 seeds × 5 arms = 750 simulations of 1,500 ticks.
 
@@ -79,7 +87,7 @@ checkpoints         metadata only; model binaries are distributed separately
 runtime             measurement protocol and frozen timing observations
 ```
 
-Run `make help` for individual claims such as `make table-main`, `make paired-ci`, `make fig05`, `make station6`, `make density-scale`, and `make result-plots`. All documentation remains ordinary Markdown so it renders directly in repository and anonymous-mirror views.
+Run `make help` for individual claims such as `make table-main`, `make paired-ci`, `make fig05`, `make fig06`, `make station6`, `make density-scale`, and `make result-plots`. All documentation remains ordinary Markdown so it renders directly in repository and anonymous-mirror views.
 
 ## Review anonymity and provenance
 

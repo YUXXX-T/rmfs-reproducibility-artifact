@@ -15,7 +15,8 @@ This web appendix is the canonical review version; no identity-bearing PDF metad
 - Greedy, Hungarian, JSQ, WM-Base, S1/J1, PP, and PIBT: configuration files.
 - Per-seed raw result rows and paired arrival manifests: committed with schema and count validation.
 - Paired bootstrap intervals: deterministic script and complete Proposed–JSQ/WM-Base CSV.
-- Runtime observations and limitations: raw and aggregate tables.
+- Dedicated synchronized runtime benchmark: paired CPU/GPU data, hardware and
+  timing protocol, static Fig. 6/6s, and a deterministic plotting script.
 - Collapse and station-lock rules: separate versioned detection configs.
 - Sensitivity: station-lock thresholds 0.6/0.7/0.8/0.9, with 0.8 preregistered for the main figure.
 

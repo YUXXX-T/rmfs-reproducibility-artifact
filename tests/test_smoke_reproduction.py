@@ -25,3 +25,18 @@ def test_mechanism_validation_and_figure_generation(tmp_path: Path) -> None:
     assert (tmp_path / "fig05_station_lock_mechanism.pdf").stat().st_size > 1000
     assert (tmp_path / "fig05_station_lock_mechanism.png").stat().st_size > 1000
     assert (tmp_path / "fig05_station_lock_mechanism.summary.json").is_file()
+
+
+def test_runtime_figure_generation(tmp_path: Path) -> None:
+    subprocess.run(
+        [sys.executable, "scripts/generate_fig06_runtime.py", "--output-dir", str(tmp_path)],
+        cwd=ROOT,
+        check=True,
+    )
+    for name in (
+        "fig06_runtime_benchmark.pdf",
+        "fig06_runtime_benchmark.png",
+        "fig06s_runtime_wall_time.pdf",
+        "fig06s_runtime_wall_time.png",
+    ):
+        assert (tmp_path / name).stat().st_size > 1000

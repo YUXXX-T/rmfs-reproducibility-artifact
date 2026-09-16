@@ -1,0 +1,54 @@
+{
+  "assign_median_ms": {
+    "gpu_over_cpu_median_ratio": 0.9189550202063643,
+    "ratio_min": 0.7705696116969168,
+    "ratio_max": 1.0240451522811516,
+    "gpu_faster_seeds": 6,
+    "wilcoxon_two_sided_p": 0.083984375
+  },
+  "assign_mean_ms": {
+    "gpu_over_cpu_median_ratio": 0.9457895992369465,
+    "ratio_min": 0.8464626802399969,
+    "ratio_max": 1.0553979297168532,
+    "gpu_faster_seeds": 8,
+    "wilcoxon_two_sided_p": 0.01953125
+  },
+  "assign_p95_ms": {
+    "gpu_over_cpu_median_ratio": 0.9651835193776989,
+    "ratio_min": 0.8484343623097824,
+    "ratio_max": 1.0976288994812724,
+    "gpu_faster_seeds": 8,
+    "wilcoxon_two_sided_p": 0.232421875
+  },
+  "wall_s": {
+    "gpu_over_cpu_median_ratio": 0.9808723709956306,
+    "ratio_min": 0.938832870794128,
+    "ratio_max": 1.039927993766528,
+    "gpu_faster_seeds": 7,
+    "wilcoxon_two_sided_p": 0.064453125
+  },
+  "driver_cpu": {
+    "slope_ms_per_inference_call": 7.107444472619792,
+    "intercept_ms_per_tick": 39.93783717073773,
+    "pearson_r": 0.8837749662839681,
+    "p": 0.0006922803431196908,
+    "inference_calls_per_tick_min": 1.5673333333333332,
+    "inference_calls_per_tick_max": 10.056,
+    "per_inference_ms_internal_median": 9.1734,
+    "inference_share_of_assign_total_median": 0.6407221377269794,
+    "inference_share_min": 0.20654145259312748,
+    "inference_share_max": 0.7512785204298141
+  },
+  "driver_gpu": {
+    "slope_ms_per_inference_call": 7.048412940480317,
+    "intercept_ms_per_tick": 36.53123506583615,
+    "pearson_r": 0.8652864153203029,
+    "p": 0.0012207636557623031,
+    "inference_calls_per_tick_min": 1.5673333333333332,
+    "inference_calls_per_tick_max": 10.056,
+    "per_inference_ms_internal_median": 8.626149999999999,
+    "inference_share_of_assign_total_median": 0.6457290282305087,
+    "inference_share_min": 0.24527529111881638,
+    "inference_share_max": 0.7396989670839446
+  }
+}

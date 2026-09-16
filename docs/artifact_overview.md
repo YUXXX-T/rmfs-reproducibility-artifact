@@ -10,7 +10,8 @@
 - Flattened per-seed result rows for the main, six-station, and 1,350-run
   fixed-four-station scale-transfer campaigns, with identity-bearing path and
   fingerprint fields removed.
-- Paired bootstrap outputs, station-lock events, collapse summaries, paper tables, and figures.
+- Paired bootstrap outputs, station-lock events, collapse summaries, the
+  dedicated 50-run CPU/GPU runtime extract, paper tables, and figures.
 - Reproduction, validation, CI, and documentation infrastructure.
 
 ## Distributed separately

@@ -51,6 +51,28 @@ The exact summaries are in `table_density_scale.csv` and
 `table_density_scale_cells.csv`; paired effects and Pareto membership are in
 the adjacent `statistics/` directory.
 
+## Runtime benchmark
+
+The dedicated six-station mid-load benchmark measures every `assign()` call
+over ten paired held-out seeds (15,000 calls per configuration).
+
+![Dispatch runtime benchmark](../figures/fig06_runtime_benchmark.png)
+
+| Configuration | Median (ms) | Mean (ms) | p95 (ms) | Maximum (ms) |
+|---|---:|---:|---:|---:|
+| Greedy | 0.8 | 1.0 | 2.8 | 6.9 |
+| JSQ | 1.2 | 2.1 | 8.3 | 20.0 |
+| Hungarian | 0.8 | 9.4 | 52.6 | 203.8 |
+| Proposed (CPU) | 28.9 | 74.5 | 307.8 | 6,217.2 |
+| Proposed (GPU) | 23.0 | 70.8 | 297.1 | 7,510.6 |
+
+![Episode wall time supplementary](../figures/fig06s_runtime_wall_time.png)
+
+The second figure is descriptive: its 300-order line marks low throughput,
+not the paper's joint completed-orders/deadlock collapse label. Full
+interpretation and paired device statistics are in the
+[runtime result](../../docs/results/runtime_results.md).
+
 Bold marks the largest mean in each row and is descriptive, not a claim of
 statistical significance. The paired-effect figure above reports the paired
 bootstrap 95% confidence intervals used for inference.
