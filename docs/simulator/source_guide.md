@@ -116,7 +116,7 @@ non-overlapping ownership:
 | `AgentState` | `src/WorldState/agent_state.py` | Robot position, status, path cursor, carried pod, waits, and stall state. |
 | `PodState` / `Pod` | `src/WorldState/pod_state.py` | Pod home/current position, carrier, type, and SKU inventory. |
 | `OrderState` / `Order` | `src/WorldState/order_state.py` | Demand, destination station, delivered pods, status, and timestamps. |
-| `TaskState` / `Task` | `src/WorldState/task_state.py` | Per-robot `PICK -> DELIVER -> RETURN` chains and task timestamps. |
+| `TaskState` / `Task` | `src/WorldState/task_state.py` | The three task types (`PICK`, `DELIVER`, `RETURN`), their assignment/execution/terminal states, and timestamps. |
 | `StationState` | `src/WorldState/station_state.py` | Physical slots, admission records, queue-zone motion, and exits. |
 
 The task assigner works through the interface in
@@ -125,8 +125,9 @@ The task assigner works through the interface in
 separates a fixed `(order, pod, station, return)` context from robot selection.
 The action-conditioned world model changes the robot choice for that context;
 it does not silently change the order, selected pod, station, or return rule.
-The committed unit of work is the lifecycle documented in
-[Entities and lifecycle](entities_and_lifecycle.md).
+Those three task types are only the task-chain skeleton. Admission, travel,
+queueing, service, exit, return, failure/replacement, and multi-pod order
+completion are documented in [Entities and lifecycle](entities_and_lifecycle.md).
 
 ## Orders, pods, and service
 
