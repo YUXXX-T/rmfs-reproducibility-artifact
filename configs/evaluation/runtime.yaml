@@ -1,8 +1,9 @@
 schema_version: runtime_contract_v2
 dedicated_latency_benchmark_available: true
-benchmark: six_station_mid_heldout
+benchmark: six_station_three_load_heldout
 layout: map20_r48_s6
-load: mid
+loads: [low, mid, high]
+main_figure_load: mid
 seeds: {start: 721, stop_exclusive: 731, count: 10}
 ticks_per_run: 1500
 paired_arrival_replay: true
@@ -13,7 +14,7 @@ primary_metric: synchronized_task_assigner_assign_wall_latency_ms
 initialization_excluded: true
 cuda_synchronization: before_and_after_each_call
 calls_per_seed: 1500
-pooled_calls_per_configuration: 15000
+pooled_calls_per_configuration_and_load: 15000
 device_comparison:
   unit: paired_seed
   test: two_sided_wilcoxon_signed_rank

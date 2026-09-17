@@ -11,7 +11,8 @@
   fixed-four-station scale-transfer campaigns, with identity-bearing path and
   fingerprint fields removed.
 - Paired bootstrap outputs, station-lock events, collapse summaries, the
-  dedicated 50-run CPU/GPU runtime extract, paper tables, and figures.
+  dedicated 150-run, three-load CPU/GPU runtime extract, paper tables, and
+  figures.
 - Reproduction, validation, CI, and documentation infrastructure.
 
 ## Distributed separately

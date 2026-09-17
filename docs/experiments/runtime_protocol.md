@@ -2,13 +2,13 @@
 
 ## Dedicated dispatch benchmark
 
-Fig. 6 uses a dedicated benchmark rather than timing fields opportunistically
-collected during the main campaign.
+Fig. 6 and the cross-load runtime audit use a dedicated benchmark rather than
+timing fields opportunistically collected during the main campaign.
 
 | Item | Fixed setting |
 |---|---|
 | Environment | six-station 20×20 adaptation, 48 robots, PP planner |
-| Workload | mid load |
+| Workload | low, mid, and high; main Fig. 6 uses mid load |
 | Seeds | 721–730 (ten held-out seeds) |
 | Pairing | identical recorded arrival manifest within each seed |
 | Horizon | 1,500 simulation ticks per run |
@@ -18,7 +18,7 @@ collected during the main campaign.
 | CUDA timing | `torch.cuda.synchronize()` immediately before and after the measured call |
 | Initialization | recorded separately and excluded from steady-state assignment latency |
 | Warm-up | 30 ticks for each method/device before measurement |
-| Calls | 1,500 per seed; 15,000 pooled per configuration |
+| Calls | 1,500 per seed; 15,000 pooled per configuration and load |
 | Candidate setting | proposed top-M = 10 |
 
 For each run, the benchmark records mean, median, p95, maximum, and total
@@ -43,6 +43,14 @@ two-sided Wilcoxon signed-rank test. The latency-driver panel fits ordinary
 least squares across the ten CPU observations, with inference calls per tick
 as the predictor and mean `assign()` latency as the outcome.
 
+The main Fig. 6 device comparison is the mid-load slice. The cross-load audit
+adds descriptive pooled means and p95 values for low/high load. Its CPU/GPU
+assignment-cost ratios are not treated as pure device speedups because the two
+closed-loop trajectories need not remain numerically identical. This is
+observable at high load: Proposed CPU and GPU finish different numbers of
+orders on seeds 727, 728, and 730. The plotting script marks both device runs
+for these seeds with red open points in the wall-time figure.
+
 ## Whole-run timing
 
 Episode wall time includes the simulator, task assignment, path planning,
@@ -58,10 +66,10 @@ deadlock ratio of at least 0.4.
 ## Frozen data boundary
 
 The anonymous artifact retains all per-run and pooled values required to
-recompute Fig. 6/6s. Absolute worker paths, checkpoint/manifest fingerprints,
-and the worker hostname from the collection JSON are excluded. Hardware and
-software fields relevant to interpretation are recorded separately in
-`runtime/hardware.md`.
+recompute Fig. 6/6s and both cross-load figures: 50 runs per load, 150 runs in
+total. Absolute worker paths, checkpoint/manifest fingerprints, and the worker
+hostname from the collection JSON are excluded. Hardware and software fields
+relevant to interpretation are recorded separately in `runtime/hardware.md`.
 
 `runtime/raw_measurements.csv` and `runtime/summary.csv` are the broader timing
 extracts from the main and adaptation campaigns. They are retained for audit,

@@ -8,7 +8,7 @@
 | Run-level collapse uses both completed orders and mean deadlock ratio | Collapse summary | main per-seed rows + station events | `python scripts/reproduce_mechanism.py` |
 | Adaptation transfers to a six-station layout on held-out seeds | Six-station table / [static result overview](assets/results_overview.png) | `artifacts/raw/station6_per_seed.csv` | `make station6` |
 | Frozen policy transfers to larger maps and proportional fleets under four fixed stations | [Scale-transfer figures and paired analysis](results/density_scale_results.md) | `artifacts/raw/density_scale_per_seed.csv` | `make density-scale` |
-| Proposed latency is driven more by candidate inference count than CPU/GPU placement | [Runtime Fig. 6 and paired analysis](results/runtime_results.md) | `artifacts/raw/figure_inputs/fig06_runtime_benchmark_runs.csv` | `make fig06` |
+| Proposed has higher dispatch cost than analytic baselines; device differences do not establish end-to-end speedup | [Runtime figures and three-load analysis](results/runtime_results.md) | `artifacts/raw/figure_inputs/station6_runtime_chart_summary.csv` | `make fig06` |
 | Arrival streams are paired within every load/seed cell | Manifest audit | `manifests/main_50seed`, `manifests/station6_10seed`, `manifests/density_scale_10seed` | `make verify` |
 
 The intended chain is:

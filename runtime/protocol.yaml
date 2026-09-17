@@ -1,7 +1,8 @@
 schema_version: runtime_protocol_v2
-benchmark: six_station_mid_heldout
+benchmark: six_station_three_load_heldout
 layout: map20_r48_s6
-load: mid
+loads: [low, mid, high]
+main_figure_load: mid
 seeds: {start: 721, stop_exclusive: 731, count: 10}
 ticks_per_run: 1500
 pairing: identical_recorded_arrival_manifest
@@ -12,7 +13,7 @@ warmup_ticks_per_method_device: 30
 assignment_latency:
   scope: synchronized_wall_time_around_task_assigner_assign
   calls_per_seed: 1500
-  pooled_calls_per_configuration: 15000
+  pooled_calls_per_configuration_and_load: 15000
   initialization: separately_recorded_and_excluded
   cuda_synchronization: before_and_after_each_measured_call
   summaries: [mean, median, p95, maximum, total]

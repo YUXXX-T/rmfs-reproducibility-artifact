@@ -1,7 +1,7 @@
 {
   "schema_version": "rmfs_artifact_index_v2",
   "generated_from": "committed anonymous evidence",
-  "entry_count": 49,
+  "entry_count": 57,
   "entries": [
     {
       "path": "figures/density_scale_completed_orders_factorial.pdf",
@@ -68,6 +68,22 @@
       "role": "figures"
     },
     {
+      "path": "figures/station6_runtime_assignment.pdf",
+      "role": "figures"
+    },
+    {
+      "path": "figures/station6_runtime_assignment.png",
+      "role": "figures"
+    },
+    {
+      "path": "figures/station6_runtime_wall.pdf",
+      "role": "figures"
+    },
+    {
+      "path": "figures/station6_runtime_wall.png",
+      "role": "figures"
+    },
+    {
       "path": "figures/paired_effects_overview.pdf",
       "role": "figures"
     },
@@ -125,6 +141,22 @@
     },
     {
       "path": "raw/figure_inputs/fig06_runtime_benchmark_stats.json",
+      "role": "raw"
+    },
+    {
+      "path": "raw/figure_inputs/high_all_seeds_cpu_gpu_runs.csv",
+      "role": "raw"
+    },
+    {
+      "path": "raw/figure_inputs/low_all_seeds_cpu_gpu_runs.csv",
+      "role": "raw"
+    },
+    {
+      "path": "raw/figure_inputs/mid_all_seeds_cpu_gpu_runs.csv",
+      "role": "raw"
+    },
+    {
+      "path": "raw/figure_inputs/station6_runtime_chart_summary.csv",
       "role": "raw"
     },
     {

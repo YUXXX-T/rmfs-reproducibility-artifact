@@ -22,6 +22,12 @@ latency-driver regressions, validates them against the frozen statistics, and
 writes Fig. 6/6s to `artifacts/generated/fig06`. It does not load a checkpoint
 or import model-side code.
 
+The same target also runs
+`scripts/generate_station6_runtime_crossload.py`, which validates the complete
+150-run low/mid/high matrix and regenerates the cross-load assignment and
+per-seed wall-time figures under
+`artifacts/generated/station6_runtime_crossload`.
+
 Use `--figure all` to regenerate Figs. 5, 6, and 6s together.
 
 The fixed-four-station scale-transfer figures are independently regenerated

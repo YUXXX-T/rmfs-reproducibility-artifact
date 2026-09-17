@@ -73,6 +73,29 @@ not the paper's joint completed-orders/deadlock collapse label. Full
 interpretation and paired device statistics are in the
 [runtime result](../../docs/results/runtime_results.md).
 
+### Cross-load runtime audit
+
+The extended benchmark covers low, mid, and high load with the same ten
+held-out seeds.
+
+![Assignment cost across three loads](../figures/station6_runtime_assignment.png)
+
+| Load | Greedy CPU | JSQ CPU | Hungarian CPU | Proposed CPU | Proposed GPU |
+|---|---:|---:|---:|---:|---:|
+| Low | 0.83 | 2.80 | 6.36 | 86.86 | 79.32 |
+| Mid | 1.02 | 2.05 | 9.37 | 74.49 | 70.79 |
+| High | 1.33 | 4.65 | 18.15 | 71.12 | 64.01 |
+
+Values are pooled mean `assign()` milliseconds per tick (15,000 calls per
+cell). The CPU/GPU differences are closed-loop observations, not strict
+same-state inference speedups.
+
+![Per-seed whole-run time across three loads](../figures/station6_runtime_wall.png)
+
+Red open points identify high-load seeds where Proposed CPU and GPU finish
+different numbers of orders. Whole-run time is descriptive because the
+dispatcher changes the subsequent simulated trajectory.
+
 Bold marks the largest mean in each row and is descriptive, not a claim of
 statistical significance. The paired-effect figure above reports the paired
 bootstrap 95% confidence intervals used for inference.

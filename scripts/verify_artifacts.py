@@ -139,6 +139,60 @@ def verify_manifest_metadata() -> None:
                 raise AssertionError(f"density-scale result/manifest mismatch: {target}")
 
 
+def verify_runtime_benchmark() -> None:
+    figure_input = ROOT / "artifacts/raw/figure_inputs"
+    labels = {"greedy", "jsq", "hungarian", "proposed_cpu", "proposed_cuda_0"}
+    all_rows = []
+    by_load = {}
+    for load in ("low", "mid", "high"):
+        rows = read_rows(figure_input / f"{load}_all_seeds_cpu_gpu_runs.csv")
+        if len(rows) != 50:
+            raise AssertionError(f"runtime {load} rows: expected 50, got {len(rows)}")
+        if {(row["label"], int(row["seed"])) for row in rows} != {
+            (label, seed) for label in labels for seed in range(721, 731)
+        }:
+            raise AssertionError(f"runtime {load} method/seed grid is incomplete")
+        for row in rows:
+            if row["load"] != load or int(row["ticks"]) != 1500:
+                raise AssertionError(f"runtime {load} load/tick contract changed")
+            if int(row["assignment_calls"]) != 1500:
+                raise AssertionError(f"runtime {load} assignment-call count changed")
+            if row["audit_passed"].lower() != "true":
+                raise AssertionError(f"runtime {load} contains a failed run audit")
+        all_rows.extend(rows)
+        by_load[load] = rows
+    if len(all_rows) != 150:
+        raise AssertionError("runtime benchmark must contain 150 runs")
+
+    summary = read_rows(figure_input / "station6_runtime_chart_summary.csv")
+    if len(summary) != 15 or {(row["load"], row["label"]) for row in summary} != {
+        (load, label) for load in ("low", "mid", "high") for label in labels
+    }:
+        raise AssertionError("runtime 3x5 summary is incomplete")
+    if any(
+        int(row["runs"]) != 10
+        or int(row["assignment_calls"]) != 15_000
+        or row["audit_passed"].lower() != "true"
+        for row in summary
+    ):
+        raise AssertionError("runtime summary count/audit contract changed")
+
+    mismatches = {}
+    for load, rows in by_load.items():
+        completed = {
+            (row["label"], int(row["seed"])): int(float(row["completed_orders"]))
+            for row in rows
+        }
+        mismatches[load] = {
+            seed
+            for seed in range(721, 731)
+            if completed[("proposed_cpu", seed)]
+            != completed[("proposed_cuda_0", seed)]
+        }
+    if mismatches != {"low": set(), "mid": set(), "high": {727, 728, 730}}:
+        raise AssertionError("runtime CPU/GPU trajectory-mismatch audit changed")
+
+
 def verify_artifact_index() -> int:
     root = ROOT / "artifacts"
     index = json.loads((root / "artifact_manifest.json").read_text(encoding="utf-8"))
@@ -242,6 +296,7 @@ def main() -> None:
     verify_counts()
     verify_protocols()
     verify_manifest_metadata()
+    verify_runtime_benchmark()
     indexed = verify_artifact_index()
     anonymity_scan()
     git_history_anonymity_scan()
@@ -255,7 +310,10 @@ def main() -> None:
         ROOT / "artifacts/figures/fig05_station_lock_mechanism.pdf",
         ROOT / "artifacts/figures/fig06_runtime_benchmark.pdf",
         ROOT / "artifacts/figures/fig06s_runtime_wall_time.pdf",
+        ROOT / "artifacts/figures/station6_runtime_assignment.pdf",
+        ROOT / "artifacts/figures/station6_runtime_wall.pdf",
         ROOT / "artifacts/raw/figure_inputs/fig06_runtime_benchmark_runs.csv",
+        ROOT / "artifacts/raw/figure_inputs/station6_runtime_chart_summary.csv",
         ROOT / "artifacts/figures/density_scale_completed_orders_factorial.png",
         ROOT / "artifacts/figures/density_scale_four_endpoint_summary.png",
         ROOT / "artifacts/statistics/density_scale_paired_effects.csv",
@@ -264,8 +322,9 @@ def main() -> None:
     if missing:
         raise AssertionError(f"missing required artifacts: {missing}")
     print(
-        "PASS: main, six-station, and 1,350-run scale counts; protocols; "
-        f"210 arrival manifests; {indexed} indexed artifacts; and anonymity verified"
+        "PASS: main, six-station, 1,350-run scale, and 150-run runtime counts; "
+        f"protocols; 210 arrival manifests; {indexed} indexed artifacts; "
+        "and anonymity verified"
     )
 
 

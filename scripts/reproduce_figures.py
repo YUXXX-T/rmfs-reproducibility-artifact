@@ -19,6 +19,8 @@ def main() -> None:
     if args.figure in ("fig06", "all"):
         script = Path(__file__).with_name("generate_fig06_runtime.py")
         subprocess.run([sys.executable, str(script)], check=True)
+        script = Path(__file__).with_name("generate_station6_runtime_crossload.py")
+        subprocess.run([sys.executable, str(script)], check=True)
     if args.figure == "all":
         print(
             "Figs. 2--4 remain frozen outputs; Figs. 5, 6, and 6s were "

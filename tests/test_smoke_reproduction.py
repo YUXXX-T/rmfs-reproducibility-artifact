@@ -40,3 +40,23 @@ def test_runtime_figure_generation(tmp_path: Path) -> None:
         "fig06s_runtime_wall_time.png",
     ):
         assert (tmp_path / name).stat().st_size > 1000
+
+
+def test_crossload_runtime_figure_generation(tmp_path: Path) -> None:
+    subprocess.run(
+        [
+            sys.executable,
+            "scripts/generate_station6_runtime_crossload.py",
+            "--output-dir",
+            str(tmp_path),
+        ],
+        cwd=ROOT,
+        check=True,
+    )
+    for name in (
+        "station6_runtime_assignment.pdf",
+        "station6_runtime_assignment.png",
+        "station6_runtime_wall.pdf",
+        "station6_runtime_wall.png",
+    ):
+        assert (tmp_path / name).stat().st_size > 1000

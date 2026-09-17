@@ -15,7 +15,7 @@ six-station CSV, and 1,350-row scale-transfer CSV retain scalar metrics but
 omit absolute paths, wall-time observations, protocol fingerprints, verbose
 station traces, and duplicated nested audit structures.
 
-The Fig. 6 runtime inputs are the exception to the general omission of timing
-fields: they come from a dedicated synchronized benchmark and are stored under
-`raw/figure_inputs/`. Machine paths and file fingerprints from its collection
-audit are not retained.
+The runtime-figure inputs are the exception to the general omission of timing
+fields: they come from a dedicated synchronized three-load benchmark and are
+stored under `raw/figure_inputs/`. Machine paths and file fingerprints from
+its collection audit are not retained.

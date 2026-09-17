@@ -14,6 +14,8 @@ def test_static_github_figures_are_committed_and_match_docs_copies() -> None:
         "density_scale_four_endpoint_summary.png",
         "fig06_runtime_benchmark.png",
         "fig06s_runtime_wall_time.png",
+        "station6_runtime_assignment.png",
+        "station6_runtime_wall.png",
     ):
         canonical = ROOT / "artifacts/figures" / name
         docs_copy = ROOT / "docs/assets" / name
@@ -36,6 +38,8 @@ def test_repository_pages_embed_static_figures() -> None:
             "../figures/density_scale_four_endpoint_summary.png",
             "../figures/fig06_runtime_benchmark.png",
             "../figures/fig06s_runtime_wall_time.png",
+            "../figures/station6_runtime_assignment.png",
+            "../figures/station6_runtime_wall.png",
         ),
     }
     for relative, references in required.items():
