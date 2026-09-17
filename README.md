@@ -4,7 +4,14 @@ Anonymous review artifact for a robotic mobile fulfillment system (RMFS) dispatc
 
 ## Results at a glance
 
-The following committed figures render directly on GitHub and anonymous repository mirrors; no download, notebook, or JavaScript execution is required.
+The following committed figures render directly on GitHub and anonymous repository mirrors.
+
+**Figure labels.** `ComboS1J1` is the paper's **Proposed** method: S1 selects
+the robot within a fixed dispatch context, and J1 orders contexts using
+station congestion and service pressure. `PhaseC` denotes **WM-Base**, the
+same-world-model control without the S1 long-risk conversion or J1 context
+ordering. In runtime figures, `Proposed (CPU)` and `Proposed (GPU)` are two
+device configurations of ComboS1J1, not two different policies.
 
 ![Aggregate results across load and station layouts](artifacts/figures/results_overview.png)
 
@@ -15,8 +22,16 @@ Exact values and machine-readable files are linked from the [result tables](arti
 ## Fixed-four-station scale transfer
 
 The frozen policy is also evaluated on 20×20, 30×30, and 40×40 maps at three
-robot densities. This is zero-shot graph/fleet-scale transfer with four
-stations fixed, not station-count generalization.
+robot densities, defined as `number of robots / number of grid cells`:
+
+| Map | Density 0.12 | Density 0.15 | Density 0.18 |
+|---:|---:|---:|---:|
+| 20×20 | 48 robots | 60 robots | 72 robots |
+| 30×30 | 108 robots | 135 robots | 162 robots |
+| 40×40 | 192 robots | 240 robots | 288 robots |
+
+All nine variants retain exactly four stations. This is zero-shot
+graph/fleet-scale transfer, not station-count generalization.
 
 ![Map-size summary across four endpoints](artifacts/figures/density_scale_four_endpoint_summary.png)
 
@@ -28,13 +43,36 @@ analysis.
 
 ![Aggregate station-lock mechanism](docs/assets/fig05_station_lock_mechanism.png)
 
-## Runtime benchmark
+## Runtime benchmark — figures, exact values, and reproduction
 
-![Six-station dispatch runtime benchmark](artifacts/figures/fig06_runtime_benchmark.png)
+Runtime evidence is available directly from this page. Fig. 6 reports the
+six-station mid-load benchmark; the second figure expands the same protocol to
+low, mid, and high load.
 
-The [runtime results](docs/results/runtime_results.md) report the paired CPU/GPU
-analysis, latency-driver fit, hardware record, and supplementary episode-time
-figure.
+![Fig. 6: six-station dispatch runtime benchmark](artifacts/figures/fig06_runtime_benchmark.png)
+
+![Six-station assignment latency across low, mid, and high load](artifacts/figures/station6_runtime_assignment.png)
+
+Mean assignment latency (ms/tick; 15,000 calls per load and configuration):
+
+| Load | Greedy CPU | JSQ CPU | Hungarian CPU | Proposed CPU | Proposed GPU |
+|---|---:|---:|---:|---:|---:|
+| Low | 0.83 | 2.80 | 6.36 | 86.86 | 79.32 |
+| Mid | 1.02 | 2.05 | 9.37 | 74.49 | 70.79 |
+| High | 1.33 | 4.65 | 18.15 | 71.12 | 64.01 |
+
+Proposed is substantially more expensive than the analytic baselines. Its GPU
+mean is 5–10% below its CPU mean in these closed-loop runs, but this is not a
+controlled same-state inference-speedup comparison. The dominant observed
+driver is the number of World-Model candidate evaluations per tick
+(`r = 0.88`).
+
+**Runtime entry points:** [runtime evidence index](runtime/README.md) ·
+[complete interpretation](docs/results/runtime_results.md) · [hardware
+record](runtime/hardware.md) · [cross-load numeric
+evidence](artifacts/raw/figure_inputs/station6_runtime_chart_summary.csv) ·
+reproduce with `python scripts/generate_fig06_runtime.py` and
+`python scripts/generate_station6_runtime_crossload.py`.
 
 ## Start here
 

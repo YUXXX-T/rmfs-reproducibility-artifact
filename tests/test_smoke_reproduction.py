@@ -10,6 +10,11 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def test_lightweight_reproduction_matches_committed_tables() -> None:
     subprocess.run([sys.executable, "scripts/reproduce_tables.py"], cwd=ROOT, check=True)
+    subprocess.run(
+        [sys.executable, "scripts/reproduce_density_scale.py"],
+        cwd=ROOT,
+        check=True,
+    )
     subprocess.run([sys.executable, "scripts/compare_generated.py"], cwd=ROOT, check=True)
 
 

@@ -1,5 +1,15 @@
 # Fixed-four-station scale transfer
 
+The factorial varies map size and fleet density while holding the station
+count at four. Robot density is `number of robots / number of grid cells`, so
+the exact fleet sizes are:
+
+| Map | Density 0.12 | Density 0.15 | Density 0.18 |
+|---:|---:|---:|---:|
+| 20×20 | 48 robots | 60 robots | 72 robots |
+| 30×30 | 108 robots | 135 robots | 162 robots |
+| 40×40 | 192 robots | 240 robots | 288 robots |
+
 Both committed figures render directly in GitHub and anonymous repository
 views. The first exposes all 27 load × density × map-size cells; bands are
 ten-seed 95% t intervals.

@@ -29,6 +29,10 @@ Mean completed orders over 10 held-out seeds:
 
 ## Fixed-four-station map/fleet scale transfer
 
+The three densities are 0.12, 0.15, and 0.18 robots per grid cell. They
+correspond to 48/60/72 robots on 20×20, 108/135/162 on 30×30, and
+192/240/288 on 40×40; every variant has four stations.
+
 The frozen model and policy are evaluated without retraining across three map
 sizes, three proportional robot densities, three loads, and ten seeds.
 
